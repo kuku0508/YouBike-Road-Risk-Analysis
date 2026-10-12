@@ -1,0 +1,215 @@
+{
+  "contract_version": "accident-road-reference-validation-v1",
+  "generated_at_utc": "2026-09-23T16:35:23+00:00",
+  "accident_entity_input": {
+    "path": "data/processed/accidents/accident_entities_2023_2024.parquet",
+    "sha256": "3b82df95f59e5725c84c4f05fff7c785795f66d3e76b7580108a598613497d29",
+    "fingerprint_sha256": "ded355d1b5791ea3f2146c51d0321984b4d75ba9e0ff17fb20b8cf9a7b210923",
+    "row_count": 46586,
+    "id_contract": {
+      "algorithm": "reconstructed_accident_ + SHA-256(UTF-8 compact JSON canonical event key)",
+      "source_status": "reconstruction artifact; not an official source accident ID",
+      "stable": true,
+      "deterministic": true,
+      "row_order_independent": true,
+      "collision_count": 0
+    }
+  },
+  "road_reference": {
+    "directory": "data/raw/8mroadup",
+    "component_hashes": {
+      "Road.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "Road.dbf": "ba09baec6599844958b4bcb175b4ae7812f1abb58b23870ddf5b9357df88faf0",
+      "Road.prj": "8dac7d82ea889063f9eaa7df408fcaeb7307d32831ea973b6534d0139a4523c5",
+      "Road.qmd": "f791e1df3232d397b1eb4a2bbff8ea9f0aebf675f2b753d65c0b0b16ec3a45cc",
+      "Road.shp": "d590a4f0ad0c463b97b0f47e95795a2737059d45a562faeb9ee4f86ae8af4ffc",
+      "Road.shx": "f597d0747450d363b3c84ff6b8b53619fa2f2bdf43dd5bcf0f0250777267356b"
+    },
+    "feature_count": 13419,
+    "crs": "EPSG:3826",
+    "epsg": 3826,
+    "geometry_type_counts": {
+      "Polygon": 13419
+    },
+    "ogc_valid_count": 13419,
+    "ogc_invalid_count": 0,
+    "empty_geometry_count": 0,
+    "valid_road_id_count": 13418,
+    "blank_road_id_count": 1
+  },
+  "crs_contract": {
+    "accident_source_assumption": "WGS84 geographic longitude/latitude operationally treated as EPSG:4326",
+    "assumption_status": "RECONSTRUCTION_ASSUMPTION_NOT_SOURCE_METADATA_FACT",
+    "target_crs": "EPSG:3826",
+    "distance_unit": "metre"
+  },
+  "containment_contract": {
+    "predicate": "polygon.covers(point)",
+    "boundary_semantics": "boundary points are covered",
+    "road_assignment_performed": false,
+    "nearest_road_assignment_performed": false,
+    "formal_distance_threshold_selected": false
+  },
+  "coverage": {
+    "total": 46586,
+    "spatially_evaluable": 46585,
+    "coordinate_unavailable": {
+      "count": 1,
+      "percentage_of_all_accidents": 2.146567638346284e-05
+    },
+    "containment": {
+      "contained_unique": {
+        "count": 37884,
+        "percentage_of_all_accidents": 0.8132056841111064,
+        "percentage_of_spatially_evaluable": 0.8132231404958677
+      },
+      "contained_multiple": {
+        "count": 0,
+        "percentage_of_all_accidents": 0.0,
+        "percentage_of_spatially_evaluable": 0.0
+      },
+      "contained_zero": {
+        "count": 8701,
+        "percentage_of_all_accidents": 0.1867728502125102,
+        "percentage_of_spatially_evaluable": 0.18677685950413223
+      }
+    },
+    "unique_with_valid_road_id": {
+      "count": 37859,
+      "percentage": 0.8126690422015198
+    },
+    "unique_with_blank_road_id": {
+      "count": 25,
+      "percentage": 0.000536641909586571
+    },
+    "multiple_candidate_count_distribution": {},
+    "multiple_candidate_count_grouped": {
+      "2": 0,
+      "3": 0,
+      "4_plus": 0
+    },
+    "multiple_with_interior_overlap": 0,
+    "multiple_with_any_boundary_hit": 0,
+    "multiple_with_shared_boundary_hit": 0,
+    "contained_zero_radius_sensitivity_m": {
+      "1": {
+        "count": 394,
+        "percentage_of_contained_zero": 0.04528215147684174,
+        "percentage_of_all_accidents": 0.008457476495084361
+      },
+      "3": {
+        "count": 995,
+        "percentage_of_contained_zero": 0.11435467187679577,
+        "percentage_of_all_accidents": 0.02135834800154553
+      },
+      "5": {
+        "count": 1521,
+        "percentage_of_contained_zero": 0.17480749339156418,
+        "percentage_of_all_accidents": 0.03264929377924698
+      },
+      "10": {
+        "count": 2298,
+        "percentage_of_contained_zero": 0.2641075738420871,
+        "percentage_of_all_accidents": 0.049328124329197615
+      },
+      "20": {
+        "count": 3183,
+        "percentage_of_contained_zero": 0.3658200206872773,
+        "percentage_of_all_accidents": 0.06832524792856223
+      },
+      "30": {
+        "count": 3849,
+        "percentage_of_contained_zero": 0.44236294678772553,
+        "percentage_of_all_accidents": 0.08262138839994848
+      },
+      "50": {
+        "count": 5416,
+        "percentage_of_contained_zero": 0.6224571888288702,
+        "percentage_of_all_accidents": 0.11625810329283476
+      }
+    },
+    "nearest_distance_m": {
+      "count": 8701,
+      "min": 0.000983041134462768,
+      "max": 2954.682397562932,
+      "mean": 77.07702135331286,
+      "median": 37.67527706525521,
+      "p50": 37.67527706525521,
+      "p75": 74.06749329656077,
+      "p90": 138.55696827146852,
+      "p95": 256.7225514470816,
+      "p97_5": 467.5077234720952,
+      "p99": 922.6796680511707
+    },
+    "second_nearest_distance_m": {
+      "count": 8701,
+      "min": 0.44817979436938304,
+      "max": 3053.6784800392415,
+      "mean": 94.61982453069652,
+      "median": 51.86222474323868,
+      "p50": 51.86222474323868,
+      "p75": 88.55700967683464,
+      "p90": 156.6404869940506,
+      "p95": 285.42255429219387,
+      "p97_5": 498.9796086003558,
+      "p99": 979.7524244407982
+    },
+    "distance_gap_m": {
+      "count": 8701,
+      "min": 0.0,
+      "max": 428.3695426869224,
+      "mean": 17.542803177383664,
+      "median": 5.329271570402533,
+      "p50": 5.329271570402533,
+      "p75": 22.724657011137353,
+      "p90": 47.83431481238293,
+      "p95": 66.05739128197433,
+      "p97_5": 92.32326638882493,
+      "p99": 148.29055048741415
+    },
+    "contained_zero_equal_nearest_ties": 30
+  },
+  "outputs": {
+    "validation_path": "data/interim/accidents/accident_road_reference_validation_2023_2024.parquet",
+    "validation_rows": 46586,
+    "validation_fingerprint_sha256": "3cfb32dec6813e4b0e0e1852ff35c999c619cf96c4824ba175c20fc989e418d9",
+    "validation_sha256": "313bb429e594cd93ded17326f0a4fbfc191789252635bd7214a70b08eaed52ee",
+    "qa_sample_path": "notes/phase8_3b-accident-road-reference-qa-sample.csv",
+    "qa_sample_rows": 36,
+    "qa_sample_sha256": "871b6bf30d622ee3f45b2757d9936bd155560a0ef34d7bf9289702c30c29e61a"
+  },
+  "limitations": {
+    "road_reference_scope": "official reference contains roads wider than 8 metres; it is not the complete Taipei road universe",
+    "contained_zero_interpretation": "outside this reference coverage, not proof of accident error or off-road location",
+    "coordinate_unavailable_interpretation": "accepted entity retained without spatial classification; no coordinate was invented",
+    "tt_intersect_semantics": "UNRESOLVED; retained for QA only and never used for disambiguation",
+    "road_name_use": "QA description only; never used as matching rule"
+  },
+  "readiness": {
+    "phase8_3c": "READY_FOR_HUMAN_POLICY_DECISION_WITH_DISCLOSED_COVERAGE_LIMITATIONS",
+    "unresolved_decisions": [
+      "whether to use nearest-road fallback",
+      "formal distance threshold",
+      "multiple-polygon disambiguation rule",
+      "treatment of outside-reference coverage"
+    ]
+  },
+  "prohibited_work_confirmed_not_performed": {
+    "assigned_road_id": false,
+    "nearest_road_selected": false,
+    "distance_threshold_selected": false,
+    "tt_intersect_disambiguation": false,
+    "brouter_segment_matching": false,
+    "phase8_2_flow_join": false,
+    "epdo_calculated": false,
+    "cbi_calculated": false,
+    "risk_analysis_started": false,
+    "phase8_3c_started": false
+  },
+  "software": {
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "pyshp": "3.1.6"
+  },
+  "receipt_fingerprint_sha256": "8fd98c25b967fb6fd5f1757688643eff8272fc8a00e1b503c41a3262e4cd1a70"
+}

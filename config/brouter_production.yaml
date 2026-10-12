@@ -1,0 +1,69 @@
+{
+  "pipeline_version": "brouter-production-v1",
+  "routing_contract_version": "road-routing-contract-v1.1",
+  "coordinate_assumption_id": "routing-coordinate-assumption-v1",
+  "paths": {
+    "od": "data/processed/od/aggregate/core_2023_2024/od.parquet",
+    "coordinates": "data/processed/routing/routing_station_coordinates_2023_2024.parquet",
+    "hourly_od_root": "data/processed/network/hourly_2023_2024",
+    "manifest": "data/processed/routing/production/production_manifest.parquet",
+    "cache_db": "data/processed/routing/production/route_cache.sqlite",
+    "progress": "data/processed/routing/production/progress.json"
+  },
+  "locked_hashes": {
+    "od": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+    "coordinates": "8e5b4bbe3511b0145234f209768f0eec0f766e9121716ae510170724dab1ad06",
+    "station_id_fingerprint": "1cf8fa00388dd9b89b16eb8ee895a9bb5913f62344d69791095d591b9eafc820",
+    "coordinate_fingerprint": "b744b692ba020cd13293f5429f8d6e43400d70737560f1d921ccb0309281bd02",
+    "brouter_jar": "93e9821640093cde82ed470ac8c08ab84fc7ae3b570e30c9ab41d686c7af1d4a",
+    "profile": "00241f71fe9251d3e38571a4eb296352c7c2451d86eb34e656123820c27b315e",
+    "lookups": "bf8fc3b2c052b7204e9c5a8d78e4d6ab6b125d3236a943f34583b838c477f419",
+    "graphs": ["86a1e9c4ef037a204fbe71dcac6f525469102e04b0887dad6f06d29a547df37a", "533b558b33e51f723ad3ae9838d098d3055b85c1f986259d4f7dd940366a96e3"]
+  },
+  "environment": {
+    "brouter_version": "1.7.10",
+    "java_version_prefix": "25.0.4.1",
+    "base_url": "http://127.0.0.1:17777/brouter",
+    "jar": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/brouter-1.7.10-all.jar",
+    "profile": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/trekking.brf",
+    "lookups": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/lookups.dat",
+    "graphs": ["data/raw/routing/E120_N20_20260918.rd5", "data/raw/routing/E120_N25_20260918.rd5"],
+    "graph_runtime_aliases": {
+      "data/raw/routing/E120_N20.rd5": "E120_N20_20260918.rd5",
+      "data/raw/routing/E120_N25.rd5": "E120_N25_20260918.rd5"
+    },
+    "preflight_smoke_route": {
+      "source": "Phase 8.1A gate successful route",
+      "route_id": "00087cf1126a2a927ebb1931",
+      "origin_station_id": "500107110",
+      "destination_station_id": "500101180",
+      "origin_lon": 121.53043,
+      "origin_lat": 25.06245,
+      "destination_lon": 121.54693,
+      "destination_lat": 25.03597
+    },
+    "routing_parameters": {"profile":"trekking", "alternativeidx":0, "format":"geojson", "exportWaypoints":1}
+  },
+  "expected": {
+    "manifest_routes": 1100919,
+    "manifest_trip_weight": 83693979,
+    "coordinate_exclusion_edges": 23096,
+    "coordinate_exclusion_trip_weight": 1421216,
+    "non_self_edges": 1124015,
+    "non_self_trip_weight": 85115195,
+    "self_loop_edges": 1504,
+    "self_loop_trip_weight": 6023568,
+    "eligible_trip_weight": 91138763
+  },
+  "execution": {
+    "selected_workers": 4,
+    "batch_size": 100,
+    "request_timeout_seconds": 120,
+    "max_attempts": 3,
+    "retryable_statuses": ["timeout", "brouter_error"],
+    "terminal_statuses": ["success", "no_route", "malformed_output", "snap_anomaly"],
+    "snap_anomaly_threshold_m": null,
+    "minimum_free_disk_bytes": 8589934592,
+    "full_run_requires_explicit_flag": true
+  }
+}

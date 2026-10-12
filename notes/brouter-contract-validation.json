@@ -1,0 +1,299 @@
+{
+  "contract_version": "road-routing-contract-v1",
+  "full_routing_executed": false,
+  "od": {
+    "path": "data/processed/od/aggregate/core_2023_2024/od.parquet",
+    "sha256": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+    "edge_count": 1125519,
+    "trip_weight": 91138763,
+    "node_count": 2782,
+    "self_loop_edges": 1504,
+    "self_loop_trip_weight": 6023568,
+    "eligible_non_self_edges": 1124015,
+    "eligible_non_self_trip_weight": 85115195
+  },
+  "coordinate_sources": {
+    "historical": {
+      "path": "data/raw/station_snapshot_2024-05-31.csv",
+      "sha256": "c696c0f23f55cef97862c324468781d85b752bd5f9557e3608e691f9c930634a"
+    },
+    "taipei_current": {
+      "path": "data/raw/youbike_immediate_2026-09-13.json",
+      "sha256": "0ac45607a811c3d7dde8727f2d1d4e005dcece367b1411c211eabfa2496f6969"
+    },
+    "new_taipei_current": {
+      "path": "data/raw/new_taipei_youbike_2026-09-14.csv",
+      "sha256": "325d0adc6b89ee986fd8abf1cd453d67ba645cd70432c92404436aa991578d27"
+    }
+  },
+  "coordinate_audit": {
+    "routing_nodes": 2782,
+    "status_counts": {
+      "historical_snapshot": 1384,
+      "coordinate_conflict": 31,
+      "current_only_temporal_unresolved": 1367
+    },
+    "usable_unique_coordinates_under_v1": 2751,
+    "conflicting_station_ids": [
+      "500101015",
+      "500101159",
+      "500101166",
+      "500101180",
+      "500101199",
+      "500104032",
+      "500104057",
+      "500104075",
+      "500104076",
+      "500104107",
+      "500105009",
+      "500105025",
+      "500107008",
+      "500107016",
+      "500107033",
+      "500107075",
+      "500107133",
+      "500108006",
+      "500108013",
+      "500108022",
+      "500108132",
+      "500109047",
+      "500109065",
+      "500109068",
+      "500110027",
+      "500111028",
+      "500112017",
+      "500112089",
+      "500113012",
+      "500113037",
+      "500119084"
+    ],
+    "duplicate_coordinate_groups": 0,
+    "duplicate_coordinate_station_count": 0,
+    "outside_expected_bounds": 0,
+    "od_impact_by_status": {
+      "coordinate_conflict": {
+        "od_edges": 44010,
+        "trip_weight": 3953066,
+        "non_self_od_edges": 43979,
+        "non_self_trip_weight": 3805894
+      },
+      "current_only_temporal_unresolved": {
+        "od_edges": 243756,
+        "trip_weight": 2835254,
+        "non_self_od_edges": 243665,
+        "non_self_trip_weight": 2789522
+      },
+      "unresolved_union": {
+        "od_edges": 282408,
+        "trip_weight": 6734704,
+        "non_self_od_edges": 282286,
+        "non_self_trip_weight": 6541800
+      }
+    }
+  },
+  "bounded_sample": {
+    "definition": [
+      {
+        "pair": "500101025->500101022",
+        "category": "high_flow",
+        "trip_count": 107084,
+        "distance_m": 581.4826213277171
+      },
+      {
+        "pair": "500101027->500101022",
+        "category": "high_flow",
+        "trip_count": 105214,
+        "distance_m": 809.1423270921416
+      },
+      {
+        "pair": "500101022->500101027",
+        "category": "high_flow",
+        "trip_count": 97440,
+        "distance_m": 809.1423270921416
+      },
+      {
+        "pair": "500113004->500207044",
+        "category": "middle_flow",
+        "trip_count": 6,
+        "distance_m": 2736.063906747715
+      },
+      {
+        "pair": "500113004->500207023",
+        "category": "middle_flow",
+        "trip_count": 2,
+        "distance_m": 3092.697445615458
+      },
+      {
+        "pair": "500113004->500210015",
+        "category": "middle_flow",
+        "trip_count": 1,
+        "distance_m": 3225.5655668158975
+      },
+      {
+        "pair": "500101001->500103005",
+        "category": "low_flow",
+        "trip_count": 1,
+        "distance_m": 5891.981034745227
+      },
+      {
+        "pair": "500101001->500103010",
+        "category": "low_flow",
+        "trip_count": 1,
+        "distance_m": 6115.9537579294165
+      },
+      {
+        "pair": "500101001->500103011",
+        "category": "low_flow",
+        "trip_count": 1,
+        "distance_m": 6064.2228350197
+      },
+      {
+        "pair": "500109007->500223012",
+        "category": "taipei_to_new_taipei",
+        "trip_count": 9638,
+        "distance_m": 6021.630101025349
+      },
+      {
+        "pair": "500101022->500101025",
+        "category": "reciprocal",
+        "trip_count": 90072,
+        "distance_m": 581.4826213277171
+      },
+      {
+        "pair": "500107026->500107113",
+        "category": "short_distance",
+        "trip_count": 1094,
+        "distance_m": 10.502619276780898
+      },
+      {
+        "pair": "500104130->500232002",
+        "category": "long_distance",
+        "trip_count": 1,
+        "distance_m": 34218.22178290384
+      },
+      {
+        "pair": "500101001->500101002",
+        "category": "deterministic_fill",
+        "trip_count": 2947,
+        "distance_m": 44.58056077034159
+      },
+      {
+        "pair": "500101001->500101003",
+        "category": "deterministic_fill",
+        "trip_count": 3013,
+        "distance_m": 307.9629753388078
+      },
+      {
+        "pair": "500101001->500101004",
+        "category": "deterministic_fill",
+        "trip_count": 8514,
+        "distance_m": 293.165468371895
+      },
+      {
+        "pair": "500101001->500101005",
+        "category": "deterministic_fill",
+        "trip_count": 20398,
+        "distance_m": 506.3451453147146
+      },
+      {
+        "pair": "500101001->500101006",
+        "category": "deterministic_fill",
+        "trip_count": 1358,
+        "distance_m": 198.34121346052493
+      },
+      {
+        "pair": "500101001->500101007",
+        "category": "deterministic_fill",
+        "trip_count": 7253,
+        "distance_m": 392.90244782327017
+      },
+      {
+        "pair": "500101001->500101008",
+        "category": "deterministic_fill",
+        "trip_count": 845,
+        "distance_m": 1105.6823174943374
+      },
+      {
+        "pair": "500103044->500103044",
+        "category": "self_loop_exclusion",
+        "trip_count": 54664,
+        "distance_m": 0.0
+      }
+    ],
+    "sha256": "7079e32ea2a8db6f65e3d5e784c176e880bb3eb1cffa75a5ea53b618d1ccc375",
+    "routing_executed": true,
+    "results_path": "notes/brouter-bounded-results.json",
+    "summary": {
+      "sample_non_self_count": 20,
+      "success_count": 20,
+      "success_rate": 1.0,
+      "sample_trip_weight": 454883,
+      "successful_trip_weight": 454883,
+      "trip_weight_coverage": 1.0,
+      "failure_status_counts": {
+        "self_loop_not_routed": 1,
+        "success": 20
+      },
+      "runtime_seconds": {
+        "median": 0.050459799997042865,
+        "p90": 0.2956051400280558
+      },
+      "response_bytes": {
+        "median": 5761.5,
+        "p90": 46433.600000000006
+      },
+      "route_distance_m": {
+        "min": 44.0,
+        "median": 1253.0,
+        "max": 51151.0
+      },
+      "segment_count": {
+        "min": 2,
+        "median": 41.0,
+        "max": 1255
+      },
+      "snap_offset_m": {
+        "max": 16.410487618377086,
+        "bins": {
+          "le_25": 40,
+          "25_50": 0,
+          "50_100": 0,
+          "gt_100": 0
+        }
+      },
+      "repeated_segment_routes": 0,
+      "deterministic_rerun": {
+        "comparable_routes": 20,
+        "all_statuses_equal": true,
+        "route_hash_and_distance_equal": true
+      },
+      "engineering_estimate": {
+        "eligible_non_self_edges": 1124015,
+        "single_worker_hours_at_sample_median": 15.75488113713226,
+        "single_worker_hours_at_sample_p90": 92.29572540795421,
+        "raw_response_gib_at_sample_median": 6.031256562564522
+      }
+    }
+  },
+  "brouter_environment": {
+    "status": "pinned_and_validated",
+    "brouter_version": "1.7.10",
+    "java_version": "25.0.4.1",
+    "release_zip_sha256": "023fec3ba997758e8cd7ab9e1bae52e962af3f00b57683e3de86b84ffad01532",
+    "jar_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/brouter-1.7.10-all.jar",
+    "jar_sha256": "93e9821640093cde82ed470ac8c08ab84fc7ae3b570e30c9ab41d686c7af1d4a",
+    "profile_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/trekking.brf",
+    "profile_sha256": "00241f71fe9251d3e38571a4eb296352c7c2451d86eb34e656123820c27b315e",
+    "routing_graph": [
+      {
+        "path": "data/raw/routing/E120_N20_20260918.rd5",
+        "sha256": "86a1e9c4ef037a204fbe71dcac6f525469102e04b0887dad6f06d29a547df37a"
+      },
+      {
+        "path": "data/raw/routing/E120_N25_20260918.rd5",
+        "sha256": "533b558b33e51f723ad3ae9838d098d3055b85c1f986259d4f7dd940366a96e3"
+      }
+    ]
+  },
+  "validation_status": "blocked_station_coordinates"
+}

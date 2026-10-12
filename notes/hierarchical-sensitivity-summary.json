@@ -1,0 +1,133 @@
+{
+  "holiday": [
+    {
+      "ari_vs_primary": 0.03862791951701425,
+      "cluster_sizes": {
+        "1": 2767,
+        "2": 9,
+        "3": 1,
+        "4": 5
+      },
+      "cophenetic_correlation": 0.9248876678022443,
+      "linkage": "complete",
+      "linkage_sha256": "f4b748e0135422a1d8a17416b84a2175c3d725a8a4b011c1feaa811a97bfe693",
+      "nmi_vs_primary": 0.07115656762257616,
+      "scaling": true,
+      "variant": "standard_scaler_complete"
+    },
+    {
+      "ari_vs_primary": 0.018146178821315244,
+      "cluster_sizes": {
+        "1": 2775,
+        "2": 5,
+        "3": 1,
+        "4": 1
+      },
+      "cophenetic_correlation": 0.9537972987948887,
+      "linkage": "average",
+      "linkage_sha256": "fafb2374f0aa50608eaeedcdfa513f0027f733d670b44a1012edced4934e438f",
+      "nmi_vs_primary": 0.03686753231541081,
+      "scaling": true,
+      "variant": "standard_scaler_average"
+    },
+    {
+      "ari_vs_primary": 0.620627227424059,
+      "cluster_sizes": {
+        "1": 177,
+        "2": 314,
+        "3": 1963,
+        "4": 328
+      },
+      "cophenetic_correlation": 0.781441950076979,
+      "linkage": "ward",
+      "linkage_sha256": "6fba5ffbc77440a04b9fbf9a2cba55fc4a556076b122d4a652954ca818f71e15",
+      "nmi_vs_primary": 0.47324401427252855,
+      "scaling": false,
+      "variant": "no_scaling_ward"
+    }
+  ],
+  "weekday": [
+    {
+      "ari_vs_primary": 0.010032167237935513,
+      "cluster_sizes": {
+        "1": 2770,
+        "2": 3,
+        "3": 4,
+        "4": 1,
+        "5": 4
+      },
+      "cophenetic_correlation": 0.9068130335313236,
+      "linkage": "complete",
+      "linkage_sha256": "ce20a7bb36ed676affcc77f33f9c50d4e3e2d90f2cafc540c06bae12f94fddf6",
+      "nmi_vs_primary": 0.035716201819821554,
+      "scaling": true,
+      "variant": "standard_scaler_complete"
+    },
+    {
+      "ari_vs_primary": 0.016832810502253746,
+      "cluster_sizes": {
+        "1": 2762,
+        "2": 17,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "cophenetic_correlation": 0.9439482846354729,
+      "linkage": "average",
+      "linkage_sha256": "fe2966028d881834a38b105cdf1e29982334a4ff6e37bcadb26c6345f1387d5f",
+      "nmi_vs_primary": 0.05821939029130843,
+      "scaling": true,
+      "variant": "standard_scaler_average"
+    },
+    {
+      "ari_vs_primary": 0.5140251318111811,
+      "cluster_sizes": {
+        "1": 89,
+        "2": 324,
+        "3": 458,
+        "4": 176,
+        "5": 1735
+      },
+      "cophenetic_correlation": 0.8633876992935865,
+      "linkage": "ward",
+      "linkage_sha256": "d040aa8e06e9a793255f230782d034893f01ee4cc712f32b15d46c9cd4f0bb78",
+      "nmi_vs_primary": 0.484576585802019,
+      "scaling": false,
+      "variant": "no_scaling_ward"
+    }
+  ],
+  "weekday_vs_holiday": {
+    "ari": 0.3815975382367906,
+    "cross_tab": {
+      "1": {
+        "1": 45,
+        "2": 20,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "2": {
+        "1": 0,
+        "2": 446,
+        "3": 91,
+        "4": 0,
+        "5": 0
+      },
+      "3": {
+        "1": 0,
+        "2": 84,
+        "3": 676,
+        "4": 1419,
+        "5": 0
+      },
+      "4": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1
+      }
+    },
+    "nmi": 0.45601473220990674
+  }
+}

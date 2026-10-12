@@ -1,0 +1,115 @@
+{
+  "phase": "8.0A",
+  "policy_version": "historical-coordinate-resolution-policy-v1",
+  "research_period": "2023-01-01/2024-12-31",
+  "full_routing_executed": false,
+  "initial_coordinate_status": {
+    "routing_nodes": 2782,
+    "dated_2024_05_31": 1384,
+    "coordinate_conflicts": 31,
+    "current_only": 1367
+  },
+  "historical_sources_used": [
+    {
+      "name": "preserved_taipei_official_feed_capture_2024-05-31",
+      "sha256": "c696c0f23f55cef97862c324468781d85b752bd5f9557e3608e691f9c930634a"
+    },
+    {
+      "name": "taipei_official_current_2026-09-13",
+      "sha256": "0ac45607a811c3d7dde8727f2d1d4e005dcece367b1411c211eabfa2496f6969"
+    },
+    {
+      "name": "new_taipei_official_current_2026-09-14",
+      "sha256": "325d0adc6b89ee986fd8abf1cd453d67ba645cd70432c92404436aa991578d27"
+    }
+  ],
+  "source_discovery": {
+    "official_historical_download_obtained": false,
+    "tdx_historical_api_discovered": true,
+    "tdx_access_status": "credentials_required_not_available",
+    "official_city_portals": "current endpoints only in discovered public listings"
+  },
+  "evidence_ledger": {
+    "path": "data/interim/routing/station_coordinate_evidence.parquet",
+    "rows": 4193,
+    "sha256": "51d80e6da75a216b445675641c2c7d999e59bb16ff342ab7055ae9fff18e1c1c"
+  },
+  "resolution": {
+    "direct_historical_resolved_count": 0,
+    "direct_historical_evidence_node_count": 1415,
+    "temporally_bracketed_count": 5,
+    "single_sided_not_accepted": 1379,
+    "current_only_remaining": 1367,
+    "conflicts_resolved": 0,
+    "conflicts_unresolved": 31,
+    "within_period_relocation_count": 0,
+    "within_period_relocation_status": "not_established_with_available_evidence",
+    "coordinate_era_count": 0,
+    "coordinate_status_counts": {
+      "partially_covered": 1379,
+      "unresolved_conflict": 31,
+      "uncovered": 1367,
+      "fully_covered": 5
+    },
+    "city_summary": {
+      "New Taipei": {
+        "nodes": 1276,
+        "accepted_nodes": 0,
+        "unresolved_nodes": 1276
+      },
+      "Taipei": {
+        "nodes": 1506,
+        "accepted_nodes": 5,
+        "unresolved_nodes": 1501
+      }
+    }
+  },
+  "conflict_displacement": {
+    "count": 31,
+    "bins": {
+      "gte_100m": 8,
+      "30_100m": 20,
+      "15_30m": 1,
+      "5_15m": 1,
+      "lt_5m": 1
+    },
+    "p50_m": 59.190261326527185,
+    "p90_m": 154.98821638629855,
+    "p95_m": 155.2988499071309,
+    "max_m": 207.54431854419084
+  },
+  "routing_readiness": {
+    "routing_ready_nodes": 5,
+    "total_nodes": 2782,
+    "node_coverage": 0.0017972681524083393,
+    "routing_ready_non_self_od_edges": 0,
+    "total_non_self_od_edges": 1124015,
+    "od_edge_coverage": 0.0,
+    "routing_ready_non_self_trip_weight": 0,
+    "total_non_self_trip_weight": 85115195,
+    "trip_weight_coverage": 0.0
+  },
+  "artifacts": {
+    "final_coordinate_artifact": {
+      "path": "data/processed/routing/routing_station_coordinates_2023_2024.parquet",
+      "rows": 5,
+      "sha256": "541dd43d2d9fe242ad6520317b83f3e486a5fb27f10afb5ebffd38685d937c0b",
+      "station_id_fingerprint": "ebb3140be7e3b8eb3f39f13610fea84a1277fd600ac59786241c87e9b7a7d93c",
+      "coordinate_fingerprint": "c00fe3755c5c77367b0d868e744c2fba2090b66ab4446866ddf42a7227220513"
+    },
+    "unresolved_artifact": {
+      "path": "data/processed/routing/routing_coordinate_unresolved.parquet",
+      "rows": 2777,
+      "sha256": "6d38b7dc1df03456eeb41e5539f9ade4afcfd1b863ed89fab64f8836d1b3281c"
+    },
+    "conflict_artifact": {
+      "path": "data/interim/routing/routing_coordinate_conflicts.parquet",
+      "rows": 31,
+      "sha256": "fbe5b938d5c6aa30d3deca3f96cbaa2bf770f3fde09a4e3877acd8e21c586010"
+    }
+  },
+  "routing_contract_version": "road-routing-contract-v1",
+  "routing_unit": "unique_directed_od_pair",
+  "routing_unit_assessment": "No within-period relocation was established, but insufficient evidence prevents treating this as proof that none occurred.",
+  "readiness_status": "HISTORICAL COORDINATES: PARTIALLY RESOLVED — ROAD ROUTING STILL BLOCKED"
+}

@@ -1,0 +1,196 @@
+{
+  "contract_version": "segment-risk-inputs-v1",
+  "generated_at_utc": "2026-09-25T20:35:36+00:00",
+  "locked_inputs": {
+    "entity_sha256": "3b82df95f59e5725c84c4f05fff7c785795f66d3e76b7580108a598613497d29",
+    "entity_fingerprint": "ded355d1b5791ea3f2146c51d0321984b4d75ba9e0ff17fb20b8cf9a7b210923",
+    "matching_sha256": "bdad7b3190f27991c15dd5860a9792b41ca7a545352e1b37ec2e59361a2e2baf",
+    "matching_fingerprint": "db598989c4b0278fdec77d35b7fb9ef10c5d139ba267e5f67f7620c72d687658",
+    "exposure_sha256": "c6dd301a7b328d650aa4e58a7e9b36330d6389465594ad69010d39c02dd0cd6f",
+    "exposure_fingerprint": "d494a2ddc33e76dc169454af08996ae91543bea6a540a06832d3ede9d4cfad88",
+    "phase8_4b_receipt_fingerprint": "e465bf6b34adad2bce14563421ab21a44297b0bbaaa5ff2583c5a230a7ba6a4f",
+    "calendar_sha256": "a10889e9a656d9f9c06975f0e1adb36b3b6d93955365bd91fc49308a2dd37bc5"
+  },
+  "severity_contract": {
+    "fatal": "death_count > 0 OR death_2_30_day_count > 0",
+    "injury": "both death counts = 0 AND injury_count > 0",
+    "fatal_precedence": true,
+    "death_2_30_day_as_fatal": "analytical_decision",
+    "coefficients": {
+      "fatal": 193,
+      "injury": 117,
+      "pdo": 1
+    },
+    "pdo_accidents_available": false,
+    "epdo_pdo_component_status": "unobserved",
+    "accident_population": "fatal_and_injury_accidents_only"
+  },
+  "severity": {
+    "canonical_accidents": 46586,
+    "status_counts": {
+      "classified_fatal": 149,
+      "classified_injury": 46424,
+      "severity_unavailable": 13
+    },
+    "conservation": true
+  },
+  "matching_intersection": {
+    "phase8_4b_matched": 39711,
+    "matched_classified": 39705,
+    "matched_fatal": 124,
+    "matched_injury": 39581,
+    "excluded_from_segment_aggregation": 6881
+  },
+  "day_type": {
+    "weekday_matched": 30088,
+    "holiday_matched": 9617,
+    "unresolved": 0,
+    "calendar_audit": {
+      "source_filename": "2020_2025假日.fst",
+      "source_sha256": "a10889e9a656d9f9c06975f0e1adb36b3b6d93955365bd91fc49308a2dd37bc5",
+      "source_bytes": 11880,
+      "schema": {
+        "Date": "R Date",
+        "IsHoliday": "numeric 0/1",
+        "NaturalDisaster": "numeric 0/1"
+      },
+      "date_min": "2020-01-01",
+      "date_max": "2025-12-31",
+      "total_dates": 2192,
+      "core_dates": 731,
+      "dates_2023": 365,
+      "dates_2024": 366,
+      "holiday_dates": 233,
+      "weekday_dates": 498,
+      "natural_disaster_dates": 6,
+      "missing_dates": [],
+      "duplicate_dates": 0,
+      "unknown_is_holiday_values": [],
+      "natural_disaster_override_applied": false,
+      "validation_status": "passed"
+    }
+  },
+  "segment_universe": {
+    "rows": 106049,
+    "with_accidents": 19874,
+    "without_accidents": 86175,
+    "max_accident_count": 38,
+    "max_epdo": 4446
+  },
+  "epdo": {
+    "total": 4654909,
+    "weekday": 3527364,
+    "holiday": 1127545,
+    "conservation": true
+  },
+  "cbi": {
+    "max_sri": 1.0,
+    "max_ssi": 1.0,
+    "distribution": {
+      "count": 106049,
+      "min": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.05263157894736842,
+      "p95": 0.10526315789473684,
+      "p99": 0.2631578947368421,
+      "max": 2.0
+    },
+    "common_normalization_universe": 106049,
+    "day_type_renormalization": false
+  },
+  "exposure": {
+    "total": 4674227848,
+    "weekday": 3307530105,
+    "holiday": 1366697743,
+    "total_median": 6618.0,
+    "weekday_median": 4352.0,
+    "holiday_median": 1983.0,
+    "weekday_high_flow_segments": 53032,
+    "holiday_high_flow_segments": 53025,
+    "zero_total": 0,
+    "zero_weekday": 2404,
+    "zero_holiday": 1724
+  },
+  "rates": {
+    "total": {
+      "count": 106049,
+      "min": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 4.73703388801166,
+      "p95": 17.05216304483914,
+      "p99": 175.93984962406014,
+      "max": 277875.0
+    },
+    "weekday": {
+      "count": 103645,
+      "min": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 4.397983936055665,
+      "p95": 17.430254181469753,
+      "p99": 195.97989949748742,
+      "max": 312000.0
+    },
+    "holiday": {
+      "count": 104325,
+      "min": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "p95": 6.073448728481262,
+      "p99": 100.36727614792034,
+      "max": 175500.0
+    },
+    "segments_with_accidents_exposure": {
+      "count": 19874,
+      "min": 2.0,
+      "p25": 10519.0,
+      "p50": 35583.0,
+      "p75": 94121.0,
+      "p90": 199994.50000000003,
+      "p95": 307139.45,
+      "p99": 619643.15,
+      "max": 1564106.0
+    },
+    "segments_without_accidents_exposure": {
+      "count": 86175,
+      "min": 1.0,
+      "p25": 184.0,
+      "p50": 3328.0,
+      "p75": 28333.0,
+      "p90": 96048.0,
+      "p95": 175847.30000000016,
+      "p99": 455954.0,
+      "max": 2045405.0
+    }
+  },
+  "validation": {
+    "accident_conservation": true,
+    "epdo_conservation": true,
+    "day_type_conservation": true,
+    "id_uniqueness": true,
+    "no_ranking_performed": true,
+    "unsmoothed_microsegments": true
+  },
+  "output": {
+    "path": "data/processed/risk/segment_risk_inputs_2023_2024.parquet",
+    "rows": 106049,
+    "fingerprint_sha256": "f9a3f6ba149cf8bdd4742d5e5857e03aa0a4bb8a1ab90f603199e10f103c4f14",
+    "parquet_sha256": "dec4bf536fe692e69311371e02c905e02e19bdc49e30f45f88316e8dffcc750f"
+  },
+  "limitations": {
+    "pdo": "A3/PDO-only accidents unavailable; PDO component unobserved, not observed zero",
+    "exposure": "BRouter reconstructed estimated traversal exposure, not GPS-observed counts or unique cyclists",
+    "geometry": "unsmoothed routing microsegments; no corridor merge or Road.shp aggregation"
+  },
+  "readiness": {
+    "phase8_5b": "READY_FOR_SEPARATELY_AUTHORIZED_STABILITY_AND_PRESENTATION_POLICY"
+  },
+  "receipt_fingerprint_sha256": "549e5344dab77b3fbb25df534ff45466734bfad49428c4c543cfaa7ed8c0fd70"
+}

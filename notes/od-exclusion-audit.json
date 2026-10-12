@@ -1,0 +1,155 @@
+{
+  "categories": [
+    {
+      "category": "candidate_only",
+      "primary_reason": "candidate_only",
+      "precedence": 5,
+      "proportion": 3.916550263153076e-05,
+      "record_count": 4297,
+      "status": "excluded_from_primary_od"
+    },
+    {
+      "category": "identity_ambiguous",
+      "primary_reason": "identity_ambiguous",
+      "precedence": 3,
+      "proportion": 0.008441118294410447,
+      "record_count": 926108,
+      "status": "excluded_from_primary_od"
+    },
+    {
+      "category": "identity_unresolved",
+      "primary_reason": "identity_unresolved",
+      "precedence": 4,
+      "proportion": 2.5429777133342057e-06,
+      "record_count": 279,
+      "status": "excluded_from_primary_od"
+    },
+    {
+      "category": "missing_endpoint",
+      "primary_reason": "missing_endpoint",
+      "precedence": 2,
+      "proportion": 6.079448511806148e-06,
+      "record_count": 667,
+      "status": "excluded_from_primary_od"
+    },
+    {
+      "category": "name_collision",
+      "primary_reason": "name_collision",
+      "precedence": 6,
+      "proportion": 0.0,
+      "record_count": 0,
+      "status": "excluded_from_primary_od"
+    },
+    {
+      "category": "no_unique_station_id",
+      "primary_reason": "no_unique_station_id",
+      "precedence": 7,
+      "proportion": 0.006425813013900819,
+      "record_count": 705001,
+      "status": "excluded_from_primary_od"
+    },
+    {
+      "category": "quarantined",
+      "primary_reason": "quarantined",
+      "precedence": 1,
+      "proportion": 1.1575561634173624e-06,
+      "record_count": 127,
+      "status": "excluded_from_primary_od"
+    }
+  ],
+  "conservation_passed": true,
+  "eligible_records": 108077420,
+  "excluded_union": 1636479,
+  "overlap_matrix": {
+    "candidate_only": {
+      "candidate_only": 4305,
+      "cross_city_valid": 0,
+      "identity_ambiguous": 8,
+      "identity_unresolved": 0,
+      "missing_endpoint": 0,
+      "name_collision": 0,
+      "valid_name_no_id": 5
+    },
+    "cross_city_valid": {
+      "candidate_only": 0,
+      "cross_city_valid": 1789007,
+      "identity_ambiguous": 4641,
+      "identity_unresolved": 0,
+      "missing_endpoint": 4,
+      "name_collision": 0,
+      "valid_name_no_id": 9383
+    },
+    "identity_ambiguous": {
+      "candidate_only": 8,
+      "cross_city_valid": 4641,
+      "identity_ambiguous": 926114,
+      "identity_unresolved": 0,
+      "missing_endpoint": 6,
+      "name_collision": 0,
+      "valid_name_no_id": 1217
+    },
+    "identity_unresolved": {
+      "candidate_only": 0,
+      "cross_city_valid": 0,
+      "identity_ambiguous": 0,
+      "identity_unresolved": 279,
+      "missing_endpoint": 0,
+      "name_collision": 0,
+      "valid_name_no_id": 1
+    },
+    "missing_endpoint": {
+      "candidate_only": 0,
+      "cross_city_valid": 4,
+      "identity_ambiguous": 6,
+      "identity_unresolved": 0,
+      "missing_endpoint": 667,
+      "name_collision": 0,
+      "valid_name_no_id": 6
+    },
+    "name_collision": {
+      "candidate_only": 0,
+      "cross_city_valid": 0,
+      "identity_ambiguous": 0,
+      "identity_unresolved": 0,
+      "missing_endpoint": 0,
+      "name_collision": 0,
+      "valid_name_no_id": 0
+    },
+    "valid_name_no_id": {
+      "candidate_only": 5,
+      "cross_city_valid": 9383,
+      "identity_ambiguous": 1217,
+      "identity_unresolved": 1,
+      "missing_endpoint": 6,
+      "name_collision": 0,
+      "valid_name_no_id": 706230
+    }
+  },
+  "policy_version": "od-inclusion-policy-v1",
+  "precedence": [
+    "quarantined",
+    "missing_endpoint",
+    "identity_ambiguous",
+    "identity_unresolved",
+    "candidate_only",
+    "name_collision",
+    "no_unique_station_id",
+    "od_eligible"
+  ],
+  "scope": "2023/01-2025/03",
+  "secondary_flags": {
+    "approved_repair": 1118165,
+    "both_endpoints_missing": 8,
+    "both_endpoints_unique_id": 108077420,
+    "candidate_only": 4305,
+    "cross_city_valid": 1789007,
+    "identity_ambiguous": 926114,
+    "identity_unresolved": 279,
+    "missing_endpoint": 667,
+    "name_collision": 0,
+    "not_an_error": 1784176,
+    "unchanged_no_rule": 109634329,
+    "valid_name_no_id": 706230
+  },
+  "total_input_records": 109713899
+}

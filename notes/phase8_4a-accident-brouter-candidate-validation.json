@@ -1,0 +1,281 @@
+{
+  "contract_version": "accident-brouter-candidate-validation-v1",
+  "generated_at_utc": "2026-09-23T19:12:01+00:00",
+  "locked_inputs": {
+    "phase8_2_path": "data/processed/routing/directed_segment_usage_2023_2024.parquet",
+    "phase8_2_sha256": "68d0dec6498b7734b6cd09c7f94ec20cfa8708de31cbdb898b4ad65a0288f8ad",
+    "phase8_2_fingerprint": "0925c99aa8f0022c953e09046bd7728d6a546cae6f28c81f68ccb5e35d6b2a04",
+    "phase8_3c_path": "data/processed/accidents/accident_road_context_2023_2024.parquet",
+    "phase8_3c_sha256": "d64954bf04877776968f7eb8e8bf6755d96c2ea75019d292325234c2df75cfa3",
+    "phase8_3c_fingerprint": "186f751e3a33ff2db01e7e44abe3255fff1008de3e9aaeb35056dd541e6b9f5b",
+    "phase8_3b_bounded_sha256": "313bb429e594cd93ded17326f0a4fbfc191789252635bd7214a70b08eaed52ee",
+    "road_reference_fingerprint": "54076680fc3ee98b77d02adf97e86ef856d9db065dc5229611fb1db68c57a36f"
+  },
+  "population": {
+    "accidents": 46586,
+    "status_counts": {
+      "contained_blank_road_id": 25,
+      "contained_valid_road": 37859,
+      "coordinate_unavailable": 1,
+      "outside_reference_coverage": 8701
+    },
+    "one_row_per_accident": true
+  },
+  "neutral_segments": {
+    "directed_input_count": 149234,
+    "neutral_physical_segment_count": 106049,
+    "one_direction_only_count": 62864,
+    "both_directions_count": 43185,
+    "unexpected_gt2_multiplicity_count": 0,
+    "directed_member_conservation": true
+  },
+  "crs_and_geometry": {
+    "source_endpoint_unit": "integer microdegrees",
+    "source_crs": "EPSG:4326",
+    "target_crs": "EPSG:3826",
+    "distance_unit": "metre",
+    "segment_identity": "lexicographically ordered endpoint integer tuple",
+    "context_predicate": "LineString.intersects(road_polygon)"
+  },
+  "global_search": {
+    "evaluable_accidents": 46585,
+    "distance_m": {
+      "count": 46585,
+      "min": 1.1594517257415583e-08,
+      "mean": 31.91701022011023,
+      "max": 7225.467339290614,
+      "p50": 2.405715767328733,
+      "p75": 5.162666588048901,
+      "p90": 13.859373051340272,
+      "p95": 35.516919625619714,
+      "p97_5": 82.20799441139322,
+      "p99": 857.6740241416477,
+      "bins_le_m": {
+        "0.5": 6214,
+        "1": 11479,
+        "2": 20389,
+        "3": 26926,
+        "5": 34511,
+        "10": 40434,
+        "20": 42931,
+        "30": 43878,
+        "50": 44879
+      }
+    },
+    "exact_tie_accidents": 988,
+    "near_gap_bins": {
+      "<= 0.1 m": 6248,
+      "<= 0.5 m": 6065,
+      "<= 1 m": 4983,
+      "<= 2 m": 6739,
+      "<= 5 m": 10035,
+      "> 5 m": 12515,
+      "null": 1
+    }
+  },
+  "road_context_search": {
+    "contained_valid_road": {
+      "count": 37859,
+      "same_nearest": 35290,
+      "same_nearest_rate": 0.932142951477852,
+      "different_nearest": 1328,
+      "empty_candidate_set": 1241,
+      "global_distance_m": {
+        "count": 37859,
+        "min": 1.1594517257415583e-08,
+        "mean": 16.690778027885536,
+        "max": 4917.994417504808,
+        "p50": 2.2244253034619814,
+        "p75": 4.330179596245211,
+        "p90": 7.975553348446828,
+        "p95": 13.457901110135953,
+        "p97_5": 32.465261598936806,
+        "p99": 131.57045317228616,
+        "bins_le_m": {
+          "0.5": 5180,
+          "1": 9652,
+          "2": 17455,
+          "3": 23305,
+          "5": 30201,
+          "10": 35127,
+          "20": 36425,
+          "30": 36839,
+          "50": 37177
+        }
+      },
+      "constrained_distance_m": {
+        "count": 36618,
+        "min": 1.1594517257415583e-08,
+        "mean": 3.870632443910615,
+        "max": 361.88113252137725,
+        "p50": 2.1361761581091225,
+        "p75": 4.104795587388586,
+        "p90": 7.1955251550040975,
+        "p95": 10.60889111394483,
+        "p97_5": 19.978923808704163,
+        "p99": 32.28767378601491,
+        "bins_le_m": {
+          "0.5": 5178,
+          "1": 9633,
+          "2": 17373,
+          "3": 23136,
+          "5": 29903,
+          "10": 34594,
+          "20": 35704,
+          "30": 36178,
+          "50": 36420
+        }
+      },
+      "distance_delta_m": {
+        "count": 36618,
+        "min": 0.0,
+        "mean": 0.5583370803138481,
+        "max": 351.53164334241256,
+        "p50": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "p97_5": 1.876314228638157,
+        "p99": 13.318163634018731,
+        "bins_le_m": {
+          "0.5": 35451,
+          "1": 35551,
+          "2": 35718,
+          "3": 35830,
+          "5": 35987,
+          "10": 36182,
+          "20": 36366,
+          "30": 36444,
+          "50": 36510
+        }
+      },
+      "candidate_size_bins": {
+        "0": 1241,
+        "1": 648,
+        "2": 2326,
+        "3-5": 9003,
+        "6-10": 10089,
+        "11-20": 9304,
+        ">20": 5248
+      }
+    },
+    "contained_blank_road_id": {
+      "count": 25,
+      "same_nearest": 25,
+      "different_nearest": 0,
+      "empty_candidate_set": 0,
+      "global_distance_m": {
+        "count": 25,
+        "min": 0.044547189612656385,
+        "mean": 2.300000075391511,
+        "max": 7.83843953386832,
+        "p50": 2.0428325411432406,
+        "p75": 3.0484433241915783,
+        "p90": 4.531016446746404,
+        "p95": 6.696623872404479,
+        "p97_5": 7.381959755782076,
+        "p99": 7.6558476226338215,
+        "bins_le_m": {
+          "0.5": 4,
+          "1": 6,
+          "2": 12,
+          "3": 18,
+          "5": 22,
+          "10": 25,
+          "20": 25,
+          "30": 25,
+          "50": 25
+        }
+      },
+      "constrained_distance_m": {
+        "count": 25,
+        "min": 0.044547189612656385,
+        "mean": 2.300000075391511,
+        "max": 7.83843953386832,
+        "p50": 2.0428325411432406,
+        "p75": 3.0484433241915783,
+        "p90": 4.531016446746404,
+        "p95": 6.696623872404479,
+        "p97_5": 7.381959755782076,
+        "p99": 7.6558476226338215,
+        "bins_le_m": {
+          "0.5": 4,
+          "1": 6,
+          "2": 12,
+          "3": 18,
+          "5": 22,
+          "10": 25,
+          "20": 25,
+          "30": 25,
+          "50": 25
+        }
+      },
+      "candidate_size_bins": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3-5": 0,
+        "6-10": 0,
+        "11-20": 0,
+        ">20": 25
+      }
+    },
+    "outside_reference_coverage": {
+      "count": 8701,
+      "global_distance_m": {
+        "count": 8701,
+        "min": 0.00033539645360772437,
+        "mean": 98.25310375177932,
+        "max": 7225.467339290614,
+        "p50": 5.223199346313279,
+        "p75": 20.836451418001406,
+        "p90": 57.680265856616685,
+        "p95": 167.23088023672608,
+        "p97_5": 1258.5290749663368,
+        "p99": 2399.349028221625,
+        "bins_le_m": {
+          "0.5": 1030,
+          "1": 1821,
+          "2": 2922,
+          "3": 3603,
+          "5": 4288,
+          "10": 5282,
+          "20": 6481,
+          "30": 7014,
+          "50": 7677
+        }
+      }
+    },
+    "coordinate_unavailable": 1
+  },
+  "indexed_search_validation": {
+    "sample_size": 200,
+    "mismatch_count": 0,
+    "exact_match": true
+  },
+  "outputs": {
+    "neutral_path": "data/interim/routing/neutral_brouter_microsegments_2023_2024.parquet",
+    "neutral_rows": 106049,
+    "neutral_fingerprint_sha256": "94b6de3529ac2b989d288ba4a67f58e8b7f23face25275881b01d2983e853496",
+    "neutral_sha256": "8655af1ab1895820a6da53ceaeb32e5b73c200dcc7d01874d5fb782a5c52c0c3",
+    "validation_path": "data/interim/accidents/accident_brouter_candidate_validation_2023_2024.parquet",
+    "validation_rows": 46586,
+    "validation_sha256": "8e1de7f64eb21884a2ce53e7cae2ff16f0e97f8d233d5be36ef0f995fd612233",
+    "validation_fingerprint_sha256": "53f1e8e741cb1269299db885a8d5b5794f5a444b39b260f878434ce57c7758e6",
+    "qa_path": "notes/phase8_4a-candidate-qa-sample.csv",
+    "qa_rows": 36,
+    "qa_sha256": "96fe6a3956865a25b8cb9fda57d7b35c17491ff583c5856089acc4a8ce4979b8"
+  },
+  "semantics": {
+    "formal_segment_assignment_performed": false,
+    "formal_distance_threshold_selected": false,
+    "flow_used_for_candidate_ranking": false,
+    "epdo_calculated": false,
+    "cbi_calculated": false,
+    "risk_analysis_started": false
+  },
+  "readiness": {
+    "phase8_4b": "READY_FOR_ANALYST_MATCHING_POLICY_DECISION_ONLY"
+  },
+  "receipt_fingerprint_sha256": "43999a9a4e308b10824eca8cc0d094642ebcbaa6da76489423db2e6bfa571276"
+}

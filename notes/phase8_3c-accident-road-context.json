@@ -1,0 +1,112 @@
+{
+  "contract_version": "accident-road-context-v1",
+  "generated_at_utc": "2026-09-23T18:23:25+00:00",
+  "locked_inputs": {
+    "phase8_3a2_entity_path": "data/processed/accidents/accident_entities_2023_2024.parquet",
+    "phase8_3a2_entity_fingerprint": "ded355d1b5791ea3f2146c51d0321984b4d75ba9e0ff17fb20b8cf9a7b210923",
+    "phase8_3a2_entity_sha256": "3b82df95f59e5725c84c4f05fff7c785795f66d3e76b7580108a598613497d29",
+    "phase8_3b_validation_path": "data/interim/accidents/accident_road_reference_validation_2023_2024.parquet",
+    "phase8_3b_validation_fingerprint": "3cfb32dec6813e4b0e0e1852ff35c999c619cf96c4824ba175c20fc989e418d9",
+    "phase8_3b_validation_sha256": "313bb429e594cd93ded17326f0a4fbfc191789252635bd7214a70b08eaed52ee",
+    "phase8_3b_receipt_fingerprint": "8fd98c25b967fb6fd5f1757688643eff8272fc8a00e1b503c41a3262e4cd1a70",
+    "road_component_hashes": {
+      "Road.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "Road.dbf": "ba09baec6599844958b4bcb175b4ae7812f1abb58b23870ddf5b9357df88faf0",
+      "Road.prj": "8dac7d82ea889063f9eaa7df408fcaeb7307d32831ea973b6534d0139a4523c5",
+      "Road.qmd": "f791e1df3232d397b1eb4a2bbff8ea9f0aebf675f2b753d65c0b0b16ec3a45cc",
+      "Road.shp": "d590a4f0ad0c463b97b0f47e95795a2737059d45a562faeb9ee4f86ae8af4ffc",
+      "Road.shx": "f597d0747450d363b3c84ff6b8b53619fa2f2bdf43dd5bcf0f0250777267356b"
+    },
+    "road_reference_fingerprint": "54076680fc3ee98b77d02adf97e86ef856d9db065dc5229611fb1db68c57a36f"
+  },
+  "population": {
+    "canonical_accident_count": 46586,
+    "spatially_evaluable_count": 46585,
+    "status_counts": {
+      "contained_valid_road": 37859,
+      "contained_blank_road_id": 25,
+      "outside_reference_coverage": 8701,
+      "coordinate_unavailable": 1,
+      "contained_multiple": 0
+    },
+    "status_percentages_of_all_accidents": {
+      "contained_valid_road": 0.8126690422015198,
+      "contained_blank_road_id": 0.000536641909586571,
+      "outside_reference_coverage": 0.1867728502125102,
+      "coordinate_unavailable": 2.146567638346284e-05,
+      "contained_multiple": 0.0
+    },
+    "status_conservation_exact": true,
+    "reconstructed_accident_id_set_equal": true,
+    "valid_road_id_context_coverage": 0.8126690422015198
+  },
+  "policy": {
+    "status_vocabulary": [
+      "contained_valid_road",
+      "contained_blank_road_id",
+      "outside_reference_coverage",
+      "coordinate_unavailable",
+      "contained_multiple"
+    ],
+    "direct_polygon_coverage_required": true,
+    "valid_nonblank_road_id_required_for_identifiable_context": true,
+    "nearest_road_fallback": "disabled",
+    "distance_threshold": null,
+    "road_name_as_identifier": false,
+    "contained_multiple_tie_break": "disabled",
+    "tt_intersect_use": "UNRESOLVED_NOT_USED"
+  },
+  "crs": {
+    "road_crs_fact": "EPSG:3826",
+    "accident_crs_status": "RECONSTRUCTION_ASSUMPTION_NOT_SOURCE_METADATA_FACT",
+    "accident_crs_assumption": "WGS84 geographic longitude/latitude operationally treated as EPSG:4326; transformed to EPSG:3826 for polygon coverage"
+  },
+  "limitations": {
+    "road_reference_scope": "official Road.shp contains roads wider than 8 metres and is not the complete Taipei road universe",
+    "outside_reference_semantics": "not covered by the study's >8m official road-polygon reference; not an invalid or off-road accident classification",
+    "layer_roles": "Road.shp provides accident road context; BRouter directed segments remain the bicycle-flow estimation layer"
+  },
+  "output": {
+    "path": "data/processed/accidents/accident_road_context_2023_2024.parquet",
+    "row_count": 46586,
+    "schema": [
+      "reconstructed_accident_id",
+      "year",
+      "event_datetime",
+      "x_raw",
+      "y_raw",
+      "x_epsg3826",
+      "y_epsg3826",
+      "road_context_status",
+      "road_id",
+      "road_name",
+      "town_name",
+      "road_reference_feature_count",
+      "crs_assumption",
+      "source_accident_entity_fingerprint",
+      "source_bounded_validation_fingerprint",
+      "source_road_reference_fingerprint"
+    ],
+    "fingerprint_sha256": "186f751e3a33ff2db01e7e44abe3255fff1008de3e9aaeb35056dd541e6b9f5b",
+    "parquet_sha256": "d64954bf04877776968f7eb8e8bf6755d96c2ea75019d292325234c2df75cfa3",
+    "sorted_by": "reconstructed_accident_id"
+  },
+  "readiness": {
+    "phase8_4": "READY_WITH_FORMAL_ROAD_CONTEXT_STATES_AND_DISCLOSED_REFERENCE_LIMITATIONS",
+    "phase8_4_not_started": true
+  },
+  "prohibited_work_confirmed_not_performed": {
+    "nearest_road_assignment": false,
+    "distance_threshold_selected": false,
+    "road_name_text_matching": false,
+    "address_geocoding": false,
+    "brouter_candidate_search": false,
+    "brouter_segment_assignment": false,
+    "phase8_2_flow_join": false,
+    "epdo_calculated": false,
+    "cbi_calculated": false,
+    "risk_analysis_started": false,
+    "phase8_4_started": false
+  },
+  "receipt_fingerprint_sha256": "24298f009a728d6a2a0aba988c6e11a7716e9dcf1d9a2354e714d2606514e896"
+}

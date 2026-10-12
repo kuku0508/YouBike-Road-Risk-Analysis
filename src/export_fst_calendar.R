@@ -1,0 +1,5 @@
+args <- commandArgs(trailingOnly = TRUE)
+if (length(args) != 2) stop("usage: export_fst_calendar.R INPUT.fst OUTPUT.csv")
+if (!requireNamespace("fst", quietly = TRUE)) stop("R package fst is required")
+x <- fst::read_fst(args[[1]])
+utils::write.csv(x, args[[2]], row.names = FALSE, fileEncoding = "UTF-8")

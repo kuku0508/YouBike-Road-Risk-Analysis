@@ -1,0 +1,97 @@
+{
+  "contract_version": "hierarchical-clustering-reconstruction-contract-v1",
+  "report_period_text": "2022-2024",
+  "resolved_analysis_period": "2022-01-01/2024-12-31",
+  "period_resolution": "clearly_2022_2024",
+  "period_confidence": "high",
+  "analysis_units": ["weekday", "holiday"],
+  "input": {
+    "status": "missing_reconstruction_required",
+    "required_files": {
+      "weekday": "data/processed/network/hierarchical_2022_2024/weekday_hourly_sna_features.parquet",
+      "holiday": "data/processed/network/hierarchical_2022_2024/holiday_hourly_sna_features.parquet"
+    },
+    "node_key": "station_id",
+    "row_grain": "one_station_per_day_type",
+    "station_universe_policy": "derive_separately_per_day_type_after_complete_2022_2024_reconstruction",
+    "required_period_months": 36,
+    "currently_available_period_metrics": false
+  },
+  "features": {
+    "metrics": ["betweenness", "eigenvector", "pagerank"],
+    "hours": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+    "expected_feature_count_per_day_type": 72,
+    "column_pattern": "{metric}_h{hour:02d}",
+    "weighted_degree_included": false,
+    "clustering_coefficient_included": false,
+    "feature_implementation_status": "report_specified_metrics_reconstruction_metric_variants_pending_2022_network_contract"
+  },
+  "preprocessing": {
+    "report_specified": false,
+    "primary_scaler": "StandardScaler",
+    "scale_axis": "each_of_72_features_across_stations_within_day_type",
+    "with_mean": true,
+    "with_std": true,
+    "transformations": [],
+    "missing_value_policy": "fail_closed_no_imputation",
+    "outlier_policy": "retain_all_no_winsorization_trimming_or_removal"
+  },
+  "distance": {
+    "report_specified": true,
+    "metric": "euclidean"
+  },
+  "linkage": {
+    "report_specified": true,
+    "report_method": "Ward.D2",
+    "report_implementation_evidence": "R hclust plot label; R version unspecified",
+    "reconstruction_library": "scipy",
+    "reconstruction_library_version": "1.17.1",
+    "reconstruction_function": "scipy.cluster.hierarchy.linkage",
+    "reconstruction_method": "ward",
+    "reconstruction_semantics": "Ward variance minimization from Euclidean observation vectors; equivalence to the unidentified report R environment is not assumed"
+  },
+  "cut_rule": {
+    "rule": "fixed_maxclust_matching_report_displayed_cluster_count",
+    "weekday_cluster_count": 5,
+    "holiday_cluster_count": 4,
+    "count_evidence": "report appendix figures 45 and 49",
+    "exact_cut_height": null,
+    "exact_cut_mechanism": "implementation_unspecified"
+  },
+  "determinism": {
+    "input_order": "station_id_ascending",
+    "ordered_station_ids_fingerprint": "required_at_execution",
+    "linkage_matrix_sha256": "required_at_execution",
+    "relabel_rule": "sort_clusters_by_min_station_id_ascending_then_assign_1_based_integer",
+    "labels_have_semantic_order": false
+  },
+  "dendrogram": {
+    "full_linkage_matrix_required": true,
+    "full_leaf_order_sidecar_required": true,
+    "full_station_labels_in_display": false,
+    "display_strategy": "full_hierarchy_without_leaf_text_plus_separate_station_id_leaf_order",
+    "sampling_may_replace_full_hierarchy": false
+  },
+  "comparison_with_kmeans": {
+    "purpose_relationship": "report_implied_methodological_similarity_not_validation",
+    "membership_comparison_allowed_only_if_period_features_and_station_universe_match": true,
+    "current_direct_comparison_allowed": false,
+    "future_metrics": ["adjusted_rand_index", "normalized_mutual_information", "cross_tab"]
+  },
+  "secondary_diagnostics": {
+    "cophenetic_correlation": true,
+    "role": "representation_fidelity_only_not_report_selection_criterion"
+  },
+  "sensitivity_plan": {
+    "scaling": ["none"],
+    "linkage": ["complete", "average"],
+    "full_cross_product": false
+  },
+  "phase_7_2_guard": {
+    "full_core_hierarchical_allowed": false,
+    "synthetic_hierarchical_allowed": true,
+    "bounded_real_hierarchical_max_rows": 12,
+    "execution_ready": false,
+    "blocked_reason": "2022_NETWORK_RECONSTRUCTION_REQUIRED"
+  }
+}

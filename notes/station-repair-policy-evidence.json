@@ -1,0 +1,219 @@
+{
+  "phase": "3.3",
+  "rule_version": "station-repair-policy-v2",
+  "policy": {
+    "tier_1": "unique metadata candidate plus at least one dated historical snapshot or complete raw name in the same/adjacent research-period month; no competitor",
+    "tier_2": "unique current metadata candidate without temporal/historical corroboration",
+    "tier_3": "multiple or zero candidates, or conflicting evidence",
+    "not_an_error": "station-universe reclassification; never a repair"
+  },
+  "allowlist_unique_mapping_summary": {
+    "approved_repair": 27,
+    "ambiguous": 12,
+    "candidate_only": 14,
+    "unresolved": 3
+  },
+  "tier1_subtype_mapping_counts": {
+    "1A": 8,
+    "1C": 13,
+    "1B": 6
+  },
+  "allowlist_by_issue": {
+    "illegal_utf8": {
+      "unique_raw_values": 8,
+      "decisions": {
+        "approved_repair": 5,
+        "ambiguous": 1,
+        "candidate_only": 2
+      },
+      "candidate_rows": 8
+    },
+    "native_replacement": {
+      "unique_raw_values": 7,
+      "decisions": {
+        "approved_repair": 3,
+        "candidate_only": 4
+      },
+      "candidate_rows": 7
+    },
+    "question_mark": {
+      "unique_raw_values": 10,
+      "decisions": {
+        "approved_repair": 4,
+        "candidate_only": 6
+      },
+      "candidate_rows": 10
+    },
+    "unbalanced_parentheses": {
+      "unique_raw_values": 31,
+      "decisions": {
+        "candidate_only": 2,
+        "ambiguous": 11,
+        "approved_repair": 15,
+        "unresolved": 3
+      },
+      "candidate_rows": 42
+    }
+  },
+  "record_coverage": {
+    "core_period": {
+      "illegal_utf8": {
+        "classified_record_union": 181703,
+        "by_decision": {
+          "approved_repair": 181584,
+          "candidate_only": 72,
+          "ambiguous": 47
+        },
+        "approved_subtype_record_unions": {
+          "1A": 181234,
+          "1C": 350
+        }
+      },
+      "native_replacement": {
+        "classified_record_union": 145366,
+        "by_decision": {
+          "approved_repair": 145117,
+          "candidate_only": 249
+        },
+        "approved_subtype_record_unions": {
+          "1B": 68160,
+          "1A": 76957
+        }
+      },
+      "question_mark": {
+        "classified_record_union": 342112,
+        "by_decision": {
+          "approved_repair": 338356,
+          "candidate_only": 3756
+        },
+        "approved_subtype_record_unions": {
+          "1B": 338356
+        }
+      },
+      "unbalanced_parentheses": {
+        "classified_record_union": 1213052,
+        "by_decision": {
+          "approved_repair": 343495,
+          "ambiguous": 868966,
+          "unresolved": 528,
+          "candidate_only": 63
+        },
+        "approved_subtype_record_unions": {
+          "1A": 314024,
+          "1C": 29489
+        }
+      },
+      "any_station_anomaly": {
+        "classified_record_union": 1877700,
+        "by_decision": {
+          "approved_repair": 1004254,
+          "ambiguous": 868966,
+          "candidate_only": 3952,
+          "unresolved": 528
+        },
+        "approved_subtype_record_unions": {
+          "1A": 571329,
+          "1B": 405279,
+          "1C": 29583
+        }
+      }
+    },
+    "extended_report_period": {
+      "illegal_utf8": {
+        "classified_record_union": 202123,
+        "by_decision": {
+          "approved_repair": 201996,
+          "candidate_only": 75,
+          "ambiguous": 52
+        },
+        "approved_subtype_record_unions": {
+          "1A": 201601,
+          "1C": 395
+        }
+      },
+      "native_replacement": {
+        "classified_record_union": 145366,
+        "by_decision": {
+          "approved_repair": 145117,
+          "candidate_only": 249
+        },
+        "approved_subtype_record_unions": {
+          "1B": 68160,
+          "1A": 76957
+        }
+      },
+      "question_mark": {
+        "classified_record_union": 408725,
+        "by_decision": {
+          "approved_repair": 404551,
+          "candidate_only": 4174
+        },
+        "approved_subtype_record_unions": {
+          "1B": 404551
+        }
+      },
+      "unbalanced_parentheses": {
+        "classified_record_union": 1294741,
+        "by_decision": {
+          "approved_repair": 367958,
+          "ambiguous": 926158,
+          "unresolved": 558,
+          "candidate_only": 67
+        },
+        "approved_subtype_record_unions": {
+          "1A": 333737,
+          "1C": 34241
+        }
+      },
+      "any_station_anomaly": {
+        "classified_record_union": 2046061,
+        "by_decision": {
+          "approved_repair": 1114968,
+          "ambiguous": 926158,
+          "candidate_only": 4377,
+          "unresolved": 558
+        },
+        "approved_subtype_record_unions": {
+          "1A": 611294,
+          "1B": 471391,
+          "1C": 34350
+        }
+      }
+    }
+  },
+  "destination_only": {
+    "unique_values": 1528,
+    "decisions": {
+      "unresolved": 217,
+      "not_an_error": 1311
+    },
+    "value_involvement_records": {
+      "not_an_error": 1784172,
+      "unresolved": 21940
+    },
+    "historical_operational_status": {
+      "unresolved": 1528
+    }
+  },
+  "immutability": {
+    "before": {
+      "notes\\station-name-forensics.csv": "4ad0c82385628ad4d045fbe4c2935980b10d8be845e6bf4bcfbcfeee031ae26f",
+      "notes\\station-name-forensics-evidence.json": "0119d76a2f37abd54c9631935c31a6869f722103e06f0d09bc75959c23099734",
+      "notes\\data-quality-profile.json": "85310e4b4852b4ec7d7e73d20aa2f684d32ced2da14bfa1022f25b4d9e4241ce"
+    },
+    "after": {
+      "notes\\station-name-forensics.csv": "4ad0c82385628ad4d045fbe4c2935980b10d8be845e6bf4bcfbcfeee031ae26f",
+      "notes\\station-name-forensics-evidence.json": "0119d76a2f37abd54c9631935c31a6869f722103e06f0d09bc75959c23099734",
+      "notes\\data-quality-profile.json": "85310e4b4852b4ec7d7e73d20aa2f684d32ced2da14bfa1022f25b4d9e4241ce"
+    }
+  },
+  "outputs": {
+    "allowlist": "config\\station_repair_allowlist.csv",
+    "station_universe": "notes\\station-universe-classification.csv"
+  },
+  "limits": [
+    "No mapping was applied to records.",
+    "Current metadata alone never produces Tier 1.",
+    "Value-involvement counts can overlap; Phase 3.1 record unions remain authoritative."
+  ]
+}

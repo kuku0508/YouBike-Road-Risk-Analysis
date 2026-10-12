@@ -1,0 +1,80 @@
+{
+  "contract_version": "network-metric-contract-v1",
+  "library": {"name": "networkx", "validated_version": "3.4.2"},
+  "graph_scope": "core_2023_2024",
+  "source_od": "data/processed/od/aggregate/core_2023_2024/od.parquet",
+  "directed": true,
+  "weighted": true,
+  "node_key": "station_id",
+  "edge_flow_attribute": "trip_count",
+  "edge_flow_semantics": "flow_strength_not_distance_or_cost",
+  "self_loop_data_policy": "retain",
+  "metrics": {
+    "weighted_degree": {
+      "enabled": true,
+      "direction_mode": "report_in_out_and_total",
+      "weight_mode": "flow_strength",
+      "weight_attribute": "trip_count",
+      "weight_transform": "none",
+      "self_loop_mode": "include_in_and_out_once_each_total_twice",
+      "normalization": "none",
+      "parameters": {},
+      "report_support": "total weighted degree plus separate in and out formulas; labels for borrow and return direction are reversed relative to O_to_D",
+      "reconstruction_rationale": "publish out_strength in_strength and total_strength with O_to_D direction corrected",
+      "sensitivity_variant": "exclude_self_loops"
+    },
+    "betweenness": {
+      "enabled": true,
+      "direction_mode": "directed",
+      "weight_mode": "unweighted_primary",
+      "weight_attribute": null,
+      "weight_transform": "none",
+      "self_loop_mode": "exclude_explicitly",
+      "normalization": "networkx_default_true",
+      "parameters": {"endpoints": false},
+      "report_support": "shortest_path_formula_only_implementation_unspecified",
+      "reconstruction_rationale": "trip_count_is_strength_and_cannot_be_passed_as_distance; unweighted topology avoids an unsupported transform",
+      "sensitivity_variant": ["inverse_flow_distance_1_over_trip_count", "inverse_log_flow_distance_1_over_log1p_trip_count"]
+    },
+    "eigenvector": {
+      "enabled": true,
+      "direction_mode": "directed_left_predecessor_influence",
+      "weight_mode": "unweighted_primary",
+      "weight_attribute": null,
+      "weight_transform": "none",
+      "self_loop_mode": "exclude_explicitly",
+      "normalization": "unit_euclidean_norm_networkx",
+      "parameters": {"max_iter": 1000, "tol": 1e-09},
+      "report_support": "binary_adjacency_formula_direction_implementation_unspecified",
+      "reconstruction_rationale": "matches report binary adjacency while making NetworkX left-eigenvector incoming semantics explicit",
+      "sensitivity_variant": ["weighted_left_trip_count", "unweighted_right_via_reversed_graph"]
+    },
+    "pagerank": {
+      "enabled": true,
+      "direction_mode": "directed_origin_to_destination",
+      "weight_mode": "weighted_transition_preference",
+      "weight_attribute": "trip_count",
+      "weight_transform": "none",
+      "self_loop_mode": "include_as_observed_transition",
+      "normalization": "sum_to_one",
+      "parameters": {"alpha": 0.85, "personalization": "uniform", "dangling": "uniform_personalization", "max_iter": 1000, "tol": 1e-09},
+      "report_support": "alpha_0_85_incoming_link_logic_and_uniform_dangling_are_report_specified_weighting_is_unspecified",
+      "reconstruction_rationale": "trip_count is valid transition strength and preserves observed destination preference",
+      "sensitivity_variant": "unweighted_directed_pagerank"
+    },
+    "clustering": {
+      "enabled": true,
+      "direction_mode": "undirected_simple_projection",
+      "weight_mode": "unweighted_primary",
+      "weight_attribute": null,
+      "weight_transform": "binary_projection",
+      "self_loop_mode": "exclude_before_projection",
+      "normalization": "networkx_undirected_local_clustering",
+      "parameters": {"aggregation_for_reciprocal_edges": "presence_only"},
+      "report_support": "formula_2E_over_k_k_minus_1_implies_undirected_unweighted_local_coefficient_but_implementation_unspecified",
+      "reconstruction_rationale": "closest executable interpretation of the reported formula",
+      "sensitivity_variant": ["directed_unweighted_fagiolo_networkx", "undirected_weighted_geometric_mean_normalized_by_max_weight"]
+    }
+  },
+  "forbidden_full_core_operations_in_phase_4_2": ["centrality_ranking", "louvain", "modularity", "kmeans", "hierarchical_clustering", "routing", "accident_matching"]
+}

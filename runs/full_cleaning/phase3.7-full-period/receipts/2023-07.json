@@ -1,0 +1,272 @@
+{
+  "accepted_bike_type_counts": {
+    "<NULL>": 3055138
+  },
+  "accepted_records": 3055138,
+  "allowlist_sha256": "9699e5e25b975fec202e58e5bf8727578f34075953ff961314b029b18e1bff1a",
+  "allowlist_version": "station-repair-policy-v2",
+  "bike_type_counts": {
+    "<NULL>": 3055147
+  },
+  "dry_run": false,
+  "end_timestamp": "2026-09-16T07:13:35.779643+00:00",
+  "illegal_utf8": {
+    "affected_field_count": 11600,
+    "affected_record_count": 11038,
+    "approved_repair_accepted_records": 11029,
+    "approved_repair_accepted_station_sides": 11591,
+    "both_endpoints_affected_records": 562,
+    "destination_affected_records": 5991,
+    "illegal_byte_count": 14485,
+    "origin_affected_records": 5609,
+    "quarantine_unique_raw_base64_patterns": [
+      "5paw5YyX5biC56uL6bav5q2M6auY57Sa5bel5ZWG6IG35qWt5a245g==",
+      "5paw5YyX5biC5pS/5bqc5p2/5qmL5YiG5bGA5rKZ5bSZ5rS+5Ye65g=="
+    ],
+    "station_side_status_counts": {
+      "destination": {
+        "ambiguous": 0,
+        "approved_repair": 5982,
+        "candidate_only": 9,
+        "not_an_error": 0,
+        "unchanged_no_rule": 0,
+        "unresolved": 0
+      },
+      "origin": {
+        "ambiguous": 0,
+        "approved_repair": 5609,
+        "candidate_only": 0,
+        "not_an_error": 0,
+        "unchanged_no_rule": 0,
+        "unresolved": 0
+      }
+    },
+    "unapproved_quarantine_records": 9,
+    "unapproved_quarantine_station_sides": 9,
+    "unique_raw_base64_pattern_union_count": 6,
+    "unique_raw_base64_patterns": {
+      "destination": [
+        "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+        "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+        "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw==",
+        "5paw5YyX5biC56uL6bav5q2M6auY57Sa5bel5ZWG6IG35qWt5a245g==",
+        "5paw5YyX5biC5pS/5bqc5p2/5qmL5YiG5bGA5rKZ5bSZ5rS+5Ye65g==",
+        "6I+v5rGf5LiA6I+v5rGf5LqM6Lev5Y+jKOaxn+WMr0xpZmXnpL7ljQ=="
+      ],
+      "origin": [
+        "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+        "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+        "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw=="
+      ]
+    }
+  },
+  "input_records": 3055147,
+  "output_bytes": {
+    "cleaned.parquet": 52736145,
+    "quarantine.jsonl": 12748
+  },
+  "output_hashes": {
+    "cleaned.parquet": "eacee7243244d8fe33fa418489f9aaf205e2d559158cff98a5a50a32ebf2e7d3",
+    "quarantine.jsonl": "032af0a42e8a6bf4d6e021fa9e2686150a4339364cc109e49bec59a923e6dbca"
+  },
+  "parquet_validation": {
+    "accepted_quarantine_overlap": 0,
+    "approved_missing_provenance": 0,
+    "bike_type_counts": {
+      "<NULL>": 3055138
+    },
+    "bike_type_null_count": 3055138,
+    "clean_changes_without_approval": 0,
+    "combined_multiset_fingerprint": {
+      "count": 3055147,
+      "sum128": "188ab60fb3b57cdd0eb369e96ac797cb",
+      "xor128": "051a8ab13768720a320f9e872f5fe883"
+    },
+    "combined_state_count": 3055147,
+    "nonapproved_identity_assignments": 0,
+    "raw_multiset_fingerprint": {
+      "count": 3055138,
+      "sum128": "214b3f024348961e556a1f8b23bd434f",
+      "xor128": "0f675d4c2e56042e08a3c3c09d97fa05"
+    },
+    "raw_station_profile": {
+      "destination_missing": 1,
+      "destination_numeric_suffix": 49146,
+      "destination_question_mark": 6115,
+      "destination_replacement_character": 0,
+      "destination_unbalanced_parentheses": 17133,
+      "origin_missing": 2,
+      "origin_numeric_suffix": 52683,
+      "origin_question_mark": 6103,
+      "origin_replacement_character": 0,
+      "origin_unbalanced_parentheses": 17505
+    },
+    "row_count": 3055138,
+    "schema": "borrow_time: string\nreturn_time: string\nduration_raw: string\nbike_type: string\nborrow_date: string\n_source_file: string\n_source_row: int64\n_schema_version: string\n_parse_warnings: string\norigin_station_raw: string\norigin_station_raw_base64: string\norigin_station_clean: string\norigin_station_id: string\norigin_station_city: string\norigin_station_repair_status: string\norigin_station_rule_version: string\norigin_station_evidence_tier: string\norigin_station_tier1_subtype: string\ndestination_station_raw: string\ndestination_station_raw_base64: string\ndestination_station_clean: string\ndestination_station_id: string\ndestination_station_city: string\ndestination_station_repair_status: string\ndestination_station_rule_version: string\ndestination_station_evidence_tier: string\ndestination_station_tier1_subtype: string",
+    "schema_fingerprint_sha256": "9ce32292c859e148f8124605c30d12d2f4aea534759a21c8d96ce4838df5cbb0",
+    "source_rows_strictly_increasing": true
+  },
+  "parser_version": "youbike-raw-parser-contract-v1",
+  "performance": {
+    "peak_working_set_bytes": 663404544,
+    "rows_per_second": 8904.400069619594,
+    "wall_clock_seconds": 343.1043052999885
+  },
+  "period": "2023/07",
+  "phase3_cross_check": {
+    "profile_sha256": "85310e4b4852b4ec7d7e73d20aa2f684d32ced2da14bfa1022f25b4d9e4241ce",
+    "status": "passed"
+  },
+  "pipeline_version": "station-cleaning-pipeline-v1",
+  "preflight": {
+    "bike_type_counts": {
+      "<NULL>": 3055147
+    },
+    "csv_member": "202307_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv",
+    "csv_uncompressed_bytes": 323579167,
+    "destination_missing": 1,
+    "duration_gt_24h": 168,
+    "duration_gt_7d": 9,
+    "duration_zero": 32,
+    "first_source_row": 1,
+    "gates": {
+      "bike_type": true,
+      "destination_missing": true,
+      "duration_gt_24h": true,
+      "duration_gt_7d": true,
+      "duration_zero": true,
+      "encoding": true,
+      "header": true,
+      "origin_missing": true,
+      "record_count": true,
+      "schema": true,
+      "source_rows": true,
+      "station_patterns": true
+    },
+    "header_present": false,
+    "illegal_utf8": {
+      "affected_field_count": 11600,
+      "affected_record_count": 11038,
+      "both_endpoints_affected_records": 562,
+      "destination_affected_records": 5991,
+      "illegal_byte_count": 14485,
+      "origin_affected_records": 5609,
+      "unique_raw_base64_pattern_union_count": 6,
+      "unique_raw_base64_patterns": {
+        "destination": [
+          "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+          "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+          "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw==",
+          "5paw5YyX5biC56uL6bav5q2M6auY57Sa5bel5ZWG6IG35qWt5a245g==",
+          "5paw5YyX5biC5pS/5bqc5p2/5qmL5YiG5bGA5rKZ5bSZ5rS+5Ye65g==",
+          "6I+v5rGf5LiA6I+v5rGf5LqM6Lev5Y+jKOaxn+WMr0xpZmXnpL7ljQ=="
+        ],
+        "origin": [
+          "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+          "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+          "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw=="
+        ]
+      }
+    },
+    "last_source_row": 3055147,
+    "origin_missing": 2,
+    "phase3_repeated_identical": {
+      "excess_copies": 6413,
+      "involved_records": 12790,
+      "multiplicity_groups": {
+        "2": 6341,
+        "3": 36,
+        "4": 0,
+        "5_plus": 0
+      },
+      "repeated_groups": 6377
+    },
+    "phase3_station_patterns": {
+      "destination_numeric_suffix": 49146,
+      "destination_question_mark": 6115,
+      "destination_unbalanced_parentheses": 17133,
+      "origin_numeric_suffix": 52683,
+      "origin_question_mark": 6103,
+      "origin_unbalanced_parentheses": 17505
+    },
+    "raw_multiset_fingerprint": {
+      "count": 3055147,
+      "sum128": "188ab60fb3b57cdd0eb369e96ac797cb",
+      "xor128": "051a8ab13768720a320f9e872f5fe883"
+    },
+    "record_count": 3055147,
+    "schema_version": "v1_6col",
+    "station_patterns": {
+      "destination_numeric_suffix": 49146,
+      "destination_question_mark": 6115,
+      "destination_replacement_character": 0,
+      "destination_unbalanced_parentheses": 17133,
+      "origin_numeric_suffix": 52683,
+      "origin_question_mark": 6103,
+      "origin_replacement_character": 0,
+      "origin_unbalanced_parentheses": 17505
+    },
+    "warning_record_count": 11038
+  },
+  "quarantine_bike_type_counts": {
+    "<NULL>": 9
+  },
+  "quarantine_reason_counts": {
+    "serialization_unsafe_unapproved_destination_station_raw": 9
+  },
+  "quarantine_records": 9,
+  "raw_source": {
+    "bytes": 50718314,
+    "csv_member": "202307_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv",
+    "csv_uncompressed_bytes": 323579167,
+    "filename": "202307_YouBike2.0票證刷卡資料.zip",
+    "sha256": "51f3476ef7b6a7f2ad41d2c1962825b9cd17085f7116420418125b6628644b4d"
+  },
+  "record_conservation": true,
+  "repaired_trip_count": 32442,
+  "repeated_identical_preservation": {
+    "excess_copies": 6413,
+    "involved_records": 12790,
+    "multiplicity_groups": {
+      "2": 6341,
+      "3": 36,
+      "4": 0,
+      "5_plus": 0
+    },
+    "policy": "retain_all",
+    "raw_multiset_fingerprint_match": true,
+    "repeated_groups": 6377
+  },
+  "run_id": "phase3.7-full-period-2023-07",
+  "start_timestamp": "2026-09-16T07:07:52.544074+00:00",
+  "station_side_status_counts": {
+    "destination": {
+      "ambiguous": 11804,
+      "approved_repair": 17224,
+      "candidate_only": 174,
+      "not_an_error": 59758,
+      "unchanged_no_rule": 2966170,
+      "unresolved": 8
+    },
+    "origin": {
+      "ambiguous": 12532,
+      "approved_repair": 16685,
+      "candidate_only": 0,
+      "not_an_error": 0,
+      "unchanged_no_rule": 3025921,
+      "unresolved": 0
+    }
+  },
+  "tier1_subtype_station_side_counts": {
+    "1A": 21694,
+    "1B": 12046,
+    "1C": 169
+  },
+  "trip_level_repair_counts": {
+    "both_sides_repaired": 1467,
+    "destination_only_repaired": 15757,
+    "neither_side_repaired": 3022696,
+    "origin_only_repaired": 15218
+  },
+  "validation_status": "passed"
+}

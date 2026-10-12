@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Preserve source index bytes and encoding
+"references/臺北市公共自行車2.0租借紀錄(20260911更新_V5).csv" -text whitespace=cr-at-eol

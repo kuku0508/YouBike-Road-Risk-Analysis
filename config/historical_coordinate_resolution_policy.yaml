@@ -1,0 +1,22 @@
+{
+  "policy_version": "historical-coordinate-resolution-policy-v1",
+  "research_period": {"start": "2023-01-01", "end": "2024-12-31"},
+  "station_identity_rule": "exact_station_id_only",
+  "accepted_evidence_tiers": ["tier_1_direct_historical", "tier_2_temporally_bracketed_stable"],
+  "tier_3_default": "not_accepted",
+  "current_only_policy": "prohibited_as_historical_coordinate",
+  "legacy_unverified_provenance_policy": "supporting_only_not_routing_accepted",
+  "temporal_coverage_rule": "accepted evidence must cover every routing-relevant observed month or map it uniquely to a non-overlapping coordinate era",
+  "displacement_qa_bins_m": [0, 5, 15, 30, 100],
+  "distance_rule": "geodesic_haversine_for_qa_only_never_auto_resolve",
+  "relocation_handling": {
+    "outside_period": "use evidenced in-period coordinate",
+    "within_period": "construct_non_overlapping_coordinate_eras",
+    "unknown_timing": "fail_closed"
+  },
+  "era_construction_rule": "no invented day-level boundaries; uncertainty intervals remain unresolved",
+  "unresolved_policy": "preserve_with_OD_edge_and_trip_weight_impact_never_silent_drop",
+  "routing_readiness_rule": "all endpoint observed periods accepted or uniquely era-mapped through non-overlapping eras",
+  "name_matching_allowed": false,
+  "full_routing_allowed_in_phase_8_0A": false
+}

@@ -1,0 +1,24 @@
+{
+  "core_dates": 731,
+  "date_max": "2025-12-31",
+  "date_min": "2020-01-01",
+  "dates_2023": 365,
+  "dates_2024": 366,
+  "duplicate_dates": 0,
+  "holiday_dates": 233,
+  "missing_dates": [],
+  "natural_disaster_dates": 6,
+  "natural_disaster_override_applied": false,
+  "schema": {
+    "Date": "R Date",
+    "IsHoliday": "numeric 0/1",
+    "NaturalDisaster": "numeric 0/1"
+  },
+  "source_bytes": 11880,
+  "source_filename": "2020_2025假日.fst",
+  "source_sha256": "a10889e9a656d9f9c06975f0e1adb36b3b6d93955365bd91fc49308a2dd37bc5",
+  "total_dates": 2192,
+  "unknown_is_holiday_values": [],
+  "validation_status": "passed",
+  "weekday_dates": 498
+}

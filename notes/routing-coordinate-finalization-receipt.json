@@ -1,0 +1,157 @@
+{
+  "phase": "8.0C",
+  "full_routing_executed": false,
+  "analyst_decision_id": "D110",
+  "coordinate_assumption_id": "routing-coordinate-assumption-v1",
+  "legacy_csv_sha256": "8bf19851f7e9329b0f7207f84b149ce243ca9f6d1e6270ffb5f382b1a9e63205",
+  "mapping_sha256": "52513e958338c87b4e09bb2de4b9b9113b367b5549043d796c1c5990e2b52c66",
+  "provenance_status": "unverified; Phase 8.0B NOT SUFFICIENTLY TRACEABLE conclusion preserved",
+  "evidence_status": "supporting_unverified_provenance",
+  "routing_acceptance": "accepted_by_analyst_assumption",
+  "identity_mapped_station_count": 2769,
+  "accepted_under_assumption_count": 2756,
+  "verified_historical_count": 0,
+  "conflict_count": 31,
+  "accepted_conflict_count": 28,
+  "unresolved_conflict_count": 3,
+  "unresolved_core_nodes": 26,
+  "within_period_coordinate_changes_observed": 0,
+  "coordinate_era_count": 0,
+  "routing_unit": "unique_directed_od_pair",
+  "routing_contract_version": "road-routing-contract-v1.1",
+  "coverage": {
+    "accepted_core_nodes": 2756,
+    "total_core_nodes": 2782,
+    "node_percentage": 99.06542056074767,
+    "routable_non_self_od_edges": 1100919,
+    "total_non_self_od_edges": 1124015,
+    "routable_od_percentage": 97.9452231509366,
+    "routable_trip_weight": 83693979,
+    "total_non_self_trip_weight": 85115195,
+    "routable_trip_weight_percentage": 98.33024408861426,
+    "unroutable_non_self_od_edges": 23096,
+    "unroutable_trip_weight": 1421216
+  },
+  "gap_profile": {
+    "identity_mapped_but_no_valid_legacy_coordinate": 13,
+    "no_accepted_exact_identity_mapping": 13,
+    "by_city": {
+      "New Taipei": 9,
+      "Taipei": 17
+    },
+    "unroutable_endpoint_pattern": {
+      "both": {
+        "edges": 109,
+        "trip_weight": 8274
+      },
+      "destination": {
+        "edges": 10838,
+        "trip_weight": 707001
+      },
+      "origin": {
+        "edges": 12149,
+        "trip_weight": 705941
+      }
+    },
+    "top_unresolved_station_ids_by_endpoint_trip_involvement": [
+      {
+        "station_id": "500110036",
+        "city": "Taipei",
+        "endpoint_od_involvements": 2369,
+        "endpoint_trip_involvements": 326477,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      },
+      {
+        "station_id": "500101153",
+        "city": "Taipei",
+        "endpoint_od_involvements": 2384,
+        "endpoint_trip_involvements": 208665,
+        "reason": "no_accepted_exact_legacy_mapping_and_no_other_accepted_coordinate"
+      },
+      {
+        "station_id": "500101095",
+        "city": "Taipei",
+        "endpoint_od_involvements": 1588,
+        "endpoint_trip_involvements": 118723,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      },
+      {
+        "station_id": "500107133",
+        "city": "Taipei",
+        "endpoint_od_involvements": 2063,
+        "endpoint_trip_involvements": 115744,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      },
+      {
+        "station_id": "500107057",
+        "city": "Taipei",
+        "endpoint_od_involvements": 1961,
+        "endpoint_trip_involvements": 105535,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      },
+      {
+        "station_id": "500107074",
+        "city": "Taipei",
+        "endpoint_od_involvements": 1641,
+        "endpoint_trip_involvements": 93430,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      },
+      {
+        "station_id": "500113031",
+        "city": "Taipei",
+        "endpoint_od_involvements": 1182,
+        "endpoint_trip_involvements": 91881,
+        "reason": "no_accepted_exact_legacy_mapping_and_no_other_accepted_coordinate"
+      },
+      {
+        "station_id": "500101183",
+        "city": "Taipei",
+        "endpoint_od_involvements": 1751,
+        "endpoint_trip_involvements": 85186,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      },
+      {
+        "station_id": "500113027",
+        "city": "Taipei",
+        "endpoint_od_involvements": 932,
+        "endpoint_trip_involvements": 72016,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      },
+      {
+        "station_id": "500104076",
+        "city": "Taipei",
+        "endpoint_od_involvements": 998,
+        "endpoint_trip_involvements": 69403,
+        "reason": "exact_legacy_identity_but_no_valid_legacy_coordinate"
+      }
+    ],
+    "bias_limitation": "The excluded flow is concentrated in 26 unresolved stations and is not demonstrated to be unbiased; Phase 8.1 must report routed and unroutable denominators separately."
+  },
+  "self_loops": {
+    "edges": 1504,
+    "trip_weight": 6023568,
+    "policy": "excluded_from_BRouter_and_retained_in_conservation_accounting"
+  },
+  "artifacts": {
+    "final_coordinate": {
+      "path": "data/processed/routing/routing_station_coordinates_2023_2024.parquet",
+      "rows": 2756,
+      "sha256": "8e5b4bbe3511b0145234f209768f0eec0f766e9121716ae510170724dab1ad06",
+      "station_id_fingerprint": "1cf8fa00388dd9b89b16eb8ee895a9bb5913f62344d69791095d591b9eafc820",
+      "coordinate_fingerprint": "b744b692ba020cd13293f5429f8d6e43400d70737560f1d921ccb0309281bd02"
+    },
+    "core_gap": {
+      "path": "data/processed/routing/core_routing_coordinate_gap.csv",
+      "rows": 26,
+      "sha256": "a0e93f581a9610f7fb17be25dbf11fff90880dbeca740f146817a1c96bf33c20"
+    },
+    "unroutable_od": {
+      "path": "data/processed/routing/unroutable_od_due_to_coordinate_gap.parquet",
+      "rows": 23096,
+      "sha256": "feab37705c95204621eb8eb3c46a791e00ab157d92df032b8909c41acab4e6a6"
+    },
+    "coordinate_era": null
+  },
+  "cache_invalidation": "coordinate artifact hash and routing contract version are cache-key inputs; prior route cache is stale",
+  "readiness_status": "ROUTING COORDINATES FINALIZED — PHASE 8.1 READY WITH DISCLOSED EXCLUSIONS"
+}

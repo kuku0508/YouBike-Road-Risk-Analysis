@@ -1,0 +1,61 @@
+{
+  "contract_version": "louvain-reconstruction-contract-v1",
+  "source_graph": {
+    "scope": "core_2023_2024",
+    "path": "data/processed/od/aggregate/core_2023_2024/od.parquet",
+    "directed": true,
+    "node_key": "station_id",
+    "edge_direction": "origin_to_destination",
+    "weight": "trip_count"
+  },
+  "target_graph": {
+    "type": "undirected_simple_weighted",
+    "projection_mode": "sum",
+    "reciprocal_merge_rule": "w_undirected_ij = w_i_to_j + w_j_to_i",
+    "one_way_rule": "retain_observed_direction_weight",
+    "weight": "trip_count",
+    "self_loop_mode": "remove_before_projection",
+    "isolated_node_policy": "retain_as_singleton_community"
+  },
+  "modularity": {
+    "definition": "weighted_undirected_newman_girvan",
+    "function": "networkx.algorithms.community.quality.modularity",
+    "weight": "trip_count",
+    "resolution": 1.0
+  },
+  "algorithm": {
+    "library": "networkx",
+    "library_version": "3.4.2",
+    "function": "networkx.algorithms.community.louvain_communities",
+    "weight": "trip_count",
+    "resolution": 1.0,
+    "threshold": 1e-7,
+    "max_level": null,
+    "seed": 42,
+    "backend": "networkx_builtin"
+  },
+  "determinism": {
+    "node_order": "station_id_ascending",
+    "edge_order": "min_station_id_then_max_station_id_ascending",
+    "community_relabel": "sort_communities_by_min_station_id_ascending_then_assign_1_based_integer",
+    "partition_comparison": ["adjusted_rand_index", "normalized_mutual_information"]
+  },
+  "sensitivity_variants": {
+    "projection": ["max", "unweighted"],
+    "self_loop": ["retain"],
+    "resolution": [0.5, 1.5],
+    "additional_seeds": [7, 19, 73]
+  },
+  "report_comparison": {
+    "reference_modularity": 0.66574,
+    "reference_community_count_approx": 11,
+    "acceptance_target": false,
+    "comparison_classes": ["exact_or_near", "broadly_similar", "materially_different", "cannot_verify"]
+  },
+  "phase_6_0_guard": {
+    "full_core_louvain_allowed": false,
+    "full_core_projection_qa_allowed": true,
+    "synthetic_louvain_allowed": true,
+    "bounded_real_louvain_max_nodes": 20
+  }
+}

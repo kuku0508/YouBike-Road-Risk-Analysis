@@ -1,0 +1,221 @@
+{
+  "contract_version": "kmeans-reconstruction-contract-v1",
+  "inertia_cross_scaler_comparable": false,
+  "pipeline_version": "core-kmeans-v1",
+  "primary_variant": "StandardScaler_seed_42",
+  "variants": [
+    {
+      "ari_vs_primary": 1.0,
+      "assignment_fingerprint": "bccae38d2937c71b5adfffb2a864035dc00cd331f0f43009668910a2ff93e971",
+      "cluster_sizes": [
+        {
+          "cluster_id": 1,
+          "node_count": 60
+        },
+        {
+          "cluster_id": 2,
+          "node_count": 347
+        },
+        {
+          "cluster_id": 3,
+          "node_count": 939
+        },
+        {
+          "cluster_id": 4,
+          "node_count": 1436
+        }
+      ],
+      "inertia": 3518.3530454050792,
+      "nmi_vs_primary": 1.0,
+      "runtime_seconds": 0.13020210003014654,
+      "scaler": "StandardScaler",
+      "seed": 42,
+      "silhouette": 0.5098197652197591,
+      "variant": "seed_42",
+      "variant_type": "seed"
+    },
+    {
+      "ari_vs_primary": 0.9993057420321804,
+      "assignment_fingerprint": "ea9b382a95c0f42650a61cd0e74c4ad97b3f3d34af1e996b8a06db32d5bf28c8",
+      "cluster_sizes": [
+        {
+          "cluster_id": 1,
+          "node_count": 60
+        },
+        {
+          "cluster_id": 2,
+          "node_count": 346
+        },
+        {
+          "cluster_id": 3,
+          "node_count": 940
+        },
+        {
+          "cluster_id": 4,
+          "node_count": 1436
+        }
+      ],
+      "inertia": 3518.33640047659,
+      "nmi_vs_primary": 0.9974853344955243,
+      "runtime_seconds": 0.1332519999705255,
+      "scaler": "StandardScaler",
+      "seed": 7,
+      "silhouette": 0.5098923161140317,
+      "variant": "seed_7",
+      "variant_type": "seed"
+    },
+    {
+      "ari_vs_primary": 0.9993057420321804,
+      "assignment_fingerprint": "ea9b382a95c0f42650a61cd0e74c4ad97b3f3d34af1e996b8a06db32d5bf28c8",
+      "cluster_sizes": [
+        {
+          "cluster_id": 1,
+          "node_count": 60
+        },
+        {
+          "cluster_id": 2,
+          "node_count": 346
+        },
+        {
+          "cluster_id": 3,
+          "node_count": 940
+        },
+        {
+          "cluster_id": 4,
+          "node_count": 1436
+        }
+      ],
+      "inertia": 3518.332954217708,
+      "nmi_vs_primary": 0.9974853344955243,
+      "runtime_seconds": 0.10894599999301136,
+      "scaler": "StandardScaler",
+      "seed": 19,
+      "silhouette": 0.5098923161140317,
+      "variant": "seed_19",
+      "variant_type": "seed"
+    },
+    {
+      "ari_vs_primary": 1.0,
+      "assignment_fingerprint": "bccae38d2937c71b5adfffb2a864035dc00cd331f0f43009668910a2ff93e971",
+      "cluster_sizes": [
+        {
+          "cluster_id": 1,
+          "node_count": 60
+        },
+        {
+          "cluster_id": 2,
+          "node_count": 347
+        },
+        {
+          "cluster_id": 3,
+          "node_count": 939
+        },
+        {
+          "cluster_id": 4,
+          "node_count": 1436
+        }
+      ],
+      "inertia": 3518.3530454050792,
+      "nmi_vs_primary": 1.0,
+      "runtime_seconds": 0.1193164000287652,
+      "scaler": "StandardScaler",
+      "seed": 73,
+      "silhouette": 0.5098197652197591,
+      "variant": "seed_73",
+      "variant_type": "seed"
+    },
+    {
+      "ari_vs_primary": 0.5159365305063828,
+      "assignment_fingerprint": "cdb447a7c6c73f190642b8004a96da792b5fd4ed19bd68bb8a8d223711120221",
+      "cluster_sizes": [
+        {
+          "cluster_id": 1,
+          "node_count": 32
+        },
+        {
+          "cluster_id": 2,
+          "node_count": 226
+        },
+        {
+          "cluster_id": 3,
+          "node_count": 683
+        },
+        {
+          "cluster_id": 4,
+          "node_count": 1841
+        }
+      ],
+      "inertia": 4246942556526.5283,
+      "inertia_cross_scaler_comparable": false,
+      "nmi_vs_primary": 0.5358702879976635,
+      "runtime_seconds": 0.09181000001262873,
+      "scaler": "none",
+      "seed": 42,
+      "silhouette": 0.7183440356931627,
+      "variant": "none",
+      "variant_type": "scaling"
+    },
+    {
+      "ari_vs_primary": 0.7542734429465945,
+      "assignment_fingerprint": "ce475f29020c7b43877067b57341f3134b6e4288198ddbf24a3467faf5376e65",
+      "cluster_sizes": [
+        {
+          "cluster_id": 1,
+          "node_count": 292
+        },
+        {
+          "cluster_id": 2,
+          "node_count": 1109
+        },
+        {
+          "cluster_id": 3,
+          "node_count": 1339
+        },
+        {
+          "cluster_id": 4,
+          "node_count": 42
+        }
+      ],
+      "inertia": 23.03002070149698,
+      "inertia_cross_scaler_comparable": false,
+      "nmi_vs_primary": 0.6916036359515436,
+      "runtime_seconds": 0.1535525000654161,
+      "scaler": "MinMaxScaler",
+      "seed": 42,
+      "silhouette": 0.5529872111179128,
+      "variant": "MinMaxScaler",
+      "variant_type": "scaling"
+    },
+    {
+      "ari_vs_primary": 0.6464768070258295,
+      "assignment_fingerprint": "0704c5f04191e7d24eb57643686decbec4ce64ff76a55902f3de2e7b272cae35",
+      "cluster_sizes": [
+        {
+          "cluster_id": 1,
+          "node_count": 186
+        },
+        {
+          "cluster_id": 2,
+          "node_count": 1260
+        },
+        {
+          "cluster_id": 3,
+          "node_count": 1291
+        },
+        {
+          "cluster_id": 4,
+          "node_count": 45
+        }
+      ],
+      "inertia": 3518.383972005629,
+      "inertia_cross_scaler_comparable": false,
+      "nmi_vs_primary": 0.6156138062958177,
+      "runtime_seconds": 0.1422764000017196,
+      "scaler": "log1p_total_strength_then_StandardScaler",
+      "seed": 42,
+      "silhouette": 0.5500889689791301,
+      "variant": "log1p_total_strength_then_StandardScaler",
+      "variant_type": "scaling"
+    }
+  ]
+}

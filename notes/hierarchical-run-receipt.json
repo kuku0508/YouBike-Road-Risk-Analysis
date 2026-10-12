@@ -1,0 +1,809 @@
+{
+  "accident_stage_triggered": false,
+  "brouter_triggered": false,
+  "contract_version": "hierarchical-reconstruction-v1",
+  "feature_count": 72,
+  "hierarchical_reconstruction_complete": true,
+  "peak_working_set_bytes": 488329216,
+  "period_caveat": "report text states 2022-2024; this is the analyst-selected 2023-2024 reconstruction variant",
+  "primary": {
+    "holiday": {
+      "all_finite": true,
+      "artifacts": {
+        "dendrogram": "reports/figures/hierarchical_holiday_dendrogram.png",
+        "leaf_order": "data/processed/network/hourly_2023_2024/hierarchical_holiday_leaf_order.json",
+        "linkage": "data/processed/network/hourly_2023_2024/hierarchical_holiday_linkage.npy",
+        "partition": "data/processed/network/hourly_2023_2024/hierarchical_holiday_partition.parquet"
+      },
+      "assignment_label_sha256": "70fc87e4a02b59488cb847c339439ddeef6518be2575ce9137ecfd12f1dd5191",
+      "assignment_sha256": "1a1de84ac1101858a9c372549def345ccc57313e3250d31268b0d1f6c29665c7",
+      "cluster_size_statistics": {
+        "max": 2179,
+        "mean": 695.5,
+        "median": 301.0,
+        "min": 1
+      },
+      "cluster_sizes": {
+        "1": 65,
+        "2": 537,
+        "3": 2179,
+        "4": 1
+      },
+      "cluster_summaries": [
+        {
+          "cluster_id": 1,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.22787332680856984,
+              "station_id": "500110049",
+              "station_name": "饒河疏散門(基四號疏散門)"
+            },
+            "eigenvector": {
+              "aggregate_24h": 1.8735552986369002,
+              "station_id": "500106067",
+              "station_name": "臺北轉運站"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.10744837781342326,
+              "station_id": "500101022",
+              "station_name": "捷運公館站(2號出口)"
+            }
+          },
+          "node_count": 65,
+          "percentage": 0.02336448598130841,
+          "prototype_distance_to_standardized_centroid": 7.623170172837916,
+          "prototype_station_id": "500113039",
+          "prototype_station_name": "中華桂林路口"
+        },
+        {
+          "cluster_id": 2,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.04702095879649526,
+              "station_id": "500106092",
+              "station_name": "捷運西門站(3號出口)"
+            },
+            "eigenvector": {
+              "aggregate_24h": 1.7222118654564655,
+              "station_id": "500101156",
+              "station_name": "信義建國路口"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.04770675106245146,
+              "station_id": "500109034",
+              "station_name": "捷運石牌站(2號出口)"
+            }
+          },
+          "node_count": 537,
+          "percentage": 0.19302659956865564,
+          "prototype_distance_to_standardized_centroid": 2.817937052520061,
+          "prototype_station_id": "500107033",
+          "prototype_station_name": "江寧公園"
+        },
+        {
+          "cluster_id": 3,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.021355741488449372,
+              "station_id": "500104070",
+              "station_name": "福安消防分隊"
+            },
+            "eigenvector": {
+              "aggregate_24h": 0.7116220678920742,
+              "station_id": "500101037",
+              "station_name": "臺大國青大樓宿舍前"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.027878261514889046,
+              "station_id": "500108033",
+              "station_name": "湖光國宅"
+            }
+          },
+          "node_count": 2179,
+          "percentage": 0.7832494608195543,
+          "prototype_distance_to_standardized_centroid": 0.6604320419874916,
+          "prototype_station_id": "500111089",
+          "prototype_station_name": "向陽南港路口(西北側)"
+        },
+        {
+          "cluster_id": 4,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.6957138507829516,
+              "station_id": "500103044",
+              "station_name": "大稻埕碼頭"
+            },
+            "eigenvector": {
+              "aggregate_24h": 1.4691160318268615,
+              "station_id": "500103044",
+              "station_name": "大稻埕碼頭"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.07641028465762598,
+              "station_id": "500103044",
+              "station_name": "大稻埕碼頭"
+            }
+          },
+          "node_count": 1,
+          "percentage": 0.0003594536304816679,
+          "prototype_distance_to_standardized_centroid": 0.0,
+          "prototype_station_id": "500103044",
+          "prototype_station_name": "大稻埕碼頭"
+        }
+      ],
+      "cophenetic_correlation": 0.6422845190160917,
+      "cut_function": "scipy.cluster.hierarchy.fcluster(maxclust)",
+      "cut_k": 4,
+      "day_type": "holiday",
+      "distance": "euclidean",
+      "feature_columns_sha256": "7f0620e7aac19c761a81b944d68616a57b8364317a686f7cb5c9bdfd9920d561",
+      "feature_count": 72,
+      "input_sha256": "b232620f2ee14ff436439c715efaf89794e9ddbf7af8c8323f0814e44a2685d8",
+      "leaf_count": 2782,
+      "leaf_order_sha256": "f7f4dbc80dea0f2a150bc7ce4cb792bf06bf1c570fff425670a6c27e61687d15",
+      "linkage": "ward",
+      "linkage_sha256": "701c1af921d04b712bc94f9f6799818555e76ea074c505feaec24a97d296c640",
+      "linkage_shape": [
+        2781,
+        4
+      ],
+      "linkage_validation": {
+        "all_finite": true,
+        "distances_monotonic": true,
+        "final_merge_count": true,
+        "shape": true
+      },
+      "no_nan": true,
+      "report_term": "Ward.D2",
+      "runtimes_seconds": {
+        "dendrogram_generation": 0.45409090002067387,
+        "pairwise_plus_primary_linkage": 0.5696537999901921,
+        "sensitivity": 1.8835029999027029,
+        "standard_scaler": 0.00468159990850836,
+        "total": 3.9163518000859767
+      },
+      "scaler": {
+        "class": "StandardScaler",
+        "means": [
+          0.0002496061170834446,
+          0.0002717528456650434,
+          0.00028181870780924647,
+          0.00028914411948044927,
+          0.0002787978519071351,
+          0.00025397776372207783,
+          0.00023935204714997907,
+          0.00023110372919990792,
+          0.0002258410246854806,
+          0.0002198719830330901,
+          0.00021904541236176918,
+          0.00021461123126746443,
+          0.00021585457432587733,
+          0.00020963204728142694,
+          0.00020588802340644314,
+          0.0002007676835784589,
+          0.00019950021012413998,
+          0.00020148480732885002,
+          0.00020940111148862393,
+          0.00021754147032637607,
+          0.00021954164302748013,
+          0.00022657762942986898,
+          0.00023719621247297323,
+          0.0002538035041385415,
+          0.01048365802875981,
+          0.010537368913664984,
+          0.010374107083379925,
+          0.01025524336535284,
+          0.009834836539416816,
+          0.009418002489426553,
+          0.010076442685861187,
+          0.010197729676998755,
+          0.010064601433378777,
+          0.0101732465454853,
+          0.010171730818699841,
+          0.010057645731636783,
+          0.010290049946038793,
+          0.010524355125030936,
+          0.01085376222718574,
+          0.011065663261006001,
+          0.011154720764834092,
+          0.011029910336785667,
+          0.010784646210980567,
+          0.010745890596186388,
+          0.010828163262327066,
+          0.010731555102361907,
+          0.010460425004190444,
+          0.010112955852844737,
+          0.0003594536304816667,
+          0.00035945363048166826,
+          0.0003594536304816671,
+          0.0003594536304816699,
+          0.0003594536304816675,
+          0.0003594536304816676,
+          0.0003594536304816681,
+          0.00035945363048166707,
+          0.00035945363048166777,
+          0.0003594536304816679,
+          0.00035945363048166745,
+          0.00035945363048166793,
+          0.00035945363048166755,
+          0.0003594536304816677,
+          0.0003594536304816681,
+          0.00035945363048166777,
+          0.00035945363048166755,
+          0.0003594536304816675,
+          0.00035945363048166826,
+          0.0003594536304816676,
+          0.00035945363048166723,
+          0.0003594536304816677,
+          0.00035945363048166804,
+          0.0003594536304816671
+        ],
+        "parameters_sha256": "01416c3f721a80b2250702fa78d4123b6772451e6d2f11a53304e66b62c22d00",
+        "scales": [
+          0.000653047299615092,
+          0.0007405389049139619,
+          0.0008044974257915282,
+          0.0008927228756797148,
+          0.0009283789126722065,
+          0.0007442195793790539,
+          0.0007983777899649548,
+          0.0008100296409628433,
+          0.0008780014468584904,
+          0.0008298382698304955,
+          0.0008075487298516728,
+          0.0007615175449628178,
+          0.0008254273866465855,
+          0.0008868175158388355,
+          0.0009304392781988963,
+          0.0009553442570494622,
+          0.0009854855475243266,
+          0.000958084425260495,
+          0.0010428931575546337,
+          0.0011156662192066122,
+          0.0011407551965485578,
+          0.0009893700050673325,
+          0.0009426996981202602,
+          0.0007847226191953254,
+          0.01579704228068305,
+          0.015761265395233807,
+          0.015869200758205637,
+          0.015946272730611832,
+          0.01620893644643657,
+          0.016454630338929622,
+          0.016059854709187825,
+          0.015983114212084162,
+          0.016067278191059547,
+          0.015998708860606198,
+          0.01599967257894922,
+          0.016071633172100343,
+          0.015923834418559334,
+          0.015769958138305343,
+          0.015545078835354418,
+          0.015394957845856216,
+          0.015330552342960348,
+          0.015420593647591407,
+          0.015593108624826876,
+          0.015619842053505565,
+          0.015562921025503482,
+          0.01562969467285391,
+          0.015812436220057152,
+          0.01603688730396523,
+          0.0003726865808493542,
+          0.00035518654477618267,
+          0.00034961794382065383,
+          0.0003654330140684937,
+          0.0004293851520460371,
+          0.0004881661229139441,
+          0.00045742861278230977,
+          0.000431585250816139,
+          0.00043420705899892026,
+          0.000430726410418518,
+          0.0004355070336386752,
+          0.0004392536137222046,
+          0.00043594492139138004,
+          0.0004383494530049204,
+          0.00043996869172842335,
+          0.000435169875624811,
+          0.00042827976972805706,
+          0.00042188050080724747,
+          0.00041586423810292,
+          0.0004073431399712651,
+          0.00040360831394708904,
+          0.00040561091053983536,
+          0.00040459995560691137,
+          0.00040114750696306953
+        ],
+        "with_mean": true,
+        "with_std": true
+      },
+      "sensitivity": [
+        {
+          "ari_vs_primary": 0.03862791951701425,
+          "cluster_sizes": {
+            "1": 2767,
+            "2": 9,
+            "3": 1,
+            "4": 5
+          },
+          "cophenetic_correlation": 0.9248876678022443,
+          "linkage": "complete",
+          "linkage_sha256": "f4b748e0135422a1d8a17416b84a2175c3d725a8a4b011c1feaa811a97bfe693",
+          "nmi_vs_primary": 0.07115656762257616,
+          "scaling": true,
+          "variant": "standard_scaler_complete"
+        },
+        {
+          "ari_vs_primary": 0.018146178821315244,
+          "cluster_sizes": {
+            "1": 2775,
+            "2": 5,
+            "3": 1,
+            "4": 1
+          },
+          "cophenetic_correlation": 0.9537972987948887,
+          "linkage": "average",
+          "linkage_sha256": "fafb2374f0aa50608eaeedcdfa513f0027f733d670b44a1012edced4934e438f",
+          "nmi_vs_primary": 0.03686753231541081,
+          "scaling": true,
+          "variant": "standard_scaler_average"
+        },
+        {
+          "ari_vs_primary": 0.620627227424059,
+          "cluster_sizes": {
+            "1": 177,
+            "2": 314,
+            "3": 1963,
+            "4": 328
+          },
+          "cophenetic_correlation": 0.781441950076979,
+          "linkage": "ward",
+          "linkage_sha256": "6fba5ffbc77440a04b9fbf9a2cba55fc4a556076b122d4a652954ca818f71e15",
+          "nmi_vs_primary": 0.47324401427252855,
+          "scaling": false,
+          "variant": "no_scaling_ward"
+        }
+      ],
+      "station_count": 2782,
+      "station_order_sha256": "ee756d9484d99996d15ae93ce0dd03e4d6b88b7393ee651df66c02098eea2e86"
+    },
+    "weekday": {
+      "all_finite": true,
+      "artifacts": {
+        "dendrogram": "reports/figures/hierarchical_weekday_dendrogram.png",
+        "leaf_order": "data/processed/network/hourly_2023_2024/hierarchical_weekday_leaf_order.json",
+        "linkage": "data/processed/network/hourly_2023_2024/hierarchical_weekday_linkage.npy",
+        "partition": "data/processed/network/hourly_2023_2024/hierarchical_weekday_partition.parquet"
+      },
+      "assignment_label_sha256": "0a52760287fb9c75ab2afb5d3912ff299c93d1617fca9803001ff4205303f3a5",
+      "assignment_sha256": "60f7ddc98caeaa97d654e0dc206bb4625374a6c9841f0b0ce230edc1cc0281fb",
+      "cluster_size_statistics": {
+        "max": 1419,
+        "mean": 556.4,
+        "median": 550.0,
+        "min": 1
+      },
+      "cluster_sizes": {
+        "1": 45,
+        "2": 550,
+        "3": 767,
+        "4": 1419,
+        "5": 1
+      },
+      "cluster_summaries": [
+        {
+          "cluster_id": 1,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.16249114527235697,
+              "station_id": "500106067",
+              "station_name": "臺北轉運站"
+            },
+            "eigenvector": {
+              "aggregate_24h": 1.7582287550963533,
+              "station_id": "500106067",
+              "station_name": "臺北轉運站"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.09426736919993153,
+              "station_id": "500101022",
+              "station_name": "捷運公館站(2號出口)"
+            }
+          },
+          "node_count": 45,
+          "percentage": 0.016175413371675055,
+          "prototype_distance_to_standardized_centroid": 8.155431025606617,
+          "prototype_station_id": "500112085",
+          "prototype_station_name": "捷運市政府站(3號出口)"
+        },
+        {
+          "cluster_id": 2,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.059346333313409855,
+              "station_id": "500105007",
+              "station_name": "捷運景美站(2號出口)"
+            },
+            "eigenvector": {
+              "aggregate_24h": 1.679893026617811,
+              "station_id": "500101109",
+              "station_name": "臺灣師範大學(圖書館)"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.04756192856581131,
+              "station_id": "500101109",
+              "station_name": "臺灣師範大學(圖書館)"
+            }
+          },
+          "node_count": 550,
+          "percentage": 0.19769949676491733,
+          "prototype_distance_to_standardized_centroid": 2.237174954807287,
+          "prototype_station_id": "500110052",
+          "prototype_station_name": "南京東路五段59巷口"
+        },
+        {
+          "cluster_id": 3,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.03745094923438954,
+              "station_id": "500104107",
+              "station_name": "捷運士林站(1號出口)"
+            },
+            "eigenvector": {
+              "aggregate_24h": 0.8453134589113288,
+              "station_id": "500110007",
+              "station_name": "捷運南京三民站(1號出口)"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.052714636452810694,
+              "station_id": "500109025",
+              "station_name": "捷運奇岩站(三合街)"
+            }
+          },
+          "node_count": 767,
+          "percentage": 0.2757009345794392,
+          "prototype_distance_to_standardized_centroid": 1.8653939994948303,
+          "prototype_station_id": "500111075",
+          "prototype_station_name": "成德立體停車場"
+        },
+        {
+          "cluster_id": 4,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.006641338757376963,
+              "station_id": "500109012",
+              "station_name": "捷運關渡站(2號出口)"
+            },
+            "eigenvector": {
+              "aggregate_24h": 0.26264212148416183,
+              "station_id": "500210031",
+              "station_name": "永和國中(國中路)"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.007613064398823969,
+              "station_id": "500109088",
+              "station_name": "公舘承德路口"
+            }
+          },
+          "node_count": 1419,
+          "percentage": 0.5100647016534867,
+          "prototype_distance_to_standardized_centroid": 0.2018792747841271,
+          "prototype_station_id": "500214027",
+          "prototype_station_name": "汐止火車站停車場"
+        },
+        {
+          "cluster_id": 5,
+          "leaders": {
+            "betweenness": {
+              "aggregate_24h": 0.42996763661701937,
+              "station_id": "500103044",
+              "station_name": "大稻埕碼頭"
+            },
+            "eigenvector": {
+              "aggregate_24h": 1.0754425875579574,
+              "station_id": "500103044",
+              "station_name": "大稻埕碼頭"
+            },
+            "pagerank": {
+              "aggregate_24h": 0.042469078688451456,
+              "station_id": "500103044",
+              "station_name": "大稻埕碼頭"
+            }
+          },
+          "node_count": 1,
+          "percentage": 0.0003594536304816679,
+          "prototype_distance_to_standardized_centroid": 0.0,
+          "prototype_station_id": "500103044",
+          "prototype_station_name": "大稻埕碼頭"
+        }
+      ],
+      "cophenetic_correlation": 0.6424927192617466,
+      "cut_function": "scipy.cluster.hierarchy.fcluster(maxclust)",
+      "cut_k": 5,
+      "day_type": "weekday",
+      "distance": "euclidean",
+      "feature_columns_sha256": "7f0620e7aac19c761a81b944d68616a57b8364317a686f7cb5c9bdfd9920d561",
+      "feature_count": 72,
+      "input_sha256": "ed00378e3ce489b7c80bbc9a7a22198dffa7dc1c6b9bbd18804074963d987054",
+      "leaf_count": 2782,
+      "leaf_order_sha256": "d433cbe1f6d1c70b6c21c9592c5ef25ba04085db04590259297af6bcc6eff78f",
+      "linkage": "ward",
+      "linkage_sha256": "53bd62b7e07c74e74129b912f3fe389654484a01bb850d7647741886088447d5",
+      "linkage_shape": [
+        2781,
+        4
+      ],
+      "linkage_validation": {
+        "all_finite": true,
+        "distances_monotonic": true,
+        "final_merge_count": true,
+        "shape": true
+      },
+      "no_nan": true,
+      "report_term": "Ward.D2",
+      "runtimes_seconds": {
+        "dendrogram_generation": 0.7812544000335038,
+        "pairwise_plus_primary_linkage": 0.5593424000544474,
+        "sensitivity": 2.311315399943851,
+        "standard_scaler": 0.0037811999209225178,
+        "total": 4.874809100059792
+      },
+      "scaler": {
+        "class": "StandardScaler",
+        "means": [
+          0.00025148549832296164,
+          0.0002671592365792908,
+          0.00027901618782076565,
+          0.0002858740091420148,
+          0.0002769111246126023,
+          0.00025033109832306135,
+          0.00022717577498541767,
+          0.00021154932114649964,
+          0.00020741800209252473,
+          0.00020806478039203793,
+          0.0002062431912182454,
+          0.00020680432753460113,
+          0.00020622947548261484,
+          0.00020440509666767718,
+          0.00020233843751927934,
+          0.0002015683570811486,
+          0.00019785525172885733,
+          0.00018752172351677287,
+          0.00018864994738392748,
+          0.0001988095414706091,
+          0.0002012959021293013,
+          0.0002054936146425318,
+          0.0002184692119832294,
+          0.000234936510157328,
+          0.01047531286659468,
+          0.01042017584162985,
+          0.010169257047651153,
+          0.010003764600384022,
+          0.009766966708183647,
+          0.009500226303964947,
+          0.009906049276708578,
+          0.009830438813240009,
+          0.009866504936858651,
+          0.009966219190485274,
+          0.010083579485652937,
+          0.010080367259952303,
+          0.010312185633983593,
+          0.010409323149834018,
+          0.010683019809549272,
+          0.010938346535458447,
+          0.011361454929698193,
+          0.011678112365699435,
+          0.011741154779740751,
+          0.011535516621952882,
+          0.011526687371537515,
+          0.011465976364280088,
+          0.011042304618189131,
+          0.010547715529348254,
+          0.00035945363048166755,
+          0.0003594536304816668,
+          0.0003594536304816674,
+          0.00035945363048166793,
+          0.00035945363048166685,
+          0.000359453630481667,
+          0.0003594536304816682,
+          0.00035945363048166956,
+          0.00035945363048166837,
+          0.00035945363048166745,
+          0.0003594536304816679,
+          0.0003594536304816677,
+          0.0003594536304816686,
+          0.0003594536304816676,
+          0.00035945363048166723,
+          0.0003594536304816679,
+          0.00035945363048166826,
+          0.00035945363048166826,
+          0.00035945363048166793,
+          0.0003594536304816679,
+          0.00035945363048166826,
+          0.00035945363048166804,
+          0.00035945363048166804,
+          0.00035945363048166745
+        ],
+        "parameters_sha256": "2fd6b68ea284710061217ad6d79a63e88cc2045418a182cf12211f000c239e6b",
+        "scales": [
+          0.0006413302929474824,
+          0.0007339019929897861,
+          0.0007828742399812841,
+          0.0008773094394582255,
+          0.0010227361138694156,
+          0.000703126905096563,
+          0.0005663406309481154,
+          0.0004971065711079669,
+          0.0005147350657137474,
+          0.0005404979297622528,
+          0.0005820151850827376,
+          0.0005717741450814564,
+          0.000552251394222424,
+          0.0006238145518872393,
+          0.0006917344125040245,
+          0.0006682545634701149,
+          0.0005895093623379988,
+          0.0005402061887131575,
+          0.0005838146745610112,
+          0.000716862134101038,
+          0.0007859993877606822,
+          0.0007684268015326853,
+          0.0008017953314816614,
+          0.0006783345318067193,
+          0.015802577347655153,
+          0.01583898879067668,
+          0.016001245000951184,
+          0.01610522661441842,
+          0.016249922824521357,
+          0.016407295043824877,
+          0.01616551323679794,
+          0.01621160396817083,
+          0.01618967914483211,
+          0.01612848739122398,
+          0.016055374652688335,
+          0.016057391643294668,
+          0.015909508412642118,
+          0.015846123249678372,
+          0.015662908996429935,
+          0.015485677432772906,
+          0.015177976556909835,
+          0.014935706279107322,
+          0.014886198806943255,
+          0.015046112014281849,
+          0.015052877091124656,
+          0.01509917270897443,
+          0.015411720838400457,
+          0.01575434313431105,
+          0.00038583441465607195,
+          0.0003704104499749144,
+          0.00037208462090868987,
+          0.00039570866604706623,
+          0.00045226736511063515,
+          0.0004822830301586588,
+          0.0004744874921941625,
+          0.0004995906631697105,
+          0.0005301170713711988,
+          0.0005092843625722549,
+          0.0004505230900206218,
+          0.00043497297489188927,
+          0.0004272417781555604,
+          0.0004244376880337715,
+          0.0004131689917527499,
+          0.00040772607963877595,
+          0.0004076552363092059,
+          0.0004199522882092792,
+          0.00041325054664464035,
+          0.00039720457362869014,
+          0.00039540135310208975,
+          0.00040427461748954863,
+          0.00039973773855876487,
+          0.00039615251509216796
+        ],
+        "with_mean": true,
+        "with_std": true
+      },
+      "sensitivity": [
+        {
+          "ari_vs_primary": 0.010032167237935513,
+          "cluster_sizes": {
+            "1": 2770,
+            "2": 3,
+            "3": 4,
+            "4": 1,
+            "5": 4
+          },
+          "cophenetic_correlation": 0.9068130335313236,
+          "linkage": "complete",
+          "linkage_sha256": "ce20a7bb36ed676affcc77f33f9c50d4e3e2d90f2cafc540c06bae12f94fddf6",
+          "nmi_vs_primary": 0.035716201819821554,
+          "scaling": true,
+          "variant": "standard_scaler_complete"
+        },
+        {
+          "ari_vs_primary": 0.016832810502253746,
+          "cluster_sizes": {
+            "1": 2762,
+            "2": 17,
+            "3": 1,
+            "4": 1,
+            "5": 1
+          },
+          "cophenetic_correlation": 0.9439482846354729,
+          "linkage": "average",
+          "linkage_sha256": "fe2966028d881834a38b105cdf1e29982334a4ff6e37bcadb26c6345f1387d5f",
+          "nmi_vs_primary": 0.05821939029130843,
+          "scaling": true,
+          "variant": "standard_scaler_average"
+        },
+        {
+          "ari_vs_primary": 0.5140251318111811,
+          "cluster_sizes": {
+            "1": 89,
+            "2": 324,
+            "3": 458,
+            "4": 176,
+            "5": 1735
+          },
+          "cophenetic_correlation": 0.8633876992935865,
+          "linkage": "ward",
+          "linkage_sha256": "d040aa8e06e9a793255f230782d034893f01ee4cc712f32b15d46c9cd4f0bb78",
+          "nmi_vs_primary": 0.484576585802019,
+          "scaling": false,
+          "variant": "no_scaling_ward"
+        }
+      ],
+      "station_count": 2782,
+      "station_order_sha256": "ee756d9484d99996d15ae93ce0dd03e4d6b88b7393ee651df66c02098eea2e86"
+    }
+  },
+  "reconstruction_period": "2023-2024",
+  "reproducibility": {
+    "holiday": {
+      "assignment_hash_identical": true,
+      "leaf_order_hash_identical": true,
+      "linkage_hash_identical": true
+    },
+    "weekday": {
+      "assignment_hash_identical": true,
+      "leaf_order_hash_identical": true,
+      "linkage_hash_identical": true
+    }
+  },
+  "scipy_version": "1.17.1",
+  "station_count": 2782,
+  "total_runtime_seconds": 10.458506700000726,
+  "validation_status": "passed",
+  "weekday_vs_holiday": {
+    "ari": 0.3815975382367906,
+    "cross_tab": {
+      "1": {
+        "1": 45,
+        "2": 20,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "2": {
+        "1": 0,
+        "2": 446,
+        "3": 91,
+        "4": 0,
+        "5": 0
+      },
+      "3": {
+        "1": 0,
+        "2": 84,
+        "3": 676,
+        "4": 1419,
+        "5": 0
+      },
+      "4": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1
+      }
+    },
+    "nmi": 0.45601473220990674
+  }
+}

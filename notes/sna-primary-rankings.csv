@@ -1,0 +1,141 @@
+﻿rank,metric,station_id,station_name,city,value
+1,in_strength,500101022,捷運公館站(2號出口),Taipei,884752.0
+2,in_strength,500101181,捷運公館站(3號出口),Taipei,519940.0
+3,in_strength,500101001,捷運科技大樓站,Taipei,454502.0
+4,in_strength,500107024,捷運中山國中站,Taipei,387302.0
+5,in_strength,500104108,捷運芝山站(2號出口)_1,Taipei,382851.0
+6,in_strength,500112070,捷運永春站(2號出口),Taipei,355485.0
+7,in_strength,500101109,臺灣師範大學(圖書館),Taipei,350012.0
+8,in_strength,500101101,捷運六張犁站,Taipei,338128.0
+9,in_strength,500112081,松仁路95巷口,Taipei,338059.0
+10,in_strength,500101169,捷運信義安和站(4號出口),Taipei,335260.0
+11,in_strength,500112049,松山車站,Taipei,332319.0
+12,in_strength,500101179,捷運東門站(5號出口),Taipei,321813.0
+13,in_strength,500107036,捷運行天宮站(3號出口),Taipei,307775.0
+14,in_strength,500101027,臺灣科技大學後門,Taipei,302222.0
+15,in_strength,500103009,捷運圓山站(1號出口),Taipei,293415.0
+16,in_strength,500113040,捷運龍山寺站(1號出口),Taipei,292276.0
+17,in_strength,500101113,臺北市立圖書館(總館),Taipei,290151.0
+18,in_strength,500110007,捷運南京三民站(1號出口),Taipei,288571.0
+19,in_strength,500119075,臺大第一活動中心西南側,Taipei,282836.0
+20,in_strength,500112007,臺北醫學大學,Taipei,279343.0
+1,out_strength,500101022,捷運公館站(2號出口),Taipei,838271.0
+2,out_strength,500101181,捷運公館站(3號出口),Taipei,494940.0
+3,out_strength,500101001,捷運科技大樓站,Taipei,477354.0
+4,out_strength,500107024,捷運中山國中站,Taipei,434954.0
+5,out_strength,500104108,捷運芝山站(2號出口)_1,Taipei,398582.0
+6,out_strength,500101101,捷運六張犁站,Taipei,360845.0
+7,out_strength,500112070,捷運永春站(2號出口),Taipei,360654.0
+8,out_strength,500101169,捷運信義安和站(4號出口),Taipei,354124.0
+9,out_strength,500112049,松山車站,Taipei,341430.0
+10,out_strength,500101179,捷運東門站(5號出口),Taipei,335842.0
+11,out_strength,500107036,捷運行天宮站(3號出口),Taipei,323213.0
+12,out_strength,500103009,捷運圓山站(1號出口),Taipei,317793.0
+13,out_strength,500113040,捷運龍山寺站(1號出口),Taipei,312447.0
+14,out_strength,500112076,捷運台北101/世貿站(2號出口),Taipei,310913.0
+15,out_strength,500101109,臺灣師範大學(圖書館),Taipei,307350.0
+16,out_strength,500101027,臺灣科技大學後門,Taipei,296779.0
+17,out_strength,500110007,捷運南京三民站(1號出口),Taipei,294446.0
+18,out_strength,500101025,臺灣科技大學側門,Taipei,293660.0
+19,out_strength,500112081,松仁路95巷口,Taipei,282774.0
+20,out_strength,500101167,捷運國父紀念館站(2號出口),Taipei,279932.0
+1,total_strength,500101022,捷運公館站(2號出口),Taipei,1723023.0
+2,total_strength,500101181,捷運公館站(3號出口),Taipei,1014880.0
+3,total_strength,500101001,捷運科技大樓站,Taipei,931856.0
+4,total_strength,500107024,捷運中山國中站,Taipei,822256.0
+5,total_strength,500104108,捷運芝山站(2號出口)_1,Taipei,781433.0
+6,total_strength,500112070,捷運永春站(2號出口),Taipei,716139.0
+7,total_strength,500101101,捷運六張犁站,Taipei,698973.0
+8,total_strength,500101169,捷運信義安和站(4號出口),Taipei,689384.0
+9,total_strength,500112049,松山車站,Taipei,673749.0
+10,total_strength,500101179,捷運東門站(5號出口),Taipei,657655.0
+11,total_strength,500101109,臺灣師範大學(圖書館),Taipei,657362.0
+12,total_strength,500107036,捷運行天宮站(3號出口),Taipei,630988.0
+13,total_strength,500112081,松仁路95巷口,Taipei,620833.0
+14,total_strength,500103009,捷運圓山站(1號出口),Taipei,611208.0
+15,total_strength,500113040,捷運龍山寺站(1號出口),Taipei,604723.0
+16,total_strength,500101027,臺灣科技大學後門,Taipei,599001.0
+17,total_strength,500110007,捷運南京三民站(1號出口),Taipei,583017.0
+18,total_strength,500112076,捷運台北101/世貿站(2號出口),Taipei,574302.0
+19,total_strength,500101113,臺北市立圖書館(總館),Taipei,567373.0
+20,total_strength,500101025,臺灣科技大學側門,Taipei,565069.0
+1,betweenness_primary,500103044,大稻埕碼頭,Taipei,0.010578306451858066
+2,betweenness_primary,500103028,捷運北門站(3號出口),Taipei,0.003705595883629065
+3,betweenness_primary,500109007,關渡宮,Taipei,0.0036734584279050552
+4,betweenness_primary,500109011,捷運關渡站(1號出口),Taipei,0.0034640922112675805
+5,betweenness_primary,500103030,永樂市場,Taipei,0.003362573710949383
+6,betweenness_primary,500103009,捷運圓山站(1號出口),Taipei,0.0031840556363344607
+7,betweenness_primary,500103037,太原廣場,Taipei,0.0027489876543872575
+8,betweenness_primary,500113042,華西公園,Taipei,0.002746958184757103
+9,betweenness_primary,500106067,臺北轉運站,Taipei,0.0025866754532597215
+10,betweenness_primary,500106112,忠孝西重慶南路口,Taipei,0.0024788945797745206
+11,betweenness_primary,500103027,捷運雙連站(2號出口),Taipei,0.00222687064028668
+12,betweenness_primary,500113038,西本願寺廣場,Taipei,0.002220847286099383
+13,betweenness_primary,500106002,汀州思源街口東南側,Taipei,0.0021647802110311494
+14,betweenness_primary,500110049,饒河疏散門(基四號疏散門),Taipei,0.002047142896076776
+15,betweenness_primary,500113034,開封西寧路口,Taipei,0.0020317579768610733
+16,betweenness_primary,500106090,自來水園區,Taipei,0.0019693029336017936
+17,betweenness_primary,500103053,捷運中山站(5號出口),Taipei,0.0018810190068019837
+18,betweenness_primary,500113040,捷運龍山寺站(1號出口),Taipei,0.0018777786379036725
+19,betweenness_primary,500106062,捷運臺大醫院站(4號出口),Taipei,0.0018323014702688958
+20,betweenness_primary,500107059,捷運中山站(2號出口),Taipei,0.0018103045435800612
+1,eigenvector_primary,500103044,大稻埕碼頭,Taipei,0.04456740949936091
+2,eigenvector_primary,500223012,捷運淡水站,New Taipei,0.042849150095868906
+3,eigenvector_primary,500103009,捷運圓山站(1號出口),Taipei,0.04265303503614369
+4,eigenvector_primary,500106070,光華商場,Taipei,0.041950017668297666
+5,eigenvector_primary,500103030,永樂市場,Taipei,0.04160314476060565
+6,eigenvector_primary,500106067,臺北轉運站,Taipei,0.041324307358172024
+7,eigenvector_primary,500107059,捷運中山站(2號出口),Taipei,0.04109242868287534
+8,eigenvector_primary,500103028,捷運北門站(3號出口),Taipei,0.04100712222796891
+9,eigenvector_primary,500107036,捷運行天宮站(3號出口),Taipei,0.040625838628514446
+10,eigenvector_primary,500103027,捷運雙連站(2號出口),Taipei,0.04059955267546639
+11,eigenvector_primary,500106062,捷運臺大醫院站(4號出口),Taipei,0.04018267537433593
+12,eigenvector_primary,500106080,捷運臺北車站(M2出口),Taipei,0.040060753924431085
+13,eigenvector_primary,500103037,太原廣場,Taipei,0.039936388125349165
+14,eigenvector_primary,500112085,捷運市政府站(3號出口),Taipei,0.03987759503227147
+15,eigenvector_primary,500107024,捷運中山國中站,Taipei,0.0397482732319539
+16,eigenvector_primary,500106112,忠孝西重慶南路口,Taipei,0.039651039443903524
+17,eigenvector_primary,500110049,饒河疏散門(基四號疏散門),Taipei,0.039455938067336126
+18,eigenvector_primary,500107063,林森長春路口,Taipei,0.03932697305224986
+19,eigenvector_primary,500103053,捷運中山站(5號出口),Taipei,0.03931373142635819
+20,eigenvector_primary,500110044,捷運南京復興站(5號出口),Taipei,0.03924327476657206
+1,pagerank_primary,500101022,捷運公館站(2號出口),Taipei,0.005238356949521053
+2,pagerank_primary,500104108,捷運芝山站(2號出口)_1,Taipei,0.003916931653831529
+3,pagerank_primary,500109075,捷運北投站(1號出口),Taipei,0.0038414309323800003
+4,pagerank_primary,500101181,捷運公館站(3號出口),Taipei,0.0031720412400535677
+5,pagerank_primary,500107024,捷運中山國中站,Taipei,0.003017920946494639
+6,pagerank_primary,500103009,捷運圓山站(1號出口),Taipei,0.0028776662451928483
+7,pagerank_primary,500107008,捷運劍南路站(2號出口),Taipei,0.00287254049353685
+8,pagerank_primary,500101001,捷運科技大樓站,Taipei,0.002846151830032564
+9,pagerank_primary,500113040,捷運龍山寺站(1號出口),Taipei,0.0028388563233356467
+10,pagerank_primary,500112049,松山車站,Taipei,0.0027122962529620657
+11,pagerank_primary,500112070,捷運永春站(2號出口),Taipei,0.002570328646056054
+12,pagerank_primary,500109025,捷運奇岩站(三合街),Taipei,0.0023670853531446512
+13,pagerank_primary,500107036,捷運行天宮站(3號出口),Taipei,0.0023636136817444843
+14,pagerank_primary,500104046,捷運芝山站(1號出口),Taipei,0.002316428177351195
+15,pagerank_primary,500101101,捷運六張犁站,Taipei,0.00228980590940468
+16,pagerank_primary,500112081,松仁路95巷口,Taipei,0.002267623210475943
+17,pagerank_primary,500110007,捷運南京三民站(1號出口),Taipei,0.002219968853650855
+18,pagerank_primary,500103044,大稻埕碼頭,Taipei,0.0022150859505300677
+19,pagerank_primary,500101109,臺灣師範大學(圖書館),Taipei,0.002183281513699903
+20,pagerank_primary,500101169,捷運信義安和站(4號出口),Taipei,0.0021700186622457436
+1,clustering_primary,500104109,銘傳大學(中山北路五段280巷口),Taipei,1.0
+2,clustering_primary,500104123,劍潭海外青年活動中心(志清大樓),Taipei,1.0
+3,clustering_primary,500104131,重慶北路四段190巷口(通河西街側),Taipei,1.0
+4,clustering_primary,500109099,捷運石牌站(2號出口)(西安街一段),Taipei,1.0
+5,clustering_primary,500201020,訊塘廣場(義民中華路口),New Taipei,1.0
+6,clustering_primary,500201021,八里停五平面停車場,New Taipei,1.0
+7,clustering_primary,500202004,三芝兒一公園,New Taipei,1.0
+8,clustering_primary,500203112,光復興德路口(東南側),New Taipei,1.0
+9,clustering_primary,500203113,光復路二段42巷口,New Taipei,1.0
+10,clustering_primary,500203123,三和國中(自強路三段110巷),New Taipei,1.0
+11,clustering_primary,500203124,頂崁街210巷28弄口,New Taipei,1.0
+12,clustering_primary,500203125,河邊北街100巷口,New Taipei,1.0
+13,clustering_primary,500205007,中園國小,New Taipei,1.0
+14,clustering_primary,500205014,臺北大學(音律資訊大樓),New Taipei,1.0
+15,clustering_primary,500205021,新北市客家文化園區,New Taipei,1.0
+16,clustering_primary,500205024,大智中山路口,New Taipei,1.0
+17,clustering_primary,500205035,臺北大學宿舍(學成路),New Taipei,1.0
+18,clustering_primary,500205036,國際二國學街口,New Taipei,1.0
+19,clustering_primary,500205042,溪東市民活動中心,New Taipei,1.0
+20,clustering_primary,500205048,中園街福隆宮,New Taipei,1.0

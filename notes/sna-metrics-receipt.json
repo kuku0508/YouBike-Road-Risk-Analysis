@@ -1,0 +1,142 @@
+{
+  "contract_sha256": "8e4a309de1d1177178b8312f89c6dba7ddc19b57b2cd3c7ad59b1891c470ea96",
+  "contract_version": "network-metric-contract-v1",
+  "convergence_status": "all_converged",
+  "core_od_sha256": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+  "cumulative_metric_runtime_seconds": 2997.6700603000354,
+  "edge_count": 1125519,
+  "finalization_invocation_runtime_seconds": 9.215672599966638,
+  "formal_metrics_complete": true,
+  "networkx_version": "3.4.2",
+  "node_count": 2782,
+  "numeric_tolerances": {
+    "eigenvector_squared_norm": 1e-06,
+    "pagerank_sum": 1e-08
+  },
+  "output_bytes": 292449,
+  "output_sha256": "a31ade358f59529ca8d5784bd0151aa17be6894b3a39194322534659dd27fe72",
+  "peak_working_set_bytes": 1718120448,
+  "per_metric_parameters": {
+    "betweenness_inverse_flow": {
+      "distance": "1/trip_count",
+      "endpoints": false,
+      "exact": true,
+      "normalized": true,
+      "self_loops": "excluded"
+    },
+    "betweenness_log_inverse_flow": {
+      "distance": "1/log1p(trip_count)",
+      "endpoints": false,
+      "exact": true,
+      "normalized": true,
+      "self_loops": "excluded"
+    },
+    "betweenness_primary": {
+      "directed": true,
+      "endpoints": false,
+      "exact": true,
+      "normalized": true,
+      "self_loops": "excluded",
+      "weight": null
+    },
+    "clustering_directed": {
+      "graph": "directed",
+      "self_loops": "excluded",
+      "weight": null
+    },
+    "clustering_primary": {
+      "graph": "undirected_simple_projection",
+      "self_loops": "excluded",
+      "weight": null
+    },
+    "clustering_weighted": {
+      "graph": "undirected_reciprocal_sum",
+      "self_loops": "excluded",
+      "weight": "trip_count"
+    },
+    "eigenvector_primary": {
+      "directed_semantics": "left_predecessor",
+      "max_iter": 1000,
+      "self_loops": "excluded",
+      "tol": 1e-09,
+      "weight": null
+    },
+    "eigenvector_reverse": {
+      "directed_semantics": "right_via_reversed_graph",
+      "max_iter": 1000,
+      "self_loops": "excluded",
+      "tol": 1e-09,
+      "weight": null
+    },
+    "eigenvector_weighted": {
+      "directed_semantics": "left_predecessor",
+      "max_iter": 1000,
+      "self_loops": "excluded",
+      "tol": 1e-09,
+      "weight": "trip_count"
+    },
+    "pagerank_primary": {
+      "alpha": 0.85,
+      "dangling": "uniform",
+      "max_iter": 1000,
+      "personalization": "uniform",
+      "self_loops": "included",
+      "tol": 1e-09,
+      "weight": "trip_count"
+    },
+    "pagerank_unweighted": {
+      "alpha": 0.85,
+      "dangling": "uniform",
+      "max_iter": 1000,
+      "personalization": "uniform",
+      "self_loops": "included",
+      "tol": 1e-09,
+      "weight": null
+    },
+    "strength": {
+      "normalization": "none",
+      "self_loops": "included",
+      "weight": "trip_count"
+    }
+  },
+  "per_metric_runtime_seconds": {
+    "betweenness_inverse_flow": 678.240633099922,
+    "betweenness_log_inverse_flow": 582.0565946999704,
+    "betweenness_primary": 226.88111640000716,
+    "clustering_directed": 574.7902243999997,
+    "clustering_primary": 138.72811290004756,
+    "clustering_weighted": 752.2159963999875,
+    "eigenvector_primary": 1.779833700042218,
+    "eigenvector_reverse": 4.53907459997572,
+    "eigenvector_weighted": 33.5381707000779,
+    "pagerank_primary": 2.6275706000160426,
+    "pagerank_unweighted": 2.2727327999891713
+  },
+  "pipeline_version": "core-sna-metrics-v1",
+  "self_loop_edges": 1504,
+  "validation": {
+    "all_finite": true,
+    "betweenness_inverse_flow_range": true,
+    "betweenness_log_inverse_flow_range": true,
+    "betweenness_primary_range": true,
+    "clustering_directed_range": true,
+    "clustering_primary_range": true,
+    "clustering_weighted_range": true,
+    "eigenvector_primary_norm": true,
+    "eigenvector_reverse_norm": true,
+    "eigenvector_weighted_norm": true,
+    "in_strength_conservation": true,
+    "in_strength_nonnegative_integer": true,
+    "no_nan": true,
+    "node_count_2782": true,
+    "out_strength_conservation": true,
+    "out_strength_nonnegative_integer": true,
+    "pagerank_primary_sum": true,
+    "pagerank_unweighted_sum": true,
+    "station_id_unique": true,
+    "total_strength_conservation": true,
+    "total_strength_nonnegative_integer": true
+  },
+  "validation_status": "passed",
+  "weight_sum": 91138763
+}

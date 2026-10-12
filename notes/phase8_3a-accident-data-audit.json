@@ -1,0 +1,3004 @@
+{
+  "contract_version": "accident-input-audit-v1",
+  "generated_at_utc": "2026-09-22T11:53:04+00:00",
+  "audit_mode": "read_only_no_spatial_matching",
+  "official_metadata_checked": {
+    "accident_dataset": {
+      "url": "https://data.taipei/dataset/detail?id=2f238b4f-1b27-4085-93e9-d684ef0e2735",
+      "provider": "Taipei City Police Department Traffic Police Division",
+      "confirmed": [
+        "dataset supplies Taipei casualty traffic accident details",
+        "X/Y are coordinate-point fields"
+      ],
+      "not_confirmed": [
+        "coordinate reference system",
+        "accident-level identifier",
+        "one-row-per-accident grain"
+      ]
+    },
+    "road_dataset": {
+      "url": "https://data.taipei/dataset/detail?id=ee2e4015-8844-48fb-aa57-31209909b0fc",
+      "provider": "Taipei City Public Works Department New Construction Office",
+      "confirmed": [
+        "roads wider than 8 metres",
+        "built from the 2014-2016 survey project",
+        "TWD97 coordinate system",
+        "published field list agrees with local DBF"
+      ]
+    }
+  },
+  "accident_files": {
+    "112": {
+      "path": "data/raw/112年-臺北市死傷交通事故明細.csv",
+      "size_bytes": 10228496,
+      "sha256": "448859d4191d6c4014583466dd9e6f13b481cc80a0a0ebf3ae00ab2613300ba9",
+      "encoding": "UTF-8 with BOM",
+      "bom": true,
+      "delimiter": ",",
+      "duplicate_column_names": [],
+      "completely_empty_rows": 0,
+      "malformed_row_count": 0,
+      "parsing_warnings": [],
+      "row_count": 56139,
+      "column_count": 50,
+      "header": [
+        "發生年度",
+        "發生月",
+        "發生日",
+        "發生時-Hours",
+        "發生分",
+        "區序",
+        "肇事地點",
+        "死亡人數",
+        "2-30日死亡人數",
+        "受傷人數",
+        "當事人序號",
+        "車種",
+        "天候",
+        "光線",
+        "道路類別",
+        "速限-速度限制",
+        "道路型態",
+        "事故位置",
+        "路面狀況1",
+        "路面狀況2",
+        "路面狀況3",
+        "道路障礙1",
+        "道路障礙2",
+        "號誌1",
+        "號誌2",
+        "車道劃分-分向",
+        "車道劃分-分道1",
+        "車道劃分-分道2",
+        "車道劃分-分道3",
+        "事故類型及型態",
+        "性別",
+        "年齡",
+        "受傷程度",
+        "主要傷處",
+        "保護裝置",
+        "行動電話",
+        "車輛用途",
+        "當事者行動狀態",
+        "駕駛資格情形",
+        "駕駛執照種類",
+        "飲酒情形",
+        "車輛撞擊部位1",
+        "車輛撞擊部位2",
+        "肇因碼-個別",
+        "肇因碼-主要",
+        "個人肇逃否",
+        "職業",
+        "旅次目的",
+        "座標-X",
+        "座標-Y"
+      ],
+      "exact_duplicate_row_count": 0,
+      "column_profiles": [
+        {
+          "column": "發生年度",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 1,
+          "representative_values": [
+            "112"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生月",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 12,
+          "representative_values": [
+            "01",
+            "02",
+            "03"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生日",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 31,
+          "representative_values": [
+            "01",
+            "02",
+            "03"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生時-Hours",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 24,
+          "representative_values": [
+            "00",
+            "01",
+            "02"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生分",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 60,
+          "representative_values": [
+            "00",
+            "01",
+            "02"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "區序",
+          "inferred_dtype": "string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 12,
+          "representative_values": [
+            "01大同區",
+            "02萬華區",
+            "03中山區"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "肇事地點",
+          "inferred_dtype": "string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 16387,
+          "representative_values": [
+            "(中央南路1段63號前)",
+            "(中華路1段89號前)",
+            "(中華路一段192號前)"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "死亡人數",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56130,
+          "null_count": 9,
+          "null_rate": 0.00016031635761235504,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "0",
+            "1"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "2-30日死亡人數",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56130,
+          "null_count": 9,
+          "null_rate": 0.00016031635761235504,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "0",
+            "1"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "受傷人數",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56138,
+          "null_count": 1,
+          "null_rate": 1.7812928623595004e-05,
+          "distinct_non_null_count": 9,
+          "representative_values": [
+            "0",
+            "1",
+            "2"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "當事人序號",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 18,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": true,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車種",
+          "inferred_dtype": "string",
+          "non_null_count": 55119,
+          "null_count": 1020,
+          "null_rate": 0.018169187196066906,
+          "distinct_non_null_count": 40,
+          "representative_values": [
+            "33",
+            "A01",
+            "A02"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "天候",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56129,
+          "null_count": 10,
+          "null_rate": 0.00017812928623595005,
+          "distinct_non_null_count": 7,
+          "representative_values": [
+            "1",
+            "3",
+            "4"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "光線",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 7,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路類別",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 6,
+          "representative_values": [
+            "3",
+            "4",
+            "5"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "速限-速度限制",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56133,
+          "null_count": 6,
+          "null_rate": 0.00010687757174157004,
+          "distinct_non_null_count": 11,
+          "representative_values": [
+            "0",
+            "15",
+            "20"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路型態",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 17,
+          "representative_values": [
+            "10",
+            "11",
+            "12"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "事故位置",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 23,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "路面狀況1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 4,
+          "representative_values": [
+            "1",
+            "2",
+            "4"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "路面狀況2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "路面狀況3",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路障礙1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 6,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路障礙2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 13,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "號誌1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 4,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "號誌2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 4,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分向",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 10,
+          "representative_values": [
+            "1",
+            "10",
+            "2"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分道1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分道2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分道3",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "1",
+            "2"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "事故類型及型態",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56126,
+          "null_count": 13,
+          "null_rate": 0.00023156807210673506,
+          "distinct_non_null_count": 30,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "性別",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56139,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 4,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "年齡",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56118,
+          "null_count": 21,
+          "null_rate": 0.0003740715010954951,
+          "distinct_non_null_count": 107,
+          "representative_values": [
+            "0",
+            "1",
+            "10"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "受傷程度",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54817,
+          "null_count": 1322,
+          "null_rate": 0.023548691640392597,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "主要傷處",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54817,
+          "null_count": 1322,
+          "null_rate": 0.023548691640392597,
+          "distinct_non_null_count": 11,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "保護裝置",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54795,
+          "null_count": 1344,
+          "null_rate": 0.023940576070111685,
+          "distinct_non_null_count": 7,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "行動電話",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54796,
+          "null_count": 1343,
+          "null_rate": 0.023922763141488092,
+          "distinct_non_null_count": 8,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車輛用途",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54807,
+          "null_count": 1332,
+          "null_rate": 0.023726820926628547,
+          "distinct_non_null_count": 8,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "當事者行動狀態",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54804,
+          "null_count": 1335,
+          "null_rate": 0.023780259712499332,
+          "distinct_non_null_count": 21,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "駕駛資格情形",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54809,
+          "null_count": 1330,
+          "null_rate": 0.023691195069381357,
+          "distinct_non_null_count": 8,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "駕駛執照種類",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54788,
+          "null_count": 1351,
+          "null_rate": 0.02406526657047685,
+          "distinct_non_null_count": 19,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "飲酒情形",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 55239,
+          "null_count": 900,
+          "null_rate": 0.016031635761235504,
+          "distinct_non_null_count": 11,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車輛撞擊部位1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54808,
+          "null_count": 1331,
+          "null_rate": 0.023709007998004954,
+          "distinct_non_null_count": 17,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車輛撞擊部位2",
+          "inferred_dtype": "string",
+          "non_null_count": 462,
+          "null_count": 55677,
+          "null_rate": 0.9917704269758991,
+          "distinct_non_null_count": 15,
+          "representative_values": [
+            "1",
+            "11",
+            "12"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "肇因碼-個別",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 55498,
+          "null_count": 641,
+          "null_rate": 0.011418087247724399,
+          "distinct_non_null_count": 119,
+          "representative_values": [
+            "1",
+            "10",
+            "100"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "肇因碼-主要",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 1,
+          "null_count": 56138,
+          "null_rate": 0.9999821870713764,
+          "distinct_non_null_count": 1,
+          "representative_values": [
+            "13"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "個人肇逃否",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 56093,
+          "null_count": 46,
+          "null_rate": 0.0008193947166853702,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "1",
+            "2"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "職業",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 54787,
+          "null_count": 1352,
+          "null_rate": 0.02408307949910045,
+          "distinct_non_null_count": 29,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "旅次目的",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 28373,
+          "null_count": 27766,
+          "null_rate": 0.4945937761627389,
+          "distinct_non_null_count": 9,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "座標-X",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 56136,
+          "null_count": 3,
+          "null_rate": 5.343878587078502e-05,
+          "distinct_non_null_count": 23669,
+          "representative_values": [
+            "121.4538759",
+            "121.4620965",
+            "121.4622087"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": true,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "座標-Y",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 56136,
+          "null_count": 3,
+          "null_rate": 5.343878587078502e-05,
+          "distinct_non_null_count": 23824,
+          "representative_values": [
+            "24.96470622",
+            "24.96628975",
+            "24.96663015"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": true,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        }
+      ],
+      "temporal_audit": {
+        "status": "parsed_by_documented_roc_year_plus_1911_rule",
+        "minimum_datetime": "2023-01-01T00:46",
+        "maximum_datetime": "2023-12-31T23:23",
+        "missing_datetime_records": 0,
+        "invalid_datetime_records": 0,
+        "records_by_month": {
+          "2023-01": 4662,
+          "2023-02": 4578,
+          "2023-03": 5526,
+          "2023-04": 4665,
+          "2023-05": 5016,
+          "2023-06": 4494,
+          "2023-07": 4423,
+          "2023-08": 4434,
+          "2023-09": 4419,
+          "2023-10": 4441,
+          "2023-11": 4823,
+          "2023-12": 4658
+        },
+        "western_years": [
+          2023
+        ]
+      },
+      "coordinate_audit": {
+        "status": "audited",
+        "coordinate_columns": [
+          "座標-X",
+          "座標-Y"
+        ],
+        "complete_coordinate_records": 56136,
+        "complete_coordinate_rate": 0.9999465612141292,
+        "missing_either_coordinate_records": 3,
+        "missing_both_coordinate_records": 3,
+        "invalid_numeric_coordinate_records": 0,
+        "zero_coordinate_records": 0,
+        "unique_coordinate_pairs": 23984,
+        "duplicate_coordinate_pairs": 23982,
+        "records_in_duplicated_coordinate_pairs": 56134,
+        "maximum_coordinate_multiplicity": 35,
+        "x_min": 121.4538759,
+        "x_max": 121.6446712,
+        "y_min": 24.96470622,
+        "y_max": 25.18811674,
+        "decimal_place_distribution_across_values": {
+          "1": 2,
+          "3": 13,
+          "4": 71,
+          "5": 867,
+          "6": 8060,
+          "7": 79597,
+          "8": 23662
+        },
+        "candidate_crs": "WGS84 / EPSG:4326",
+        "crs_status": "candidate_from_numeric_range_only"
+      },
+      "accident_entity_audit": {
+        "status": "heuristic_only_no_accident_id",
+        "heuristic_group_columns": [
+          "發生年度",
+          "發生月",
+          "發生日",
+          "發生時-Hours",
+          "發生分",
+          "區序",
+          "肇事地點",
+          "座標-X",
+          "座標-Y"
+        ],
+        "heuristic_group_count": 24331,
+        "records_per_heuristic_group_distribution": {
+          "1": 2,
+          "2": 18605,
+          "3": 4562,
+          "4": 830,
+          "5": 191,
+          "6": 88,
+          "7": 26,
+          "8": 14,
+          "9": 6,
+          "10": 2,
+          "11": 2,
+          "12": 1,
+          "18": 2
+        },
+        "maximum_records_per_heuristic_group": 18,
+        "heuristic_groups_with_multiple_records": 24329,
+        "heuristic_groups_with_contiguous_party_sequence": 24328,
+        "heuristic_groups_with_noncontiguous_or_invalid_party_sequence": 3,
+        "heuristic_groups_with_consistent_casualty_counts": 24330,
+        "heuristic_groups_with_inconsistent_casualty_counts": 1
+      },
+      "row_unit_finding": "party-level record supported by party sequence and party attributes; not one row per accident",
+      "accident_id_finding": "no explicit reliable accident identifier observed",
+      "severity_fields": [
+        "死亡人數",
+        "2-30日死亡人數",
+        "受傷人數",
+        "受傷程度"
+      ],
+      "severity_audit": {
+        "casualty_count_fields": {
+          "死亡人數": {
+            "null_count": 9,
+            "invalid_numeric_count": 0,
+            "minimum": 0,
+            "maximum": 1,
+            "record_level_distribution": {
+              "": 9,
+              "0": 55970,
+              "1": 160
+            }
+          },
+          "2-30日死亡人數": {
+            "null_count": 9,
+            "invalid_numeric_count": 0,
+            "minimum": 0,
+            "maximum": 1,
+            "record_level_distribution": {
+              "": 9,
+              "0": 56094,
+              "1": 36
+            }
+          },
+          "受傷人數": {
+            "null_count": 1,
+            "invalid_numeric_count": 0,
+            "minimum": 0,
+            "maximum": 8,
+            "record_level_distribution": {
+              "": 1,
+              "0": 115,
+              "1": 37279,
+              "2": 14473,
+              "3": 3336,
+              "4": 681,
+              "5": 168,
+              "6": 53,
+              "7": 25,
+              "8": 8
+            }
+          }
+        },
+        "party_injury_field_present": true,
+        "explicit_a1_a2_a3_field_present": false,
+        "property_damage_field_present": false,
+        "epdo_support": "incomplete: casualty counts exist at repeated party-row grain, no reliable accident ID, and no property-damage field/population"
+      },
+      "property_damage_field_present": false
+    },
+    "113": {
+      "path": "data/raw/113年-臺北市死傷交通事故明細.csv",
+      "size_bytes": 9398043,
+      "sha256": "b6ad23f05658531998f34ba4995a190d03872940ea48013115da89bb2a4e92c5",
+      "encoding": "UTF-8 with BOM",
+      "bom": true,
+      "delimiter": ",",
+      "duplicate_column_names": [],
+      "completely_empty_rows": 0,
+      "malformed_row_count": 0,
+      "parsing_warnings": [],
+      "row_count": 51810,
+      "column_count": 49,
+      "header": [
+        "發生年度",
+        "發生月",
+        "發生日",
+        "發生時-Hours",
+        "發生分",
+        "區序",
+        "肇事地點",
+        "死亡人數",
+        "2-30日死亡人數",
+        "受傷人數",
+        "當事人序號",
+        "車種",
+        "天候",
+        "道路照明設備",
+        "道路類別",
+        "速限-速度限制",
+        "道路型態",
+        "事故位置",
+        "路面狀況1",
+        "路面狀況2",
+        "路面狀況3",
+        "道路障礙1",
+        "道路障礙2",
+        "號誌1",
+        "號誌2",
+        "車道劃分-分向",
+        "車道劃分-分道1",
+        "車道劃分-分道2",
+        "車道劃分-分道3",
+        "事故類型及型態",
+        "性別",
+        "年齡",
+        "受傷程度",
+        "主要傷處",
+        "保護裝置",
+        "行動電話",
+        "車輛用途",
+        "當事者行動狀態",
+        "駕駛資格情形",
+        "駕駛執照種類",
+        "飲酒情形",
+        "車輛撞擊部位1",
+        "車輛撞擊部位2",
+        "肇因碼-個別",
+        "肇因碼-主要",
+        "個人肇逃否",
+        "職業",
+        "座標-X",
+        "座標-Y"
+      ],
+      "exact_duplicate_row_count": 0,
+      "column_profiles": [
+        {
+          "column": "發生年度",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 1,
+          "representative_values": [
+            "113"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生月",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 12,
+          "representative_values": [
+            "01",
+            "02",
+            "03"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生日",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 31,
+          "representative_values": [
+            "01",
+            "02",
+            "03"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生時-Hours",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 24,
+          "representative_values": [
+            "00",
+            "01",
+            "02"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "發生分",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 60,
+          "representative_values": [
+            "00",
+            "01",
+            "02"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "區序",
+          "inferred_dtype": "string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 12,
+          "representative_values": [
+            "01大同區",
+            "02萬華區",
+            "03中山區"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "肇事地點",
+          "inferred_dtype": "string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 15144,
+          "representative_values": [
+            "(中山北路1段58號前)",
+            "(信義路5段150巷431弄20號前)",
+            "(光復南路419號前)"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "死亡人數",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 3,
+          "representative_values": [
+            "0",
+            "1",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "2-30日死亡人數",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "0",
+            "1"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "受傷人數",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51808,
+          "null_count": 2,
+          "null_rate": 3.860258637328701e-05,
+          "distinct_non_null_count": 12,
+          "representative_values": [
+            "0",
+            "1",
+            "13"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "當事人序號",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 27,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": true,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車種",
+          "inferred_dtype": "string",
+          "non_null_count": 50890,
+          "null_count": 920,
+          "null_rate": 0.017757189731712024,
+          "distinct_non_null_count": 42,
+          "representative_values": [
+            "A01",
+            "A02",
+            "A03"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "天候",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "5",
+            "6",
+            "7"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路照明設備",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 3,
+          "representative_values": [
+            "5",
+            "6",
+            "7"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路類別",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 6,
+          "representative_values": [
+            "4",
+            "5",
+            "6"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "速限-速度限制",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51808,
+          "null_count": 2,
+          "null_rate": 3.860258637328701e-05,
+          "distinct_non_null_count": 13,
+          "representative_values": [
+            "0",
+            "10",
+            "15"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路型態",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 14,
+          "representative_values": [
+            "10",
+            "11",
+            "12"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "事故位置",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 22,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "路面狀況1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "路面狀況2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "路面狀況3",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 4,
+          "representative_values": [
+            "1",
+            "3",
+            "4"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路障礙1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 6,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "道路障礙2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 6,
+          "representative_values": [
+            "10",
+            "11",
+            "12"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": true,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "號誌1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 4,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "號誌2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 4,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分向",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 10,
+          "representative_values": [
+            "1",
+            "10",
+            "2"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分道1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分道2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車道劃分-分道3",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "1",
+            "2"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "事故類型及型態",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51791,
+          "null_count": 19,
+          "null_rate": 0.0003667245705462266,
+          "distinct_non_null_count": 30,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "性別",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51810,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "年齡",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51723,
+          "null_count": 87,
+          "null_rate": 0.001679212507237985,
+          "distinct_non_null_count": 102,
+          "representative_values": [
+            "-1",
+            "0",
+            "1"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": true,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "受傷程度",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50443,
+          "null_count": 1367,
+          "null_rate": 0.026384867786141672,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": true
+        },
+        {
+          "column": "主要傷處",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50443,
+          "null_count": 1367,
+          "null_rate": 0.026384867786141672,
+          "distinct_non_null_count": 11,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "保護裝置",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50437,
+          "null_count": 1373,
+          "null_rate": 0.02650067554526153,
+          "distinct_non_null_count": 6,
+          "representative_values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "行動電話",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50440,
+          "null_count": 1370,
+          "null_rate": 0.026442771665701602,
+          "distinct_non_null_count": 5,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車輛用途",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50446,
+          "null_count": 1364,
+          "null_rate": 0.026326963906581742,
+          "distinct_non_null_count": 7,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "當事者行動狀態",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50444,
+          "null_count": 1366,
+          "null_rate": 0.026365566492955027,
+          "distinct_non_null_count": 21,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "駕駛資格情形",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50448,
+          "null_count": 1362,
+          "null_rate": 0.026288361320208453,
+          "distinct_non_null_count": 7,
+          "representative_values": [
+            "1",
+            "2",
+            "3"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "駕駛執照種類",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50428,
+          "null_count": 1382,
+          "null_rate": 0.026674387183941325,
+          "distinct_non_null_count": 20,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "飲酒情形",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50726,
+          "null_count": 1084,
+          "null_rate": 0.02092260181432156,
+          "distinct_non_null_count": 11,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車輛撞擊部位1",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50437,
+          "null_count": 1373,
+          "null_rate": 0.02650067554526153,
+          "distinct_non_null_count": 17,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "車輛撞擊部位2",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 497,
+          "null_count": 51313,
+          "null_rate": 0.9904072572862381,
+          "distinct_non_null_count": 15,
+          "representative_values": [
+            "1",
+            "10",
+            "11"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "肇因碼-個別",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51764,
+          "null_count": 46,
+          "null_rate": 0.0008878594865856012,
+          "distinct_non_null_count": 111,
+          "representative_values": [
+            "1",
+            "10",
+            "100"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "肇因碼-主要",
+          "inferred_dtype": "empty",
+          "non_null_count": 0,
+          "null_count": 51810,
+          "null_rate": 1.0,
+          "distinct_non_null_count": 0,
+          "representative_values": [],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "個人肇逃否",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 51700,
+          "null_count": 110,
+          "null_rate": 0.0021231422505307855,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "1",
+            "2"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "職業",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 50433,
+          "null_count": 1377,
+          "null_rate": 0.026577880718008106,
+          "distinct_non_null_count": 13,
+          "representative_values": [
+            "14",
+            "15",
+            "16"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "座標-X",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 51808,
+          "null_count": 2,
+          "null_rate": 3.860258637328701e-05,
+          "distinct_non_null_count": 21952,
+          "representative_values": [
+            "121.4611893",
+            "121.4619842",
+            "121.4621867"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": true,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "座標-Y",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 51808,
+          "null_count": 2,
+          "null_rate": 3.860258637328701e-05,
+          "distinct_non_null_count": 22042,
+          "representative_values": [
+            "24.96671237",
+            "24.96693308",
+            "24.9693091"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": true,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        }
+      ],
+      "temporal_audit": {
+        "status": "parsed_by_documented_roc_year_plus_1911_rule",
+        "minimum_datetime": "2024-01-01T00:22",
+        "maximum_datetime": "2024-12-31T23:46",
+        "missing_datetime_records": 0,
+        "invalid_datetime_records": 0,
+        "records_by_month": {
+          "2024-01": 4800,
+          "2024-02": 3733,
+          "2024-03": 4479,
+          "2024-04": 4098,
+          "2024-05": 4492,
+          "2024-06": 4137,
+          "2024-07": 4235,
+          "2024-08": 4465,
+          "2024-09": 4424,
+          "2024-10": 3922,
+          "2024-11": 4347,
+          "2024-12": 4678
+        },
+        "western_years": [
+          2024
+        ]
+      },
+      "coordinate_audit": {
+        "status": "audited",
+        "coordinate_columns": [
+          "座標-X",
+          "座標-Y"
+        ],
+        "complete_coordinate_records": 51808,
+        "complete_coordinate_rate": 0.9999613974136267,
+        "missing_either_coordinate_records": 2,
+        "missing_both_coordinate_records": 2,
+        "invalid_numeric_coordinate_records": 0,
+        "zero_coordinate_records": 0,
+        "unique_coordinate_pairs": 22237,
+        "duplicate_coordinate_pairs": 22236,
+        "records_in_duplicated_coordinate_pairs": 51807,
+        "maximum_coordinate_multiplicity": 74,
+        "x_min": 121.4611893,
+        "x_max": 121.6433699,
+        "y_min": 24.96671237,
+        "y_max": 25.18824608,
+        "decimal_place_distribution_across_values": {
+          "3": 9,
+          "4": 70,
+          "5": 910,
+          "6": 8211,
+          "7": 81672,
+          "8": 12744
+        },
+        "candidate_crs": "WGS84 / EPSG:4326",
+        "crs_status": "candidate_from_numeric_range_only"
+      },
+      "accident_entity_audit": {
+        "status": "heuristic_only_no_accident_id",
+        "heuristic_group_columns": [
+          "發生年度",
+          "發生月",
+          "發生日",
+          "發生時-Hours",
+          "發生分",
+          "區序",
+          "肇事地點",
+          "座標-X",
+          "座標-Y"
+        ],
+        "heuristic_group_count": 22368,
+        "records_per_heuristic_group_distribution": {
+          "1": 1,
+          "2": 17128,
+          "3": 4135,
+          "4": 754,
+          "5": 211,
+          "6": 66,
+          "7": 27,
+          "8": 14,
+          "9": 10,
+          "10": 8,
+          "11": 1,
+          "12": 5,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 2,
+          "18": 1,
+          "20": 1,
+          "27": 1
+        },
+        "maximum_records_per_heuristic_group": 27,
+        "heuristic_groups_with_multiple_records": 22367,
+        "heuristic_groups_with_contiguous_party_sequence": 22368,
+        "heuristic_groups_with_noncontiguous_or_invalid_party_sequence": 0,
+        "heuristic_groups_with_consistent_casualty_counts": 22368,
+        "heuristic_groups_with_inconsistent_casualty_counts": 0
+      },
+      "row_unit_finding": "party-level record supported by party sequence and party attributes; not one row per accident",
+      "accident_id_finding": "no explicit reliable accident identifier observed",
+      "severity_fields": [
+        "死亡人數",
+        "2-30日死亡人數",
+        "受傷人數",
+        "受傷程度"
+      ],
+      "severity_audit": {
+        "casualty_count_fields": {
+          "死亡人數": {
+            "null_count": 19,
+            "invalid_numeric_count": 0,
+            "minimum": 0,
+            "maximum": 3,
+            "record_level_distribution": {
+              "": 19,
+              "0": 51590,
+              "1": 194,
+              "3": 7
+            }
+          },
+          "2-30日死亡人數": {
+            "null_count": 19,
+            "invalid_numeric_count": 0,
+            "minimum": 0,
+            "maximum": 1,
+            "record_level_distribution": {
+              "": 19,
+              "0": 51783,
+              "1": 8
+            }
+          },
+          "受傷人數": {
+            "null_count": 2,
+            "invalid_numeric_count": 0,
+            "minimum": 0,
+            "maximum": 26,
+            "record_level_distribution": {
+              "": 2,
+              "0": 122,
+              "1": 34828,
+              "13": 14,
+              "16": 18,
+              "2": 13265,
+              "26": 27,
+              "3": 2748,
+              "4": 566,
+              "5": 129,
+              "6": 52,
+              "7": 19,
+              "9": 20
+            }
+          }
+        },
+        "party_injury_field_present": true,
+        "explicit_a1_a2_a3_field_present": false,
+        "property_damage_field_present": false,
+        "epdo_support": "incomplete: casualty counts exist at repeated party-row grain, no reliable accident ID, and no property-damage field/population"
+      },
+      "property_damage_field_present": false
+    }
+  },
+  "schema_compatibility": {
+    "safe_to_blindly_stack": false,
+    "common_columns": [
+      "發生年度",
+      "發生月",
+      "發生日",
+      "發生時-Hours",
+      "發生分",
+      "區序",
+      "肇事地點",
+      "死亡人數",
+      "2-30日死亡人數",
+      "受傷人數",
+      "當事人序號",
+      "車種",
+      "天候",
+      "道路類別",
+      "速限-速度限制",
+      "道路型態",
+      "事故位置",
+      "路面狀況1",
+      "路面狀況2",
+      "路面狀況3",
+      "道路障礙1",
+      "道路障礙2",
+      "號誌1",
+      "號誌2",
+      "車道劃分-分向",
+      "車道劃分-分道1",
+      "車道劃分-分道2",
+      "車道劃分-分道3",
+      "事故類型及型態",
+      "性別",
+      "年齡",
+      "受傷程度",
+      "主要傷處",
+      "保護裝置",
+      "行動電話",
+      "車輛用途",
+      "當事者行動狀態",
+      "駕駛資格情形",
+      "駕駛執照種類",
+      "飲酒情形",
+      "車輛撞擊部位1",
+      "車輛撞擊部位2",
+      "肇因碼-個別",
+      "肇因碼-主要",
+      "個人肇逃否",
+      "職業",
+      "座標-X",
+      "座標-Y"
+    ],
+    "only_first_year": [
+      "光線",
+      "旅次目的"
+    ],
+    "only_second_year": [
+      "道路照明設備"
+    ],
+    "same_order_for_common_columns": true,
+    "candidate_canonicalization": "requires explicit review of 光線 vs 道路照明設備 and 112-only 旅次目的; not executed"
+  },
+  "road_reference": {
+    "directory": "data/raw/8mroadup",
+    "components": [
+      {
+        "name": "Road.cpg",
+        "size_bytes": 5,
+        "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+      },
+      {
+        "name": "Road.dbf",
+        "size_bytes": 7381252,
+        "sha256": "ba09baec6599844958b4bcb175b4ae7812f1abb58b23870ddf5b9357df88faf0"
+      },
+      {
+        "name": "Road.prj",
+        "size_bytes": 399,
+        "sha256": "8dac7d82ea889063f9eaa7df408fcaeb7307d32831ea973b6534d0139a4523c5"
+      },
+      {
+        "name": "Road.qmd",
+        "size_bytes": 678,
+        "sha256": "f791e1df3232d397b1eb4a2bbff8ea9f0aebf675f2b753d65c0b0b16ec3a45cc"
+      },
+      {
+        "name": "Road.shp",
+        "size_bytes": 3962960,
+        "sha256": "d590a4f0ad0c463b97b0f47e95795a2737059d45a562faeb9ee4f86ae8af4ffc"
+      },
+      {
+        "name": "Road.shx",
+        "size_bytes": 107452,
+        "sha256": "f597d0747450d363b3c84ff6b8b53619fa2f2bdf43dd5bcf0f0250777267356b"
+      }
+    ],
+    "declared_encoding": "UTF-8",
+    "prj_wkt": "PROJCS[\"TWD_1997_TM_Taiwan\",GEOGCS[\"GCS_TWD_1997\",DATUM[\"D_TWD_1997\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",250000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",121.0],PARAMETER[\"Scale_Factor\",0.9999],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+    "crs": {
+      "status": "confirmed_from_prj",
+      "name": "TWD97 / TM2 zone 121",
+      "epsg": 3826
+    },
+    "shapefile": {
+      "file_code": 9994,
+      "version": 1000,
+      "declared_geometry_type": "Polygon",
+      "feature_count": 13419,
+      "geometry_type_counts": {
+        "Polygon": 13419
+      },
+      "bounding_box": [
+        296583.6732999999,
+        2763248.199100001,
+        313075.2282999996,
+        2785444.3727
+      ],
+      "empty_geometry_count": 0,
+      "structurally_invalid_geometry_count": 0,
+      "ogc_topology_validity": "unresolved_without_topology_engine"
+    },
+    "shx_feature_count": 13419,
+    "dbf": {
+      "declared_record_count": 13419,
+      "active_record_count": 13419,
+      "deleted_record_count": 0,
+      "header_length": 801,
+      "record_length": 550,
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "type": "N",
+          "length": 9,
+          "decimals": 0
+        },
+        {
+          "name": "ROADLENGHT",
+          "type": "N",
+          "length": 16,
+          "decimals": 11
+        },
+        {
+          "name": "ROADWIDTH",
+          "type": "N",
+          "length": 15,
+          "decimals": 11
+        },
+        {
+          "name": "ROAD_ID",
+          "type": "C",
+          "length": 50,
+          "decimals": 0
+        },
+        {
+          "name": "TT",
+          "type": "N",
+          "length": 4,
+          "decimals": 0
+        },
+        {
+          "name": "ROADNAME",
+          "type": "C",
+          "length": 30,
+          "decimals": 0
+        },
+        {
+          "name": "TOWNNAME",
+          "type": "C",
+          "length": 9,
+          "decimals": 0
+        },
+        {
+          "name": "OMISSION",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "POINT_X",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "POINT_Y",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "POINT_Z",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "SWALK_AREA",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "DITCH_AREA",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "CEN_MEDIAN",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "CAR_MEDIAN",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "ADMIN_NO",
+          "type": "N",
+          "length": 3,
+          "decimals": 0
+        },
+        {
+          "name": "ADMIT_DIR",
+          "type": "C",
+          "length": 10,
+          "decimals": 0
+        },
+        {
+          "name": "INTERSECT",
+          "type": "C",
+          "length": 137,
+          "decimals": 0
+        },
+        {
+          "name": "SHAPE_LENG",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "AVG",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "MAX",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "MIN",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "SHAPE_LE_1",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        },
+        {
+          "name": "SHAPE_AREA",
+          "type": "N",
+          "length": 19,
+          "decimals": 11
+        }
+      ],
+      "column_profiles": [
+        {
+          "column": "OBJECTID",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13419,
+          "representative_values": [
+            "1",
+            "10",
+            "100"
+          ],
+          "suspected_identifier": true,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "ROADLENGHT",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13003,
+          "representative_values": [
+            "0.00000000000",
+            "10.00080000000",
+            "10.00160000000"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "ROADWIDTH",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 7424,
+          "representative_values": [
+            "0.00000000000",
+            "10.00050000000",
+            "10.00130000000"
+          ],
+          "suspected_identifier": true,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "ROAD_ID",
+          "inferred_dtype": "string",
+          "non_null_count": 13418,
+          "null_count": 1,
+          "null_rate": 7.452120128176467e-05,
+          "distinct_non_null_count": 13418,
+          "representative_values": [
+            "100-001",
+            "100-002",
+            "100-003"
+          ],
+          "suspected_identifier": true,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "TT",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "0",
+            "1"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "ROADNAME",
+          "inferred_dtype": "string",
+          "non_null_count": 13418,
+          "null_count": 1,
+          "null_rate": 7.452120128176467e-05,
+          "distinct_non_null_count": 1720,
+          "representative_values": [
+            "103",
+            "104",
+            "105"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "TOWNNAME",
+          "inferred_dtype": "string",
+          "non_null_count": 13418,
+          "null_count": 1,
+          "null_rate": 7.452120128176467e-05,
+          "distinct_non_null_count": 12,
+          "representative_values": [
+            "中山區",
+            "中正區",
+            "信義區"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "OMISSION",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 2,
+          "representative_values": [
+            "0.00000000000",
+            "1.00000000000"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "POINT_X",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 5687,
+          "representative_values": [
+            "0.00000000000",
+            "300540.64371200000",
+            "300659.72563100000"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "POINT_Y",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 5699,
+          "representative_values": [
+            "0.00000000000",
+            "2763274.79897000000",
+            "2763346.83281000000"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "POINT_Z",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 1,
+          "representative_values": [
+            "0.00000000000"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "SWALK_AREA",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 9189,
+          "representative_values": [
+            "0.00000000000",
+            "0.00000841644",
+            "0.00002456792"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "DITCH_AREA",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 11917,
+          "representative_values": [
+            "0.00000000000",
+            "0.00001277383",
+            "0.00001351776"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "CEN_MEDIAN",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 2711,
+          "representative_values": [
+            "0.00000000000",
+            "0.00013244306",
+            "0.00063972845"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "CAR_MEDIAN",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 472,
+          "representative_values": [
+            "0.00000000000",
+            "0.00029231097",
+            "0.01147413033"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "ADMIN_NO",
+          "inferred_dtype": "integer-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 201,
+          "representative_values": [
+            "0",
+            "1",
+            "10"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "ADMIT_DIR",
+          "inferred_dtype": "string",
+          "non_null_count": 334,
+          "null_count": 13085,
+          "null_rate": 0.9751099187718906,
+          "distinct_non_null_count": 8,
+          "representative_values": [
+            "E",
+            "EN",
+            "ES"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "INTERSECT",
+          "inferred_dtype": "string",
+          "non_null_count": 13418,
+          "null_count": 1,
+          "null_rate": 7.452120128176467e-05,
+          "distinct_non_null_count": 13380,
+          "representative_values": [
+            "100-001,100-158",
+            "100-001,100-159",
+            "100-001,100-180"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "SHAPE_LENG",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13409,
+          "representative_values": [
+            "0.00000000000",
+            "10.02311651290",
+            "10.02580225590"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "AVG",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13409,
+          "representative_values": [
+            "0.00000000000",
+            "10.00081639700",
+            "10.00162620600"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "MAX",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13408,
+          "representative_values": [
+            "0.00000000000",
+            "10.00439045650",
+            "10.00475322320"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "MIN",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13403,
+          "representative_values": [
+            "0.00000000000",
+            "10.00044232780",
+            "10.00247149530"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "SHAPE_LE_1",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13419,
+          "representative_values": [
+            "100.02749476600",
+            "100.05555049400",
+            "100.08391374200"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        },
+        {
+          "column": "SHAPE_AREA",
+          "inferred_dtype": "numeric-like string",
+          "non_null_count": 13419,
+          "null_count": 0,
+          "null_rate": 0.0,
+          "distinct_non_null_count": 13419,
+          "representative_values": [
+            "100.03233337300",
+            "100.11846472400",
+            "100.12414918800"
+          ],
+          "suspected_identifier": false,
+          "suspected_date_or_time": false,
+          "suspected_coordinate": false,
+          "suspected_address_or_road": false,
+          "suspected_severity_or_casualty": false
+        }
+      ]
+    },
+    "road_id": {
+      "present": true,
+      "null_count": 1,
+      "distinct_non_null_count": 13418,
+      "duplicate_non_null_value_count": 0,
+      "unique_and_non_null": false
+    },
+    "roadwidth": {
+      "valid_numeric_count": 13419,
+      "invalid_or_null_count": 0,
+      "minimum": 0.0,
+      "maximum": 102.83
+    },
+    "tt_distribution": {
+      "0": 7667,
+      "1": 5752
+    },
+    "tt_observed_patterns": {
+      "0": {
+        "feature_count": 7667,
+        "roadwidth_min": 0.0,
+        "roadwidth_max": 102.83,
+        "intersect_values_containing_comma": 7171
+      },
+      "1": {
+        "feature_count": 5752,
+        "roadwidth_min": 0.0,
+        "roadwidth_max": 0.0,
+        "intersect_values_containing_comma": 5715
+      }
+    },
+    "intersect_non_null_count": 13418,
+    "tt_intersect_semantics": "unresolved_without_authoritative_field metadata"
+  },
+  "phase8_3b_readiness": {
+    "ready": false,
+    "status": "BLOCKED",
+    "blockers": [
+      "No explicit reliable accident ID; accident-level entity construction remains unresolved.",
+      "Accident coordinate CRS is only a WGS84/EPSG:4326 candidate from numeric range; no source metadata confirms it.",
+      "TT and INTERSECT semantics lack authoritative metadata.",
+      "Road polygon OGC topology validity is unresolved without a topology engine; binary structural checks alone passed or are reported.",
+      "The casualty-detail extracts have no property-damage field or demonstrated A3-only population, so complete EPDO is unsupported.",
+      "The road reference source explicitly covers roads wider than 8 metres, so it is not a complete Taipei street universe."
+    ],
+    "road_layer_candidate_use": "physical road polygon reference layer after metadata and topology limitations are resolved or explicitly contracted"
+  },
+  "prohibited_work_confirmed_not_performed": {
+    "accident_to_road_matching": false,
+    "accident_to_brouter_matching": false,
+    "distance_threshold_selected": false,
+    "epdo_calculated": false,
+    "cbi_calculated": false,
+    "risk_ranking_performed": false,
+    "phase8_3b_started": false,
+    "brouter_called": false
+  },
+  "audit_fingerprint_sha256": "0f0f75f6290c499346bf6d1b561b5be96208e37f6dd8d7c57f812c7db96f4491"
+}

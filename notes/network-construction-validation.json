@@ -1,0 +1,111 @@
+{
+  "contract_sha256": "8e4a309de1d1177178b8312f89c6dba7ddc19b57b2cd3c7ad59b1891c470ea96",
+  "contract_version": "network-metric-contract-v1",
+  "core_graph_integrity": {
+    "checks": {
+      "directed_simple_graph": true,
+      "edge_count": true,
+      "node_count": true,
+      "self_loop_edges": true,
+      "self_loop_trips": true,
+      "station_ids_present": true,
+      "unique_edges": true,
+      "weight_sum": true
+    },
+    "formal_core_metrics_computed": false,
+    "observed": {
+      "directed": true,
+      "duplicate_od_edges": 0,
+      "edge_count": 1125519,
+      "multigraph": false,
+      "node_count": 2782,
+      "null_station_ids": 0,
+      "self_loop_edges": 1504,
+      "self_loop_trips": 6023568,
+      "weight_sum": 91138763
+    },
+    "source_od_sha256": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+    "validation_status": "passed"
+  },
+  "scope_guard": {
+    "core_period": "2023/01-2024/12",
+    "full_core_centrality_computed": false
+  },
+  "synthetic_metric_validation": {
+    "betweenness_inverse_flow": {
+      "A": 0.0,
+      "B": 0.16666666666666666,
+      "C": 0.25,
+      "D": 0.0,
+      "E": 0.0
+    },
+    "betweenness_unweighted": {
+      "A": 0.0,
+      "B": 0.041666666666666664,
+      "C": 0.125,
+      "D": 0.0,
+      "E": 0.0
+    },
+    "clustering_formula_probe": {
+      "tail": 0,
+      "x": 0.3333333333333333,
+      "y": 1.0,
+      "z": 1.0
+    },
+    "clustering_undirected_projection": {
+      "A": 0.3333333333333333,
+      "B": 0.6666666666666666,
+      "C": 0.6666666666666666,
+      "D": 1.0,
+      "E": 0
+    },
+    "edges": 9,
+    "eigenvector_left_predecessor": {
+      "A": 9.155088992644095e-11,
+      "B": 0.400446571604211,
+      "C": 0.6479361632942985,
+      "D": 0.6479361632027476,
+      "E": 2.197221358234583e-09
+    },
+    "eigenvector_right_via_reverse": {
+      "A": 0.6251200309355116,
+      "B": 0.5057327278033525,
+      "C": 0.5057327278033525,
+      "D": 0.3125600150056708,
+      "E": 4.018130605653031e-11
+    },
+    "networkx_version": "3.4.2",
+    "nodes": 5,
+    "pagerank_unweighted": {
+      "A": 0.03837134939685771,
+      "B": 0.17957866258840818,
+      "C": 0.30667160387904163,
+      "D": 0.42613515240707805,
+      "E": 0.049243231728614695
+    },
+    "pagerank_weighted": {
+      "A": 0.036676684835209625,
+      "B": 0.19668966665074258,
+      "C": 0.20371359337037498,
+      "D": 0.523645438465969,
+      "E": 0.03927461667770364
+    },
+    "pagerank_weighted_sum": 0.9999999999999998,
+    "self_loop_edges": 1,
+    "shortest_path_inverse_flow_A_to_B": [
+      "A",
+      "C",
+      "B"
+    ],
+    "shortest_path_unweighted_A_to_B": [
+      "A",
+      "B"
+    ],
+    "validation_status": "passed",
+    "weighted_strength_node_D": {
+      "in_strength": 9.0,
+      "out_strength": 6.0,
+      "total_strength": 15.0
+    }
+  }
+}

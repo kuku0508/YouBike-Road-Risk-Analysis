@@ -1,0 +1,322 @@
+{
+  "pipeline_version": "phase8.1b-migration-bundle-v2",
+  "created_utc": "2026-09-19T11:54:28Z",
+  "routing_contract_version": "road-routing-contract-v1.1",
+  "coordinate_assumption_version": "routing-coordinate-assumption-v1",
+  "python_version": "3.11.0",
+  "java_version": "java version \"25.0.4.1\" 2026-08-18 LTS",
+  "brouter_version": "1.7.10",
+  "locked_hashes": {
+    "od": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+    "coordinates": "8e5b4bbe3511b0145234f209768f0eec0f766e9121716ae510170724dab1ad06",
+    "station_id_fingerprint": "1cf8fa00388dd9b89b16eb8ee895a9bb5913f62344d69791095d591b9eafc820",
+    "coordinate_fingerprint": "b744b692ba020cd13293f5429f8d6e43400d70737560f1d921ccb0309281bd02",
+    "brouter_jar": "93e9821640093cde82ed470ac8c08ab84fc7ae3b570e30c9ab41d686c7af1d4a",
+    "profile": "00241f71fe9251d3e38571a4eb296352c7c2451d86eb34e656123820c27b315e",
+    "lookups": "bf8fc3b2c052b7204e9c5a8d78e4d6ab6b125d3236a943f34583b838c477f419",
+    "graphs": [
+      "86a1e9c4ef037a204fbe71dcac6f525469102e04b0887dad6f06d29a547df37a",
+      "533b558b33e51f723ad3ae9838d098d3055b85c1f986259d4f7dd940366a96e3"
+    ]
+  },
+  "production_manifest_sha256": "9d9691a81ffa5f804224ee270890cf5acf579db8d53342574229d503290834ee",
+  "coordinate_artifact_sha256": "8e5b4bbe3511b0145234f209768f0eec0f766e9121716ae510170724dab1ad06",
+  "rd5_runtime_aliases": {
+    "data/raw/routing/E120_N20.rd5": "E120_N20_20260918.rd5",
+    "data/raw/routing/E120_N25.rd5": "E120_N25_20260918.rd5"
+  },
+  "rd5_alias_note": "aliases are reconstructed by the Linux launcher and are not independent graph payloads",
+  "cache_snapshot": {
+    "snapshot_created_utc": "2026-09-19T11:54:28Z",
+    "method": "Python sqlite3 online backup API from read-only source connection",
+    "source_journal_mode": "wal",
+    "integrity_check": "ok",
+    "status_counts": {
+      "success": 94900
+    },
+    "rows": 94900,
+    "schema_sha256": "f12a65cb49050e55d565cbe99835ac5c301743b036558df86c505b4af46bf2f5"
+  },
+  "items": [
+    {
+      "relative_path": "config/brouter_production.yaml",
+      "category": "configuration",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 3314,
+      "sha256": "532caf9ca096015e7364ca44cef18878edf5937ce5cdb9c5554b0312cdb797c3",
+      "source_location": "config/brouter_production.yaml",
+      "bundle_destination_path": "config/brouter_production.yaml"
+    },
+    {
+      "relative_path": "config/routing_contract.yaml",
+      "category": "contract",
+      "required_for": [
+        "preflight",
+        "reproducibility"
+      ],
+      "size_bytes": 5688,
+      "sha256": "bfb0fa70f62de216f26ed671c5db1db8e57c122875409e8cf8c0a39d323438ee",
+      "source_location": "config/routing_contract.yaml",
+      "bundle_destination_path": "config/routing_contract.yaml"
+    },
+    {
+      "relative_path": "config/routing_coordinate_assumption.yaml",
+      "category": "contract",
+      "required_for": [
+        "preflight",
+        "reproducibility"
+      ],
+      "size_bytes": 1809,
+      "sha256": "66e3d83b66d681b3eb95031dac2ac98f9a33d7f1895a73df5f58372a4a4d1a10",
+      "source_location": "config/routing_coordinate_assumption.yaml",
+      "bundle_destination_path": "config/routing_coordinate_assumption.yaml"
+    },
+    {
+      "relative_path": "data/processed/od/aggregate/core_2023_2024/od.parquet",
+      "category": "production_input",
+      "required_for": [
+        "preflight"
+      ],
+      "size_bytes": 3021906,
+      "sha256": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+      "source_location": "data/processed/od/aggregate/core_2023_2024/od.parquet",
+      "bundle_destination_path": "data/processed/od/aggregate/core_2023_2024/od.parquet"
+    },
+    {
+      "relative_path": "data/processed/routing/production/cache_snapshot_status.json",
+      "category": "resume_state_metadata",
+      "required_for": [
+        "resume",
+        "audit"
+      ],
+      "size_bytes": 355,
+      "sha256": "6a49e5269ecb96f1a8d232e14b3564e2f32962dafc8aa7f14a9ddae3bce136ee",
+      "source_location": "generated_from_cache_snapshot",
+      "bundle_destination_path": "data/processed/routing/production/cache_snapshot_status.json"
+    },
+    {
+      "relative_path": "data/processed/routing/production/production_manifest.parquet",
+      "category": "production_input",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 116694218,
+      "sha256": "9d9691a81ffa5f804224ee270890cf5acf579db8d53342574229d503290834ee",
+      "source_location": "data/processed/routing/production/production_manifest.parquet",
+      "bundle_destination_path": "data/processed/routing/production/production_manifest.parquet"
+    },
+    {
+      "relative_path": "data/processed/routing/production/progress_at_packaging.json",
+      "category": "resume_state_metadata",
+      "required_for": [
+        "audit"
+      ],
+      "size_bytes": 442,
+      "sha256": "ab554a4a12e7b83ec47ffbe975c93853398056971770f2aef8b39ad35585b0d2",
+      "source_location": "data/processed/routing/production/progress.json",
+      "bundle_destination_path": "data/processed/routing/production/progress_at_packaging.json"
+    },
+    {
+      "relative_path": "data/processed/routing/production/route_cache.sqlite",
+      "category": "resume_state_snapshot",
+      "required_for": [
+        "resume"
+      ],
+      "size_bytes": 309432320,
+      "sha256": "f127f2367c22acc339863f3f7e61d211632924e9fd37dbc36369a0b854f216b1",
+      "source_location": "data/processed/routing/production/route_cache.sqlite",
+      "bundle_destination_path": "data/processed/routing/production/route_cache.sqlite"
+    },
+    {
+      "relative_path": "data/processed/routing/routing_station_coordinates_2023_2024.parquet",
+      "category": "production_input",
+      "required_for": [
+        "preflight",
+        "reproducibility"
+      ],
+      "size_bytes": 116930,
+      "sha256": "8e5b4bbe3511b0145234f209768f0eec0f766e9121716ae510170724dab1ad06",
+      "source_location": "data/processed/routing/routing_station_coordinates_2023_2024.parquet",
+      "bundle_destination_path": "data/processed/routing/routing_station_coordinates_2023_2024.parquet"
+    },
+    {
+      "relative_path": "data/raw/routing/E120_N20_20260918.rd5",
+      "category": "brouter_environment",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 22093981,
+      "sha256": "86a1e9c4ef037a204fbe71dcac6f525469102e04b0887dad6f06d29a547df37a",
+      "source_location": "data/raw/routing/E120_N20_20260918.rd5",
+      "bundle_destination_path": "data/raw/routing/E120_N20_20260918.rd5"
+    },
+    {
+      "relative_path": "data/raw/routing/E120_N25_20260918.rd5",
+      "category": "brouter_environment",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 12557128,
+      "sha256": "533b558b33e51f723ad3ae9838d098d3055b85c1f986259d4f7dd940366a96e3",
+      "source_location": "data/raw/routing/E120_N25_20260918.rd5",
+      "bundle_destination_path": "data/raw/routing/E120_N25_20260918.rd5"
+    },
+    {
+      "relative_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/brouter-1.7.10-all.jar",
+      "category": "brouter_environment",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 2341826,
+      "sha256": "93e9821640093cde82ed470ac8c08ab84fc7ae3b570e30c9ab41d686c7af1d4a",
+      "source_location": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/brouter-1.7.10-all.jar",
+      "bundle_destination_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/brouter-1.7.10-all.jar"
+    },
+    {
+      "relative_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/lookups.dat",
+      "category": "brouter_profile_runtime_dependency",
+      "required_for": [
+        "execution",
+        "preflight"
+      ],
+      "size_bytes": 31604,
+      "sha256": "bf8fc3b2c052b7204e9c5a8d78e4d6ab6b125d3236a943f34583b838c477f419",
+      "source_location": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/lookups.dat",
+      "bundle_destination_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/lookups.dat"
+    },
+    {
+      "relative_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/trekking.brf",
+      "category": "brouter_environment",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 17852,
+      "sha256": "00241f71fe9251d3e38571a4eb296352c7c2451d86eb34e656123820c27b315e",
+      "source_location": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/trekking.brf",
+      "bundle_destination_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/trekking.brf"
+    },
+    {
+      "relative_path": "environment/cloud-runtime-requirements.txt",
+      "category": "environment",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 264,
+      "sha256": "e2971cb7939ef11ccaa44bf50c268a48a941f445560f59773467fd79fb9c0eb6",
+      "source_location": "environment/cloud-runtime-requirements.txt",
+      "bundle_destination_path": "environment/cloud-runtime-requirements.txt"
+    },
+    {
+      "relative_path": "notes/phase8_1a-production-gate-receipt.json",
+      "category": "provenance",
+      "required_for": [
+        "audit"
+      ],
+      "size_bytes": 5445,
+      "sha256": "f4222502b3bdcb31468e35a7fa45d356dd7825eb0649c77bc768c183c8b3c28b",
+      "source_location": "notes/phase8_1a-production-gate-receipt.json",
+      "bundle_destination_path": "notes/phase8_1a-production-gate-receipt.json"
+    },
+    {
+      "relative_path": "notes/phase8_1b-cloud-migration-audit.md",
+      "category": "provenance",
+      "required_for": [
+        "audit"
+      ],
+      "size_bytes": 5030,
+      "sha256": "a3be2f379abc8233066b239638e6871e2c670de378128c9a1e2c0cb437606b15",
+      "source_location": "notes/phase8_1b-cloud-migration-audit.md",
+      "bundle_destination_path": "notes/phase8_1b-cloud-migration-audit.md"
+    },
+    {
+      "relative_path": "notes/phase8_1b-cloud-migration-runbook.md",
+      "category": "runbook",
+      "required_for": [
+        "execution",
+        "resume"
+      ],
+      "size_bytes": 2860,
+      "sha256": "3359c604cbe60fb30edad9f1169bb9ea05f33daa03f8a1dae2cc193fe1b3df0f",
+      "source_location": "notes/phase8_1b-cloud-migration-runbook.md",
+      "bundle_destination_path": "notes/phase8_1b-cloud-migration-runbook.md"
+    },
+    {
+      "relative_path": "notes/phase8_1b-final-cache-snapshot-procedure.md",
+      "category": "runbook",
+      "required_for": [
+        "resume"
+      ],
+      "size_bytes": 976,
+      "sha256": "75688c57ae709c7f5aac9cf39bb482aa0f2cf9500783c669b7a83e88320601c4",
+      "source_location": "notes/phase8_1b-final-cache-snapshot-procedure.md",
+      "bundle_destination_path": "notes/phase8_1b-final-cache-snapshot-procedure.md"
+    },
+    {
+      "relative_path": "notes/routing-coordinate-finalization-receipt.json",
+      "category": "provenance",
+      "required_for": [
+        "audit"
+      ],
+      "size_bytes": 6024,
+      "sha256": "bf31bdd0def1037ecb4751b2009d76a08ca68eaf170442ccd2ccd7598cca00f4",
+      "source_location": "notes/routing-coordinate-finalization-receipt.json",
+      "bundle_destination_path": "notes/routing-coordinate-finalization-receipt.json"
+    },
+    {
+      "relative_path": "scripts/start_brouter_linux.sh",
+      "category": "environment",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 1318,
+      "sha256": "e6a912b7aeb477961822463dab3cec6724e356a87af92cc5dc4f1aa30b0c5aad",
+      "source_location": "scripts/start_brouter_linux.sh",
+      "bundle_destination_path": "scripts/start_brouter_linux.sh"
+    },
+    {
+      "relative_path": "src/audit_routing_contract.py",
+      "category": "source_execution",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 9516,
+      "sha256": "d273b7fe2dd9373c190d7c448f252459a9fe4d46b2d5fbecd20ebe9621e89af3",
+      "source_location": "src/audit_routing_contract.py",
+      "bundle_destination_path": "src/audit_routing_contract.py"
+    },
+    {
+      "relative_path": "src/route_segment_utils.py",
+      "category": "source_execution",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 4642,
+      "sha256": "fa9fb0abd1a591a8ad75b6b13e3afe66c3375a79355c2363eb98f70bd81851c1",
+      "source_location": "src/route_segment_utils.py",
+      "bundle_destination_path": "src/route_segment_utils.py"
+    },
+    {
+      "relative_path": "src/run_brouter_production.py",
+      "category": "source_execution",
+      "required_for": [
+        "execution"
+      ],
+      "size_bytes": 15027,
+      "sha256": "179435d49f91c8c08a0fea171be7855121075e3b96aeb4845db222d14c882439",
+      "source_location": "src/run_brouter_production.py",
+      "bundle_destination_path": "src/run_brouter_production.py"
+    }
+  ],
+  "excluded": [
+    "raw monthly YouBike ZIP/CSV",
+    "unrelated notebooks/plots/reports",
+    "Git objects",
+    "unrelated HTML",
+    "unrelated caches",
+    "live SQLite WAL/SHM"
+  ],
+  "manifest_self_note": "migration_manifest.json is excluded from its own item hashes to avoid self-reference",
+  "payload_fingerprint_sha256": "e12aca67c60028838a304eb556b738f69940d0165320d71c6af03742ff4e4c35"
+}

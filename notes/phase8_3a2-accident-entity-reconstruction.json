@@ -1,0 +1,384 @@
+{
+  "contract_version": "accident-entity-reconstruction-v1",
+  "generated_at_utc": "2026-09-23T12:09:48+00:00",
+  "phase8_3a_audit_fingerprint": "0f0f75f6290c499346bf6d1b561b5be96208e37f6dd8d7c57f812c7db96f4491",
+  "raw_file_hashes": {
+    "112": {
+      "spot_map_sha256": "db2d9ff5b2caa81b1cbbab19cd14c68fc52457b64b97344be5b03d695cc13b76",
+      "party_detail_sha256": "448859d4191d6c4014583466dd9e6f13b481cc80a0a0ebf3ae00ab2613300ba9"
+    },
+    "113": {
+      "spot_map_sha256": "63dbff7974735ab16ed000f344b72d5a7b9ffc6106e1dfb8030b666e99ddd45c",
+      "party_detail_sha256": "b6ad23f05658531998f34ba4995a190d03872940ea48013115da89bb2a4e92c5"
+    }
+  },
+  "matching_key_contract": {
+    "fields": [
+      "exact minute datetime",
+      "NFC plus outer-trim comparison-only location",
+      "exact numeric decimal X",
+      "exact numeric decimal Y"
+    ],
+    "coordinate_rounding_in_primary": null,
+    "row_order_used": false,
+    "forced_tie_break": false
+  },
+  "yearly": {
+    "112": {
+      "year": 2023,
+      "spot_map_audit": {
+        "encoding": "CP950",
+        "bom": false,
+        "delimiter": ",",
+        "row_count": 24272,
+        "column_count": 5,
+        "exact_duplicate_rows": 1,
+        "empty_rows": 0,
+        "malformed_rows": 0,
+        "path": "data/raw/112年臺北市道路交通事故斑點圖.csv",
+        "size_bytes": 1715609,
+        "sha256": "db2d9ff5b2caa81b1cbbab19cd14c68fc52457b64b97344be5b03d695cc13b76",
+        "header": [
+          "發生時間",
+          "處理別",
+          "肇事地點",
+          "座標-X",
+          "座標-Y"
+        ],
+        "handling_type_distribution": {
+          "1": 61,
+          "2": 24211
+        },
+        "missing_coordinates": 1
+      },
+      "party_detail_audit": {
+        "encoding": "utf-8-sig",
+        "bom": true,
+        "delimiter": ",",
+        "row_count": 56139,
+        "column_count": 50,
+        "exact_duplicate_rows": 0,
+        "empty_rows": 0,
+        "malformed_rows": 0,
+        "path": "data/raw/112年-臺北市死傷交通事故明細.csv",
+        "size_bytes": 10228496,
+        "sha256": "448859d4191d6c4014583466dd9e6f13b481cc80a0a0ebf3ae00ab2613300ba9",
+        "header": [
+          "發生年度",
+          "發生月",
+          "發生日",
+          "發生時-Hours",
+          "發生分",
+          "區序",
+          "肇事地點",
+          "死亡人數",
+          "2-30日死亡人數",
+          "受傷人數",
+          "當事人序號",
+          "車種",
+          "天候",
+          "光線",
+          "道路類別",
+          "速限-速度限制",
+          "道路型態",
+          "事故位置",
+          "路面狀況1",
+          "路面狀況2",
+          "路面狀況3",
+          "道路障礙1",
+          "道路障礙2",
+          "號誌1",
+          "號誌2",
+          "車道劃分-分向",
+          "車道劃分-分道1",
+          "車道劃分-分道2",
+          "車道劃分-分道3",
+          "事故類型及型態",
+          "性別",
+          "年齡",
+          "受傷程度",
+          "主要傷處",
+          "保護裝置",
+          "行動電話",
+          "車輛用途",
+          "當事者行動狀態",
+          "駕駛資格情形",
+          "駕駛執照種類",
+          "飲酒情形",
+          "車輛撞擊部位1",
+          "車輛撞擊部位2",
+          "肇因碼-個別",
+          "肇因碼-主要",
+          "個人肇逃否",
+          "職業",
+          "旅次目的",
+          "座標-X",
+          "座標-Y"
+        ]
+      },
+      "spot_candidate_key_count": 24271,
+      "party_group_count": 24331,
+      "match_status_counts_by_key": {
+        "ambiguous_duplicate_spot_event": 1,
+        "exact_1to1": 24220,
+        "unmatched_party_group": 110,
+        "unmatched_spot_event": 50
+      },
+      "exact_1to1_rate_of_spot_rows": 0.9978576137112722,
+      "exact_1to1_rate_of_spot_candidate_keys": 0.9978987268756953,
+      "exact_1to1_rate_of_party_groups": 0.9954379187045334,
+      "spot_rows_in_duplicate_candidate_keys": 2,
+      "severity_conflict_party_groups": 1,
+      "party_sequence_conflict_groups": 3,
+      "sensitivity": {
+        "exact_decimal": {
+          "safe_1to1": 24220,
+          "spot_only_keys": 50,
+          "party_only_keys": 110,
+          "duplicate_spot_keys": 1
+        },
+        "round_8_decimal": {
+          "safe_1to1": 24220,
+          "spot_only_keys": 50,
+          "party_only_keys": 110,
+          "duplicate_spot_keys": 1
+        },
+        "round_7_decimal": {
+          "safe_1to1": 24220,
+          "spot_only_keys": 50,
+          "party_only_keys": 110,
+          "duplicate_spot_keys": 1
+        },
+        "round_6_decimal": {
+          "safe_1to1": 24221,
+          "spot_only_keys": 49,
+          "party_only_keys": 109,
+          "duplicate_spot_keys": 1
+        }
+      },
+      "handling_severity_audit": {
+        "matched_domain": {
+          "1": 61,
+          "2": 24159
+        },
+        "type1_with_nonpositive_24h_death": 0,
+        "type2_with_positive_24h_death": 0
+      }
+    },
+    "113": {
+      "year": 2024,
+      "spot_map_audit": {
+        "encoding": "CP950",
+        "bom": false,
+        "delimiter": ",",
+        "row_count": 22368,
+        "column_count": 5,
+        "exact_duplicate_rows": 1,
+        "empty_rows": 0,
+        "malformed_rows": 0,
+        "path": "data/raw/113年臺北市道路交通事故斑點圖 .csv",
+        "size_bytes": 1580764,
+        "sha256": "63dbff7974735ab16ed000f344b72d5a7b9ffc6106e1dfb8030b666e99ddd45c",
+        "header": [
+          "發生時間",
+          "處理別",
+          "肇事地點",
+          "座標-X",
+          "座標-Y"
+        ],
+        "handling_type_distribution": {
+          "1": 68,
+          "2": 22300
+        },
+        "missing_coordinates": 0
+      },
+      "party_detail_audit": {
+        "encoding": "utf-8-sig",
+        "bom": true,
+        "delimiter": ",",
+        "row_count": 51810,
+        "column_count": 49,
+        "exact_duplicate_rows": 0,
+        "empty_rows": 0,
+        "malformed_rows": 0,
+        "path": "data/raw/113年-臺北市死傷交通事故明細.csv",
+        "size_bytes": 9398043,
+        "sha256": "b6ad23f05658531998f34ba4995a190d03872940ea48013115da89bb2a4e92c5",
+        "header": [
+          "發生年度",
+          "發生月",
+          "發生日",
+          "發生時-Hours",
+          "發生分",
+          "區序",
+          "肇事地點",
+          "死亡人數",
+          "2-30日死亡人數",
+          "受傷人數",
+          "當事人序號",
+          "車種",
+          "天候",
+          "道路照明設備",
+          "道路類別",
+          "速限-速度限制",
+          "道路型態",
+          "事故位置",
+          "路面狀況1",
+          "路面狀況2",
+          "路面狀況3",
+          "道路障礙1",
+          "道路障礙2",
+          "號誌1",
+          "號誌2",
+          "車道劃分-分向",
+          "車道劃分-分道1",
+          "車道劃分-分道2",
+          "車道劃分-分道3",
+          "事故類型及型態",
+          "性別",
+          "年齡",
+          "受傷程度",
+          "主要傷處",
+          "保護裝置",
+          "行動電話",
+          "車輛用途",
+          "當事者行動狀態",
+          "駕駛資格情形",
+          "駕駛執照種類",
+          "飲酒情形",
+          "車輛撞擊部位1",
+          "車輛撞擊部位2",
+          "肇因碼-個別",
+          "肇因碼-主要",
+          "個人肇逃否",
+          "職業",
+          "座標-X",
+          "座標-Y"
+        ]
+      },
+      "spot_candidate_key_count": 22367,
+      "party_group_count": 22368,
+      "match_status_counts_by_key": {
+        "ambiguous_duplicate_spot_event": 1,
+        "exact_1to1": 22366,
+        "unmatched_party_group": 1
+      },
+      "exact_1to1_rate_of_spot_rows": 0.9999105865522174,
+      "exact_1to1_rate_of_spot_candidate_keys": 0.9999552912773282,
+      "exact_1to1_rate_of_party_groups": 0.9999105865522174,
+      "spot_rows_in_duplicate_candidate_keys": 2,
+      "severity_conflict_party_groups": 0,
+      "party_sequence_conflict_groups": 0,
+      "sensitivity": {
+        "exact_decimal": {
+          "safe_1to1": 22366,
+          "spot_only_keys": 0,
+          "party_only_keys": 1,
+          "duplicate_spot_keys": 1
+        },
+        "round_8_decimal": {
+          "safe_1to1": 22366,
+          "spot_only_keys": 0,
+          "party_only_keys": 1,
+          "duplicate_spot_keys": 1
+        },
+        "round_7_decimal": {
+          "safe_1to1": 22366,
+          "spot_only_keys": 0,
+          "party_only_keys": 1,
+          "duplicate_spot_keys": 1
+        },
+        "round_6_decimal": {
+          "safe_1to1": 22366,
+          "spot_only_keys": 0,
+          "party_only_keys": 1,
+          "duplicate_spot_keys": 1
+        }
+      },
+      "handling_severity_audit": {
+        "matched_domain": {
+          "1": 68,
+          "2": 22298
+        },
+        "type1_with_nonpositive_24h_death": 0,
+        "type2_with_positive_24h_death": 0
+      }
+    }
+  },
+  "totals": {
+    "spot_map_rows": 46640,
+    "party_rows": 107949,
+    "spot_candidate_keys": 46638,
+    "party_groups": 46699,
+    "exact_1to1_reconstructed_accidents": 46586,
+    "exact_1to1_rate_of_spot_rows": 0.9988421955403087,
+    "unmatched_spot_event_keys": 50,
+    "unmatched_party_groups": 111,
+    "ambiguous_duplicate_spot_keys": 2,
+    "spot_rows_in_ambiguous_duplicate_keys": 4,
+    "severity_conflict_keys": 0,
+    "severity_conflict_party_groups": 1,
+    "reconstructed_entities_with_missing_severity": 11,
+    "reconstructed_entities_with_party_sequence_conflict": 2
+  },
+  "reconstructed_id_contract": {
+    "algorithm": "reconstructed_accident_ + SHA-256(UTF-8 compact JSON canonical event key)",
+    "source_status": "reconstruction artifact; not an official source accident ID",
+    "stable": true,
+    "deterministic": true,
+    "row_order_independent": true,
+    "collision_count": 0
+  },
+  "crs": {
+    "assumption": "WGS84 geographic longitude/latitude treated operationally as EPSG:4326",
+    "status": "accepted_reconstruction_assumption_not_source_metadata_fact",
+    "transformed_point_count": 46639,
+    "transformed_bbox_epsg3826": [
+      295756.69149705657,
+      2761989.771349643,
+      315058.49224292865,
+      2786750.2487901025
+    ],
+    "road_bbox_epsg3826": [
+      296583.6732999999,
+      2763248.199100001,
+      313075.2282999996,
+      2785444.3727
+    ],
+    "bbox_overlap_positive": true,
+    "matching_use": false
+  },
+  "outputs": {
+    "crosswalk_path": "data/interim/accidents/accident_entity_crosswalk_2023_2024.parquet",
+    "crosswalk_rows": 46749,
+    "crosswalk_fingerprint_sha256": "7fd43e5809b9962562b61e5de8a196cb575cc7e65ccc420f65ef6e157ab75f16",
+    "crosswalk_sha256": "12a4ce44190e6bc11b504bc94aa912484dcbefa09db45247a10d1b69c984ca5d",
+    "entity_path": "data/processed/accidents/accident_entities_2023_2024.parquet",
+    "entity_rows": 46586,
+    "entity_fingerprint_sha256": "ded355d1b5791ea3f2146c51d0321984b4d75ba9e0ff17fb20b8cf9a7b210923",
+    "entity_sha256": "3b82df95f59e5725c84c4f05fff7c785795f66d3e76b7580108a598613497d29"
+  },
+  "readiness": {
+    "accident_entity": "READY_WITH_DISCLOSED_EXCLUSIONS_FOR_EXACT_1TO1_SUBSET",
+    "crs": "READY_UNDER_EXPLICIT_RECONSTRUCTION_ASSUMPTION",
+    "road_attribution_coverage": "LIMITED_TO_ROADS_WIDER_THAN_8_METRES; preserve outside_reference_coverage in Phase 8.3B",
+    "phase8_3b": "READY_WITH_DISCLOSED_EXCLUSIONS",
+    "remaining_exclusions": [
+      "50 unmatched spot-map event keys",
+      "111 unmatched party groups",
+      "2 duplicate spot-map keys containing 4 source rows and involving 2 party groups"
+    ]
+  },
+  "prohibited_work_confirmed_not_performed": {
+    "road_matching": false,
+    "point_in_polygon": false,
+    "nearest_road": false,
+    "brouter_segment_matching": false,
+    "distance_threshold_selected": false,
+    "epdo_calculated": false,
+    "cbi_calculated": false,
+    "risk_analysis_started": false,
+    "phase8_3b_started": false
+  },
+  "receipt_fingerprint_sha256": "2fe5155d8900d5407940ba171f6bd7d78c1068d33e639029a1fc5adf3c4dd179"
+}

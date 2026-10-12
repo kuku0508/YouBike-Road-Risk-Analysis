@@ -1,0 +1,102 @@
+{
+  "algorithm": "lloyd",
+  "assignment_fingerprint": "bccae38d2937c71b5adfffb2a864035dc00cd331f0f43009668910a2ff93e971",
+  "cluster_sizes": [
+    {
+      "cluster_id": 1,
+      "node_count": 60
+    },
+    {
+      "cluster_id": 2,
+      "node_count": 347
+    },
+    {
+      "cluster_id": 3,
+      "node_count": 939
+    },
+    {
+      "cluster_id": 4,
+      "node_count": 1436
+    }
+  ],
+  "contract_sha256": "0fa89f6e52fb0667ef67da10ae682dfff6df3604748c910739b660904244664a",
+  "contract_version": "kmeans-reconstruction-contract-v1",
+  "detected_knee": 3,
+  "feature_list": [
+    "total_strength",
+    "betweenness_primary",
+    "clustering_primary",
+    "pagerank_primary"
+  ],
+  "k_range": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "max_iter": 300,
+  "n_init": 50,
+  "output_bytes": {
+    "partition": 203002,
+    "summary": 26142
+  },
+  "output_sha256": {
+    "partition": "e07a08a3c2848eff904110534d5ea2596e669268b85b6c875916fb26dc259cba",
+    "summary": "3f2f1efd375fa3aca8d9234143b0093ac80f0604bc27e620d02e06c014173217"
+  },
+  "peak_working_set_bytes": 341196800,
+  "pipeline_version": "core-kmeans-v1",
+  "primary_inertia": 3518.3530454050792,
+  "primary_k": 4,
+  "primary_silhouette": 0.5098197652197591,
+  "random_state": 42,
+  "runtime_seconds": {
+    "elbow_total": 4.343940699938685,
+    "primary_k4": 0.111267099971883,
+    "primary_k4_repeat": 0.12213600007817149,
+    "sensitivity_total": 1.8071689000353217,
+    "silhouette_total": 1.1599365001311526,
+    "whole_run": 6.548789200023748
+  },
+  "scaler": "StandardScaler",
+  "scaler_parameters": {
+    "mean": {
+      "betweenness_primary": 0.00014564502546569487,
+      "clustering_primary": 0.7215923342928258,
+      "pagerank_primary": 0.00035945363048166793,
+      "total_strength": 65520.3184759166
+    },
+    "scale": {
+      "betweenness_primary": 0.0003608173363120574,
+      "clustering_primary": 0.16956438042022187,
+      "pagerank_primary": 0.0004038886670812731,
+      "total_strength": 109760.40500053106
+    }
+  },
+  "silhouette_best_k": 2,
+  "sklearn_version": "1.8.0",
+  "source_metrics_sha256": "a31ade358f59529ca8d5784bd0151aa17be6894b3a39194322534659dd27fe72",
+  "tol": 0.0001,
+  "validation": {
+    "all_nodes_assigned_once": true,
+    "centroid_inverse_transform": true,
+    "cluster_ids_contiguous_1_to_4": true,
+    "elbow_k_1_to_10_complete": true,
+    "features_finite": true,
+    "fixed_seed_reproducible": true,
+    "no_hierarchical_clustering": true,
+    "node_count_2782": true,
+    "outliers_retained": true,
+    "raw_scaled_join_aligned": true,
+    "silhouette_k_2_to_10_complete": true,
+    "source_hash_gate": true,
+    "station_id_unique": true
+  },
+  "validation_status": "passed"
+}

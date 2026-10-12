@@ -1,0 +1,105 @@
+{
+  "contract_version": "interactive-cbi-case-review-v1",
+  "generated_at_utc": "2026-10-02T16:01:09+00:00",
+  "locked_inputs": {
+    "phase8_6a_worksheet_sha256": "660566e42801bbba51e20020985217bd3583c47188d8acaba56c48c4fa236893",
+    "phase8_6a_worksheet_fingerprint": "91d8666aeb7248b0e6beafb21e67e7ac5a60d137e22a2007fe491c319c72c595",
+    "phase8_6a_receipt_fingerprint": "9a62a25cb51b222866ecd4076c5490675be9a15829121d6c9ddb854e49a03a79",
+    "phase8_6a_qa_fingerprint": "cd8212fa9a3076a0d8cf4ccbc9c2d38751675fa011deb719419809a56dda0ba6",
+    "phase8_5c_fingerprint": "2e6d9f763b0370abbf3785c9e510f04b36cde415947b156eccc7223129af2ea0",
+    "phase8_5c_parquet_sha256": "8d818cd74c7b52d65488c5a0c0a97223f9ef7569e0d1ac35a26d2ca0b3e83ddc",
+    "phase8_5c_receipt_fingerprint": "15c2c4ccecb8b662b52a6af35a1eabbe74b197e4f2415d2f4129483935dffe30"
+  },
+  "summary": {
+    "primary_unique_segments": 1283,
+    "secondary_unique_segments": 2592,
+    "weekday_candidates": 1270,
+    "holiday_candidates": 1255,
+    "both_daytypes_candidates": 1242,
+    "layer_feature_counts": {
+      "weekday_above_q95": 759,
+      "weekday_q90_q95": 511,
+      "weekday_q75_q90": 2560,
+      "holiday_above_q95": 752,
+      "holiday_q90_q95": 503,
+      "holiday_q75_q90": 2539
+    }
+  },
+  "display_contract": {
+    "class_colors": {
+      "q75_q90": "#e6b75c",
+      "q90_q95": "#3d82b8",
+      "above_q95": "#153f67"
+    },
+    "base_width_px": {
+      "q75_q90": 3.0,
+      "q90_q95": 5.5,
+      "above_q95": 5.5
+    },
+    "hover_width_px": {
+      "q75_q90": 5.0,
+      "q90_q95": 7.5,
+      "above_q95": 7.5
+    },
+    "width_encodes_metric": false,
+    "traditional_chinese_ui": true,
+    "default_visible": [
+      "weekday_above_q95",
+      "weekday_q90_q95",
+      "holiday_above_q95",
+      "holiday_q90_q95"
+    ],
+    "secondary_default_visible": false,
+    "ranking": false,
+    "hotspot": false,
+    "new_cutoff": false,
+    "automatic_case_selection": false,
+    "corridor_aggregation": false
+  },
+  "output": {
+    "path": "figures/interactive/phase8_6a_case_candidate_review.html",
+    "bytes": 3148519,
+    "sha256": "dfaeaf5ffe480a9c57adade1332ce88da62b913075bef5923d596f9e8f61909d",
+    "map_data_fingerprint": "70ef06e5828a5a959f818df8b4d53cd4356b1d6cf1289a403e372ece610b2f4e",
+    "bounds_latlon": [
+      [
+        24.97621,
+        121.464893
+      ],
+      [
+        25.144114,
+        121.622384
+      ]
+    ],
+    "basemap": "OpenStreetMap remote tiles",
+    "basemap_requires_network": true
+  },
+  "validation": {
+    "canonical_values_unchanged": true,
+    "geometry_endpoints_unchanged": true,
+    "primary_counts_match_phase8_6a": true,
+    "secondary_count_matches_phase8_6a": true,
+    "no_ranking_fields": true,
+    "no_hotspot_fields": true,
+    "no_automatic_selection": true,
+    "no_new_cutoff": true,
+    "no_corridor_aggregation": true,
+    "html_structure_and_bindings": true,
+    "browser_visual_qa": "not_executed_browser_security_policy_blocks_local_file_urls"
+  },
+  "tests": {
+    "phase8_6a_2_focused": 28,
+    "project_wide": 582,
+    "status": "all_passed"
+  },
+  "limitations": [
+    "candidate unit is a BRouter physical microsegment, not an official road corridor",
+    "visualization classes are not hotspot definitions or rankings",
+    "Leaflet plugin assets and OpenStreetMap basemap tiles are remote and require an internet connection when viewing the HTML",
+    "automated browser visual QA could not open the local file URL because of browser security policy",
+    "final case selection remains human-reviewed and requires explicit researcher rationale",
+    "A3/PDO-only accidents are unavailable and BRouter exposure is estimated"
+  ],
+  "phase8_6b_executed": false,
+  "receipt_fingerprint_sha256": "f48605ea085526152faa90ce6e767fe66ab0ad5f33af609cc190608a63bfaf6f"
+}

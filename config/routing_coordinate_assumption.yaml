@@ -1,0 +1,29 @@
+{
+  "assumption_id": "routing-coordinate-assumption-v1",
+  "decision_id": "D110",
+  "date": "2026-09-19",
+  "affected_stage": "Phase 8.0C and downstream road routing",
+  "source": {
+    "path": "data/raw/active_station_all.csv",
+    "sha256": "8bf19851f7e9329b0f7207f84b149ce243ca9f6d1e6270ffb5f382b1a9e63205",
+    "mapping_path": "data/interim/routing/legacy_station_name_mapping.parquet",
+    "mapping_sha256": "52513e958338c87b4e09bb2de4b9b9113b367b5549043d796c1c5990e2b52c66"
+  },
+  "evidence_status": "supporting_unverified_provenance",
+  "routing_acceptance": "accepted_by_analyst_assumption",
+  "assumption": "For reconstruction only, treat the coordinates attached to each monthly record in active_station_all.csv as the station routing coordinate for that month.",
+  "limitations": [
+    "Upstream official provenance is not verified.",
+    "The table may contain coordinates joined retrospectively from a static lookup.",
+    "Month is interpreted only at YYYY-MM precision; no day-level validity is asserted.",
+    "Operational acceptance does not promote the source to verified historical evidence."
+  ],
+  "identity_gate": "Only Phase 8.0B deterministic accepted mappings may receive the override; no fuzzy, geographic-nearest, suffix-stripping or current-only fallback.",
+  "coordinate_precedence": [
+    "verified_direct_historical_evidence_covering_routing_month",
+    "legacy_monthly_coordinate_accepted_by_analyst_assumption",
+    "existing_accepted_temporally_bracketed_coordinate",
+    "unresolved"
+  ],
+  "replacement_policy": "When verified 2023-2024 historical station metadata becomes available, preserve this decision and raw source, create a new versioned coordinate artifact, compare coordinate differences, invalidate affected route cache entries and reroute affected OD pairs."
+}

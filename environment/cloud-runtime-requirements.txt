@@ -1,0 +1,8 @@
+# Minimal Phase 8.1B runtime dependencies; intentionally not a full pip freeze.
+pandas==3.0.3
+pyarrow==21.0.0
+
+# Runtime outside pip:
+# - CPython 3.11.x (bundle audited with 3.11.0)
+# - 64-bit Linux
+# - Java 25 or a compatible later JRE able to run BRouter 1.7.10

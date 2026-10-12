@@ -1,0 +1,2 @@
+rent_time,rent_station,return_time,return_station,rent,bike_kind,infodate
+2026-07-01 00:00:00,起點,2026-07-01 01:00:00,終點,00:12:34,一般車,2026-07-01

@@ -1,0 +1,30 @@
+# Never publish original research/team documents
+references/*.pdf
+references/*.docx
+references/*.pptx
+
+# Data
+/data/raw/*
+!/data/raw/.gitkeep
+/data/interim/*
+!/data/interim/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Local/runtime
+/tmp/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite
+*.db
+.DS_Store
+Thumbs.db

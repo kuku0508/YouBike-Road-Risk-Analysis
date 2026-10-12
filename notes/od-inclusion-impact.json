@@ -1,0 +1,364 @@
+{
+  "accepted_cleaned_records": 109713772,
+  "endpoint_taxonomy_counts": {
+    "destination": {
+      "eligible_unique_id": 108809795,
+      "eligible_valid_name_no_id": 440691,
+      "ineligible_ambiguous": 458299,
+      "ineligible_candidate_only": 4305,
+      "ineligible_missing": 403,
+      "ineligible_name_collision": 0,
+      "ineligible_unresolved": 279
+    },
+    "origin": {
+      "eligible_unique_id": 108928774,
+      "eligible_valid_name_no_id": 295927,
+      "ineligible_ambiguous": 488799,
+      "ineligible_candidate_only": 0,
+      "ineligible_missing": 272,
+      "ineligible_name_collision": 0,
+      "ineligible_unresolved": 0
+    }
+  },
+  "identity_evidence": {
+    "metadata_name_collisions": 0,
+    "source_hashes": {
+      "cleaning_manifest": "1aea8c9f7eebc9db300b44dc5c2ebcbc3f2c79f9c0d11ec197a5371312d410c8",
+      "current_metadata": "0ac45607a811c3d7dde8727f2d1d4e005dcece367b1411c211eabfa2496f6969",
+      "historical_metadata": "c696c0f23f55cef97862c324468781d85b752bd5f9557e3608e691f9c930634a",
+      "metadata_evidence": "a3ba9d7af22f983888d64c0d99af9f663ff5ce802469f6268857548fe302ae20",
+      "station_universe": "64e16b5ff44c481e6b044a965396e617f6de8d05a38af73489dc0680ede8c023"
+    },
+    "station_universe_exact_ids": 1311,
+    "unique_exact_metadata_names": 1817
+  },
+  "issue_overlap_matrix": {
+    "candidate_only": {
+      "candidate_only": 4305,
+      "cross_city_valid": 0,
+      "identity_ambiguous": 8,
+      "identity_unresolved": 0,
+      "missing_endpoint": 0,
+      "name_collision": 0,
+      "valid_name_no_id": 5
+    },
+    "cross_city_valid": {
+      "candidate_only": 0,
+      "cross_city_valid": 1789007,
+      "identity_ambiguous": 4641,
+      "identity_unresolved": 0,
+      "missing_endpoint": 4,
+      "name_collision": 0,
+      "valid_name_no_id": 9383
+    },
+    "identity_ambiguous": {
+      "candidate_only": 8,
+      "cross_city_valid": 4641,
+      "identity_ambiguous": 926114,
+      "identity_unresolved": 0,
+      "missing_endpoint": 6,
+      "name_collision": 0,
+      "valid_name_no_id": 1217
+    },
+    "identity_unresolved": {
+      "candidate_only": 0,
+      "cross_city_valid": 0,
+      "identity_ambiguous": 0,
+      "identity_unresolved": 279,
+      "missing_endpoint": 0,
+      "name_collision": 0,
+      "valid_name_no_id": 1
+    },
+    "missing_endpoint": {
+      "candidate_only": 0,
+      "cross_city_valid": 4,
+      "identity_ambiguous": 6,
+      "identity_unresolved": 0,
+      "missing_endpoint": 667,
+      "name_collision": 0,
+      "valid_name_no_id": 6
+    },
+    "name_collision": {
+      "candidate_only": 0,
+      "cross_city_valid": 0,
+      "identity_ambiguous": 0,
+      "identity_unresolved": 0,
+      "missing_endpoint": 0,
+      "name_collision": 0,
+      "valid_name_no_id": 0
+    },
+    "valid_name_no_id": {
+      "candidate_only": 5,
+      "cross_city_valid": 9383,
+      "identity_ambiguous": 1217,
+      "identity_unresolved": 1,
+      "missing_endpoint": 6,
+      "name_collision": 0,
+      "valid_name_no_id": 706230
+    }
+  },
+  "monthly": {
+    "2023/01": {
+      "accepted": 2686167,
+      "broad_raw_pseudonodes": 2685957,
+      "hybrid_allow_safe_name_fallback": 2665762,
+      "include_candidate_raw_pseudonodes": 2665891,
+      "primary_id_required_full_universe": 2616890,
+      "taipei_only_id_required": 2561675
+    },
+    "2023/02": {
+      "accepted": 2837717,
+      "broad_raw_pseudonodes": 2837717,
+      "hybrid_allow_safe_name_fallback": 2812863,
+      "include_candidate_raw_pseudonodes": 2813009,
+      "primary_id_required_full_universe": 2763405,
+      "taipei_only_id_required": 2707238
+    },
+    "2023/03": {
+      "accepted": 3774359,
+      "broad_raw_pseudonodes": 3774354,
+      "hybrid_allow_safe_name_fallback": 3740366,
+      "include_candidate_raw_pseudonodes": 3740581,
+      "primary_id_required_full_universe": 3684853,
+      "taipei_only_id_required": 3610275
+    },
+    "2023/04": {
+      "accepted": 3365042,
+      "broad_raw_pseudonodes": 3365041,
+      "hybrid_allow_safe_name_fallback": 3335187,
+      "include_candidate_raw_pseudonodes": 3335365,
+      "primary_id_required_full_universe": 3280543,
+      "taipei_only_id_required": 3206580
+    },
+    "2023/05": {
+      "accepted": 3641886,
+      "broad_raw_pseudonodes": 3641883,
+      "hybrid_allow_safe_name_fallback": 3609125,
+      "include_candidate_raw_pseudonodes": 3609322,
+      "primary_id_required_full_universe": 3556040,
+      "taipei_only_id_required": 3483633
+    },
+    "2023/06": {
+      "accepted": 3362018,
+      "broad_raw_pseudonodes": 3362012,
+      "hybrid_allow_safe_name_fallback": 3333603,
+      "include_candidate_raw_pseudonodes": 3333762,
+      "primary_id_required_full_universe": 3285497,
+      "taipei_only_id_required": 3223188
+    },
+    "2023/07": {
+      "accepted": 3055138,
+      "broad_raw_pseudonodes": 3055135,
+      "hybrid_allow_safe_name_fallback": 3031176,
+      "include_candidate_raw_pseudonodes": 3031350,
+      "primary_id_required_full_universe": 2988431,
+      "taipei_only_id_required": 2929317
+    },
+    "2023/08": {
+      "accepted": 2722839,
+      "broad_raw_pseudonodes": 2722798,
+      "hybrid_allow_safe_name_fallback": 2701608,
+      "include_candidate_raw_pseudonodes": 2701760,
+      "primary_id_required_full_universe": 2662886,
+      "taipei_only_id_required": 2613122
+    },
+    "2023/09": {
+      "accepted": 2863438,
+      "broad_raw_pseudonodes": 2863396,
+      "hybrid_allow_safe_name_fallback": 2839610,
+      "include_candidate_raw_pseudonodes": 2839788,
+      "primary_id_required_full_universe": 2800654,
+      "taipei_only_id_required": 2746130
+    },
+    "2023/10": {
+      "accepted": 2843257,
+      "broad_raw_pseudonodes": 2843255,
+      "hybrid_allow_safe_name_fallback": 2818521,
+      "include_candidate_raw_pseudonodes": 2818677,
+      "primary_id_required_full_universe": 2779003,
+      "taipei_only_id_required": 2723283
+    },
+    "2023/11": {
+      "accepted": 2941065,
+      "broad_raw_pseudonodes": 2940933,
+      "hybrid_allow_safe_name_fallback": 2915222,
+      "include_candidate_raw_pseudonodes": 2915331,
+      "primary_id_required_full_universe": 2876130,
+      "taipei_only_id_required": 2819184
+    },
+    "2023/12": {
+      "accepted": 2725874,
+      "broad_raw_pseudonodes": 2725708,
+      "hybrid_allow_safe_name_fallback": 2701399,
+      "include_candidate_raw_pseudonodes": 2701543,
+      "primary_id_required_full_universe": 2665934,
+      "taipei_only_id_required": 2616656
+    },
+    "2024/01": {
+      "accepted": 2746557,
+      "broad_raw_pseudonodes": 2746556,
+      "hybrid_allow_safe_name_fallback": 2722923,
+      "include_candidate_raw_pseudonodes": 2723058,
+      "primary_id_required_full_universe": 2687330,
+      "taipei_only_id_required": 2636351
+    },
+    "2024/02": {
+      "accepted": 2590755,
+      "broad_raw_pseudonodes": 2590754,
+      "hybrid_allow_safe_name_fallback": 2569701,
+      "include_candidate_raw_pseudonodes": 2569817,
+      "primary_id_required_full_universe": 2545871,
+      "taipei_only_id_required": 2492926
+    },
+    "2024/03": {
+      "accepted": 3472416,
+      "broad_raw_pseudonodes": 3472413,
+      "hybrid_allow_safe_name_fallback": 3441782,
+      "include_candidate_raw_pseudonodes": 3441963,
+      "primary_id_required_full_universe": 3420558,
+      "taipei_only_id_required": 3360270
+    },
+    "2024/04": {
+      "accepted": 3798550,
+      "broad_raw_pseudonodes": 3798549,
+      "hybrid_allow_safe_name_fallback": 3765223,
+      "include_candidate_raw_pseudonodes": 3765397,
+      "primary_id_required_full_universe": 3746878,
+      "taipei_only_id_required": 3682581
+    },
+    "2024/05": {
+      "accepted": 4338453,
+      "broad_raw_pseudonodes": 4338446,
+      "hybrid_allow_safe_name_fallback": 4298887,
+      "include_candidate_raw_pseudonodes": 4299048,
+      "primary_id_required_full_universe": 4291775,
+      "taipei_only_id_required": 4221574
+    },
+    "2024/06": {
+      "accepted": 3773353,
+      "broad_raw_pseudonodes": 3773351,
+      "hybrid_allow_safe_name_fallback": 3737137,
+      "include_candidate_raw_pseudonodes": 3737273,
+      "primary_id_required_full_universe": 3732658,
+      "taipei_only_id_required": 3675150
+    },
+    "2024/07": {
+      "accepted": 5528646,
+      "broad_raw_pseudonodes": 5528635,
+      "hybrid_allow_safe_name_fallback": 5472266,
+      "include_candidate_raw_pseudonodes": 5472431,
+      "primary_id_required_full_universe": 5466388,
+      "taipei_only_id_required": 5393888
+    },
+    "2024/08": {
+      "accepted": 6180169,
+      "broad_raw_pseudonodes": 6180155,
+      "hybrid_allow_safe_name_fallback": 6118736,
+      "include_candidate_raw_pseudonodes": 6118902,
+      "primary_id_required_full_universe": 6112587,
+      "taipei_only_id_required": 6029972
+    },
+    "2024/09": {
+      "accepted": 5799877,
+      "broad_raw_pseudonodes": 5799872,
+      "hybrid_allow_safe_name_fallback": 5739275,
+      "include_candidate_raw_pseudonodes": 5739427,
+      "primary_id_required_full_universe": 5734604,
+      "taipei_only_id_required": 5664892
+    },
+    "2024/10": {
+      "accepted": 5257614,
+      "broad_raw_pseudonodes": 5257613,
+      "hybrid_allow_safe_name_fallback": 5200099,
+      "include_candidate_raw_pseudonodes": 5200270,
+      "primary_id_required_full_universe": 5195425,
+      "taipei_only_id_required": 5126959
+    },
+    "2024/11": {
+      "accepted": 5883088,
+      "broad_raw_pseudonodes": 5883087,
+      "hybrid_allow_safe_name_fallback": 5817970,
+      "include_candidate_raw_pseudonodes": 5818154,
+      "primary_id_required_full_universe": 5812579,
+      "taipei_only_id_required": 5733417
+    },
+    "2024/12": {
+      "accepted": 6511629,
+      "broad_raw_pseudonodes": 6511626,
+      "hybrid_allow_safe_name_fallback": 6437730,
+      "include_candidate_raw_pseudonodes": 6437927,
+      "primary_id_required_full_universe": 6431844,
+      "taipei_only_id_required": 6345620
+    },
+    "2025/01": {
+      "accepted": 5552533,
+      "broad_raw_pseudonodes": 5552530,
+      "hybrid_allow_safe_name_fallback": 5495194,
+      "include_candidate_raw_pseudonodes": 5495343,
+      "primary_id_required_full_universe": 5488956,
+      "taipei_only_id_required": 5410487
+    },
+    "2025/02": {
+      "accepted": 5252701,
+      "broad_raw_pseudonodes": 5252700,
+      "hybrid_allow_safe_name_fallback": 5252580,
+      "include_candidate_raw_pseudonodes": 5252700,
+      "primary_id_required_full_universe": 5247440,
+      "taipei_only_id_required": 5174598
+    },
+    "2025/03": {
+      "accepted": 6208631,
+      "broad_raw_pseudonodes": 6208629,
+      "hybrid_allow_safe_name_fallback": 6208476,
+      "include_candidate_raw_pseudonodes": 6208629,
+      "primary_id_required_full_universe": 6202261,
+      "taipei_only_id_required": 6113475
+    }
+  },
+  "notes": [
+    "No OD pair grouping or edge aggregation was performed.",
+    "Quarantine has precedence and is not reclassified into secondary endpoint flags.",
+    "Primary counts require both endpoints to resolve to one canonical station ID."
+  ],
+  "policy_variant_retained_records": {
+    "broad_raw_pseudonodes": 109713105,
+    "hybrid_allow_safe_name_fallback": 108782421,
+    "include_candidate_raw_pseudonodes": 108786718,
+    "primary_id_required_full_universe": 108077420,
+    "taipei_only_id_required": 106302441
+  },
+  "policy_version": "od-inclusion-policy-v1",
+  "precedence_resolved_counts": {
+    "candidate_only": 4297,
+    "identity_ambiguous": 926108,
+    "identity_unresolved": 279,
+    "missing_endpoint": 667,
+    "name_collision": 0,
+    "no_unique_station_id": 705001,
+    "od_eligible": 108077420,
+    "quarantined": 127
+  },
+  "primary_city_flow_record_counts": {
+    "New Taipei->New Taipei": 0,
+    "New Taipei->Taipei": 0,
+    "Taipei->New Taipei": 1774979,
+    "Taipei->Taipei": 106302441
+  },
+  "quarantine_records": 127,
+  "scope": "2023/01-2025/03",
+  "total_input_records": 109713899,
+  "trip_flag_counts": {
+    "approved_repair": 1118165,
+    "both_endpoints_missing": 8,
+    "both_endpoints_unique_id": 108077420,
+    "candidate_only": 4305,
+    "cross_city_valid": 1789007,
+    "identity_ambiguous": 926114,
+    "identity_unresolved": 279,
+    "missing_endpoint": 667,
+    "name_collision": 0,
+    "not_an_error": 1784176,
+    "unchanged_no_rule": 109634329,
+    "valid_name_no_id": 706230
+  }
+}

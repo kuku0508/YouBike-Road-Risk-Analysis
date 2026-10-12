@@ -1,0 +1,123 @@
+{
+  "assignment_fingerprint": "bccae38d2937c71b5adfffb2a864035dc00cd331f0f43009668910a2ff93e971",
+  "cluster_size_distribution": {
+    "max": 1436,
+    "mean": 695.5,
+    "median": 643.0,
+    "min": 60
+  },
+  "cluster_sizes": [
+    {
+      "cluster_id": 1,
+      "node_count": 60
+    },
+    {
+      "cluster_id": 2,
+      "node_count": 347
+    },
+    {
+      "cluster_id": 3,
+      "node_count": 939
+    },
+    {
+      "cluster_id": 4,
+      "node_count": 1436
+    }
+  ],
+  "contract_version": "kmeans-reconstruction-contract-v1",
+  "detected_knee": 3,
+  "feature_correlation_context": {
+    "interpretation": "high correlation; not independent evidence",
+    "total_strength_pagerank_pearson": 0.9513077886268156
+  },
+  "features": [
+    "total_strength",
+    "betweenness_primary",
+    "clustering_primary",
+    "pagerank_primary"
+  ],
+  "fixed_seed_reproducible": true,
+  "node_count": 2782,
+  "original_scale_centroids": [
+    {
+      "cluster_id": 1,
+      "original_centroid_betweenness_primary": 0.0015682536042878146,
+      "original_centroid_clustering_primary": 0.43794276804250765,
+      "original_centroid_pagerank_primary": 0.0020060324670746975,
+      "original_centroid_total_strength": 506398.33333333326
+    },
+    {
+      "cluster_id": 2,
+      "original_centroid_betweenness_primary": 0.0004781329186118519,
+      "original_centroid_clustering_primary": 0.5507336451569488,
+      "original_centroid_pagerank_primary": 0.0009303401993120985,
+      "original_centroid_total_strength": 227363.02011494248
+    },
+    {
+      "cluster_id": 3,
+      "original_centroid_betweenness_primary": 0.00014864948298804278,
+      "original_centroid_clustering_primary": 0.6076009709625124,
+      "original_centroid_pagerank_primary": 0.0004123074108357714,
+      "original_centroid_total_strength": 70966.80830670927
+    },
+    {
+      "cluster_id": 4,
+      "original_centroid_betweenness_primary": 3.5659403383948482e-06,
+      "original_centroid_clustering_primary": 0.849477831130086,
+      "original_centroid_pagerank_primary": 0.0001175770061603614,
+      "original_centroid_total_strength": 4274.189547038324
+    }
+  ],
+  "pipeline_version": "core-kmeans-v1",
+  "primary_inertia": 3518.3530454050792,
+  "primary_k": 4,
+  "primary_seed": 42,
+  "primary_silhouette": 0.5098197652197591,
+  "repeat_assignment_fingerprint": "bccae38d2937c71b5adfffb2a864035dc00cd331f0f43009668910a2ff93e971",
+  "report_comparison": {
+    "k_selection_classification": "materially_different",
+    "reconstruction_detected_knee": 3,
+    "reconstruction_silhouette_best_k": 2,
+    "report_cluster_sizes": "cannot_verify",
+    "report_elbow_k": 4,
+    "report_full_centroids": "cannot_verify",
+    "report_partial_profile_evidence": {
+      "role_group_1_avg_clustering_approx": 0.752,
+      "role_group_2_avg_flow_approx": 610000
+    },
+    "report_reference_clustering_k": 4,
+    "report_station_assignments": "cannot_verify"
+  },
+  "scaled_centroids": [
+    {
+      "cluster_id": 1,
+      "scaled_centroid_betweenness_primary": 3.9427389863322944,
+      "scaled_centroid_clustering_primary": -1.6728133912757228,
+      "scaled_centroid_pagerank_primary": 4.076813663755746,
+      "scaled_centroid_total_strength": 4.016730940955289
+    },
+    {
+      "cluster_id": 2,
+      "scaled_centroid_betweenness_primary": 0.9214853602782563,
+      "scaled_centroid_clustering_primary": -1.007633140359122,
+      "scaled_centroid_pagerank_primary": 1.4134750869737898,
+      "scaled_centroid_total_strength": 1.474508969224766
+    },
+    {
+      "cluster_id": 3,
+      "scaled_centroid_betweenness_primary": 0.008326810327510073,
+      "scaled_centroid_clustering_primary": -0.6722600763663626,
+      "scaled_centroid_pagerank_primary": 0.1308622515606952,
+      "scaled_centroid_total_strength": 0.049621626585345725
+    },
+    {
+      "cluster_id": 4,
+      "scaled_centroid_betweenness_primary": -0.39377011808662415,
+      "scaled_centroid_clustering_primary": 0.7542002425292906,
+      "scaled_centroid_pagerank_primary": -0.5988695500402207,
+      "scaled_centroid_total_strength": -0.5579983868370562
+    }
+  ],
+  "scope": "core_2023_2024",
+  "silhouette_best_k": 2
+}

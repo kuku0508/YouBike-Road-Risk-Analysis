@@ -1,0 +1,26 @@
+{
+  "allowlist_sha256": "96e441aa5b044615e376237971e60684dfe88f3c0782ae008ca05d63769af8f5",
+  "allowlist_version": "station-repair-policy-v2",
+  "ambiguous_count": 1,
+  "approved_repair_count": 5,
+  "candidate_only_count": 1,
+  "cleaned_record_count": 12,
+  "end_timestamp": "2026-09-16T00:00:00+00:00",
+  "input_record_count": 13,
+  "input_source_hashes": {
+    "input.jsonl": "e0f895938f677d239b2f65e7a31730d4b52d61c23cc0234ea7ae10a09a1f0b59"
+  },
+  "not_an_error_count": 1,
+  "output_hashes": {
+    "cleaned.parquet": "3b1afb5555c5bfd16664071e027638c440b41d1811c1f4033e0d2dd4ceb6decc",
+    "quarantine.jsonl": "72b35aec9bae26ed872538b6f7f24f43858170223233f6959590c4f3e2cf7372"
+  },
+  "pipeline_version": "station-cleaning-pipeline-v1",
+  "quarantine_record_count": 1,
+  "record_conservation": true,
+  "run_id": "phase3.4-synthetic",
+  "start_timestamp": "2026-09-16T00:00:00+00:00",
+  "unchanged_no_rule_count": 15,
+  "unresolved_count": 1,
+  "validation_status": "passed"
+}

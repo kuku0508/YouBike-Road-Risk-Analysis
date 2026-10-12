@@ -1,0 +1,71 @@
+{
+  "contract_version": "kmeans-reconstruction-contract-v1",
+  "analysis_scope": "core_2023_2024",
+  "input": {
+    "metrics_file": "data/processed/network/core_2023_2024/node_metrics.parquet",
+    "sha256": "a31ade358f59529ca8d5784bd0151aa17be6894b3a39194322534659dd27fe72",
+    "node_key": "station_id",
+    "expected_node_count": 2782,
+    "source_pipeline_version": "core-sna-metrics-v1",
+    "source_metric_contract": "network-metric-contract-v1"
+  },
+  "features": [
+    "total_strength",
+    "betweenness_primary",
+    "clustering_primary",
+    "pagerank_primary"
+  ],
+  "feature_semantics": {
+    "total_strength": "in_strength_plus_out_strength_with_self_loop_counted_once_in_each",
+    "betweenness_primary": "directed_unweighted_normalized_self_loops_excluded",
+    "clustering_primary": "undirected_simple_unweighted_projection_self_loops_excluded",
+    "pagerank_primary": "directed_trip_count_weighted_alpha_0_85_self_loops_retained"
+  },
+  "preprocessing": {
+    "primary_scaler": "StandardScaler",
+    "with_mean": true,
+    "with_std": true,
+    "log_transform": false,
+    "missing_value_policy": "fail_closed_no_imputation",
+    "outlier_policy": "retain_all_no_winsorization_or_trimming"
+  },
+  "kmeans": {
+    "library": "scikit-learn",
+    "library_version": "1.8.0",
+    "class": "sklearn.cluster.KMeans",
+    "init": "k-means++",
+    "n_init": 50,
+    "max_iter": 300,
+    "tol": 0.0001,
+    "algorithm": "lloyd",
+    "random_state": 42
+  },
+  "elbow": {
+    "k_values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "metric": "inertia_wcss",
+    "knee_diagnostic": "maximum_normalized_perpendicular_distance_to_endpoint_chord",
+    "knee_tie_break": "smallest_k",
+    "report_reference_k": 4,
+    "report_reference_is_acceptance_target": false
+  },
+  "secondary_diagnostics": {
+    "silhouette": true,
+    "silhouette_k_values": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "silhouette_role": "secondary_only_not_report_method"
+  },
+  "labels": {
+    "relabel_rule": "sort_clusters_by_min_station_id_ascending_then_assign_1_based_integer",
+    "semantic_order": false,
+    "centroid_outputs": ["scaled_space", "inverse_transformed_original_units"]
+  },
+  "sensitivity_variants": {
+    "scaling": ["none", "MinMaxScaler", "log1p_total_strength_then_StandardScaler"],
+    "additional_random_states": [7, 19, 73]
+  },
+  "phase_7_0_guard": {
+    "full_core_kmeans_allowed": false,
+    "full_core_feature_audit_allowed": true,
+    "synthetic_kmeans_allowed": true,
+    "bounded_real_kmeans_max_rows": 20
+  }
+}

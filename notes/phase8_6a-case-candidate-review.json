@@ -1,0 +1,144 @@
+{
+  "contract_version": "cbi-guided-case-review-v1",
+  "generated_at_utc": "2026-10-02T16:00:20+00:00",
+  "locked_inputs": {
+    "phase8_5c_rows": 106057,
+    "phase8_5c_fingerprint": "2e6d9f763b0370abbf3785c9e510f04b36cde415947b156eccc7223129af2ea0",
+    "phase8_5c_parquet_sha256": "8d818cd74c7b52d65488c5a0c0a97223f9ef7569e0d1ac35a26d2ca0b3e83ddc",
+    "phase8_5c_receipt_fingerprint": "15c2c4ccecb8b662b52a6af35a1eabbe74b197e4f2415d2f4129483935dffe30",
+    "phase8_5a_fingerprint": "f9a3f6ba149cf8bdd4742d5e5857e03aa0a4bb8a1ab90f603199e10f103c4f14",
+    "phase8_5a_parquet_sha256": "dec4bf536fe692e69311371e02c905e02e19bdc49e30f45f88316e8dffcc750f"
+  },
+  "review_contract": {
+    "primary_classes": [
+      "q90_q95",
+      "above_q95"
+    ],
+    "secondary_context_class": "q75_q90",
+    "visualization_metadata_only": true,
+    "ranking": false,
+    "binary_hotspot": false,
+    "new_cbi_cutoff": false,
+    "new_exposure_cutoff": false,
+    "corridor_aggregation": false,
+    "automatic_case_selection": false
+  },
+  "summary": {
+    "primary_review_segments": 1283,
+    "class_counts": {
+      "above_q95": 767,
+      "q90_q95": 516
+    },
+    "weekday_candidates": 1270,
+    "holiday_candidates": 1255,
+    "candidate_daytype_state_counts": {
+      "both_daytypes_candidate": 1242,
+      "holiday_only_candidate": 13,
+      "weekday_only_candidate": 28
+    },
+    "secondary_context_segments": 2592
+  },
+  "distributions": {
+    "cbi": {
+      "n": 1283,
+      "min": 0.22762033288349076,
+      "p25": 0.2631578947368421,
+      "p50": 0.3157894736842105,
+      "p75": 0.42105263157894735,
+      "p90": 0.5263157894736842,
+      "p95": 0.631578947368421,
+      "p99": 1.0,
+      "max": 2.0
+    },
+    "accident_count": {
+      "n": 1283,
+      "min": 4.0,
+      "p25": 5.0,
+      "p50": 6.0,
+      "p75": 8.0,
+      "p90": 10.0,
+      "p95": 12.0,
+      "p99": 19.0,
+      "max": 38.0
+    },
+    "epdo": {
+      "n": 1283,
+      "min": 544.0,
+      "p25": 585.0,
+      "p50": 702.0,
+      "p75": 936.0,
+      "p90": 1170.0,
+      "p95": 1404.0,
+      "p99": 2223.0,
+      "max": 4446.0
+    },
+    "weekday_exposure": {
+      "n": 1283,
+      "min": 2034.0,
+      "p25": 17141.0,
+      "p50": 39518.0,
+      "p75": 83724.0,
+      "p90": 173055.99999999994,
+      "p95": 279257.6999999986,
+      "p99": 626024.1600000007,
+      "max": 1077423.0
+    },
+    "holiday_exposure": {
+      "n": 1283,
+      "min": 1036.0,
+      "p25": 6899.5,
+      "p50": 16728.0,
+      "p75": 36692.5,
+      "p90": 73566.39999999998,
+      "p95": 115463.69999999955,
+      "p99": 248569.74000000005,
+      "max": 434756.0
+    }
+  },
+  "outputs": {
+    "worksheet": {
+      "path": "notes/phase8_6a-case-candidate-review.csv",
+      "rows": 1283,
+      "sha256": "660566e42801bbba51e20020985217bd3583c47188d8acaba56c48c4fa236893",
+      "fingerprint_sha256": "91d8666aeb7248b0e6beafb21e67e7ac5a60d137e22a2007fe491c319c72c595"
+    },
+    "figure": {
+      "path": "figures/phase8_6a_case_candidate_review.png",
+      "sha256": "42883d5b99c886969dd44c64d23438259a512fc15b99d4a84bb7abf0b76fb17c",
+      "bytes": 433022
+    }
+  },
+  "validation": {
+    "canonical_cbi_unchanged": true,
+    "display_class_inherited": true,
+    "candidate_key_unique": true,
+    "all_candidates_high_flow": true,
+    "all_candidates_primary_class": true,
+    "blank_human_review_fields": true,
+    "no_ranking": true,
+    "no_hotspot": true,
+    "no_new_cutoff": true,
+    "no_corridor_aggregation": true,
+    "deterministic_rerun": true
+  },
+  "tests": {
+    "phase8_6a_focused": 18,
+    "relevant_regression": 143,
+    "project_wide": 582,
+    "status": "all_passed"
+  },
+  "limitations": [
+    "candidate unit is a BRouter physical microsegment, not an official road corridor",
+    "visualization classes are not risk categories",
+    "final case selection requires human map review and explicit rationale",
+    "A3/PDO-only accidents unavailable",
+    "BRouter exposure is estimated",
+    "accident matching exclusions and the analytical 10 m threshold remain",
+    "no road-environment interpretation or improvement recommendation performed"
+  ],
+  "readiness": {
+    "phase8_6b": "READY_FOR_HUMAN_REVIEW_BEFORE_SEPARATELY_AUTHORIZED_PHASE_8_6B"
+  },
+  "qa_fingerprint_sha256": "cd8212fa9a3076a0d8cf4ccbc9c2d38751675fa011deb719419809a56dda0ba6",
+  "receipt_fingerprint_sha256": "9a62a25cb51b222866ecd4076c5490675be9a15829121d6c9ddb854e49a03a79"
+}

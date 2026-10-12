@@ -1,0 +1,63 @@
+{
+  "bounded_real_validation": {
+    "edge_count": 190,
+    "fixed_seed_deterministic": true,
+    "node_count": 20,
+    "partition_fingerprint": "ee3f3c5fe54e460852c85621fbf57d5021b646889994c37a50f4f113a975c13b",
+    "purpose": "implementation_only_not_core_result"
+  },
+  "contract_sha256": "975ab48612534d3cf54de3d89562f49bbe64aefd2d15a01672bd2ae8e7fdaab6",
+  "contract_version": "louvain-reconstruction-contract-v1",
+  "core_od_sha256": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+  "full_core_louvain_executed": false,
+  "library": {
+    "directed_input_supported_by_library": true,
+    "function": "networkx.algorithms.community.louvain_communities",
+    "name": "networkx",
+    "version": "3.4.2"
+  },
+  "projection_qa": {
+    "checks": {
+      "full_weight_reconciliation": true,
+      "pair_accounting": true,
+      "projected_edge_identity": true,
+      "self_loops_removed": true,
+      "weight_conservation": true
+    },
+    "directed_edge_count": 1125519,
+    "directed_weight_sum": 91138763,
+    "isolated_node_count_after_loop_removal": 0,
+    "one_way_pair_count": 373167,
+    "projected_undirected_edge_count": 748591,
+    "projected_weight_sum": 85115195,
+    "reciprocal_pair_count": 375424,
+    "self_loop_edges_removed": 1504,
+    "self_loop_weight_removed": 6023568
+  },
+  "synthetic_validation": {
+    "checks": {
+      "fixed_seed_deterministic": true,
+      "isolated_after_loop_removal": true,
+      "isolated_in_louvain_partition": true,
+      "manual_modularity_matches_library": true,
+      "no_duplicate_projected_edges": true,
+      "one_way_retained": true,
+      "reciprocal_max": true,
+      "reciprocal_sum": true,
+      "self_loop_removed": true,
+      "unweighted_presence": true
+    },
+    "expected_partition_modularity": 0.4873417721518988,
+    "fixed_seed_partition_labels": {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "D": 2,
+      "E": 2,
+      "F": 2,
+      "G": 3
+    },
+    "node_count": 7
+  },
+  "validation_status": "passed"
+}

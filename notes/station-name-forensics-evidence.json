@@ -1,0 +1,192 @@
+{
+  "phase": "3.1",
+  "period": [
+    "2023-01",
+    "2025-03"
+  ],
+  "method": "Read-only scan of Phase 3 od_profile unique OD/month aggregates; metadata matching creates candidates only.",
+  "phase3_evidence_sha256_before": "85310e4b4852b4ec7d7e73d20aa2f684d32ced2da14bfa1022f25b4d9e4241ce",
+  "phase3_evidence_sha256_after": "85310e4b4852b4ec7d7e73d20aa2f684d32ced2da14bfa1022f25b4d9e4241ce",
+  "source_files": {
+    "phase3": {
+      "path": "notes\\data-quality-profile.json",
+      "sha256": "85310e4b4852b4ec7d7e73d20aa2f684d32ced2da14bfa1022f25b4d9e4241ce"
+    },
+    "taipei_current": {
+      "path": "data\\raw\\youbike_immediate_2026-09-13.json",
+      "sha256": "0ac45607a811c3d7dde8727f2d1d4e005dcece367b1411c211eabfa2496f6969",
+      "snapshot_date": "2026-09-13",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json",
+      "authority": "official"
+    },
+    "taipei_historical": {
+      "path": "data\\raw\\station_snapshot_2024-05-31.csv",
+      "sha256": "c696c0f23f55cef97862c324468781d85b752bd5f9557e3608e691f9c930634a",
+      "snapshot_date": "2024-05-31",
+      "url": "https://github.com/LittleFish-Coder/youbike-info-collector/blob/master/result/2024-05-31.csv",
+      "authority": "third-party capture of official feed"
+    },
+    "new_taipei_current": {
+      "path": "data\\raw\\new_taipei_youbike_2026-09-14.csv",
+      "sha256": "325d0adc6b89ee986fd8abf1cd453d67ba645cd70432c92404436aa991578d27",
+      "snapshot_date": "2026-09-14",
+      "url": "https://data.ntpc.gov.tw/api/datasets/010e5b15-3823-4b20-b401-b1cf000550c5/csv?page=0&size=5000",
+      "authority": "official"
+    }
+  },
+  "metadata_rows": {
+    "taipei_current_2026-09-13": 1800,
+    "taipei_historical_2024-05-31": 1415,
+    "new_taipei_current_2026-09-14": 1606
+  },
+  "summary": {
+    "illegal_utf8": {
+      "unique_values": 8,
+      "value_involvement_records": 202124,
+      "status_unique_values": {
+        "unique_supported": 8
+      },
+      "origin_occurrences": 102224,
+      "destination_occurrences": 108043,
+      "note": "Value-involvement counts can overlap when both station fields in one record are affected. Phase 3 record-union counts remain authoritative."
+    },
+    "native_replacement": {
+      "unique_values": 7,
+      "value_involvement_records": 145366,
+      "status_unique_values": {
+        "unique_supported": 7
+      },
+      "origin_occurrences": 73246,
+      "destination_occurrences": 78388,
+      "note": "Value-involvement counts can overlap when both station fields in one record are affected. Phase 3 record-union counts remain authoritative."
+    },
+    "question_mark": {
+      "unique_values": 10,
+      "value_involvement_records": 408777,
+      "status_unique_values": {
+        "unique_supported": 10
+      },
+      "origin_occurrences": 209947,
+      "destination_occurrences": 213404,
+      "note": "Value-involvement counts can overlap when both station fields in one record are affected. Phase 3 record-union counts remain authoritative."
+    },
+    "unbalanced_parentheses": {
+      "unique_values": 31,
+      "value_involvement_records": 1296281,
+      "status_unique_values": {
+        "unique_supported": 18,
+        "ambiguous": 10,
+        "unresolved": 3
+      },
+      "origin_occurrences": 674921,
+      "destination_occurrences": 656078,
+      "note": "Value-involvement counts can overlap when both station fields in one record are affected. Phase 3 record-union counts remain authoritative."
+    },
+    "destination_only": {
+      "unique_values": 1528,
+      "value_involvement_records": 1806112,
+      "status_unique_values": {
+        "unresolved": 217,
+        "not_an_error": 1311
+      },
+      "origin_occurrences": 0,
+      "destination_occurrences": 1806112,
+      "note": "Value-involvement counts can overlap when both station fields in one record are affected. Phase 3 record-union counts remain authoritative."
+    }
+  },
+  "record_status_assessment": {
+    "core_period": {
+      "illegal_utf8": {
+        "classified_records": 181703,
+        "by_status": {
+          "unique_supported": 181703
+        }
+      },
+      "native_replacement": {
+        "classified_records": 145366,
+        "by_status": {
+          "unique_supported": 145366
+        }
+      },
+      "question_mark": {
+        "classified_records": 342112,
+        "by_status": {
+          "unique_supported": 342112
+        }
+      },
+      "unbalanced_parentheses": {
+        "classified_records": 1213052,
+        "by_status": {
+          "unique_supported": 343605,
+          "ambiguous": 868919,
+          "unresolved": 528
+        }
+      },
+      "destination_only": {
+        "classified_records": 1564489,
+        "by_status": {
+          "not_an_error": 1544198,
+          "unresolved": 20291
+        }
+      },
+      "any_station_anomaly": {
+        "classified_records": 1877700,
+        "by_status": {
+          "unique_supported": 1008253,
+          "ambiguous": 868919,
+          "unresolved": 528
+        }
+      }
+    },
+    "extended_report_period": {
+      "illegal_utf8": {
+        "classified_records": 202123,
+        "by_status": {
+          "unique_supported": 202123
+        }
+      },
+      "native_replacement": {
+        "classified_records": 145366,
+        "by_status": {
+          "unique_supported": 145366
+        }
+      },
+      "question_mark": {
+        "classified_records": 408725,
+        "by_status": {
+          "unique_supported": 408725
+        }
+      },
+      "unbalanced_parentheses": {
+        "classified_records": 1294741,
+        "by_status": {
+          "unique_supported": 368077,
+          "ambiguous": 926106,
+          "unresolved": 558
+        }
+      },
+      "destination_only": {
+        "classified_records": 1806112,
+        "by_status": {
+          "not_an_error": 1784172,
+          "unresolved": 21940
+        }
+      },
+      "any_station_anomaly": {
+        "classified_records": 2046061,
+        "by_status": {
+          "unique_supported": 1119397,
+          "ambiguous": 926106,
+          "unresolved": 558
+        }
+      }
+    }
+  },
+  "candidate_table": "notes\\station-name-forensics.csv",
+  "interpretation_limits": [
+    "A current snapshot cannot prove a station existed during every historical month.",
+    "A fuzzy/prefix/wildcard match is candidate generation, not proof.",
+    "No station strings or trip records were changed.",
+    "Destination-only means absent from observed origins in this report period, not invalid."
+  ]
+}

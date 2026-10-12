@@ -1,0 +1,82 @@
+{
+  "contract_version": "road-routing-contract-v1.1",
+  "analysis_period": "2023-01/2024-12",
+  "period_status": "reconstruction_decision; report specifies core 2023-2024 but does not state routing aggregation granularity",
+  "od_input": {
+    "path": "data/processed/od/aggregate/core_2023_2024/od.parquet",
+    "sha256": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+    "policy_version": "od-inclusion-policy-v1",
+    "routing_unit": "unique_directed_od_pair",
+    "weight": "trip_count"
+  },
+  "self_loop_policy": "exclude_from_routing_with_explicit_edge_and_trip_weight_accounting",
+  "station_coordinates": {
+    "join_key": "exact_station_id",
+    "resolution_policy": "historical-coordinate-resolution-policy-v1",
+    "coordinate_artifact": "data/processed/routing/routing_station_coordinates_2023_2024.parquet",
+    "coordinate_artifact_sha256": "8e5b4bbe3511b0145234f209768f0eec0f766e9121716ae510170724dab1ad06",
+    "coordinate_artifact_status": "finalized_2756_of_2782_nodes_with_disclosed_exclusions",
+    "coordinate_assumption_id": "routing-coordinate-assumption-v1",
+    "coordinate_assumption_path": "config/routing_coordinate_assumption.yaml",
+    "legacy_source_sha256": "8bf19851f7e9329b0f7207f84b149ce243ca9f6d1e6270ffb5f382b1a9e63205",
+    "legacy_mapping_sha256": "52513e958338c87b4e09bb2de4b9b9113b367b5549043d796c1c5990e2b52c66",
+    "legacy_active_station_evidence": "supporting_unverified_provenance",
+    "legacy_routing_acceptance": "accepted_by_analyst_assumption",
+    "primary_source": "verified direct historical evidence when available, otherwise exact-mapped legacy monthly coordinate under routing-coordinate-assumption-v1",
+    "fallback_source": "existing accepted temporally bracketed coordinate; otherwise unresolved; current-only never silently accepted",
+    "conflicting_coordinate_policy": "preserve provenance flag; accepted legacy monthly coordinate is operational routing coordinate under analyst assumption unless stronger verified direct historical evidence exists",
+    "coordinate_time_precision": "YYYY-MM only",
+    "coordinate_era_count": 0,
+    "evidence_limitation": "Phase 8.0B provenance remains unverified and possible retrospective static-coordinate backfill remains plausible",
+    "name_geocoding_allowed": false,
+    "input_crs": "EPSG:4326"
+  },
+  "brouter": {
+    "required_version": "1.7.10",
+    "execution_mode": "pinned_local_http_server_or_cli",
+    "executable_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/brouter-1.7.10-all.jar",
+    "jar_sha256": "93e9821640093cde82ed470ac8c08ab84fc7ae3b570e30c9ab41d686c7af1d4a",
+    "java_observed": "25.0.4.1",
+    "profile_name": "trekking",
+    "profile_path": "data/raw/routing/brouter-v1.7.10/brouter-1.7.10/profiles2/trekking.brf",
+    "profile_sha256": "00241f71fe9251d3e38571a4eb296352c7c2451d86eb34e656123820c27b315e",
+    "profile_mutation_allowed": false
+  },
+  "routing_graph": {
+    "required_tiles": ["E120_N20.rd5", "E120_N25.rd5"],
+    "source": "https://brouter.de/brouter/segments4/",
+    "snapshot_observed_at_source": "2026-09-18 CET",
+    "local_paths": ["data/raw/routing/E120_N20_20260918.rd5", "data/raw/routing/E120_N25_20260918.rd5"],
+    "sha256": ["86a1e9c4ef037a204fbe71dcac6f525469102e04b0887dad6f06d29a547df37a", "533b558b33e51f723ad3ae9838d098d3055b85c1f986259d4f7dd940366a96e3"],
+    "temporal_limitation": "Road topology may differ from the graph available to the original study."
+  },
+  "endpoint_snapping": {
+    "semantics": "BRouter automatic graph matching; preserve corrected waypoints if available",
+    "qa": "measure geodesic input-to-first/last-geometry offsets; report <=25, 25-50, 50-100, >100 m; do not auto-exclude"
+  },
+  "route_directionality": "directed; reciprocal OD pairs route independently",
+  "segment_identity": {
+    "preferred": "graph_native_edge_id_if_exported",
+    "observed_output_capability": "standard GeoJSON exposes route geometry but no stable graph-native edge identity",
+    "fallback": "ordered_adjacent_lon_lat_pair",
+    "coordinate_precision_decimals": 6,
+    "serialization": "fixed_decimal_lon_lat_arrow_lon_lat",
+    "orientation": "directed"
+  },
+  "flow_assignment": "each traversal receives the full OD trip_count; never divide by segment count",
+  "repeated_segment_policy": "traversal_based",
+  "failure_taxonomy": ["success", "self_loop_not_routed", "missing_coordinate", "coordinate_conflict", "no_route", "brouter_error", "malformed_output", "snap_anomaly", "timeout"],
+  "cache_key_fields": ["origin_station_id", "destination_station_id", "origin_coordinate", "destination_coordinate", "brouter_version", "routing_graph_hashes", "trekking_profile_hash", "routing_contract_version", "coordinate_artifact_hash", "routing_parameters"],
+  "checkpoint_policy": "resume only when cache key and output SHA-256 both validate",
+  "route_output_schema": ["origin_station_id", "destination_station_id", "trip_count", "routing_status", "route_distance_m", "segment_count", "route_hash", "geometry_reference", "cache_key", "error_provenance"],
+  "segment_output_schema": ["segment_id", "from_lon", "from_lat", "to_lon", "to_lat", "directed_geometry", "segment_length_m", "trip_flow", "routed_od_count", "road_name_optional", "osm_metadata_optional"],
+  "bounded_validation_required": true,
+  "full_routing_execution": false,
+  "historical_coordinate_readiness": "finalized_phase_8_1_ready_with_disclosed_exclusions",
+  "coordinate_exclusion_accounting": {
+    "unresolved_core_nodes": 26,
+    "unroutable_non_self_od_edges": 23096,
+    "unroutable_non_self_trip_weight": 1421216,
+    "artifact": "data/processed/routing/unroutable_od_due_to_coordinate_gap.parquet"
+  }
+}

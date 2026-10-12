@@ -1,0 +1,279 @@
+{
+  "accepted_bike_type_counts": {
+    "一般車": 6316613,
+    "電輔車": 195016
+  },
+  "accepted_records": 6511629,
+  "allowlist_sha256": "9699e5e25b975fec202e58e5bf8727578f34075953ff961314b029b18e1bff1a",
+  "allowlist_version": "station-repair-policy-v2",
+  "bike_type_counts": {
+    "一般車": 6316624,
+    "電輔車": 195016
+  },
+  "dry_run": false,
+  "end_timestamp": "2026-09-16T09:38:29.925897+00:00",
+  "illegal_utf8": {
+    "affected_field_count": 23799,
+    "affected_record_count": 22953,
+    "approved_repair_accepted_records": 22942,
+    "approved_repair_accepted_station_sides": 23788,
+    "both_endpoints_affected_records": 846,
+    "destination_affected_records": 12296,
+    "illegal_byte_count": 28756,
+    "origin_affected_records": 11503,
+    "quarantine_unique_raw_base64_patterns": [
+      "5b6M5Z+U5ZyL5bCPKOWvpui4kOi3ry/ph43mhbbot68xNTXlt7fljw==",
+      "5paw5YyX5biC5pS/5bqc5p2/5qmL5YiG5bGA5rKZ5bSZ5rS+5Ye65g=="
+    ],
+    "station_side_status_counts": {
+      "destination": {
+        "ambiguous": 6,
+        "approved_repair": 12285,
+        "candidate_only": 5,
+        "not_an_error": 0,
+        "unchanged_no_rule": 0,
+        "unresolved": 0
+      },
+      "origin": {
+        "ambiguous": 0,
+        "approved_repair": 11503,
+        "candidate_only": 0,
+        "not_an_error": 0,
+        "unchanged_no_rule": 0,
+        "unresolved": 0
+      }
+    },
+    "unapproved_quarantine_records": 11,
+    "unapproved_quarantine_station_sides": 11,
+    "unique_raw_base64_pattern_union_count": 7,
+    "unique_raw_base64_patterns": {
+      "destination": [
+        "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+        "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+        "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw==",
+        "5b6M5Z+U5ZyL5bCPKOWvpui4kOi3ry/ph43mhbbot68xNTXlt7fljw==",
+        "5o236YGL5rW35bGx56uZKDPomZ/lh7rlj6Mp6L2J5LmY5YGc6LuK5Q==",
+        "5paw5YyX5biC5pS/5bqc5p2/5qmL5YiG5bGA5rKZ5bSZ5rS+5Ye65g==",
+        "6I+v5rGf5LiA6I+v5rGf5LqM6Lev5Y+jKOaxn+WMr0xpZmXnpL7ljQ=="
+      ],
+      "origin": [
+        "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+        "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+        "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw=="
+      ]
+    }
+  },
+  "input_records": 6511640,
+  "output_bytes": {
+    "cleaned.parquet": 87847268,
+    "quarantine.jsonl": 15798
+  },
+  "output_hashes": {
+    "cleaned.parquet": "d086383036c97e754800a6cd982dc220efe6ea422a1106b7cd7cfadcfc81dfd9",
+    "quarantine.jsonl": "eb34fb93a6adfef05d4b95098291ec0bc2777b6bad1c0a0689a4229ea03e4d7d"
+  },
+  "parquet_validation": {
+    "accepted_quarantine_overlap": 0,
+    "approved_missing_provenance": 0,
+    "bike_type_counts": {
+      "一般車": 6316613,
+      "電輔車": 195016
+    },
+    "bike_type_null_count": 0,
+    "clean_changes_without_approval": 0,
+    "combined_multiset_fingerprint": {
+      "count": 6511640,
+      "sum128": "948445fbc7a56db9954e03c9fef1a128",
+      "xor128": "a5e0f48e29bcf426feda7d491f297116"
+    },
+    "combined_state_count": 6511640,
+    "nonapproved_identity_assignments": 0,
+    "raw_multiset_fingerprint": {
+      "count": 6511629,
+      "sum128": "fed07136e08b363d7c12b045320e1cf4",
+      "xor128": "1b370b2ec9da26f82f8a0407c07a4ec0"
+    },
+    "raw_station_profile": {
+      "destination_missing": 2,
+      "destination_numeric_suffix": 96544,
+      "destination_question_mark": 13600,
+      "destination_replacement_character": 0,
+      "destination_unbalanced_parentheses": 51348,
+      "origin_missing": 1,
+      "origin_numeric_suffix": 101204,
+      "origin_question_mark": 13513,
+      "origin_replacement_character": 0,
+      "origin_unbalanced_parentheses": 53061
+    },
+    "row_count": 6511629,
+    "schema": "borrow_time: string\nreturn_time: string\nduration_raw: string\nbike_type: string\nborrow_date: string\n_source_file: string\n_source_row: int64\n_schema_version: string\n_parse_warnings: string\norigin_station_raw: string\norigin_station_raw_base64: string\norigin_station_clean: string\norigin_station_id: string\norigin_station_city: string\norigin_station_repair_status: string\norigin_station_rule_version: string\norigin_station_evidence_tier: string\norigin_station_tier1_subtype: string\ndestination_station_raw: string\ndestination_station_raw_base64: string\ndestination_station_clean: string\ndestination_station_id: string\ndestination_station_city: string\ndestination_station_repair_status: string\ndestination_station_rule_version: string\ndestination_station_evidence_tier: string\ndestination_station_tier1_subtype: string",
+    "schema_fingerprint_sha256": "9ce32292c859e148f8124605c30d12d2f4aea534759a21c8d96ce4838df5cbb0",
+    "source_rows_strictly_increasing": true
+  },
+  "parser_version": "youbike-raw-parser-contract-v1",
+  "performance": {
+    "peak_working_set_bytes": 662388736,
+    "rows_per_second": 8901.039434344557,
+    "wall_clock_seconds": 731.5582689000294
+  },
+  "period": "2024/12",
+  "phase3_cross_check": {
+    "profile_sha256": "85310e4b4852b4ec7d7e73d20aa2f684d32ced2da14bfa1022f25b4d9e4241ce",
+    "status": "passed"
+  },
+  "pipeline_version": "station-cleaning-pipeline-v1",
+  "preflight": {
+    "bike_type_counts": {
+      "一般車": 6316624,
+      "電輔車": 195016
+    },
+    "csv_member": "202412_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv",
+    "csv_uncompressed_bytes": 758701196,
+    "destination_missing": 2,
+    "duration_gt_24h": 410,
+    "duration_gt_7d": 18,
+    "duration_zero": 4,
+    "first_source_row": 1,
+    "gates": {
+      "bike_type": true,
+      "bike_type_schema_evidence": true,
+      "destination_missing": true,
+      "duration_gt_24h": true,
+      "duration_gt_7d": true,
+      "duration_zero": true,
+      "encoding": true,
+      "header": true,
+      "origin_missing": true,
+      "record_count": true,
+      "schema": true,
+      "source_rows": true,
+      "station_patterns": true
+    },
+    "header_present": false,
+    "illegal_utf8": {
+      "affected_field_count": 23799,
+      "affected_record_count": 22953,
+      "both_endpoints_affected_records": 846,
+      "destination_affected_records": 12296,
+      "illegal_byte_count": 28756,
+      "origin_affected_records": 11503,
+      "unique_raw_base64_pattern_union_count": 7,
+      "unique_raw_base64_patterns": {
+        "destination": [
+          "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+          "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+          "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw==",
+          "5b6M5Z+U5ZyL5bCPKOWvpui4kOi3ry/ph43mhbbot68xNTXlt7fljw==",
+          "5o236YGL5rW35bGx56uZKDPomZ/lh7rlj6Mp6L2J5LmY5YGc6LuK5Q==",
+          "5paw5YyX5biC5pS/5bqc5p2/5qmL5YiG5bGA5rKZ5bSZ5rS+5Ye65g==",
+          "6I+v5rGf5LiA6I+v5rGf5LqM6Lev5Y+jKOaxn+WMr0xpZmXnpL7ljQ=="
+        ],
+        "origin": [
+          "5Lit5ZyL6Yar6Jel5aSn5a246ZmE6Kit6Yar6Zmi6Ie65YyX5YiG6Q==",
+          "5YOR5a6J5Zyw5LiL5YGc6LuK5aC0KDLomZ/lh7rlj6Mp5p2x5Y2X5Q==",
+          "5aSp5q+N5p2x6LevOOW3ty/lv6DoqqDot6/kuozmrrUxNTTlt7fljw=="
+        ]
+      }
+    },
+    "last_source_row": 6511640,
+    "origin_missing": 1,
+    "phase3_repeated_identical": {
+      "excess_copies": 63026,
+      "involved_records": 125479,
+      "multiplicity_groups": {
+        "2": 61946,
+        "3": 450,
+        "4": 49,
+        "5_plus": 8
+      },
+      "repeated_groups": 62453
+    },
+    "phase3_station_patterns": {
+      "destination_numeric_suffix": 96544,
+      "destination_question_mark": 13600,
+      "destination_unbalanced_parentheses": 51354,
+      "origin_numeric_suffix": 101204,
+      "origin_question_mark": 13513,
+      "origin_unbalanced_parentheses": 53061
+    },
+    "raw_multiset_fingerprint": {
+      "count": 6511640,
+      "sum128": "948445fbc7a56db9954e03c9fef1a128",
+      "xor128": "a5e0f48e29bcf426feda7d491f297116"
+    },
+    "record_count": 6511640,
+    "schema_version": "v2_7col",
+    "station_patterns": {
+      "destination_numeric_suffix": 96544,
+      "destination_question_mark": 13600,
+      "destination_replacement_character": 0,
+      "destination_unbalanced_parentheses": 51354,
+      "origin_numeric_suffix": 101204,
+      "origin_question_mark": 13513,
+      "origin_replacement_character": 0,
+      "origin_unbalanced_parentheses": 53061
+    },
+    "warning_record_count": 22953
+  },
+  "quarantine_bike_type_counts": {
+    "一般車": 11
+  },
+  "quarantine_reason_counts": {
+    "serialization_unsafe_unapproved_destination_station_raw": 11
+  },
+  "quarantine_records": 11,
+  "raw_source": {
+    "bytes": 79069822,
+    "csv_member": "202412_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv",
+    "csv_uncompressed_bytes": 758701196,
+    "filename": "202412_YouBike2.0票證刷卡資料.zip",
+    "sha256": "75c972b782b1a0874a60fe32c2bf9d6395fc74d1484bf00a79b6365fc3546a7c"
+  },
+  "record_conservation": true,
+  "repaired_trip_count": 76725,
+  "repeated_identical_preservation": {
+    "excess_copies": 63026,
+    "involved_records": 125479,
+    "multiplicity_groups": {
+      "2": 61946,
+      "3": 450,
+      "4": 49,
+      "5_plus": 8
+    },
+    "policy": "retain_all",
+    "raw_multiset_fingerprint_match": true,
+    "repeated_groups": 62453
+  },
+  "run_id": "phase3.7-full-period-2024-12",
+  "start_timestamp": "2026-09-16T09:26:18.196636+00:00",
+  "station_side_status_counts": {
+    "destination": {
+      "ambiguous": 36597,
+      "approved_repair": 40416,
+      "candidate_only": 197,
+      "not_an_error": 86170,
+      "unchanged_no_rule": 6348249,
+      "unresolved": 0
+    },
+    "origin": {
+      "ambiguous": 38895,
+      "approved_repair": 39182,
+      "candidate_only": 0,
+      "not_an_error": 0,
+      "unchanged_no_rule": 6433552,
+      "unresolved": 0
+    }
+  },
+  "tier1_subtype_station_side_counts": {
+    "1A": 47214,
+    "1B": 26925,
+    "1C": 5459
+  },
+  "trip_level_repair_counts": {
+    "both_sides_repaired": 2873,
+    "destination_only_repaired": 37543,
+    "neither_side_repaired": 6434904,
+    "origin_only_repaired": 36309
+  },
+  "validation_status": "passed"
+}

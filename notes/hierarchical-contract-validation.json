@@ -1,0 +1,102 @@
+{
+  "blocked_reason": "2022_NETWORK_RECONSTRUCTION_REQUIRED",
+  "bounded_real_validation": {
+    "assignment_sha256": "bf62e30a9cb81800e856d2fd97de074320dc3c6caf91ba9971d6d67905887049",
+    "deterministic": true,
+    "feature_count": 3,
+    "linkage_sha256": "a4e47039c9154825d60837e1418653e7f18c125d4b3caa0f1c8619ef89f445c3",
+    "purpose": "three_metric_plumbing_only_not_72_feature_target_or_report_result",
+    "row_count": 12
+  },
+  "contract_version": "hierarchical-clustering-reconstruction-contract-v1",
+  "execution_readiness": "blocked",
+  "full_core_hierarchical_executed": false,
+  "period_resolution": "clearly_2022_2024",
+  "report_period": "2022-2024",
+  "required_months": 36,
+  "sample_parser_eof_validation": {
+    "2022-01": {
+      "record_count": 1371395,
+      "schema_versions": [
+        "v1_6col"
+      ],
+      "warning_count": 0
+    },
+    "2022-12": {
+      "record_count": 2628740,
+      "schema_versions": [
+        "v1_6col"
+      ],
+      "warning_count": 0
+    }
+  },
+  "sampled_2022_raw": [
+    {
+      "bytes": 16134695,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "encoding": "utf-8-sig:strict",
+      "filename": "202201_YouBike2.0票證刷卡資料.zip",
+      "header_present": true,
+      "month": "2022-01",
+      "row_count": 1371396,
+      "sha256": "00824c1a83b2ab2c72fe829c13b9e538a6e8bdbd25ae972f94c8d209bf5acba6",
+      "undecodable_byte_count": 0
+    },
+    {
+      "bytes": 30542838,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "encoding": "utf-8-sig:strict",
+      "filename": "202212_YouBike2.0票證刷卡資料.zip",
+      "header_present": true,
+      "month": "2022-12",
+      "row_count": 2628741,
+      "sha256": "a36f1f62dc8a55e328bf2c10d0499dbbc477b52eed49f64d321b73e9b38f8309",
+      "undecodable_byte_count": 0
+    }
+  ],
+  "scipy_version": "1.17.1",
+  "source_index_2022": {
+    "all_head_status_200": true,
+    "head_checked_utc": "2026-09-12T12:01:16.563828+00:00",
+    "listed_month_count": 12,
+    "months": [
+      "2022-01",
+      "2022-02",
+      "2022-03",
+      "2022-04",
+      "2022-05",
+      "2022-06",
+      "2022-07",
+      "2022-08",
+      "2022-09",
+      "2022-10",
+      "2022-11",
+      "2022-12"
+    ]
+  },
+  "synthetic_validation": {
+    "assignment_sha256": "a2ee369741d9fab8a9b9b4b02a10786f6a01bd31c7b250ded27da26c2dc4886a",
+    "checks": {
+      "different_raw_scales": true,
+      "distance_count_correct": true,
+      "labels_contiguous": true,
+      "labels_deterministic": true,
+      "linkage_deterministic": true,
+      "linkage_shape_correct": true,
+      "outlier_retained": true,
+      "scaled_mean_zero": true,
+      "shape_10_by_4": true,
+      "station_order_deterministic": true
+    },
+    "linkage_sha256": "a01ebd202db90e0d74f5b1a74b2fbe9483784acf4c23e9309b3d58ee28d0ba0d"
+  },
+  "target_feature_count_per_day_type": 72,
+  "target_input_paths": {
+    "holiday": "data/processed/network/hierarchical_2022_2024/holiday_hourly_sna_features.parquet",
+    "weekday": "data/processed/network/hierarchical_2022_2024/weekday_hourly_sna_features.parquet"
+  },
+  "target_inputs_exist": false,
+  "validation_status": "passed_contract_blocked_execution"
+}

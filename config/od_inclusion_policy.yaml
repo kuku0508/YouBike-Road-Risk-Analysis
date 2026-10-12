@@ -1,0 +1,65 @@
+{
+  "policy_version": "od-inclusion-policy-v1",
+  "scope": "2023/01-2025/03",
+  "primary_network_boundary": "full_observed_uniquely_identifiable_station_universe",
+  "station_identity_requirement": "both_endpoints_resolve_to_exactly_one_canonical_station_id",
+  "od_node_key": "station_id",
+  "canonical_station_name_role": "display_label_only",
+  "identity_resolution_order": [
+    "cleaned_endpoint_station_id",
+    "exact_raw_base64_match_to_station_universe_evidence",
+    "exact_station_name_match_to_one_id_across_locked_current_and_2024_metadata_snapshots"
+  ],
+  "allowed_endpoint_statuses": {
+    "approved_repair": "require_cleaned_station_id_and_provenance",
+    "not_an_error": "require_exact_station_universe_match_with_station_id",
+    "unchanged_no_rule": "require_nonempty_safe_name_and_exact_unique_metadata_station_id"
+  },
+  "excluded_endpoint_statuses": {
+    "candidate_only": "primary_exclusion_candidate_is_not_approved_identity",
+    "ambiguous": "primary_exclusion_multiple_possible_identities",
+    "unresolved": "primary_exclusion_no_supported_identity",
+    "valid_name_no_id": "primary_exclusion_no_unique_station_id",
+    "name_collision": "primary_exclusion_exact_name_maps_to_multiple_ids",
+    "missing": "primary_exclusion_endpoint_absent"
+  },
+  "quarantine_behavior": "exclude_from_all_od_aggregation_and_retain_in_qa_dataset",
+  "missing_endpoint_behavior": "exclude_from_all_od_aggregation_and_retain_in_non_od_qa_dataset",
+  "candidate_only_behavior": "exclude_primary_allow_raw_name_pseudonode_only_in_named_sensitivity_variant",
+  "ambiguous_behavior": "exclude_primary_allow_raw_name_pseudonode_only_in_broad_sensitivity_variant",
+  "unresolved_behavior": "exclude_primary_allow_raw_name_pseudonode_only_in_broad_sensitivity_variant",
+  "cross_city_behavior": "include_when_both_endpoints_have_unique_ids_city_is_attribute_not_filter",
+  "historical_operational_status": {
+    "raw_trip_occurrence": "evidence_that_source_recorded_the_endpoint_at_that_trip_time",
+    "eligibility_rule": "unique_identity_plus_raw_trip_occurrence_is_sufficient_for_primary_od",
+    "limitation": "does_not_assert_official_active_interval_without_valid_from_valid_to"
+  },
+  "repeated_identical_row_behavior": "retain_and_count_every_record",
+  "duration_behavior": "does_not_affect_od_eligibility",
+  "exclusion_precedence": [
+    "quarantined",
+    "missing_endpoint",
+    "identity_ambiguous",
+    "identity_unresolved",
+    "candidate_only",
+    "name_collision",
+    "no_unique_station_id",
+    "od_eligible"
+  ],
+  "secondary_flags": "retain_all_flags_independently_from_primary_exclusion_reason",
+  "sensitivity_variants": {
+    "hybrid_allow_safe_name_fallback": "allow_serialization_safe_unchanged_name_without_id_as_base64_namespaced_pseudonode",
+    "include_candidate_raw_pseudonodes": "hybrid_plus_candidate_only_exact_raw_name_pseudonodes",
+    "broad_raw_pseudonodes": "all_nonmissing_accepted_rows_except_observed_name_collisions",
+    "taipei_only_id_required": "primary_rule_plus_both_endpoint_city_equals_Taipei"
+  },
+  "forbidden_in_od_builder": [
+    "fuzzy_matching",
+    "prefix_guessing",
+    "runtime_station_repair",
+    "station_name_normalization",
+    "drop_duplicates",
+    "duration_filtering",
+    "city_based_primary_exclusion"
+  ]
+}

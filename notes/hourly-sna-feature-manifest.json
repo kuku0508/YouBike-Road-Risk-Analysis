@@ -1,0 +1,1959 @@
+{
+  "analysis_period": "2023-2024",
+  "bucket_count": 48,
+  "buckets": [
+    {
+      "active_destination_nodes": 2309,
+      "active_node_count": 2311,
+      "active_origin_nodes": 1496,
+      "day_type": "weekday",
+      "edge_count": 133810,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "f2ddad1dff23b96a3ddfb9a29f5eafd3169ba3f9316a2cb84fe265e3c01e2e64",
+      "hour": 0,
+      "metric_output_hashes": {
+        "betweenness": "d2abf944155ba9a265a2a19e4dc25712ff3f90c173a2d8b0269d3b1fb414a587",
+        "eigenvector": "0e3408d04d6fbbef26717be70d0fa141531b03ba2088d7ed3b2eb29f6a640135",
+        "pagerank": "4a9fdd6f69744e3be243a79b9277a91eb99c7b16314fd322e968b44c43f6a43a"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.1070696000242606,
+        "eigenvector": 0.4080209999810904,
+        "pagerank": 1.152553299907595
+      },
+      "metrics_parquet_sha256": "6b8ce32b378624f820d9d022c9e984d777887b59742802aa4714a4488a8b1342",
+      "node_count": 2782,
+      "od_parquet_sha256": "fffbf98cf5fc89109eb074757f384e69ed5ff86120f547a27f0ef6e1898de049",
+      "self_loop_trips": 25820,
+      "source_date_count": 492,
+      "trip_count": 535092,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2263,
+      "active_node_count": 2268,
+      "active_origin_nodes": 1492,
+      "day_type": "weekday",
+      "edge_count": 92807,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "f9516aacc2dcbf6f4a0a226cf6ccda6fc13853068c8dbfaccc7d4eafdcb8ad63",
+      "hour": 1,
+      "metric_output_hashes": {
+        "betweenness": "222931ac3fb6e4ca676c29f9bc60e234b634c257825cef447d809a8f2289a712",
+        "eigenvector": "dc0f9ccc9ab6fbe73af734d2588fba98da0db0db598a1130d837b2877dc85fd8",
+        "pagerank": "c6c375827ea6911e526ccdf30630ad41fb7ea6fb9551d78a15b1da4e323441c0"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.7505296000745147,
+        "eigenvector": 0.26153619994875044,
+        "pagerank": 0.44456309999804944
+      },
+      "metrics_parquet_sha256": "8eb1ddb9c777d6f6a5efdd1c7dfc77a68b7963fed3fb47334f00639c580c4926",
+      "node_count": 2782,
+      "od_parquet_sha256": "14b5c9c8127ab5a83a678976c2cb210d03542d1dab26c566e884d1244e90d8fb",
+      "self_loop_trips": 15208,
+      "source_date_count": 491,
+      "trip_count": 240883,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2161,
+      "active_node_count": 2170,
+      "active_origin_nodes": 1475,
+      "day_type": "weekday",
+      "edge_count": 64044,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "5c03bdb37b79775d593639766d057ef320c849d101380b632adf689cba110fe0",
+      "hour": 2,
+      "metric_output_hashes": {
+        "betweenness": "bf08941c2de5efa7262912d81ce49279827eec4a572cd395e78153fe066ffba0",
+        "eigenvector": "3a4f498d60d9cf21f07e7ae80556b1a09f0adc5c57b6233557e4e10449f46a71",
+        "pagerank": "91afd722853b4f9f987208943692ef7e90f3c6fa7f51ea40aabf6dcab5913f88"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.5553407999686897,
+        "eigenvector": 0.24500029999762774,
+        "pagerank": 0.4264387000584975
+      },
+      "metrics_parquet_sha256": "387f186ccf96867165434e0442687d986fe1d264236e198ce3adafae5f32e757",
+      "node_count": 2782,
+      "od_parquet_sha256": "f284db0d66532a898a17d4206054f19552a419f21be22b80ec46565a42d6d3c0",
+      "self_loop_trips": 9915,
+      "source_date_count": 490,
+      "trip_count": 148398,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2088,
+      "active_node_count": 2099,
+      "active_origin_nodes": 1467,
+      "day_type": "weekday",
+      "edge_count": 47516,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "600e748df3fd0798882d11e612114845042547054418045aebe1e4b45b0de0ea",
+      "hour": 3,
+      "metric_output_hashes": {
+        "betweenness": "72b254e42831350e2e5041987639505cfd3e13ee5944940c5caaeb16d62b8246",
+        "eigenvector": "a44afdc3889ab938ef525c0c64cd99efe6b98b0ea09edfc3e4d96dc7486aa6f2",
+        "pagerank": "b919da5756d44e3f188c75b7d5ab483b960e3f7b057cfc06d896d548d7cb32f8"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.4601823999546468,
+        "eigenvector": 0.18052260007243603,
+        "pagerank": 0.3966943999985233
+      },
+      "metrics_parquet_sha256": "ba6c419d7506e183d92c72c7237640feb6cd51ca8a1468385fe14995ededb82c",
+      "node_count": 2782,
+      "od_parquet_sha256": "5cdb50011bc9134cd79441002345aa0db66e5642c17c05773266faeb6a46280b",
+      "self_loop_trips": 7749,
+      "source_date_count": 490,
+      "trip_count": 115045,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2064,
+      "active_node_count": 2082,
+      "active_origin_nodes": 1484,
+      "day_type": "weekday",
+      "edge_count": 45788,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "1a80048e727184a64fbf38bc136c89d5fe4f46c1a9df1d0c5fa1e3bf7f103213",
+      "hour": 4,
+      "metric_output_hashes": {
+        "betweenness": "bf8bdf7a976b820441d8b2fac53e883d721288bd71f055dada22e4c04ccae2d5",
+        "eigenvector": "1a821fdaf6b4c77ced97fe8f20868ccdc5788ab442c25d898fb4817f617a5d2e",
+        "pagerank": "7abb77ab6b748f1a402357fb32b7e738274c8c4ae9492975e7949b32163eafe9"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.45970090001355857,
+        "eigenvector": 0.2499509999761358,
+        "pagerank": 0.3971765999449417
+      },
+      "metrics_parquet_sha256": "c90f868b0e720f2c5418c59a622cd71498df8625d4fa6e0838a115f064ab92e2",
+      "node_count": 2782,
+      "od_parquet_sha256": "30de3ee34d6b9e48a6d1ad836188e1d84edc70c673490d7007515177d77cea35",
+      "self_loop_trips": 11265,
+      "source_date_count": 491,
+      "trip_count": 153606,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2056,
+      "active_node_count": 2059,
+      "active_origin_nodes": 1491,
+      "day_type": "weekday",
+      "edge_count": 73257,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "cfc538e03dd7dc425458a7e50a09cd20378219a302aa1e213b85810c3cf8a175",
+      "hour": 5,
+      "metric_output_hashes": {
+        "betweenness": "f46b29846134e7cde8a01e6fd1a2a83942df966eeb6a13ac539c065811b4549f",
+        "eigenvector": "8cc22498fa4e5a2fa1626edbc3c6d2dcb16dfcd449d2a6377116f9f300188615",
+        "pagerank": "f9a577e0b5fb674f2f707351079a2fdc5d3439715f70cf2f0d38905782b4db0c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.5872474000789225,
+        "eigenvector": 0.31802330003120005,
+        "pagerank": 0.4925464999396354
+      },
+      "metrics_parquet_sha256": "3922c394a38c4d6c50e631faec6efb25ae80ccda67e6b9ba344ff7b4f64aa3da",
+      "node_count": 2782,
+      "od_parquet_sha256": "97eb3b0c236b9bd6b0753763bb8f7f37ae2f82af521c42b64f2c019e8640ccee",
+      "self_loop_trips": 38476,
+      "source_date_count": 492,
+      "trip_count": 456870,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2077,
+      "active_node_count": 2080,
+      "active_origin_nodes": 1500,
+      "day_type": "weekday",
+      "edge_count": 121310,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "dc943b0764c9c10949369ea24e2f300f103f5ad979bec6540295518154793f07",
+      "hour": 6,
+      "metric_output_hashes": {
+        "betweenness": "6de002412ae2e39a3e1e6c86c3bc853c9802e63421371aae68751b7483f35134",
+        "eigenvector": "748aaa93f885d99555cbe4e432f82ccc4b53bb905e318864ac733abe16a56152",
+        "pagerank": "425fa37d9c0742679d92ec6fa1e37dd3da4ab715d048d2d9028700425441b63d"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.8950518000638112,
+        "eigenvector": 0.6434298999374732,
+        "pagerank": 0.904418500023894
+      },
+      "metrics_parquet_sha256": "c94227cf63735e2742ae6ddadce2ee28817728dc1e3bbed08d8aa2e903e04b92",
+      "node_count": 2782,
+      "od_parquet_sha256": "10d6f0f57a104de507beacce751c50b2b1677a3633795613715056d53bb2a275",
+      "self_loop_trips": 81752,
+      "source_date_count": 492,
+      "trip_count": 1602394,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2193,
+      "active_node_count": 2193,
+      "active_origin_nodes": 1499,
+      "day_type": "weekday",
+      "edge_count": 201468,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "805bc5e1d85e0e3c9e5c3e24fb84f1e5e21fcdb0ac1572238a846d83094a0504",
+      "hour": 7,
+      "metric_output_hashes": {
+        "betweenness": "ed7cd226bb9cacfda9694cfd03b107f76f7601eec596b565f291d76026a3a407",
+        "eigenvector": "3eae58294745813527eb1100cdf3a54ad1990f12fe29da88721866092799934f",
+        "pagerank": "a01cd99c28349d829d3a32b8995bc2954e97215b0363962993c104669a13f32c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.3800977999344468,
+        "eigenvector": 0.6030109999701381,
+        "pagerank": 1.0071471000555903
+      },
+      "metrics_parquet_sha256": "b679da7d6231c39bb82c68621132fe4f16a5cf83eea0a3539d9bdc894d6cf5fa",
+      "node_count": 2782,
+      "od_parquet_sha256": "09f2c07b5261c961a05aa0bd7a3389b1a21fdfed4a278a1687a9ce6289b2b7a9",
+      "self_loop_trips": 107031,
+      "source_date_count": 492,
+      "trip_count": 4406594,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2256,
+      "active_node_count": 2256,
+      "active_origin_nodes": 1499,
+      "day_type": "weekday",
+      "edge_count": 247701,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "81e8cd1c4ebfc71341c062bd4ff4b04ad4fdab03bbbb741f3a6041b9023f162d",
+      "hour": 8,
+      "metric_output_hashes": {
+        "betweenness": "e4c4f7e5d24e6eacb38022079351eb600445095075cc2d1b294ff9f48232403a",
+        "eigenvector": "c72fdfc88a0d01a7d52e6728150510b9c5aef207a32bc2de4fa0f29789405495",
+        "pagerank": "1f484786bf7c0ca4bcf750d2abd220f35dda5a291f532b468c1cad30eed3ff3e"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.621119900024496,
+        "eigenvector": 0.7175903000170365,
+        "pagerank": 1.4248504000715911
+      },
+      "metrics_parquet_sha256": "74786e9159647d31f3bce206d96697e2ce6996e7f92e977fbf71e2bd298bfb83",
+      "node_count": 2782,
+      "od_parquet_sha256": "91f92bd4fa4879f4d917772bff853bbbf338c0ec58720c384331708ca597ffa5",
+      "self_loop_trips": 134511,
+      "source_date_count": 492,
+      "trip_count": 5448551,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2278,
+      "active_node_count": 2281,
+      "active_origin_nodes": 1502,
+      "day_type": "weekday",
+      "edge_count": 246669,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "89403ffa2b793961ce9e793a0804ae73293d1a3643911684bc83539ec061e019",
+      "hour": 9,
+      "metric_output_hashes": {
+        "betweenness": "93e94a5dec40c0b49f37d49ff7450e765466c04b28d3e4ed7f5c2fcd2e58e372",
+        "eigenvector": "a54b8511beeed6be88669b286e75c65436d01e83cf75e92a146e6083d7f42757",
+        "pagerank": "2c11f260f4a3256af50e1dc19e4adbc1c184a97bb226f84c18a9560889adbcdb"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.6572938000317663,
+        "eigenvector": 0.8485828000120819,
+        "pagerank": 1.4940392000135034
+      },
+      "metrics_parquet_sha256": "3c962cacdf47e720bf3e6a58b09c1cb0647f5e9e931d7aaf21ca0683ce9d1289",
+      "node_count": 2782,
+      "od_parquet_sha256": "2c37217e89689dcf6e301b97d513e315ddd99ebfb29069fb85c0dea57cc7652b",
+      "self_loop_trips": 180078,
+      "source_date_count": 492,
+      "trip_count": 3555994,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2301,
+      "active_node_count": 2301,
+      "active_origin_nodes": 1499,
+      "day_type": "weekday",
+      "edge_count": 249470,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "e214e46602833e515621c0c5084a517f5dbbc5e1937ab6428c7bf707a4e6bf0c",
+      "hour": 10,
+      "metric_output_hashes": {
+        "betweenness": "55fbb41aabd8c7d110365dee30041f5127004ad7db979db0327869b3f1452322",
+        "eigenvector": "41bd1a2f8d30d54444142f92bd70be36607f20854c235e31d831fb7ad750ed7d",
+        "pagerank": "92f695c82b89194bcf1f25a0275dae80294890e849fe68b513b90c611841f324"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.6494992000516504,
+        "eigenvector": 0.8250999000156298,
+        "pagerank": 1.1303413000423461
+      },
+      "metrics_parquet_sha256": "db6e808ba233aab73ba9623ba2d472258d04b1c8bfe7a7d0ad8a758da37a9864",
+      "node_count": 2782,
+      "od_parquet_sha256": "382d5dd0293876c716c92d65dadaf783b3ce415e2aab8ffd902ea0bdab04693f",
+      "self_loop_trips": 230497,
+      "source_date_count": 492,
+      "trip_count": 2691634,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2307,
+      "active_node_count": 2308,
+      "active_origin_nodes": 1500,
+      "day_type": "weekday",
+      "edge_count": 263052,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "a1c0e44baf5151aaaa824d0a7b59546c272300e819087c9d3b6caa9ca174288f",
+      "hour": 11,
+      "metric_output_hashes": {
+        "betweenness": "c3e5cb09ea38b2f86fd847d605af22c260ea13764b9877f688510c5a6c459826",
+        "eigenvector": "a80eb24a303478480cd69a87c5b8252ab7d82e1fee3710d3da72bbc3412fd2d9",
+        "pagerank": "dc5d6e939c6f1ff9adb5450c67b08d18a513548a0d70580f2e3d66f24a051c43"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.8765772000188008,
+        "eigenvector": 0.7615194999380037,
+        "pagerank": 1.3854884000029415
+      },
+      "metrics_parquet_sha256": "364824c1a39b00098af48e9076f78583a8e4c7d68307b82bc8cf93c6a7163c30",
+      "node_count": 2782,
+      "od_parquet_sha256": "24e168f5ed17e3648155fa2eb3b5b750ebc60f8858572d78ad43dc716ed0987f",
+      "self_loop_trips": 381429,
+      "source_date_count": 492,
+      "trip_count": 2960340,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2359,
+      "active_node_count": 2360,
+      "active_origin_nodes": 1500,
+      "day_type": "weekday",
+      "edge_count": 280720,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "233972f44931f997700ef977ec12a449eb7ad9f2d93e72dc07e5d314fa0dc15c",
+      "hour": 12,
+      "metric_output_hashes": {
+        "betweenness": "9aded03d214c68a752182de57eca6bbd3b5e9bc7efb86bafb7ac20d2071aa825",
+        "eigenvector": "6a3fcc480d49c572330c703d7cac0b798bfc1a63a4fbcdc8d2ed3859f685125f",
+        "pagerank": "e2d14078880426eb37b2eb1044c45a011222fce8a519ff8b92551c487f2c19cf"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.076640999992378,
+        "eigenvector": 0.7878456000471488,
+        "pagerank": 1.649230399983935
+      },
+      "metrics_parquet_sha256": "c561bb132980b94d91de90c5e39936c21411151e325c0bb0090fe5dc2d90ee04",
+      "node_count": 2782,
+      "od_parquet_sha256": "8a349f539f736baa05623690b31ae4f6bd614229c16ca8e24dba85bcba703dc0",
+      "self_loop_trips": 444605,
+      "source_date_count": 492,
+      "trip_count": 3781783,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2384,
+      "active_node_count": 2387,
+      "active_origin_nodes": 1503,
+      "day_type": "weekday",
+      "edge_count": 286930,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "17122a6b0294c3d8d674bc6ab3950aaf231e81b86eab7b20488a4d46620966b1",
+      "hour": 13,
+      "metric_output_hashes": {
+        "betweenness": "1dab51ea42f852bb6e5504592af480e83ad99e5c1f2d2a940095df40f50cabe4",
+        "eigenvector": "e509474eb52e7b7b14a9e40e6f1f48d72fe74aedfdd95503083645e9fc7a6828",
+        "pagerank": "6de35467eefb1505d84904b79ccf7a19bef4f0156e07301683f3f31b92a27118"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.081027999985963,
+        "eigenvector": 0.9164689000463113,
+        "pagerank": 1.5517413000343367
+      },
+      "metrics_parquet_sha256": "76f41bbb8d1361b505751f84b916288f48daabadc7b0c34976c86216b7fa031d",
+      "node_count": 2782,
+      "od_parquet_sha256": "78d7fb22ff463541a357b78bf1fc7d6690a38559b60668db2b0b931629402e37",
+      "self_loop_trips": 249328,
+      "source_date_count": 492,
+      "trip_count": 3233248,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2426,
+      "active_node_count": 2429,
+      "active_origin_nodes": 1501,
+      "day_type": "weekday",
+      "edge_count": 292184,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "659d2d0fea8af74aed8012af3e08ce2d35bbe056ef974e6cfb29e711b2d078d2",
+      "hour": 14,
+      "metric_output_hashes": {
+        "betweenness": "688364689980674df326d681268c38189ab79d45d9d770afacdd8ce81b495248",
+        "eigenvector": "0b464abefcdef1ab1d3749eabdd205bc45b0ca7b01bf9a62b05b6fdf7089be8a",
+        "pagerank": "fa7e0fe6e3f29fc207f088b93688afd69c1cdecce2acce03dc98e343b944a168"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.9161541000939906,
+        "eigenvector": 0.7829063999233767,
+        "pagerank": 1.9228267000289634
+      },
+      "metrics_parquet_sha256": "76967e4124bcd992dd98191917e3a189cd66830c761d4f93ea34ecc9bbc26d0b",
+      "node_count": 2782,
+      "od_parquet_sha256": "5a4598323773fabe6c154eab1bbdd8f8e3a42d774d82f029a367e36a5dd5ca6c",
+      "self_loop_trips": 243603,
+      "source_date_count": 492,
+      "trip_count": 2788420,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2464,
+      "active_node_count": 2465,
+      "active_origin_nodes": 1501,
+      "day_type": "weekday",
+      "edge_count": 310497,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "f4d7dd9cdc561f23adf71f92514642a5e14706a11a51f8ee33a1c0619505f90f",
+      "hour": 15,
+      "metric_output_hashes": {
+        "betweenness": "b813faf78a49de708e04dc79a1d7bfd097fc2acf36af3225de9e1bce453bda7f",
+        "eigenvector": "157202c4dc6fefcda472067da4132a5d81bf6e1203ab0f0bb6c339b8ccf09c7d",
+        "pagerank": "ac0c5d0dcd927f2dd796e5f0f148786ca4f04c9f60f7ffb30ac20f75bb4b1995"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.029605600051582,
+        "eigenvector": 0.9271196000045165,
+        "pagerank": 1.5563330999575555
+      },
+      "metrics_parquet_sha256": "15006f0cd31b99cc3978634af0282ceebd45111b7d7f12800bf6242740cc1907",
+      "node_count": 2782,
+      "od_parquet_sha256": "118b325fdbc12d105f3d3a765dc5dfda7fed89392f41ee4cb47866fd42d82fcd",
+      "self_loop_trips": 257237,
+      "source_date_count": 492,
+      "trip_count": 3091222,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2529,
+      "active_node_count": 2531,
+      "active_origin_nodes": 1501,
+      "day_type": "weekday",
+      "edge_count": 356333,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "2feebcf941ec9b3349482b04d186d78c92fb3db959afba550ec9f94066b59a90",
+      "hour": 16,
+      "metric_output_hashes": {
+        "betweenness": "6b7cf29efe004f31375ba2e31fabcec68ef5f3cb1abcc46ff9c5eaff55b9683e",
+        "eigenvector": "2e2a5786cb58d136cc8c09cb45a3718123d5814e6c8bca1d580b9f47732ba4e7",
+        "pagerank": "230c4839485c1ca7ecd0a3f731c89057578226bbdfc7489afedd2f757cc3aa6c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.328224999946542,
+        "eigenvector": 0.96736010001041,
+        "pagerank": 1.6589288999093696
+      },
+      "metrics_parquet_sha256": "1dc60580b89d1364dca005f000efbbd82f45d73754749dde545e4a07efa9189c",
+      "node_count": 2782,
+      "od_parquet_sha256": "62f3daa54413f24a0c3fb1b32880c12f75200da512881b59a3bf5d943df2b272",
+      "self_loop_trips": 296490,
+      "source_date_count": 492,
+      "trip_count": 4456689,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2534,
+      "active_node_count": 2534,
+      "active_origin_nodes": 1502,
+      "day_type": "weekday",
+      "edge_count": 410313,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "d91fa5bb2083b067815075d3bfdd26bc3a0de172c4ca86b90fe1623ba4098f89",
+      "hour": 17,
+      "metric_output_hashes": {
+        "betweenness": "2cffe0410339adad2345d35853c19229b372f69c9bd3b56794fec7babe294e8f",
+        "eigenvector": "00fdd6b7e58a040e4432b4c20e4e07c9ea901903c6ddeda4aa9f44c2983322ba",
+        "pagerank": "9f71d8a00b593febd4974147faff1449b9d7f4ab4e763c9be1eb765d22102619"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.688016099971719,
+        "eigenvector": 1.1475150999613106,
+        "pagerank": 2.0694984000874683
+      },
+      "metrics_parquet_sha256": "47f23bd28cb673976d6ec5f94e325c08a404c83fcc57ae692984ba9e672c1276",
+      "node_count": 2782,
+      "od_parquet_sha256": "9cd1795c22cb7c8dc8616b1e9237b2d361b03e69b3e1b3a768463881145fcdc4",
+      "self_loop_trips": 304235,
+      "source_date_count": 492,
+      "trip_count": 6330011,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2537,
+      "active_node_count": 2538,
+      "active_origin_nodes": 1501,
+      "day_type": "weekday",
+      "edge_count": 416054,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "808089f640bcfb72192471bee5a5051b624f0d0c894bf1d0e25a001c8ab92dae",
+      "hour": 18,
+      "metric_output_hashes": {
+        "betweenness": "5a183dc2d95f8a06d56913dde677cd476b7bb890e40ab785c8ba006ac259e91a",
+        "eigenvector": "5fb68e36299684b5cc84c9d16b854208ac346ec29b9301cdf7b9ecfd676eb9ac",
+        "pagerank": "3ea82f49791ac35ba4e132fd75a35e7ccde5c85985ca6450ec0d20f77bd52a8c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.7983962999423966,
+        "eigenvector": 1.0789589999476448,
+        "pagerank": 2.537888400023803
+      },
+      "metrics_parquet_sha256": "edf85af66094eb4a74966c67ddf99b311dbcc002b9a9bf5d0e7558c6e075764c",
+      "node_count": 2782,
+      "od_parquet_sha256": "497bbb7abcd31e0f9c1f2f0c311296e486ceed603355e7d7c2184d7ed5157c6b",
+      "self_loop_trips": 268596,
+      "source_date_count": 492,
+      "trip_count": 6501476,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2510,
+      "active_node_count": 2512,
+      "active_origin_nodes": 1502,
+      "day_type": "weekday",
+      "edge_count": 346135,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "7e004fdb616ff1c779865c545a1a5e3cc117e868be5536bd86942f3cf5f0b623",
+      "hour": 19,
+      "metric_output_hashes": {
+        "betweenness": "0acddf5fafe29f77a1e6c31dbcee10f9264b478ef513f16e069ff20ea9fc1e97",
+        "eigenvector": "7e4f4d0311c065a992ce40b854e9fb75bb5884628f3a77030c4d3bf581d4de1a",
+        "pagerank": "8fc67c6e46b81f8abf18457d73a6c9970c129028296045ee94b04f271fdd6e1a"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.2599133000476286,
+        "eigenvector": 1.068107399973087,
+        "pagerank": 1.9456372000277042
+      },
+      "metrics_parquet_sha256": "24930dc6d9cffe086ab56354ee0e8b214db686fbbf850e6db0e2f53ec9ed4294",
+      "node_count": 2782,
+      "od_parquet_sha256": "2a687af1efea94b2ae69bb65932e83e6b5ba563d11e4197d5a659567e435d272",
+      "self_loop_trips": 245340,
+      "source_date_count": 492,
+      "trip_count": 4281448,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2475,
+      "active_node_count": 2477,
+      "active_origin_nodes": 1503,
+      "day_type": "weekday",
+      "edge_count": 317045,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "2baa022771fbed4cfa45648eb7d83fa32414e9324f04ddcbaba5e96810fb3470",
+      "hour": 20,
+      "metric_output_hashes": {
+        "betweenness": "a1e5db6747eb0cdf6d723c997b7bc37c0ab4aaa668f61182ca16cee44d47cf1a",
+        "eigenvector": "bb2f4d1fb661e9cbfb19cae42d90843d5690271eba92c13beabc904a5417500b",
+        "pagerank": "524f3b6cb52060162693489190b30666cb83b16ccb9525f2e5fecd5aaad90cd3"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.264342200011015,
+        "eigenvector": 1.0615122000453994,
+        "pagerank": 1.778673900058493
+      },
+      "metrics_parquet_sha256": "12b467c4c0f93959100eb57b130394ddb7529fb0705d2b3a8cfd8d961dcf0095",
+      "node_count": 2782,
+      "od_parquet_sha256": "a3bccc14e1913ede51db2af952ff9ad1dd2774a9144d7672d44aae5e4717168c",
+      "self_loop_trips": 204281,
+      "source_date_count": 492,
+      "trip_count": 3258209,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2458,
+      "active_node_count": 2461,
+      "active_origin_nodes": 1502,
+      "day_type": "weekday",
+      "edge_count": 309768,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "b2a5e81b3ad540772d0d050b18e71b85915ac9fb8e0df9e528d08c4c121d46b7",
+      "hour": 21,
+      "metric_output_hashes": {
+        "betweenness": "985b48a24b1cbe91367356114640bc1fe0d4c9be2a112a1ea9e8091333ce18d2",
+        "eigenvector": "470cb90bf616e620f006859dde21e15194dcff35037deaa0649f2b3132ca43c4",
+        "pagerank": "035ca77647c587ed88f77132422ee0237c5847ab18d00e423df569559425d617"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 2.2698144000023603,
+        "eigenvector": 1.2765625000465661,
+        "pagerank": 1.5802680999040604
+      },
+      "metrics_parquet_sha256": "b8c54ea505e52c43074dec42f338d5c2e33ac93a6cc8e0646c2423f85882b568",
+      "node_count": 2782,
+      "od_parquet_sha256": "d8677e58f5fe4772a76ba11aa357e9caf531a269d8428c0d39eb021edff86de3",
+      "self_loop_trips": 143147,
+      "source_date_count": 491,
+      "trip_count": 3053323,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2391,
+      "active_node_count": 2392,
+      "active_origin_nodes": 1501,
+      "day_type": "weekday",
+      "edge_count": 244077,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "5f62503e02b30bf5b94e54f8b3fdc5c8cf2f0a37757d745dd20d4447da98ba52",
+      "hour": 22,
+      "metric_output_hashes": {
+        "betweenness": "25d3634ec069079a04fdf978f2f48ad862fd66084f257bdca09f549437f8f830",
+        "eigenvector": "b3cfa334ffa41a18b2b48ac6963c4c4b7ee19ebb352692769d1e5f26932aaff9",
+        "pagerank": "d6c95f59c91d7dc7ab70db0467da16f17cec94f0c9beb4b20ff2026ea1729a98"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.6884245000546798,
+        "eigenvector": 0.8178156999638304,
+        "pagerank": 1.6122449999675155
+      },
+      "metrics_parquet_sha256": "07b9d549d4ab158fcc9cf9c8074e74fa82ac153b0d14128d83f3b737c2f8c655",
+      "node_count": 2782,
+      "od_parquet_sha256": "d8c1e7ad3a899c49d95286eaaa460b13447921762afc73f9027c347f8fab6e36",
+      "self_loop_trips": 84334,
+      "source_date_count": 492,
+      "trip_count": 1955601,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2311,
+      "active_node_count": 2313,
+      "active_origin_nodes": 1499,
+      "day_type": "weekday",
+      "edge_count": 179627,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "44bce5ec4d480a8dfe0c97d7ffbbdeed8bcdd6a40ecd64a92376fdc1dfb19f78",
+      "hour": 23,
+      "metric_output_hashes": {
+        "betweenness": "a9238d1f21675a475f44072d030f44273c40926c321e55e0097d278efd33f7a3",
+        "eigenvector": "3803058c13c664262dec23843046345e38b52ff5dc40bc7f59d681550e7a3487",
+        "pagerank": "eca85b29436b3ed4cd955f152fb021580b8724639fba99de4c87ec196b2209eb"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.2651486999820918,
+        "eigenvector": 0.6135486999992281,
+        "pagerank": 1.02214710006956
+      },
+      "metrics_parquet_sha256": "a0b14f45e795eba1d300879ccc556668db6af9824eef1d50f109cacf33f0a246",
+      "node_count": 2782,
+      "od_parquet_sha256": "09d9cecfee877e1578bbecf2513df46c1b1a30001d859c6415d731a3387682c9",
+      "self_loop_trips": 49002,
+      "source_date_count": 492,
+      "trip_count": 1049554,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2296,
+      "active_node_count": 2300,
+      "active_origin_nodes": 1490,
+      "day_type": "holiday",
+      "edge_count": 123097,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "702f1ef6f60f6915d206d2b9aab32533192f582a9dc0568c39c71d2a998535fe",
+      "hour": 0,
+      "metric_output_hashes": {
+        "betweenness": "63e66b0aa464bf661daf0864f65ce09cf7fba7f9a2ec3dc4d8b5c14436af0410",
+        "eigenvector": "5a73bfbb098ca31442b38245483427f808c5603c34e52602a446092a5cc46a7f",
+        "pagerank": "2d34cca4722e6acd8e2637caae3e159b70d7e10ba063c7d80f0c91b59d854664"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.9157894999952987,
+        "eigenvector": 0.4289632000727579,
+        "pagerank": 0.5016988000134006
+      },
+      "metrics_parquet_sha256": "7f9b91bd0164d2d0b545c6bbf6f90f74d25909c5b61505aa68947c868b14faee",
+      "node_count": 2782,
+      "od_parquet_sha256": "3b4aeaaab9028db8fb0cfac007ed55800c50c02f36e14b8c4f994eb89321642d",
+      "self_loop_trips": 15630,
+      "source_date_count": 233,
+      "trip_count": 379645,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2310,
+      "active_node_count": 2316,
+      "active_origin_nodes": 1483,
+      "day_type": "holiday",
+      "edge_count": 92425,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "f5f92ffc7afee2a47ec3d8ab9bad49ff48211b86bf08bd86a44b2eac87f7c0ae",
+      "hour": 1,
+      "metric_output_hashes": {
+        "betweenness": "b647f4032595a894635a3dd3f169ed3a65e18f12afea7bcdbef3c369ee94366d",
+        "eigenvector": "f4ce39d483d2b85001c0b990c0962fc9c3f052ffd77150251345c64db67bb217",
+        "pagerank": "297541a5cce2b71af2d3377391c747ed9be4c0b700a7ae7d0373d6617d66f4ea"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.7536747000413015,
+        "eigenvector": 0.284940299927257,
+        "pagerank": 0.4225509000243619
+      },
+      "metrics_parquet_sha256": "caeb745318a39c96a08e7d88426e9865884790f05dc7bd2815f194e4d196929e",
+      "node_count": 2782,
+      "od_parquet_sha256": "2bbf742de0757efe1aa022d268bc2781eb9e5629dc79df6aa271844d5ee23345",
+      "self_loop_trips": 9157,
+      "source_date_count": 233,
+      "trip_count": 193010,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2223,
+      "active_node_count": 2236,
+      "active_origin_nodes": 1472,
+      "day_type": "holiday",
+      "edge_count": 69296,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "95f61cbe81bad53d51e05d33575bd0707c78d1bba466c0266b8b9ba3610d9491",
+      "hour": 2,
+      "metric_output_hashes": {
+        "betweenness": "edbd0733f16926153007858993f7a4cdbc38084f0abafd25d09338e42c2c9321",
+        "eigenvector": "4aac10abb3b941ce37f952193a0df6c4cfe2a73c51e8aca838a3e4271a7f1935",
+        "pagerank": "ede7e2c0e00f0a37c26ab6d2bd33ac5d0a3b75f1e1a963443fc915805c28b20c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.5886179000372067,
+        "eigenvector": 0.20195629994850606,
+        "pagerank": 0.44992209994234145
+      },
+      "metrics_parquet_sha256": "8e064841934fe4a0f0a51612c4594be3b570a6fc61d9062e651c0de6a6e174b2",
+      "node_count": 2782,
+      "od_parquet_sha256": "888f5843aeefc8c001c879377ddc3ccd22be15263fb9ccf0bbd64144948f0d88",
+      "self_loop_trips": 5913,
+      "source_date_count": 232,
+      "trip_count": 130303,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2177,
+      "active_node_count": 2197,
+      "active_origin_nodes": 1462,
+      "day_type": "holiday",
+      "edge_count": 55250,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "a42b3cfa508e18bb818a0df554a33776c9923e5d0e04add7b443e5f8e1369db9",
+      "hour": 3,
+      "metric_output_hashes": {
+        "betweenness": "80758abf6f262ee7b00551218e34d386479a408d74999237de3d9e4cf9b0a4f7",
+        "eigenvector": "2d1350532225172c0896a321dcc0253a706368ae8b4bf37084f66107162f9e9c",
+        "pagerank": "01ce0a4c01293d823b794ee5afb87c67d96174f68e128b556d7ee678c253f617"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.5109277999727055,
+        "eigenvector": 0.1548777000280097,
+        "pagerank": 0.40759989991784096
+      },
+      "metrics_parquet_sha256": "2916a82c3114f585ffa2256816c1b4985a06ff264d1d79110abc2ed31ba779cf",
+      "node_count": 2782,
+      "od_parquet_sha256": "cd41206a69c3a13533f6340ee592a4b128c867b499fa2b5a52860deca4ce903b",
+      "self_loop_trips": 4434,
+      "source_date_count": 232,
+      "trip_count": 102283,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2124,
+      "active_node_count": 2139,
+      "active_origin_nodes": 1475,
+      "day_type": "holiday",
+      "edge_count": 51523,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "83231f9f3d71f848931074a46367c88e8e5099e19d85adaa51123db542c5ac80",
+      "hour": 4,
+      "metric_output_hashes": {
+        "betweenness": "7d884acd05ce179446f2cb3de14316351a03f7fa66855b684d370dc3211f5b38",
+        "eigenvector": "085b08b4e297a0edb22f208e8c7697898466ca380319abf9afde83a309fe5cb7",
+        "pagerank": "adc923590ffeb1a737274d0e296d6f7b87a514aaeeb2ee2c4d82c23003a4f4ae"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.47521710000000894,
+        "eigenvector": 0.14831870002672076,
+        "pagerank": 0.446091299992986
+      },
+      "metrics_parquet_sha256": "02318b2329a615134c6358b6495396ebbb6ddeac66f6bd558e9a870a897cf391",
+      "node_count": 2782,
+      "od_parquet_sha256": "0f1e20d28867920a014e351627d53bc21c817e5e0c140e400d729b886f22cd21",
+      "self_loop_trips": 5866,
+      "source_date_count": 233,
+      "trip_count": 108094,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2071,
+      "active_node_count": 2075,
+      "active_origin_nodes": 1485,
+      "day_type": "holiday",
+      "edge_count": 67148,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "19e57ff281292c39fac382443e49c87696a19d49e4ebf9eed245602b821523f9",
+      "hour": 5,
+      "metric_output_hashes": {
+        "betweenness": "751ef899fc312e0300484219ea631e30f27b6a454cae2d647a07d37e00fd96b1",
+        "eigenvector": "880980d94a5a52ae7457ac7766eb9303fcaa1eba495556fa1f325ced020adedf",
+        "pagerank": "3b891fd07afb8f81b4e9ea991017606f8210ec54a95d4dfa61889ab3e1454ff9"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.6423022999661043,
+        "eigenvector": 0.33310859999619424,
+        "pagerank": 0.5234271999215707
+      },
+      "metrics_parquet_sha256": "f600efe193143d7d722c08e1ebe720cc4eed5d532ead238535c515f32135e79a",
+      "node_count": 2782,
+      "od_parquet_sha256": "b3f5c707a1fbcf24bcdbf77756dc393b09c2ff10d085f044409e9d045a375d51",
+      "self_loop_trips": 19411,
+      "source_date_count": 233,
+      "trip_count": 219941,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2099,
+      "active_node_count": 2104,
+      "active_origin_nodes": 1497,
+      "day_type": "holiday",
+      "edge_count": 92308,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "0fee3ab81f4df929008da3bdb5cefa5a156e890f849b193003fa49d9e0b662e7",
+      "hour": 6,
+      "metric_output_hashes": {
+        "betweenness": "21bfafd91dc3bc6cc94eb9b01cfe1c2faed453acf17a9bdd9644ff10dba92687",
+        "eigenvector": "0358a775081342a5458a2bf184bf280164848eba38f1e06ac7e05623d4751a37",
+        "pagerank": "6dcee38c0582681f9cb24d015fdf5fd89bfeb5328e653ccaaa55e78099f60e8c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.7295817999402061,
+        "eigenvector": 0.48828649998176843,
+        "pagerank": 0.456085899961181
+      },
+      "metrics_parquet_sha256": "12b2038175e02d6df962d7075737e44fad89959d1e5b910d42fbac150e8f8207",
+      "node_count": 2782,
+      "od_parquet_sha256": "3bcf81b3a2e1646da2d91f78091e9201921a2c24737f19c6bb2424779569b5a0",
+      "self_loop_trips": 45689,
+      "source_date_count": 233,
+      "trip_count": 478489,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2233,
+      "active_node_count": 2234,
+      "active_origin_nodes": 1497,
+      "day_type": "holiday",
+      "edge_count": 131070,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "636b9661ae4b5a32106c9f2673ebca218609b34f4e21dc6225ba07baf1105133",
+      "hour": 7,
+      "metric_output_hashes": {
+        "betweenness": "ad3c17364c8ecf0412b90fa17806853d4db368b9a65204213b63d8ff977980c7",
+        "eigenvector": "39bfcd2a0f1750606bc0d3892ca2ce56ab1c37097cccddd3dd016e6f81f56c56",
+        "pagerank": "81f2c3dc3e5ad4b740330e7f603029903638c422c1e0334223a1a21b64966468"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.9668215999845415,
+        "eigenvector": 0.6518510000314564,
+        "pagerank": 0.8515995999332517
+      },
+      "metrics_parquet_sha256": "cede12918eba49c6743ecdc855369c8f13317eac9bd11109887762a8ca368fdf",
+      "node_count": 2782,
+      "od_parquet_sha256": "a47b633e08c4dde510edbcc108132d4c5cf788abe006815a630cabe70554bfd8",
+      "self_loop_trips": 72976,
+      "source_date_count": 233,
+      "trip_count": 780886,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2316,
+      "active_node_count": 2318,
+      "active_origin_nodes": 1500,
+      "day_type": "holiday",
+      "edge_count": 168691,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "08388fcce23cc387a8bc2b84755c547e9552f67cbb92a3055fb7ebc948dc7083",
+      "hour": 8,
+      "metric_output_hashes": {
+        "betweenness": "7e2a07fb337d2ef7c966b116f21ffd52093916b6625d68bed7fecaf818376ffe",
+        "eigenvector": "c830dd4880863a2f235b220bbba821bf35fe08884d8a2a44c843cbbd141e8649",
+        "pagerank": "3095ae5c33740df53fce4c5c8e10ac63b1dbbb364a8d192a6a0683ab7f91684c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.2654032000573352,
+        "eigenvector": 0.7067373999161646,
+        "pagerank": 1.046777999959886
+      },
+      "metrics_parquet_sha256": "ca37b07250c6fd7db43add57a660885df11b6a064a4674ee1c004bedbd8cdc99",
+      "node_count": 2782,
+      "od_parquet_sha256": "6632dc48424325f9bd0ec63f4c754b7fd72c9cfba511492684a06c004d5073e2",
+      "self_loop_trips": 97178,
+      "source_date_count": 233,
+      "trip_count": 1129259,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2348,
+      "active_node_count": 2349,
+      "active_origin_nodes": 1499,
+      "day_type": "holiday",
+      "edge_count": 191164,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "e0594894371a583f20045695361f9954c5f5e3f2462426de6b7fb1b05b4c42f7",
+      "hour": 9,
+      "metric_output_hashes": {
+        "betweenness": "84e5c7710fdbdca6e22b6d9a378a8f847b1912df58b0acf8f9ba6c8e1a8b467f",
+        "eigenvector": "5d657cc1d653d4607827d9ec3e2909c86d11add243d90d6f22b1843498c567de",
+        "pagerank": "def556d9ff9baf49016bf3f1b27cac82cd0f4133cc59c5747f94b63d0108b3ab"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.4620434999233112,
+        "eigenvector": 0.7457288999576122,
+        "pagerank": 0.99717840005178
+      },
+      "metrics_parquet_sha256": "c295748c51a995d640bc8af7c5a639d556832287fa4f9d314371573e37742d13",
+      "node_count": 2782,
+      "od_parquet_sha256": "a6fca732e84a6247952f3b67c319a53e2a566251ec205b034f30de6a4e49e58d",
+      "self_loop_trips": 119596,
+      "source_date_count": 233,
+      "trip_count": 1311163,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2379,
+      "active_node_count": 2382,
+      "active_origin_nodes": 1501,
+      "day_type": "holiday",
+      "edge_count": 205986,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "55cc5d895882f921968c64687adf63ee4afcdb231691d5ad1083e3cab2bb8244",
+      "hour": 10,
+      "metric_output_hashes": {
+        "betweenness": "641e13b46ea854c45170b518d1a65d98c5ed0b268a23a54f45b5f28a9908bf20",
+        "eigenvector": "ce10d7ad00fb9813c80669030a94694e2edaf730d8120f68f593d832720ab9b1",
+        "pagerank": "02f32b20a1ca5710134322c3c353316b8448c3d7248f0b1187f96f0c9d3b4de1"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.5595700999256223,
+        "eigenvector": 0.7913752999156713,
+        "pagerank": 1.0714971999404952
+      },
+      "metrics_parquet_sha256": "87f443a9aacf5edd2eb6e29d57b89f00ab4b8b457f6514d0c64ccdb3813bf75b",
+      "node_count": 2782,
+      "od_parquet_sha256": "2cd9bfd289f1bc5284b5ca6ed1dcad5542b56c8b66198e8fdb6a902ec96cdc56",
+      "self_loop_trips": 136730,
+      "source_date_count": 233,
+      "trip_count": 1387022,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2348,
+      "active_node_count": 2351,
+      "active_origin_nodes": 1501,
+      "day_type": "holiday",
+      "edge_count": 218085,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "fe982907e13e767dc95487d2c791b5aaabfc00eacdecfd35ddb4bb92d9d9454d",
+      "hour": 11,
+      "metric_output_hashes": {
+        "betweenness": "7064f3882307d221355ba5090be25693c78522a918502fee5d204f28a52e9f31",
+        "eigenvector": "9c8d07eecdaef6580c1019936fb4567216738ead0b4b49a5e32dfaea0d0de3ed",
+        "pagerank": "3b8d38af87a9868ae57c8d3554a846f6d283545bee22a5729bc3607ceab89a5e"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.6964293000055477,
+        "eigenvector": 0.8484720999840647,
+        "pagerank": 1.6372279999777675
+      },
+      "metrics_parquet_sha256": "68b586520284a87412ee6528f6ec987f806c104e6a31df74581e1b95d1913b4e",
+      "node_count": 2782,
+      "od_parquet_sha256": "dab3d6e1c2cb36aabc3ed7d09d7937968e0e1c5248a1f2f6e9ad506b850fd6ba",
+      "self_loop_trips": 155306,
+      "source_date_count": 233,
+      "trip_count": 1482095,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2407,
+      "active_node_count": 2408,
+      "active_origin_nodes": 1501,
+      "day_type": "holiday",
+      "edge_count": 228801,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "56ca4c2236f0f05fc015f0e20929fcb0fea228e3a6f7232010719264f48dd2ac",
+      "hour": 12,
+      "metric_output_hashes": {
+        "betweenness": "f238fa49716a951f5cf38aab3c74004722821dd3df08d81b0ace405ffe82a9a6",
+        "eigenvector": "98cbe050505d44b8de3ead129bbc2d3914a5c237775ae188415f9860a5f28d4a",
+        "pagerank": "3e64150e1af03e188c7f89cbda19008fd93c9acca3c1474149bad57548203401"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.7706524999812245,
+        "eigenvector": 0.7463894999818876,
+        "pagerank": 0.9696525000035763
+      },
+      "metrics_parquet_sha256": "3c20e1406a2a02a8ac08c71b64ad2af826ba34cb34c4849ac55e2b9fbca30815",
+      "node_count": 2782,
+      "od_parquet_sha256": "4e9b1681976add24e774a5e01819be9283ff12da09f8894da7f560f709e09f64",
+      "self_loop_trips": 133049,
+      "source_date_count": 233,
+      "trip_count": 1578541,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2442,
+      "active_node_count": 2442,
+      "active_origin_nodes": 1500,
+      "day_type": "holiday",
+      "edge_count": 242600,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "e6f9e1a3e5f33986ac1ab2f3d3b90c6b5a62ecfb57b00b01ddb34fb1cc6dac75",
+      "hour": 13,
+      "metric_output_hashes": {
+        "betweenness": "561ff8ce4d51d87fd30875f4c13d0bdf4d46abb93a35dafb7723e9173f0815c6",
+        "eigenvector": "85090ee5165539d72af37b46e2276389a8e3e640a84a5b99c10f7d6b9cc3359c",
+        "pagerank": "dd6099404074efff152fa51ef639aa03c17c1a21067b05db8106d62eb5ff4302"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.591655099997297,
+        "eigenvector": 0.7131414000177756,
+        "pagerank": 1.4175824000267312
+      },
+      "metrics_parquet_sha256": "2fa9283dfc3c9ab1a462138373e907427d3463bb32f19670507257f18306ab53",
+      "node_count": 2782,
+      "od_parquet_sha256": "154d06f76d4afc9fb441869dbe8e52331b66ef2fdb67b65fe009b2739b942d0a",
+      "self_loop_trips": 115603,
+      "source_date_count": 233,
+      "trip_count": 1599257,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2478,
+      "active_node_count": 2479,
+      "active_origin_nodes": 1500,
+      "day_type": "holiday",
+      "edge_count": 254051,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "635f6e5e9a43cf2ed468213c5beae88ca429cd96c0b05d2dba8eedc9c63049f8",
+      "hour": 14,
+      "metric_output_hashes": {
+        "betweenness": "ca4ea5ba444de14a2cc137335febe02d5031b78fa09553b3ac764f4197b47edf",
+        "eigenvector": "51fd78ff6b0d04a5783688d9305d5c3472978ef1f7b07597a9b8801f21d1d26a",
+        "pagerank": "6f1d22aa7f38cc4de72ab5f91b3741141f3d0d3b8faef6a4dabb9b1c2e4a7e9c"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.6282349999528378,
+        "eigenvector": 0.7376426999690011,
+        "pagerank": 1.4528936999849975
+      },
+      "metrics_parquet_sha256": "1746a6e3056f9218fc4b7b94d6034b63d955b26b21bdf5f8dde10d10259b5939",
+      "node_count": 2782,
+      "od_parquet_sha256": "f3528f9708c2c5d20fec0318b5a24e194ae275edbe0e0eeb0253bc129079a9f4",
+      "self_loop_trips": 122972,
+      "source_date_count": 233,
+      "trip_count": 1567348,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2484,
+      "active_node_count": 2484,
+      "active_origin_nodes": 1499,
+      "day_type": "holiday",
+      "edge_count": 265001,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "5740b01ba7fdbcfb0d4afa13c00f136be058146c669f75f071057cd90b28834e",
+      "hour": 15,
+      "metric_output_hashes": {
+        "betweenness": "135b477e82b1877125cbc5114db90b4c8735c05b049029754fbc8a19be530420",
+        "eigenvector": "818d7b2a34db78a6789b98dbb0fdb708f1308834eea49f82a5c473fb0c0f11d9",
+        "pagerank": "29873a427eba2a4ff0a8428bc4c164a17eb49ece591f5dab323bfa6b0bf9fd52"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.70510119991377,
+        "eigenvector": 0.8178444999502972,
+        "pagerank": 1.1036923000356182
+      },
+      "metrics_parquet_sha256": "613ec2976b8f563d0944964459ceec3b75e755f5f612e98cebcc7a69f2199269",
+      "node_count": 2782,
+      "od_parquet_sha256": "965967e37fb18faec1808a1930e42a6785a1ea85bf1a800f0729663b3ebb0b0d",
+      "self_loop_trips": 142729,
+      "source_date_count": 233,
+      "trip_count": 1658192,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2494,
+      "active_node_count": 2495,
+      "active_origin_nodes": 1501,
+      "day_type": "holiday",
+      "edge_count": 282951,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "87b1c02c0a85a7d7d598c0697b1e60e291313d4b88d7fea61241f88f5b170ab7",
+      "hour": 16,
+      "metric_output_hashes": {
+        "betweenness": "f4019f4f6d4b6e02df2151f0e8df698c6358afdc303b5f2bf03f76e7cee1c48e",
+        "eigenvector": "8574877660522a6b7b15508af5acec0b94b1bd3e99ee58925a95a824545d46b3",
+        "pagerank": "a4b08e5d758dfba366263bae6a6244be83a52c3ccede18b49b48208fa8fcd2ef"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.858433600049466,
+        "eigenvector": 0.8712649000808597,
+        "pagerank": 1.5659569000126794
+      },
+      "metrics_parquet_sha256": "38c66da5bb09041de2680818446b2b56562ee1054482723993012bea4b04f519",
+      "node_count": 2782,
+      "od_parquet_sha256": "89e5192cd7ff929d0f3a979efa3fcdd04a67bbd1444ce8254bc882b80850096d",
+      "self_loop_trips": 165807,
+      "source_date_count": 233,
+      "trip_count": 1914052,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2479,
+      "active_node_count": 2482,
+      "active_origin_nodes": 1502,
+      "day_type": "holiday",
+      "edge_count": 286213,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "07b85a1718dc544ae6e9356e1c540dce2128f4df4eb6928aeb3121244cc340d4",
+      "hour": 17,
+      "metric_output_hashes": {
+        "betweenness": "de32ab03e06973fadcc23b566df1a6d035ba94037092540ba36daa586be6b181",
+        "eigenvector": "ed56d47cfe419b4a25d5820bcaf0a72e47b924af7554a8fe67d85fdbd9c29e2b",
+        "pagerank": "a6a2eafb45640e62fac1c91a14c0aedac7411e2f582088cd8bfbf7179b23e0f8"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.9186481999931857,
+        "eigenvector": 0.7533452999778092,
+        "pagerank": 1.4867422999814153
+      },
+      "metrics_parquet_sha256": "3f7590869f6e23a9482bc33781e2ec6be98232c4a86a857ba05a41fa717e0a1b",
+      "node_count": 2782,
+      "od_parquet_sha256": "bd64a88fb012905541df212098165693c44671569ebb0bec846415fa93ac1b14",
+      "self_loop_trips": 166816,
+      "source_date_count": 233,
+      "trip_count": 2087624,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2435,
+      "active_node_count": 2436,
+      "active_origin_nodes": 1501,
+      "day_type": "holiday",
+      "edge_count": 250805,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "7cfcb8fbb5d44978ffcebec9e039a36ae4a4be0676782f622fd090a764457428",
+      "hour": 18,
+      "metric_output_hashes": {
+        "betweenness": "8ee6ead8f9578931c4d1d03aa7abd5cd6b698373b1b4c3a9d99bbee181101d9b",
+        "eigenvector": "fe7bf740505b868e2faabffe7047ee8e0ebde4487af07e7b1e74d914537889fc",
+        "pagerank": "b5282a337fccb9b0733f935ece6ffd6d0cddc783ea98b8048c707e71c415b6a8"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.8446018999675289,
+        "eigenvector": 0.6534275999292731,
+        "pagerank": 1.6638944000005722
+      },
+      "metrics_parquet_sha256": "35652fb10a5eaeb390d4ce41bcf4ad2ef9777c960d47994f47d3128e128182d5",
+      "node_count": 2782,
+      "od_parquet_sha256": "fcf6a6458deaccfcb830f523b9737abe588060441f335a55680dab658e3ab4bc",
+      "self_loop_trips": 136993,
+      "source_date_count": 233,
+      "trip_count": 1781802,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2406,
+      "active_node_count": 2407,
+      "active_origin_nodes": 1500,
+      "day_type": "holiday",
+      "edge_count": 216107,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "6878930f82ada2895a1601161eec99b119c6d91627c3ed8996ef5cab52cd9542",
+      "hour": 19,
+      "metric_output_hashes": {
+        "betweenness": "ce65a163896f8a320f301d8a0ad97872d1bad1da9082e4072907384a38dc80e5",
+        "eigenvector": "4ee4b5370f18a9cd65da1cbf8e11df61f373983b94e3901d15641f58efd56afc",
+        "pagerank": "d1a110e1a86ef5e86133df42e9c04947684ef01307e230727d40ffcd8411fb91"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.553541100001894,
+        "eigenvector": 0.7546733999624848,
+        "pagerank": 1.015502900001593
+      },
+      "metrics_parquet_sha256": "11f8ef5e34819d281e75cdc1c6860417c590823b2aa1c3a47b8543903c2c2a32",
+      "node_count": 2782,
+      "od_parquet_sha256": "04d932a15bcf5603d4f1421e9d67a29e4b51b3c23f50d22a6f51d876afb268cc",
+      "self_loop_trips": 113204,
+      "source_date_count": 233,
+      "trip_count": 1408114,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2382,
+      "active_node_count": 2386,
+      "active_origin_nodes": 1501,
+      "day_type": "holiday",
+      "edge_count": 204563,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "612082dfc9d577f5e1f03e1b9b74880ac9a0dd677e7ee8fd9d3dedb20c56f8ef",
+      "hour": 20,
+      "metric_output_hashes": {
+        "betweenness": "445522cd4d97601cf952ec97d5ef4d5722df02bd77461261997942be686f5557",
+        "eigenvector": "47716b4125af732b1f14126830a219d21b0a687227a6ddd7b0998d7c4e021057",
+        "pagerank": "a60dece404655eaab43195f9dd9f3fda67791adeefa2969e6965788913f66ef6"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.9244306999025866,
+        "eigenvector": 0.8959764000028372,
+        "pagerank": 1.604045799933374
+      },
+      "metrics_parquet_sha256": "b389c6057dfdf1e6125523a42929773a0bc88fac2e47d0db662cd3815f5bec1a",
+      "node_count": 2782,
+      "od_parquet_sha256": "f441bef72705a9ed6f4d49d3c322ed22a63e7f8a2af1efc4a0d111cc3a1ae24b",
+      "self_loop_trips": 92190,
+      "source_date_count": 233,
+      "trip_count": 1242515,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2353,
+      "active_node_count": 2356,
+      "active_origin_nodes": 1501,
+      "day_type": "holiday",
+      "edge_count": 196523,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "2b40aba3bbac5ae806282705a1e7f1490039ee7708bd35b253edb2987471e6df",
+      "hour": 21,
+      "metric_output_hashes": {
+        "betweenness": "b7cbe6bac06327d93ed6202765fb74140ce64b8de9de341fcfa2293eda199fca",
+        "eigenvector": "64a21484f896850a1bfcb01bf0647c684d6b9c1f799c4fa9d3d7a3df93fda23c",
+        "pagerank": "894c868e265b5fe744adc18ae0d0f19f3878f27855b8c5bca24fa172c17ab19d"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.518762300023809,
+        "eigenvector": 0.6207110000541434,
+        "pagerank": 1.0237739000003785
+      },
+      "metrics_parquet_sha256": "a29addbd17f9873538deeaaea0e9b7ad06026be90c074213999fca3286da375d",
+      "node_count": 2782,
+      "od_parquet_sha256": "d888856d3ddde6082bd4d031dd01f2884a1fb6ccb63edaaaa233dafa5ade1705",
+      "self_loop_trips": 67071,
+      "source_date_count": 233,
+      "trip_count": 1150231,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2297,
+      "active_node_count": 2300,
+      "active_origin_nodes": 1499,
+      "day_type": "holiday",
+      "edge_count": 163552,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "f3a2789f383878798f1a701c58a82207fb7a86e0f2f86725faae08eb71fcdd52",
+      "hour": 22,
+      "metric_output_hashes": {
+        "betweenness": "85fdb7b13f9cc89f8f857e3cef8b76dfd5bbf22adaabd397a7dadb790635e5f2",
+        "eigenvector": "8274741fa90d0b5e62a9ce6c348362f22fb2a5247351d74e9e55ca0f0a445a95",
+        "pagerank": "2d7d0d70882d4b0f50ccefb2311a9b5dcb724775e8d134c2ecc109734f92bd82"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 1.1614334000041708,
+        "eigenvector": 0.5001074000028893,
+        "pagerank": 0.9537549000233412
+      },
+      "metrics_parquet_sha256": "6cbd57633473d5c1fc05944f9830ca35773bcced07e550e9a64360452ffe17cb",
+      "node_count": 2782,
+      "od_parquet_sha256": "a12edd079477ccc0e7ef4a63ded7acc84da0334d6ced76c75ce2073ab8848c12",
+      "self_loop_trips": 40820,
+      "source_date_count": 233,
+      "trip_count": 847193,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    },
+    {
+      "active_destination_nodes": 2219,
+      "active_node_count": 2221,
+      "active_origin_nodes": 1494,
+      "day_type": "holiday",
+      "edge_count": 122660,
+      "eigenvector_convergence": "converged",
+      "graph_sha256": "653257d5254b37cb0dc968573705dcf687a835fadefb68a4035c967f06dda0dc",
+      "hour": 23,
+      "metric_output_hashes": {
+        "betweenness": "fa58e31506879207fda351202056328b8c2f3787f03ff19c12c60f004287ab10",
+        "eigenvector": "68ebe4b173accc170035a76eed71c205bb2c2947798c606e943991381fb7015d",
+        "pagerank": "89841eb5e07c5104f388c99866b8658189e3b224cf0e9367dec403d66ce42dbd"
+      },
+      "metric_runtimes_seconds": {
+        "betweenness": 0.8864971000002697,
+        "eigenvector": 0.45501939998939633,
+        "pagerank": 0.8397453000070527
+      },
+      "metrics_parquet_sha256": "7e90aeb84e03b6a69017f1bad51514bbe921f3ac7058ca9a3d47df10c7ddb8b8",
+      "node_count": 2782,
+      "od_parquet_sha256": "898e20d6604b4b4a7fef92bca11ea9d2023ac72b7741b6527c0dc580647d9627",
+      "self_loop_trips": 24499,
+      "source_date_count": 233,
+      "trip_count": 505319,
+      "validation": {
+        "betweenness_range": true,
+        "eigenvector_active_norm": true,
+        "eigenvector_isolates_zero": true,
+        "eigenvector_nonnegative": true,
+        "finite": true,
+        "node_count_2782": true,
+        "pagerank_nonnegative": true,
+        "pagerank_sum": true,
+        "station_id_unique": true
+      },
+      "validation_status": "passed"
+    }
+  ],
+  "calendar": {
+    "core_dates": 731,
+    "date_max": "2025-12-31",
+    "date_min": "2020-01-01",
+    "dates_2023": 365,
+    "dates_2024": 366,
+    "duplicate_dates": 0,
+    "holiday_dates": 233,
+    "missing_dates": [],
+    "natural_disaster_dates": 6,
+    "natural_disaster_override_applied": false,
+    "schema": {
+      "Date": "R Date",
+      "IsHoliday": "numeric 0/1",
+      "NaturalDisaster": "numeric 0/1"
+    },
+    "source_bytes": 11880,
+    "source_filename": "2020_2025假日.fst",
+    "source_sha256": "a10889e9a656d9f9c06975f0e1adb36b3b6d93955365bd91fc49308a2dd37bc5",
+    "total_dates": 2192,
+    "unknown_is_holiday_values": [],
+    "validation_status": "passed",
+    "weekday_dates": 498
+  },
+  "conservation": {
+    "bucket_source_dates": {
+      "holiday-00": 233,
+      "holiday-01": 233,
+      "holiday-02": 232,
+      "holiday-03": 232,
+      "holiday-04": 233,
+      "holiday-05": 233,
+      "holiday-06": 233,
+      "holiday-07": 233,
+      "holiday-08": 233,
+      "holiday-09": 233,
+      "holiday-10": 233,
+      "holiday-11": 233,
+      "holiday-12": 233,
+      "holiday-13": 233,
+      "holiday-14": 233,
+      "holiday-15": 233,
+      "holiday-16": 233,
+      "holiday-17": 233,
+      "holiday-18": 233,
+      "holiday-19": 233,
+      "holiday-20": 233,
+      "holiday-21": 233,
+      "holiday-22": 233,
+      "holiday-23": 233,
+      "weekday-00": 492,
+      "weekday-01": 491,
+      "weekday-02": 490,
+      "weekday-03": 490,
+      "weekday-04": 491,
+      "weekday-05": 492,
+      "weekday-06": 492,
+      "weekday-07": 492,
+      "weekday-08": 492,
+      "weekday-09": 492,
+      "weekday-10": 492,
+      "weekday-11": 492,
+      "weekday-12": 492,
+      "weekday-13": 492,
+      "weekday-14": 492,
+      "weekday-15": 492,
+      "weekday-16": 492,
+      "weekday-17": 492,
+      "weekday-18": 492,
+      "weekday-19": 492,
+      "weekday-20": 492,
+      "weekday-21": 491,
+      "weekday-22": 492,
+      "weekday-23": 492
+    },
+    "bucket_sum_equals_expected": true,
+    "holiday_trips": 25042378,
+    "repeated_records_preserved": true,
+    "total_eligible_trips": 91138763,
+    "weekday_trips": 66096385
+  },
+  "exact_betweenness": true,
+  "hierarchical_clustering_executed": false,
+  "matrices": {
+    "holiday": {
+      "all_finite": true,
+      "bytes": 1416774,
+      "no_nan": true,
+      "parquet_columns": 75,
+      "path": "data/processed/network/hourly_2023_2024/hierarchical_holiday_72_features.parquet",
+      "scaling_applied": false,
+      "sha256": "b232620f2ee14ff436439c715efaf89794e9ddbf7af8c8323f0814e44a2685d8",
+      "shape": [
+        2782,
+        72
+      ],
+      "station_order_sha256": "ee756d9484d99996d15ae93ce0dd03e4d6b88b7393ee651df66c02098eea2e86"
+    },
+    "weekday": {
+      "all_finite": true,
+      "bytes": 1419558,
+      "no_nan": true,
+      "parquet_columns": 75,
+      "path": "data/processed/network/hourly_2023_2024/hierarchical_weekday_72_features.parquet",
+      "scaling_applied": false,
+      "sha256": "ed00378e3ce489b7c80bbc9a7a22198dffa7dc1c6b9bbd18804074963d987054",
+      "shape": [
+        2782,
+        72
+      ],
+      "station_order_sha256": "ee756d9484d99996d15ae93ce0dd03e4d6b88b7393ee651df66c02098eea2e86"
+    }
+  },
+  "period_basis": "analyst_reconstruction_decision_report_text_remains_2022_2024",
+  "pipeline_version": "hourly-sna-feature-reconstruction-v1",
+  "initial_full_execution_runtime_seconds": 1042.182829599944,
+  "latest_invocation_runtime_seconds": 113.26212820003275,
+  "source_identity": {
+    "calendar_sha256": "a10889e9a656d9f9c06975f0e1adb36b3b6d93955365bd91fc49308a2dd37bc5",
+    "cleaned_partition_hashes_sha256": "880e9bd36ddebc78a1a1778cfb22292eb19fa99bd79b67a499648b0468502043",
+    "contract_sha256": "cee74be425323740bced420df03a2986fb6f231f08bff49d0ae04afca13fe255",
+    "igraph_version": "0.11.9",
+    "networkx_version": "3.4.2",
+    "od_policy_version": "od-inclusion-policy-v1",
+    "pipeline_version": "hourly-sna-feature-reconstruction-v1",
+    "station_order_sha256": "ee756d9484d99996d15ae93ce0dd03e4d6b88b7393ee651df66c02098eea2e86"
+  },
+  "status": "complete",
+  "validation_status": "passed"
+}

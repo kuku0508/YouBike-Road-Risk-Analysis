@@ -1,0 +1,172 @@
+{
+  "contract_version": "risk-presentation-contract-v1",
+  "generated_at_utc": "2026-09-26T19:21:13+00:00",
+  "locked_inputs": {
+    "phase8_5a_fingerprint": "f9a3f6ba149cf8bdd4742d5e5857e03aa0a4bb8a1ab90f603199e10f103c4f14",
+    "phase8_5a_sha256": "dec4bf536fe692e69311371e02c905e02e19bdc49e30f45f88316e8dffcc750f",
+    "phase8_5a_receipt_fingerprint": "549e5344dab77b3fbb25df534ff45466734bfad49428c4c543cfaa7ed8c0fd70",
+    "phase8_5b_qa_fingerprint": "32eb8155f2f5ae8338747c18ec80b0b44082da3fe1e3116a7e10f4bb6c7afd8b",
+    "phase8_5b_receipt_fingerprint": "2ebd0e7e95fc435eb58284c6614b84ac7bec00863ac9f19512821b1d4886becb"
+  },
+  "presentation_universe": {
+    "weekday_rows": 53032,
+    "holiday_rows": 53025,
+    "combined_rows": 106057,
+    "overlap": {
+      "weekday_only": 1665,
+      "holiday_only": 1658,
+      "both": 51367,
+      "neither": 51359
+    },
+    "rule": "day_type exposure >= full 106,049-segment universe median",
+    "additional_minimum_exposure_cutoff": false,
+    "binary_hotspot": false
+  },
+  "cbi_display": {
+    "threshold_universe": "full 106,049-segment universe; canonical CBI > 0",
+    "positive_n": 19874,
+    "quantiles": {
+      "q50": 0.05263157894736842,
+      "q75": 0.10526315789473684,
+      "q90": 0.21052631578947367,
+      "q95": 0.2631578947368421
+    },
+    "class_counts": {
+      "weekday": {
+        "zero": 36757,
+        "positive_le_q50": 8886,
+        "q50_q75": 3559,
+        "q75_q90": 2560,
+        "q90_q95": 511,
+        "above_q95": 759
+      },
+      "holiday": {
+        "zero": 36905,
+        "positive_le_q50": 8800,
+        "q50_q75": 3526,
+        "q75_q90": 2539,
+        "q90_q95": 503,
+        "above_q95": 752
+      }
+    },
+    "canonical_values_changed": false,
+    "day_type_renormalization": false
+  },
+  "rate_display": {
+    "threshold_universe": "pooled long-form positive high-flow weekday and holiday rates",
+    "positive_observations": 19962,
+    "quantiles": {
+      "q50": 5.995695413920824,
+      "q75": 14.301804754822815,
+      "q90": 28.541459672710396,
+      "q95": 43.41743779132274,
+      "q99": 84.73853021973387
+    },
+    "class_counts": {
+      "weekday": {
+        "zero": 39207,
+        "positive_le_q50": 7754,
+        "q50_q75": 3309,
+        "q75_q90": 1847,
+        "q90_q95": 431,
+        "q95_q99": 388,
+        "above_q99": 96
+      },
+      "holiday": {
+        "zero": 46888,
+        "positive_le_q50": 2227,
+        "q50_q75": 1681,
+        "q75_q90": 1147,
+        "q90_q95": 567,
+        "q95_q99": 411,
+        "above_q99": 104
+      }
+    },
+    "canonical_values_changed": false,
+    "clipped_or_winsorized": false
+  },
+  "geometry": {
+    "encoding": "WKB LineString",
+    "crs": "EPSG:4326",
+    "source": "direction-neutral BRouter microsegment canonical endpoints",
+    "corridor_merge": false,
+    "smoothing": false
+  },
+  "output": {
+    "path": "data/processed/risk/segment_risk_presentation_2023_2024.parquet",
+    "rows": 106057,
+    "fingerprint_sha256": "2e6d9f763b0370abbf3785c9e510f04b36cde415947b156eccc7223129af2ea0",
+    "parquet_sha256": "8d818cd74c7b52d65488c5a0c0a97223f9ef7569e0d1ac35a26d2ca0b3e83ddc"
+  },
+  "figures": [
+    {
+      "path": "figures/phase8_5c_weekday_cbi.png",
+      "sha256": "ad64aed1ce0519c8a7d4eb74012261c6ba869dfb7dfa8bfa21c12c4227bd5249",
+      "bytes": 347071
+    },
+    {
+      "path": "figures/phase8_5c_holiday_cbi.png",
+      "sha256": "71678e2e266b2465e84b7409c96a39f18d09a6cce253c8b5498a86e4f747dbf0",
+      "bytes": 349284
+    },
+    {
+      "path": "figures/phase8_5c_weekday_epdo_per_1000.png",
+      "sha256": "1165a7c4404ad22938f3c2206e46e7e3e70f102a454aef3d209bad7f9b26990f",
+      "bytes": 357961
+    },
+    {
+      "path": "figures/phase8_5c_holiday_epdo_per_1000.png",
+      "sha256": "6eda06f849258370307b5622891a197316ace3f7ce97a02d3f62ce14d584c1c4",
+      "bytes": 343385
+    },
+    {
+      "path": "figures/phase8_5c_high_flow_segment_count.png",
+      "sha256": "90e57bdd6121ab253c1966a906c3b78c06fd7cc3bb7269c36815f6d320f5b149",
+      "bytes": 32325
+    },
+    {
+      "path": "figures/phase8_5c_rate_distribution.png",
+      "sha256": "6d79d7131a042d9d219e2f8c85edd5aa58e7a69e8c95c13de84e916146f01340",
+      "bytes": 53956
+    },
+    {
+      "path": "figures/phase8_5c_cbi_sparsity.png",
+      "sha256": "8396cb513dce46ab0f683fbb4741beb2069d13cd51f64e9ffd5eac34c3b513a0",
+      "bytes": 34815
+    }
+  ],
+  "validation": {
+    "geoparquet_reread": true,
+    "geometry_crs": "EPSG:4326",
+    "canonical_cbi_sri_ssi_unchanged": true,
+    "common_cbi_thresholds": true,
+    "common_pooled_rate_thresholds": true,
+    "no_ranking": true,
+    "no_hotspot": true,
+    "deterministic_rerun": true
+  },
+  "tests": {
+    "focused": 30,
+    "focused_passed": 30,
+    "relevant_regression": 154,
+    "relevant_regression_passed": 154,
+    "project_wide": 536,
+    "project_wide_passed": 536,
+    "python_compile": true,
+    "json_validation": true,
+    "geoparquet_reread": true,
+    "figure_visual_qa": true
+  },
+  "limitations": [
+    "A3/PDO-only accidents unavailable",
+    "BRouter exposure is reconstructed estimated traversal exposure, not GPS or official traffic counts",
+    "geometry remains unsmoothed routing microsegments",
+    "accident matching exclusions remain",
+    "10 m matching threshold is an analytical decision",
+    "no causal interpretation"
+  ],
+  "readiness": {
+    "phase8_6": "READY_FOR_SEPARATELY_AUTHORIZED_NEXT_STAGE"
+  },
+  "receipt_fingerprint_sha256": "15c2c4ccecb8b662b52a6af35a1eabbe74b197e4f2415d2f4129483935dffe30"
+}

@@ -1,0 +1,166 @@
+{
+  "contract_version": "accident-brouter-formal-matching-v1",
+  "generated_at_utc": "2026-09-23T20:07:04+00:00",
+  "locked_inputs": {
+    "phase8_2_fingerprint": "0925c99aa8f0022c953e09046bd7728d6a546cae6f28c81f68ccb5e35d6b2a04",
+    "phase8_2_sha256": "68d0dec6498b7734b6cd09c7f94ec20cfa8708de31cbdb898b4ad65a0288f8ad",
+    "phase8_3c_fingerprint": "186f751e3a33ff2db01e7e44abe3255fff1008de3e9aaeb35056dd541e6b9f5b",
+    "phase8_3c_sha256": "d64954bf04877776968f7eb8e8bf6755d96c2ea75019d292325234c2df75cfa3",
+    "phase8_4a_candidate_fingerprint": "53f1e8e741cb1269299db885a8d5b5794f5a444b39b260f878434ce57c7758e6",
+    "phase8_4a_candidate_sha256": "8e1de7f64eb21884a2ce53e7cae2ff16f0e97f8d233d5be36ef0f995fd612233",
+    "direction_neutral_fingerprint": "94b6de3529ac2b989d288ba4a67f58e8b7f23face25275881b01d2983e853496",
+    "direction_neutral_sha256": "8655af1ab1895820a6da53ceaeb32e5b73c200dcc7d01874d5fb782a5c52c0c3"
+  },
+  "policy": {
+    "primary_threshold_m": 10.0,
+    "sensitivity_thresholds_m": [
+      5,
+      20
+    ],
+    "road_context_policy": "constrained candidate space required when polygon context exists; no global fallback when empty",
+    "outside_reference_policy": "global direction-neutral candidate space",
+    "exact_tie_policy": "ambiguous when within threshold; no winner",
+    "near_tie_policy": "retained diagnostic; unique nearest remains eligible",
+    "flow_used_for_matching": false
+  },
+  "population": {
+    "accident_count": 46586,
+    "status_counts": {
+      "ambiguous_exact_tie": 190,
+      "context_no_brouter_candidate": 1241,
+      "coordinate_unavailable": 1,
+      "matched_context": 34460,
+      "matched_global": 5251,
+      "unmatched_distance": 5443
+    },
+    "overall_primary_match_rate": 0.852423474863693,
+    "quality_by_road_context": {
+      "all": {
+        "count": 46586,
+        "matched": 39711,
+        "matched_pct": 0.852423474863693,
+        "ambiguous": 190,
+        "ambiguous_pct": 0.00407847851285794,
+        "unmatched_distance": 5443,
+        "unmatched_distance_pct": 0.11683767655518826,
+        "no_candidate": 1241,
+        "no_candidate_pct": 0.02663890439187739
+      },
+      "contained_blank_road_id": {
+        "count": 25,
+        "matched": 25,
+        "matched_pct": 1.0,
+        "ambiguous": 0,
+        "ambiguous_pct": 0.0,
+        "unmatched_distance": 0,
+        "unmatched_distance_pct": 0.0,
+        "no_candidate": 0,
+        "no_candidate_pct": 0.0
+      },
+      "contained_valid_road": {
+        "count": 37859,
+        "matched": 34435,
+        "matched_pct": 0.9095591537018939,
+        "ambiguous": 159,
+        "ambiguous_pct": 0.0041997939723711665,
+        "unmatched_distance": 2024,
+        "unmatched_distance_pct": 0.05346152830238517,
+        "no_candidate": 1241,
+        "no_candidate_pct": 0.0327795240233498
+      },
+      "coordinate_unavailable": {
+        "count": 1,
+        "matched": 0,
+        "matched_pct": 0.0,
+        "ambiguous": 0,
+        "ambiguous_pct": 0.0,
+        "unmatched_distance": 0,
+        "unmatched_distance_pct": 0.0,
+        "no_candidate": 0,
+        "no_candidate_pct": 0.0
+      },
+      "outside_reference_coverage": {
+        "count": 8701,
+        "matched": 5251,
+        "matched_pct": 0.6034938512814619,
+        "ambiguous": 31,
+        "ambiguous_pct": 0.003562808872543386,
+        "unmatched_distance": 3419,
+        "unmatched_distance_pct": 0.3929433398459947,
+        "no_candidate": 0,
+        "no_candidate_pct": 0.0
+      }
+    }
+  },
+  "sensitivity": {
+    "5m": {
+      "matched_context": 29835,
+      "matched_global": 4271,
+      "context_no_brouter_candidate": 1241,
+      "unmatched_distance": 11131,
+      "ambiguous_exact_tie": 107,
+      "coordinate_unavailable": 1,
+      "contained_multiple_unresolved": 0
+    },
+    "10m": {
+      "matched_context": 34460,
+      "matched_global": 5251,
+      "context_no_brouter_candidate": 1241,
+      "unmatched_distance": 5443,
+      "ambiguous_exact_tie": 190,
+      "coordinate_unavailable": 1,
+      "contained_multiple_unresolved": 0
+    },
+    "20m": {
+      "matched_context": 35516,
+      "matched_global": 6410,
+      "context_no_brouter_candidate": 1241,
+      "unmatched_distance": 3134,
+      "ambiguous_exact_tie": 284,
+      "coordinate_unavailable": 1,
+      "contained_multiple_unresolved": 0
+    }
+  },
+  "primary_matched_near_ties": {
+    "0.1": 3929,
+    "0.5": 8861,
+    "1.0": 13094
+  },
+  "exposure": {
+    "row_count": 106049,
+    "one_direction_only_rows": 62864,
+    "both_directions_rows": 43185,
+    "total": 4674227848,
+    "weekday": 3307530105,
+    "holiday": 1366697743,
+    "day_type_conservation": true,
+    "fingerprint_sha256": "d494a2ddc33e76dc169454af08996ae91543bea6a540a06832d3ede9d4cfad88",
+    "path": "data/processed/routing/direction_neutral_segment_exposure_2023_2024.parquet",
+    "parquet_sha256": "c6dd301a7b328d650aa4e58a7e9b36330d6389465594ad69010d39c02dd0cd6f"
+  },
+  "output": {
+    "path": "data/processed/accidents/accident_brouter_segment_matches_2023_2024.parquet",
+    "rows": 46586,
+    "fingerprint_sha256": "db598989c4b0278fdec77d35b7fb9ef10c5d139ba267e5f67f7620c72d687658",
+    "parquet_sha256": "bdad7b3190f27991c15dd5860a9792b41ca7a545352e1b37ec2e59361a2e2baf",
+    "sorted_by": "reconstructed_accident_id"
+  },
+  "validation": {
+    "id_set_equal": true,
+    "assigned_segment_fk_valid": true,
+    "exposure_join_exactly_one": true,
+    "status_conservation": true,
+    "null_policy": true
+  },
+  "prohibited_work_confirmed_not_performed": {
+    "epdo": false,
+    "cbi": false,
+    "accidents_divided_by_exposure": false,
+    "risk_score": false,
+    "hotspot_ranking": false
+  },
+  "readiness": {
+    "phase8_5": "READY_FOR_SEPARATELY_AUTHORIZED_RISK_CONTRACT"
+  },
+  "receipt_fingerprint_sha256": "e465bf6b34adad2bce14563421ab21a44297b0bbaaa5ff2583c5a230a7ba6a4f"
+}

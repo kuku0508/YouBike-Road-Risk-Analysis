@@ -1,0 +1,153 @@
+{
+  "phase": "8.1A",
+  "full_routing_executed": false,
+  "upstream_hashes": {
+    "od": "fc03cd89819e10923b7b657f5e7d006fd58f967c70a8dcea878126ff0cf3fa26",
+    "coordinates": "8e5b4bbe3511b0145234f209768f0eec0f766e9121716ae510170724dab1ad06",
+    "brouter_jar": "93e9821640093cde82ed470ac8c08ab84fc7ae3b570e30c9ab41d686c7af1d4a",
+    "profile": "00241f71fe9251d3e38571a4eb296352c7c2451d86eb34e656123820c27b315e"
+  },
+  "routing_contract_version": "road-routing-contract-v1.1",
+  "coordinate_assumption_id": "routing-coordinate-assumption-v1",
+  "manifest": {
+    "rows": 1100919,
+    "trip_weight": 83693979,
+    "weekday": 61065093,
+    "holiday": 22628886,
+    "sha256": "9d9691a81ffa5f804224ee270890cf5acf579db8d53342574229d503290834ee",
+    "fingerprint": "ded2f21bd553f189438a8643348ddc0f77b6172bbd4bb8e3a0c87e1d1e30c112"
+  },
+  "coordinate_exclusions": {
+    "edges": 23096,
+    "trip_weight": 1421216
+  },
+  "gate": {
+    "sample_size": 1000,
+    "successes": 1000,
+    "failures": 0,
+    "status_counts": {
+      "success": 1000
+    },
+    "trip_weight": 67816,
+    "weekday_weight": 49106,
+    "holiday_weight": 18710,
+    "success_trip_weight": 67816,
+    "failure_trip_weight": 0,
+    "median_seconds_per_route": 0.4405316000338644,
+    "p90_seconds_per_route": 0.6360644499422051,
+    "p95_seconds_per_route": 0.7055200900300406,
+    "segment_count": 48989,
+    "segment_hash": "208fea2bab29adf42ec303d53e112544ee400160bc119f3ca24664408c3c30e8",
+    "cache_bytes": 3198976,
+    "bytes_per_route": 3198.976,
+    "weekday_plus_holiday_equals_total": true,
+    "segment_day_type_conservation": true,
+    "actual_brouter_execution_count": 1320,
+    "cache_rerun": {
+      "executions": 0,
+      "cache_hits": 1000,
+      "all_reused": true
+    }
+  },
+  "resume_test": {
+    "first_executions": 10,
+    "first_interrupted": true,
+    "second_executions": 10,
+    "second_cache_hits": 10,
+    "completed_not_rerun": true,
+    "partial_file_ignored": true,
+    "final_records": 20
+  },
+  "worker_benchmarks": [
+    {
+      "workers": 1,
+      "routes": 100,
+      "executions": 100,
+      "elapsed_seconds": 12.3838262000354,
+      "routes_per_second": 8.075048727647207,
+      "median_seconds_per_route": 0.10777685005450621,
+      "p90_seconds_per_route": 0.19960705004632476,
+      "p95_seconds_per_route": 0.30565175506635567,
+      "peak_python_tracemalloc_bytes": 2686603,
+      "status_counts": {
+        "success": 100
+      }
+    },
+    {
+      "workers": 2,
+      "routes": 100,
+      "executions": 100,
+      "elapsed_seconds": 13.376802599988878,
+      "routes_per_second": 7.475627994995093,
+      "median_seconds_per_route": 0.24159654998220503,
+      "p90_seconds_per_route": 0.4496643799589948,
+      "p95_seconds_per_route": 0.49509667993988843,
+      "peak_python_tracemalloc_bytes": 2997265,
+      "status_counts": {
+        "success": 100
+      }
+    },
+    {
+      "workers": 4,
+      "routes": 100,
+      "executions": 100,
+      "elapsed_seconds": 10.954957699985243,
+      "routes_per_second": 9.12828718636994,
+      "median_seconds_per_route": 0.399777400016319,
+      "p90_seconds_per_route": 0.6485652299947108,
+      "p95_seconds_per_route": 0.7259728550037835,
+      "peak_python_tracemalloc_bytes": 2501062,
+      "status_counts": {
+        "success": 100
+      }
+    }
+  ],
+  "selected_worker_count": 4,
+  "estimated_full_runtime": {
+    "optimistic_hours": 29.13169342055569,
+    "central_hours": 33.501447433639036,
+    "conservative_hours": 47.859210619484344
+  },
+  "estimated_full_disk_usage": {
+    "central_bytes": 4050085477,
+    "conservative_bytes": 6163173553
+  },
+  "peak_memory_bytes": 2997265,
+  "peak_memory_measurement": "Python traced allocation only; external BRouter JVM excluded",
+  "commands": {
+    "preflight": "python src/run_brouter_production.py --preflight",
+    "full_run": "python src/run_brouter_production.py --manifest data/processed/routing/production/production_manifest.parquet --workers 4 --execute-full-production",
+    "resume": "python src/run_brouter_production.py --manifest data/processed/routing/production/production_manifest.parquet --workers 4 --execute-full-production",
+    "progress": "python src/run_brouter_production.py --status"
+  },
+  "segment_output": {
+    "path": "data/processed/routing/production/gate_segments.parquet",
+    "rows": 48989,
+    "sha256": "56aae879734dae699a13265f5d6790dfe913badbd34d7ffb1771a432f9569ba2"
+  },
+  "gate_sample_design": {
+    "taipei_to_taipei": 741,
+    "taipei_to_new_taipei": 259,
+    "coordinate_conflict_endpoint_routes": 43,
+    "reciprocal_routes": 2,
+    "trip_count_min_median_max": [1, 5, 7518],
+    "approx_distance_m_min_median_max": [179.40531897624498, 3479.7531549086825, 22779.441598270074]
+  },
+  "artifact_sizes": {
+    "production_manifest_bytes": 116694218,
+    "gate_manifest_bytes": 155044,
+    "gate_cache_bytes_after_weight_refresh": 3387392,
+    "gate_segments_bytes": 1006071
+  },
+  "validation": {
+    "production_specific_tests": 37,
+    "full_regression_tests": 316,
+    "failures": 0,
+    "full_suite_runtime_seconds": 275.905,
+    "manifest_streaming": true,
+    "route_cache_transactional_atomicity": true,
+    "progress_atomic_replace": true,
+    "full_manifest_guard_tested": true
+  },
+  "readiness_status": "PHASE 8.1A COMPLETE — LOCAL FULL ROUTING READY"
+}

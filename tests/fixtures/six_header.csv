@@ -1,0 +1,2 @@
+rent_time,rent_station,return_time,return_station,rent,infodate
+2023-01-01 00:00:00,起點_1,2023-01-01 01:00:00,終點,00:12:34,2023-01-01

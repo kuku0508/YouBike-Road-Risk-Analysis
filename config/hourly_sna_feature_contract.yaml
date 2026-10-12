@@ -1,0 +1,48 @@
+{
+  "contract_version": "hourly-sna-feature-reconstruction-v1",
+  "analysis_period": "2023-01-01/2024-12-31",
+  "period_basis": "analyst_reconstruction_decision_report_text_remains_2022_2024",
+  "calendar": {
+    "source": "data/raw/2020_2025假日.fst",
+    "sha256": "a10889e9a656d9f9c06975f0e1adb36b3b6d93955365bd91fc49308a2dd37bc5",
+    "date_column": "Date",
+    "holiday_column": "IsHoliday",
+    "holiday_value": 1,
+    "weekday_value": 0,
+    "natural_disaster_column": "NaturalDisaster",
+    "natural_disaster_changes_day_type": false
+  },
+  "input": {
+    "cleaned_root": "data/processed/cleaned",
+    "od_policy_version": "od-inclusion-policy-v1",
+    "expected_eligible_trips": 91138763,
+    "borrow_hour_source": "borrow_time",
+    "borrow_date_source": "borrow_date"
+  },
+  "station_universe": {
+    "source": "core_2023_2024_primary_od_union",
+    "expected_node_count": 2782,
+    "fixed_across_all_48_buckets": true,
+    "inactive_betweenness": 0.0,
+    "inactive_eigenvector": 0.0,
+    "pagerank_graph_includes_all_nodes": true
+  },
+  "graph": {
+    "directed": true,
+    "edge_weight": "trip_count",
+    "self_loops_data_layer": "retain",
+    "buckets": 48
+  },
+  "metrics": {
+    "betweenness": {"exact": true, "directed": true, "weight": null, "normalized": true, "endpoints": false, "self_loops": "exclude", "backend": "python-igraph", "backend_version": "0.11.9", "normalization": "raw_directed_count_divided_by_(n-1)(n-2)", "networkx_equivalence_required": true},
+    "eigenvector": {"directed": true, "weight": null, "semantics": "left_predecessor", "self_loops": "exclude", "max_iter": 1000, "tol": 1e-9, "isolates": "explicit_zero_then_active_values_unit_norm"},
+    "pagerank": {"directed": true, "weight": "trip_count", "alpha": 0.85, "personalization": "uniform_over_2782", "dangling": "uniform_over_2782", "self_loops": "retain", "max_iter": 1000, "tol": 1e-9}
+  },
+  "features": {
+    "metrics": ["betweenness", "eigenvector", "pagerank"],
+    "hours": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+    "feature_count": 72,
+    "scaling": "none_in_phase_7_3"
+  },
+  "forbidden": ["approximate_betweenness", "hierarchical_clustering", "standard_scaling", "dendrogram", "station_sampling", "trip_sampling"]
+}

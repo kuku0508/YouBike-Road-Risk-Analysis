@@ -1,0 +1,259 @@
+{
+  "phase": "8.0B",
+  "full_routing_executed": false,
+  "source": {
+    "path": "data/raw/active_station_all.csv",
+    "bytes": 7322758,
+    "sha256": "8bf19851f7e9329b0f7207f84b149ce243ca9f6d1e6270ffb5f382b1a9e63205",
+    "encoding_mode": "utf-8 strict gate followed by utf-8+surrogateescape for lossless parsing",
+    "strict_utf8_valid": false,
+    "illegal_byte_count": 106,
+    "unique_illegal_byte_values": 5,
+    "illegal_station_field_count": 75,
+    "illegal_record_count": 75,
+    "data_row_count": 64413,
+    "column_count_including_r_rowname": 7,
+    "headers": [
+      "",
+      "month",
+      "站點",
+      "站點編號",
+      "站點標籤",
+      "經度",
+      "緯度"
+    ],
+    "malformed_width_rows": 0,
+    "legacy_number_equals_station_name_rows": 62790,
+    "legacy_number_looks_canonical_id_rows": 0,
+    "retrieval_status": "user-provided local raw file; raw bytes unchanged"
+  },
+  "provenance": {
+    "result": "unverified",
+    "repository_reference_found": false,
+    "git_history_reference_found": false,
+    "upstream_official_source_found": false,
+    "month_semantics": "unknown monthly observation/group label; not promoted to month-end snapshot",
+    "evidence_acceptance": "supporting_only; cannot independently make a station routing-ready"
+  },
+  "profile": {
+    "invalid_month_rows": 0,
+    "available_months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03"
+    ],
+    "core_months": [
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12"
+    ],
+    "core_month_count": 24,
+    "core_rows": 56408,
+    "core_rows_both_coordinates": 54913,
+    "core_rows_missing_any_coordinate": 1495,
+    "core_rows_one_coordinate_only": 0,
+    "distinct_legacy_names_core": 3015,
+    "distinct_name_coordinate_histories": 2902
+  },
+  "mapping": {
+    "legacy_name_count": 3015,
+    "status_counts": {
+      "exact_historical_candidate": 1411,
+      "exact_trip_candidate": 1358,
+      "unmatched": 246
+    },
+    "identity_mapped_unique_station_ids": 2769,
+    "mapped_city_counts": {
+      "Taipei": 1502,
+      "New Taipei": 1267
+    },
+    "canonical_ids_receiving_multiple_legacy_names": 0,
+    "collision_name_count": 0,
+    "legacy_number_is_not_canonical_id": true,
+    "quality_by_status": {
+      "exact_historical_candidate": {
+        "stations": 1411,
+        "endpoint_involved_non_self_od_edges": 1119064,
+        "endpoint_involved_non_self_trip_weight": 85076835,
+        "both_endpoints_in_status_non_self_od_edges": 876472,
+        "both_endpoints_in_status_non_self_trip_weight": 82006519
+      },
+      "exact_trip_candidate": {
+        "stations": 1358,
+        "endpoint_involved_non_self_od_edges": 242976,
+        "endpoint_involved_non_self_trip_weight": 2787062,
+        "both_endpoints_in_status_non_self_od_edges": 4312,
+        "both_endpoints_in_status_non_self_trip_weight": 33960
+      },
+      "ambiguous": {
+        "stations": 0,
+        "endpoint_involved_non_self_od_edges": 0,
+        "endpoint_involved_non_self_trip_weight": 0,
+        "both_endpoints_in_status_non_self_od_edges": 0,
+        "both_endpoints_in_status_non_self_trip_weight": 0,
+        "legacy_names": 0
+      },
+      "unmatched": {
+        "stations": 0,
+        "endpoint_involved_non_self_od_edges": 0,
+        "endpoint_involved_non_self_trip_weight": 0,
+        "both_endpoints_in_status_non_self_od_edges": 0,
+        "both_endpoints_in_status_non_self_trip_weight": 0,
+        "legacy_names": 246
+      }
+    }
+  },
+  "coordinates": {
+    "stability_status_counts": {
+      "stable_exact_coordinate": 2769
+    },
+    "temporally_complete_supporting_station_count": 2743,
+    "coordinate_conflict_candidate_count": 0,
+    "confirmed_within_period_relocations": 0,
+    "coordinate_era_count": 0,
+    "reason_no_confirmed_relocation": "source provenance is unverified; coordinate changes remain candidates"
+  },
+  "phase8a_conflicts": {
+    "total": 31,
+    "identity_mapped_in_legacy": 31,
+    "temporally_complete_support": 28,
+    "legacy_matches_2024_coordinate": 8,
+    "legacy_matches_2026_coordinate": 20,
+    "resolved_for_routing": 0
+  },
+  "phase8a_current_only": {
+    "total": 1367,
+    "identity_mapped_in_legacy": 1358,
+    "temporally_complete_support": 1352,
+    "resolved_for_routing": 0,
+    "by_city": {
+      "New Taipei": {
+        "nodes": 1276,
+        "identity_mapped": 1267,
+        "temporally_complete_support": 1262
+      },
+      "Taipei": {
+        "nodes": 91,
+        "identity_mapped": 91,
+        "temporally_complete_support": 90
+      }
+    }
+  },
+  "mapping_impact": {
+    "mapped_station_individual_edge_involvement": 2242824,
+    "mapped_station_individual_trip_involvement": 169904376,
+    "note": "Individual station impacts overlap and are not union coverage."
+  },
+  "routing_readiness_before": {
+    "routing_ready_nodes": 5,
+    "total_nodes": 2782,
+    "node_coverage": 0.0017972681524083393,
+    "routing_ready_non_self_od_edges": 0,
+    "total_non_self_od_edges": 1124015,
+    "od_edge_coverage": 0.0,
+    "routing_ready_non_self_trip_weight": 0,
+    "total_non_self_trip_weight": 85115195,
+    "trip_weight_coverage": 0.0
+  },
+  "routing_readiness_after": {
+    "routing_ready_nodes": 5,
+    "total_nodes": 2782,
+    "node_coverage": 0.0017972681524083393,
+    "routing_ready_non_self_od_edges": 0,
+    "total_non_self_od_edges": 1124015,
+    "od_edge_coverage": 0.0,
+    "routing_ready_non_self_trip_weight": 0,
+    "total_non_self_trip_weight": 85115195,
+    "trip_weight_coverage": 0.0
+  },
+  "routing_contract_version": "road-routing-contract-v1",
+  "artifacts": {
+    "mapping": {
+      "path": "data/interim/routing/legacy_station_name_mapping.parquet",
+      "rows": 3015,
+      "sha256": "52513e958338c87b4e09bb2de4b9b9113b367b5549043d796c1c5990e2b52c66"
+    },
+    "legacy_evidence": {
+      "path": "data/interim/routing/legacy_coordinate_evidence.parquet",
+      "rows": 54459,
+      "sha256": "f1078e64b8d57006b64a201ecf994ec24482802d6f29fe2ec5da09b9b8a640e0"
+    },
+    "anomalies": {
+      "path": "data/interim/routing/legacy_station_name_anomalies.parquet",
+      "rows": 246,
+      "sha256": "b82a960d3263f883b623bb9a08f63de08da01a6264d4f2eea6500b8f248d026d"
+    },
+    "timeline": {
+      "path": "data/interim/routing/legacy_coordinate_timeline.parquet",
+      "rows": 2769,
+      "sha256": "0b43414f0fea6011c7ba0228aa821ce739d0ce070b89be50fe7b6134da64ff16"
+    },
+    "phase8a_conflict_timeline": {
+      "path": "data/interim/routing/legacy_phase8a_conflict_timeline.parquet",
+      "rows": 31,
+      "sha256": "ffbe1c57e5a7bc85f6db8970d407b139b288ca30ed63175ee1b93c76e6ff8481"
+    },
+    "combined_evidence_ledger": {
+      "path": "data/interim/routing/station_coordinate_evidence.parquet",
+      "rows": 58652,
+      "sha256": "302e5d866932365b100cbd812192e69cee46780dc616a1f59b96688d75d923fd"
+    },
+    "final_coordinate_artifact_unchanged": {
+      "path": "data/processed/routing/routing_station_coordinates_2023_2024.parquet",
+      "rows": 5,
+      "sha256": "541dd43d2d9fe242ad6520317b83f3e486a5fb27f10afb5ebffd38685d937c0b",
+      "station_id_fingerprint": "ebb3140be7e3b8eb3f39f13610fea84a1277fd600ac59786241c87e9b7a7d93c",
+      "coordinate_fingerprint": "c00fe3755c5c77367b0d868e744c2fba2090b66ab4446866ddf42a7227220513"
+    }
+  },
+  "deterministic_fingerprints": {
+    "mapping": "e81a409b1b11587afc841ff0c00e115f0e1e27ea8a715d89023b49ca11567702",
+    "timeline": "5dc45a0acf10ba428144beabf2d265759fb1cf2aa92d76458782581f85b44b6f"
+  },
+  "readiness_status": "LEGACY HISTORICAL COORDINATES: NOT SUFFICIENTLY TRACEABLE"
+}

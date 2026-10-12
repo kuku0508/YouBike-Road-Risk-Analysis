@@ -1,0 +1,40 @@
+{
+  "phase": "8.1C",
+  "validation_status": "pass",
+  "validated_read_only": true,
+  "full_routing_rerun": false,
+  "road_segment_aggregation_started": false,
+  "manifest_sha256": "9d9691a81ffa5f804224ee270890cf5acf579db8d53342574229d503290834ee",
+  "cache_integrity_check": "ok",
+  "cache_schema_sha256": "f12a65cb49050e55d565cbe99835ac5c301743b036558df86c505b4af46bf2f5",
+  "route_state_fingerprint_sha256": "1a69cd69be3983779d20abc64667936561526d156f363d64bcf7cd49c31d7b37",
+  "invariants": {
+    "manifest_routes": 1100919,
+    "cache_rows": 1100919,
+    "cache_status_counts": {
+      "success": 1100919
+    },
+    "missing_manifest_routes_in_cache": 0,
+    "invalid_cache_records": 0,
+    "successful_trip_weight": 83693979,
+    "failed_trip_weight": 0,
+    "remaining": 0,
+    "cache_hit_execution_identity": true,
+    "progress_matches_cache": true
+  },
+  "progress": {
+    "total_routes": 1100919,
+    "completed": 1100919,
+    "success": 1100919,
+    "failure": 0,
+    "remaining": 0,
+    "elapsed_seconds": 84117.67240047455,
+    "throughput_routes_per_second": 13.087844308846915,
+    "estimated_remaining_seconds": 0.0,
+    "successful_trip_weight": 83693979,
+    "failed_trip_weight": 0,
+    "cache_hits": 348100,
+    "actual_brouter_executions": 752819,
+    "last_flush_utc": "2026-09-21T05:05:37Z"
+  }
+}

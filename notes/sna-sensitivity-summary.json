@@ -1,0 +1,54 @@
+{
+  "comparisons": [
+    {
+      "primary": "betweenness_primary",
+      "spearman_rank_correlation": 0.7315063414917257,
+      "top20_overlap_count": 6,
+      "top20_overlap_fraction": 0.3,
+      "variant": "betweenness_inverse_flow"
+    },
+    {
+      "primary": "betweenness_primary",
+      "spearman_rank_correlation": 0.9396014980286573,
+      "top20_overlap_count": 8,
+      "top20_overlap_fraction": 0.4,
+      "variant": "betweenness_log_inverse_flow"
+    },
+    {
+      "primary": "eigenvector_primary",
+      "spearman_rank_correlation": 0.9261356552455029,
+      "top20_overlap_count": 0,
+      "top20_overlap_fraction": 0.0,
+      "variant": "eigenvector_weighted"
+    },
+    {
+      "primary": "eigenvector_primary",
+      "spearman_rank_correlation": 0.8609147131355022,
+      "top20_overlap_count": 12,
+      "top20_overlap_fraction": 0.6,
+      "variant": "eigenvector_reverse"
+    },
+    {
+      "primary": "pagerank_primary",
+      "spearman_rank_correlation": 0.9423949364483901,
+      "top20_overlap_count": 3,
+      "top20_overlap_fraction": 0.15,
+      "variant": "pagerank_unweighted"
+    },
+    {
+      "primary": "clustering_primary",
+      "spearman_rank_correlation": 0.9841564892197798,
+      "top20_overlap_count": 12,
+      "top20_overlap_fraction": 0.6,
+      "variant": "clustering_directed"
+    },
+    {
+      "primary": "clustering_primary",
+      "spearman_rank_correlation": -0.5436998696567978,
+      "top20_overlap_count": 0,
+      "top20_overlap_fraction": 0.0,
+      "variant": "clustering_weighted"
+    }
+  ],
+  "contract_version": "network-metric-contract-v1"
+}

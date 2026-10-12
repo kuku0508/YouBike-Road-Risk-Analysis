@@ -1,0 +1,709 @@
+{
+  "cross_snapshot_comparison": {
+    "changed_name_count": 13,
+    "changed_name_examples": [
+      {
+        "newer_name": "臺北市芳和實驗中學",
+        "older_name": "芳和國中",
+        "station_id": "500101095"
+      },
+      {
+        "newer_name": "福林公園(福林路)",
+        "older_name": "福林公園(中正路)",
+        "station_id": "500104076"
+      },
+      {
+        "newer_name": "永安藝文館_表演36房",
+        "older_name": "永安藝文館-表演36房",
+        "station_id": "500105031"
+      },
+      {
+        "newer_name": "水源路11_1號旁",
+        "older_name": "水源路11-1號旁",
+        "station_id": "500106037"
+      },
+      {
+        "newer_name": "南京林森路口",
+        "older_name": "南京林森路口(東南側)",
+        "station_id": "500107045"
+      },
+      {
+        "newer_name": "樂群三路123號",
+        "older_name": "敬業三樂群三路口(西北側)",
+        "station_id": "500107133"
+      },
+      {
+        "newer_name": "瑞光路583巷口",
+        "older_name": "洲子二號公園",
+        "station_id": "500108022"
+      },
+      {
+        "newer_name": "成美長壽橋(潭美街)",
+        "older_name": "週美里活動廣場",
+        "station_id": "500108038"
+      },
+      {
+        "newer_name": "桃源國中",
+        "older_name": "中央北路四段30巷口",
+        "station_id": "500109047"
+      },
+      {
+        "newer_name": "國土管理署",
+        "older_name": "內政部營建署",
+        "station_id": "500110036"
+      },
+      {
+        "newer_name": "六張犁社會住宅1區",
+        "older_name": "景勤二號公園",
+        "station_id": "500112006"
+      },
+      {
+        "newer_name": "富生公園",
+        "older_name": "忠孝東路五段215巷口",
+        "station_id": "500112089"
+      },
+      {
+        "newer_name": "萬華安居社會住宅A區",
+        "older_name": "華江國小",
+        "station_id": "500113027"
+      }
+    ],
+    "common_station_ids": 1411,
+    "coordinate_changed_count": 31,
+    "coordinate_changed_station_ids": [
+      "500101015",
+      "500101159",
+      "500101166",
+      "500101180",
+      "500101199",
+      "500104032",
+      "500104057",
+      "500104075",
+      "500104076",
+      "500104107",
+      "500105009",
+      "500105025",
+      "500107008",
+      "500107016",
+      "500107033",
+      "500107075",
+      "500107133",
+      "500108006",
+      "500108013",
+      "500108022",
+      "500108132",
+      "500109047",
+      "500109065",
+      "500109068",
+      "500110027",
+      "500111028",
+      "500112017",
+      "500112089",
+      "500113012",
+      "500113037",
+      "500119084"
+    ],
+    "interpretation_limit": "Two snapshots do not establish valid_from/valid_to or the date of a change.",
+    "only_newer_ids": 389,
+    "only_older_ids": 4,
+    "same_name_count": 1398
+  },
+  "files": {
+    "current": {
+      "bytes": 942861,
+      "filename": "youbike_immediate_2026-09-13.json",
+      "sha256": "0ac45607a811c3d7dde8727f2d1d4e005dcece367b1411c211eabfa2496f6969"
+    },
+    "historical": {
+      "bytes": 4916545,
+      "filename": "station_snapshot_2024-05-31.csv",
+      "sha256": "c696c0f23f55cef97862c324468781d85b752bd5f9557e3608e691f9c930634a"
+    }
+  },
+  "matching": {
+    "destination_only": {
+      "current_2026_09_13": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 958
+      },
+      "historical_2024_05_31": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 958
+      },
+      "input_name_count": 958
+    },
+    "numeric_suffix": {
+      "current_2026_09_13": {
+        "exact_match_count": 16,
+        "matched_names": [
+          "劍潭海外青年活動中心_1",
+          "劍潭社區_1",
+          "師範大學公館校區_1",
+          "捷運大直站(3號出口)_1",
+          "捷運小巨蛋站(5號出口)_1",
+          "捷運臺電大樓站(2號出口)_1",
+          "捷運芝山站(2號出口)_1",
+          "捷運龍山寺站(1號出口)_1",
+          "景仁公園_1",
+          "樂群二明水路口_1",
+          "樹德公園_1",
+          "社子國小_1",
+          "臺北南山廣場_1",
+          "臺北市立美術館_1",
+          "萬華國中_1",
+          "豐年公園_1"
+        ],
+        "unmatched_count": 0
+      },
+      "historical_2024_05_31": {
+        "exact_match_count": 16,
+        "matched_names": [
+          "劍潭海外青年活動中心_1",
+          "劍潭社區_1",
+          "師範大學公館校區_1",
+          "捷運大直站(3號出口)_1",
+          "捷運小巨蛋站(5號出口)_1",
+          "捷運臺電大樓站(2號出口)_1",
+          "捷運芝山站(2號出口)_1",
+          "捷運龍山寺站(1號出口)_1",
+          "景仁公園_1",
+          "樂群二明水路口_1",
+          "樹德公園_1",
+          "社子國小_1",
+          "臺北南山廣場_1",
+          "臺北市立美術館_1",
+          "萬華國中_1",
+          "豐年公園_1"
+        ],
+        "unmatched_count": 0
+      },
+      "input_name_count": 16
+    },
+    "question_mark": {
+      "current_2026_09_13": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 7
+      },
+      "historical_2024_05_31": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 7
+      },
+      "input_name_count": 7
+    },
+    "replacement_character": {
+      "current_2026_09_13": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 6
+      },
+      "historical_2024_05_31": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 6
+      },
+      "input_name_count": 6
+    },
+    "unbalanced_parentheses": {
+      "current_2026_09_13": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 17
+      },
+      "historical_2024_05_31": {
+        "exact_match_count": 0,
+        "matched_names": [],
+        "unmatched_count": 17
+      },
+      "input_name_count": 17
+    }
+  },
+  "matching_note": "Exact string feasibility only. Current names remove only the documented YouBike2.0_ prefix. No station names were merged or changed.",
+  "numeric_suffix_base_probe": {
+    "current_2026_09_13": {
+      "exact_match_count": 14,
+      "matched_names": [
+        "劍潭海外青年活動中心",
+        "劍潭社區",
+        "師範大學公館校區",
+        "捷運大直站(3號出口)",
+        "捷運小巨蛋站(5號出口)",
+        "捷運臺電大樓站(2號出口)",
+        "捷運芝山站(2號出口)",
+        "捷運龍山寺站(1號出口)",
+        "景仁公園",
+        "樂群二明水路口",
+        "樹德公園",
+        "社子國小",
+        "臺北市立美術館",
+        "豐年公園"
+      ],
+      "unmatched_count": 2
+    },
+    "historical_2024_05_31": {
+      "exact_match_count": 14,
+      "matched_names": [
+        "劍潭海外青年活動中心",
+        "劍潭社區",
+        "師範大學公館校區",
+        "捷運大直站(3號出口)",
+        "捷運小巨蛋站(5號出口)",
+        "捷運臺電大樓站(2號出口)",
+        "捷運芝山站(2號出口)",
+        "捷運龍山寺站(1號出口)",
+        "景仁公園",
+        "樂群二明水路口",
+        "樹德公園",
+        "社子國小",
+        "臺北市立美術館",
+        "豐年公園"
+      ],
+      "unmatched_count": 2
+    },
+    "input_name_count": 16
+  },
+  "numeric_suffix_pair_details": {
+    "current_2026_09_13": [
+      {
+        "base_ids": [
+          "500104016"
+        ],
+        "base_name": "劍潭海外青年活動中心",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500104089"
+        ],
+        "suffixed_name": "劍潭海外青年活動中心_1"
+      },
+      {
+        "base_ids": [
+          "500107004"
+        ],
+        "base_name": "劍潭社區",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107116"
+        ],
+        "suffixed_name": "劍潭社區_1"
+      },
+      {
+        "base_ids": [
+          "500105015"
+        ],
+        "base_name": "師範大學公館校區",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500105061"
+        ],
+        "suffixed_name": "師範大學公館校區_1"
+      },
+      {
+        "base_ids": [
+          "500107011"
+        ],
+        "base_name": "捷運大直站(3號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107108"
+        ],
+        "suffixed_name": "捷運大直站(3號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500110047"
+        ],
+        "base_name": "捷運小巨蛋站(5號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500110072"
+        ],
+        "suffixed_name": "捷運小巨蛋站(5號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500101104"
+        ],
+        "base_name": "捷運臺電大樓站(2號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500101207"
+        ],
+        "suffixed_name": "捷運臺電大樓站(2號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500104028"
+        ],
+        "base_name": "捷運芝山站(2號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500104108"
+        ],
+        "suffixed_name": "捷運芝山站(2號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500113040"
+        ],
+        "base_name": "捷運龍山寺站(1號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500113068"
+        ],
+        "suffixed_name": "捷運龍山寺站(1號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500105006"
+        ],
+        "base_name": "景仁公園",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500105069"
+        ],
+        "suffixed_name": "景仁公園_1"
+      },
+      {
+        "base_ids": [
+          "500107006"
+        ],
+        "base_name": "樂群二明水路口",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107109"
+        ],
+        "suffixed_name": "樂群二明水路口_1"
+      },
+      {
+        "base_ids": [
+          "500103006"
+        ],
+        "base_name": "樹德公園",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500103058"
+        ],
+        "suffixed_name": "樹德公園_1"
+      },
+      {
+        "base_ids": [
+          "500104057"
+        ],
+        "base_name": "社子國小",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500104090"
+        ],
+        "suffixed_name": "社子國小_1"
+      },
+      {
+        "base_ids": [],
+        "base_name": "臺北南山廣場",
+        "both_present": false,
+        "ids_are_disjoint": false,
+        "suffixed_ids": [
+          "500112082"
+        ],
+        "suffixed_name": "臺北南山廣場_1"
+      },
+      {
+        "base_ids": [
+          "500107042"
+        ],
+        "base_name": "臺北市立美術館",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107115"
+        ],
+        "suffixed_name": "臺北市立美術館_1"
+      },
+      {
+        "base_ids": [],
+        "base_name": "萬華國中",
+        "both_present": false,
+        "ids_are_disjoint": false,
+        "suffixed_ids": [
+          "500113065"
+        ],
+        "suffixed_name": "萬華國中_1"
+      },
+      {
+        "base_ids": [
+          "500109017"
+        ],
+        "base_name": "豐年公園",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500109068"
+        ],
+        "suffixed_name": "豐年公園_1"
+      }
+    ],
+    "historical_2024_05_31": [
+      {
+        "base_ids": [
+          "500104016"
+        ],
+        "base_name": "劍潭海外青年活動中心",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500104089"
+        ],
+        "suffixed_name": "劍潭海外青年活動中心_1"
+      },
+      {
+        "base_ids": [
+          "500107004"
+        ],
+        "base_name": "劍潭社區",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107116"
+        ],
+        "suffixed_name": "劍潭社區_1"
+      },
+      {
+        "base_ids": [
+          "500105015"
+        ],
+        "base_name": "師範大學公館校區",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500105061"
+        ],
+        "suffixed_name": "師範大學公館校區_1"
+      },
+      {
+        "base_ids": [
+          "500107011"
+        ],
+        "base_name": "捷運大直站(3號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107108"
+        ],
+        "suffixed_name": "捷運大直站(3號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500110047"
+        ],
+        "base_name": "捷運小巨蛋站(5號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500110072"
+        ],
+        "suffixed_name": "捷運小巨蛋站(5號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500101104"
+        ],
+        "base_name": "捷運臺電大樓站(2號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500101207"
+        ],
+        "suffixed_name": "捷運臺電大樓站(2號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500104028"
+        ],
+        "base_name": "捷運芝山站(2號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500104108"
+        ],
+        "suffixed_name": "捷運芝山站(2號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500113040"
+        ],
+        "base_name": "捷運龍山寺站(1號出口)",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500113068"
+        ],
+        "suffixed_name": "捷運龍山寺站(1號出口)_1"
+      },
+      {
+        "base_ids": [
+          "500105006"
+        ],
+        "base_name": "景仁公園",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500105069"
+        ],
+        "suffixed_name": "景仁公園_1"
+      },
+      {
+        "base_ids": [
+          "500107006"
+        ],
+        "base_name": "樂群二明水路口",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107109"
+        ],
+        "suffixed_name": "樂群二明水路口_1"
+      },
+      {
+        "base_ids": [
+          "500103006"
+        ],
+        "base_name": "樹德公園",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500103058"
+        ],
+        "suffixed_name": "樹德公園_1"
+      },
+      {
+        "base_ids": [
+          "500104057"
+        ],
+        "base_name": "社子國小",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500104090"
+        ],
+        "suffixed_name": "社子國小_1"
+      },
+      {
+        "base_ids": [],
+        "base_name": "臺北南山廣場",
+        "both_present": false,
+        "ids_are_disjoint": false,
+        "suffixed_ids": [
+          "500112082"
+        ],
+        "suffixed_name": "臺北南山廣場_1"
+      },
+      {
+        "base_ids": [
+          "500107042"
+        ],
+        "base_name": "臺北市立美術館",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500107115"
+        ],
+        "suffixed_name": "臺北市立美術館_1"
+      },
+      {
+        "base_ids": [],
+        "base_name": "萬華國中",
+        "both_present": false,
+        "ids_are_disjoint": false,
+        "suffixed_ids": [
+          "500113065"
+        ],
+        "suffixed_name": "萬華國中_1"
+      },
+      {
+        "base_ids": [
+          "500109017"
+        ],
+        "base_name": "豐年公園",
+        "both_present": true,
+        "ids_are_disjoint": true,
+        "suffixed_ids": [
+          "500109068"
+        ],
+        "suffixed_name": "豐年公園_1"
+      }
+    ]
+  },
+  "snapshots": {
+    "current_2026_09_13": {
+      "available_fields": [
+        "address",
+        "district",
+        "latitude",
+        "longitude",
+        "source_update_time",
+        "station_id",
+        "station_name"
+      ],
+      "has_valid_from": false,
+      "has_valid_to": false,
+      "missing_core_fields": {
+        "address": 0,
+        "district": 0,
+        "latitude": 0,
+        "longitude": 0,
+        "station_id": 0,
+        "station_name": 0
+      },
+      "row_count": 1800,
+      "snapshot_date": "2026-09-13",
+      "source": "official current real-time snapshot",
+      "source_url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json",
+      "station_ids_with_multiple_names": {},
+      "station_names_with_multiple_ids": {},
+      "unique_station_ids": 1800,
+      "unique_station_names": 1800
+    },
+    "historical_2024_05_31": {
+      "available_fields": [
+        "address",
+        "district",
+        "latitude",
+        "longitude",
+        "station_id",
+        "station_name"
+      ],
+      "has_valid_from": false,
+      "has_valid_to": false,
+      "missing_core_fields": {
+        "address": 0,
+        "district": 0,
+        "latitude": 0,
+        "longitude": 0,
+        "station_id": 0,
+        "station_name": 0
+      },
+      "row_count": 1415,
+      "snapshot_date": "2024-05-31",
+      "source": "third-party capture of official real-time feed",
+      "source_url": "https://github.com/LittleFish-Coder/youbike-info-collector/blob/master/result/2024-05-31.csv",
+      "station_ids_with_multiple_names": {},
+      "station_names_with_multiple_ids": {},
+      "unique_station_ids": 1415,
+      "unique_station_names": 1415
+    }
+  }
+}

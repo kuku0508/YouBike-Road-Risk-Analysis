@@ -1,0 +1,84 @@
+{
+  "downloads": [
+    {
+      "bytes": 31286365,
+      "filename": "202301_YouBike2.0票證刷卡資料.zip",
+      "month": "2023-01",
+      "sha256": "3828652338819443ab764578225fd602a17106ec7d28a16a1b9494cb7d866c78",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2023/2023-01/202301_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 34774679,
+      "filename": "202311_YouBike2.0票證刷卡資料.zip",
+      "month": "2023-11",
+      "sha256": "97429096d6c6a7cd227ec1209c8559d1b71e573c50be75ecdef7c67fa28b2aca",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2023/2023-11/202311_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 32744927,
+      "filename": "202401_YouBike2.0票證刷卡資料.zip",
+      "month": "2024-01",
+      "sha256": "b0859586833ed76350d09c4fc3384e58365fca05449fbfea6c5c329ca021beb3",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2024/2024-01/202401_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 42911708,
+      "filename": "202406_YouBike2.0票證刷卡資料.zip",
+      "month": "2024-06",
+      "sha256": "9b32b3b44d4a1ca5e5e07bfc61438d3c4ba6535e17a7e8849e381c65a0cfd75c",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2024/2024-06/202406_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 72830972,
+      "filename": "202409_YouBike2.0票證刷卡資料.zip",
+      "month": "2024-09",
+      "sha256": "babae917cccc64e042e8662babcd0c85fd7b21e8cf3dd23d7d09756d78d93aa6",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2024/2024-09/202409_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 65983535,
+      "filename": "202410_YouBike2.0票證刷卡資料.zip",
+      "month": "2024-10",
+      "sha256": "84341ab361a17345c01d2f12fd91273234bde844292f45acc3db4bc2b62d846c",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2024/2024-10/202410_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 70942022,
+      "filename": "202411_YouBike2.0票證刷卡資料.zip",
+      "month": "2024-11",
+      "sha256": "a255acf386d88fbb1429147b87c257017c4cff1f851b3860ded61ad3894bc20a",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2024/2024-11/202411_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 79069822,
+      "filename": "202412_YouBike2.0票證刷卡資料.zip",
+      "month": "2024-12",
+      "sha256": "75c972b782b1a0874a60fe32c2bf9d6395fc74d1484bf00a79b6365fc3546a7c",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2024/2024-12/202412_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 75633751,
+      "filename": "202503_YouBike2.0票證刷卡資料.zip",
+      "month": "2025-03",
+      "sha256": "73fb52ce8c1a30cb2c22b6757c2e53a5466c2cae35bd15d9473b1380058556f9",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2025/2025-03/202503_YouBike2.0票證刷卡資料.zip"
+    },
+    {
+      "bytes": 132748590,
+      "filename": "202607_YouBike2.0票證刷卡資料.zip",
+      "month": "2026-07",
+      "sha256": "91216f4493e7b103b7c162fa1649946261a0a55486ed6bda4c45f86ac53ea312",
+      "status": "reused_existing_raw",
+      "url": "https://tcgbusfs.blob.core.windows.net/dotapp/youbike_second_ticket_opendata/2026/2026-07/202607_YouBike2.0票證刷卡資料.zip"
+    }
+  ]
+}

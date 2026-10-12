@@ -1,0 +1,1388 @@
+{
+  "months": [
+    {
+      "bytes": 31286365,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:strict",
+      "filename": "202301_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "rent_time",
+          "rent_station",
+          "return_time",
+          "return_station",
+          "rent",
+          "infodate"
+        ],
+        [
+          "2023-01-27 15:00:00",
+          "捷運景美站(2號出口)",
+          "2023-01-27 16:00:00",
+          "中華峨嵋街口",
+          "00:46:10",
+          "2023-01-27"
+        ],
+        [
+          "2023-01-27 16:00:00",
+          "捷運景美站(2號出口)",
+          "2023-01-27 18:00:00",
+          "捷運新店站",
+          "02:16:27",
+          "2023-01-27"
+        ],
+        [
+          "2023-01-27 21:00:00",
+          "捷運景美站(2號出口)",
+          "2023-01-27 21:00:00",
+          "景華街128巷口",
+          "00:03:35",
+          "2023-01-27"
+        ],
+        [
+          "2023-01-27 22:00:00",
+          "捷運景美站(2號出口)",
+          "2023-01-27 22:00:00",
+          "萬和三號公園(北側)",
+          "00:21:51",
+          "2023-01-27"
+        ]
+      ],
+      "format_nonconforming_by_width": {
+        "6": 1
+      },
+      "format_nonconforming_rows": 1,
+      "header_present": true,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 284097673,
+          "crc32": "43b7b70b",
+          "decode_errors": "strict",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202301_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2023-01",
+      "row_count": 2686168,
+      "seventh_field_exists": false,
+      "sha256": "3828652338819443ab764578225fd602a17106ec7d28a16a1b9494cb7d866c78",
+      "sixth_field_looks_like_date": false,
+      "sixth_field_top_values": [
+        [
+          "2023-01-13",
+          128095
+        ],
+        [
+          "2023-01-12",
+          122191
+        ],
+        [
+          "2023-01-19",
+          120525
+        ],
+        [
+          "2023-01-31",
+          114484
+        ],
+        [
+          "2023-01-10",
+          113905
+        ],
+        [
+          "2023-01-11",
+          113743
+        ],
+        [
+          "2023-01-07",
+          111546
+        ],
+        [
+          "2023-01-14",
+          108204
+        ],
+        [
+          "2023-01-18",
+          108075
+        ],
+        [
+          "2023-01-17",
+          107349
+        ],
+        [
+          "2023-01-09",
+          103459
+        ],
+        [
+          "2023-01-05",
+          103366
+        ],
+        [
+          "2023-01-30",
+          101259
+        ],
+        [
+          "2023-01-08",
+          100559
+        ],
+        [
+          "2023-01-04",
+          97304
+        ],
+        [
+          "2023-01-06",
+          97209
+        ],
+        [
+          "2023-01-16",
+          86331
+        ],
+        [
+          "2023-01-03",
+          81537
+        ],
+        [
+          "2023-01-29",
+          78982
+        ],
+        [
+          "2023-01-01",
+          77940
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 0,
+      "vehicle_type_field_exists": false,
+      "width_counts": {
+        "6": 2686168
+      }
+    },
+    {
+      "bytes": 34774679,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:strict",
+      "filename": "202311_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2023-11-22 18:00:00",
+          "捷運南京復興站(1號出口)",
+          "2023-11-22 18:00:00",
+          "松江路77巷口",
+          "00:08:36",
+          "2023-11-22"
+        ],
+        [
+          "2023-11-22 12:00:00",
+          "河堤國小",
+          "2023-11-22 17:00:00",
+          "捷運古亭站(2號出口)",
+          "04:37:45",
+          "2023-11-22"
+        ],
+        [
+          "2023-11-22 11:00:00",
+          "萬華國中_1",
+          "2023-11-22 12:00:00",
+          "和平金山路口",
+          "00:19:21",
+          "2023-11-22"
+        ],
+        [
+          "2023-11-22 11:00:00",
+          "萬華國中_1",
+          "2023-11-22 12:00:00",
+          "萬華國中_1",
+          "00:24:51",
+          "2023-11-22"
+        ],
+        [
+          "2023-11-22 14:00:00",
+          "木新公園",
+          "2023-11-22 21:00:00",
+          "樟樹公園",
+          "07:17:45",
+          "2023-11-22"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 311810011,
+          "crc32": "3d5234ab",
+          "decode_errors": "strict",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202311_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2023-11",
+      "row_count": 2941065,
+      "seventh_field_exists": false,
+      "sha256": "97429096d6c6a7cd227ec1209c8559d1b71e573c50be75ecdef7c67fa28b2aca",
+      "sixth_field_looks_like_date": true,
+      "sixth_field_top_values": [
+        [
+          "2023-11-03",
+          118041
+        ],
+        [
+          "2023-11-01",
+          112845
+        ],
+        [
+          "2023-11-09",
+          111991
+        ],
+        [
+          "2023-11-08",
+          111718
+        ],
+        [
+          "2023-11-22",
+          110644
+        ],
+        [
+          "2023-11-17",
+          110266
+        ],
+        [
+          "2023-11-02",
+          110091
+        ],
+        [
+          "2023-11-15",
+          109407
+        ],
+        [
+          "2023-11-23",
+          108958
+        ],
+        [
+          "2023-11-07",
+          108720
+        ],
+        [
+          "2023-11-21",
+          108613
+        ],
+        [
+          "2023-11-28",
+          106561
+        ],
+        [
+          "2023-11-29",
+          106104
+        ],
+        [
+          "2023-11-04",
+          105738
+        ],
+        [
+          "2023-11-20",
+          102523
+        ],
+        [
+          "2023-11-27",
+          102351
+        ],
+        [
+          "2023-11-06",
+          101662
+        ],
+        [
+          "2023-11-10",
+          101292
+        ],
+        [
+          "2023-11-24",
+          100016
+        ],
+        [
+          "2023-11-18",
+          97100
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 0,
+      "vehicle_type_field_exists": false,
+      "width_counts": {
+        "6": 2941065
+      }
+    },
+    {
+      "bytes": 32744927,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:strict",
+      "filename": "202401_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2024-01-22 13:00:00",
+          "捷運古亭站(9號出口)",
+          "2024-01-22 14:00:00",
+          "螢橋國小",
+          "00:18:05",
+          "2024-01-22"
+        ],
+        [
+          "2024-01-22 08:00:00",
+          "新生和平路口東北側",
+          "2024-01-22 09:00:00",
+          "新生南路三段66號前",
+          "00:07:02",
+          "2024-01-22"
+        ],
+        [
+          "2024-01-22 03:00:00",
+          "捷運西湖站(1號出口)",
+          "2024-01-22 04:00:00",
+          "捷運西湖站(1號出口)",
+          "00:27:25",
+          "2024-01-22"
+        ],
+        [
+          "2024-01-22 03:00:00",
+          "洛陽停車場",
+          "2024-01-22 05:00:00",
+          "捷運石牌站(2號出口)",
+          "01:33:35",
+          "2024-01-22"
+        ],
+        [
+          "2024-01-22 14:00:00",
+          "光復北路11巷口",
+          "2024-01-22 14:00:00",
+          "捷運南京復興站(5號出口)",
+          "00:06:37",
+          "2024-01-22"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 290468124,
+          "crc32": "d8014066",
+          "decode_errors": "strict",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202401_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2024-01",
+      "row_count": 2746557,
+      "seventh_field_exists": false,
+      "sha256": "b0859586833ed76350d09c4fc3384e58365fca05449fbfea6c5c329ca021beb3",
+      "sixth_field_looks_like_date": true,
+      "sixth_field_top_values": [
+        [
+          "2024-01-19",
+          120480
+        ],
+        [
+          "2024-01-31",
+          113645
+        ],
+        [
+          "2024-01-12",
+          110888
+        ],
+        [
+          "2024-01-05",
+          110260
+        ],
+        [
+          "2024-01-18",
+          107898
+        ],
+        [
+          "2024-01-17",
+          106710
+        ],
+        [
+          "2024-01-30",
+          105828
+        ],
+        [
+          "2024-01-11",
+          100598
+        ],
+        [
+          "2024-01-02",
+          100576
+        ],
+        [
+          "2024-01-29",
+          100353
+        ],
+        [
+          "2024-01-08",
+          99721
+        ],
+        [
+          "2024-01-16",
+          99272
+        ],
+        [
+          "2024-01-06",
+          98635
+        ],
+        [
+          "2024-01-20",
+          97016
+        ],
+        [
+          "2024-01-04",
+          97008
+        ],
+        [
+          "2024-01-10",
+          96664
+        ],
+        [
+          "2024-01-26",
+          94509
+        ],
+        [
+          "2024-01-09",
+          94323
+        ],
+        [
+          "2024-01-13",
+          91323
+        ],
+        [
+          "2024-01-14",
+          85416
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 0,
+      "vehicle_type_field_exists": false,
+      "width_counts": {
+        "6": 2746557
+      }
+    },
+    {
+      "bytes": 42911708,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:strict",
+      "filename": "202406_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2024-06-19 20:00:00",
+          "和平復興路口西北側",
+          "2024-06-19 20:00:00",
+          "臺大鄭江樓北側",
+          "00:07:06",
+          "2024-06-19"
+        ],
+        [
+          "2024-06-19 12:00:00",
+          "和平臥龍街口",
+          "2024-06-19 12:00:00",
+          "捷運科技大樓站",
+          "00:03:01",
+          "2024-06-19"
+        ],
+        [
+          "2024-06-19 15:00:00",
+          "捷運公館站(2號出口)",
+          "2024-06-19 15:00:00",
+          "臺大動物醫院前",
+          "00:04:54",
+          "2024-06-19"
+        ],
+        [
+          "2024-06-19 21:00:00",
+          "捷運公館站(2號出口)",
+          "2024-06-19 22:00:00",
+          "復興南路二段340巷口",
+          "00:11:23",
+          "2024-06-19"
+        ],
+        [
+          "2024-06-19 14:00:00",
+          "捷運圓山站(2號出口)",
+          "2024-06-19 15:00:00",
+          "捷運圓山站(2號出口)",
+          "00:32:56",
+          "2024-06-19"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 399181517,
+          "crc32": "c91844be",
+          "decode_errors": "strict",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202406_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2024-06",
+      "row_count": 3773353,
+      "seventh_field_exists": false,
+      "sha256": "9b32b3b44d4a1ca5e5e07bfc61438d3c4ba6535e17a7e8849e381c65a0cfd75c",
+      "sixth_field_looks_like_date": true,
+      "sixth_field_top_values": [
+        [
+          "2024-06-07",
+          168998
+        ],
+        [
+          "2024-06-04",
+          160644
+        ],
+        [
+          "2024-06-12",
+          157498
+        ],
+        [
+          "2024-06-13",
+          155253
+        ],
+        [
+          "2024-06-27",
+          154945
+        ],
+        [
+          "2024-06-14",
+          152140
+        ],
+        [
+          "2024-06-20",
+          150488
+        ],
+        [
+          "2024-06-03",
+          147279
+        ],
+        [
+          "2024-06-11",
+          146973
+        ],
+        [
+          "2024-06-26",
+          143677
+        ],
+        [
+          "2024-06-17",
+          143613
+        ],
+        [
+          "2024-06-28",
+          140759
+        ],
+        [
+          "2024-06-21",
+          140757
+        ],
+        [
+          "2024-06-08",
+          139853
+        ],
+        [
+          "2024-06-15",
+          138792
+        ],
+        [
+          "2024-06-18",
+          138461
+        ],
+        [
+          "2024-06-19",
+          136400
+        ],
+        [
+          "2024-06-25",
+          126258
+        ],
+        [
+          "2024-06-22",
+          125247
+        ],
+        [
+          "2024-06-29",
+          122588
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 0,
+      "vehicle_type_field_exists": false,
+      "width_counts": {
+        "6": 3773353
+      }
+    },
+    {
+      "bytes": 72830972,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:surrogateescape",
+      "filename": "202409_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2024-09-17 13:00:00",
+          "關渡醫院",
+          "2024-09-17 17:00:00",
+          "捷運木柵站",
+          "03:52:33",
+          "2024-09-17"
+        ],
+        [
+          "2024-09-17 09:00:00",
+          "麗山國小",
+          "2024-09-17 09:00:00",
+          "麗山國小",
+          "00:44:44",
+          "2024-09-17"
+        ],
+        [
+          "2024-09-17 16:00:00",
+          "關渡宮",
+          "2024-09-17 18:00:00",
+          "關渡宮",
+          "02:14:16",
+          "2024-09-17"
+        ],
+        [
+          "2024-09-17 19:00:00",
+          "仁愛安和路口",
+          "2024-09-17 19:00:00",
+          "捷運忠孝新生站(3號出口)",
+          "00:27:32",
+          "2024-09-17"
+        ],
+        [
+          "2024-09-17 13:00:00",
+          "捷運松山站(4號出口)",
+          "2024-09-17 16:00:00",
+          "捷運淡水站",
+          "02:53:00",
+          "2024-09-17"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 617298406,
+          "crc32": "29ce807b",
+          "decode_errors": "surrogateescape",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202409_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2024-09",
+      "row_count": 5799896,
+      "seventh_field_exists": false,
+      "sha256": "babae917cccc64e042e8662babcd0c85fd7b21e8cf3dd23d7d09756d78d93aa6",
+      "sixth_field_looks_like_date": true,
+      "sixth_field_top_values": [
+        [
+          "2024-09-20",
+          254622
+        ],
+        [
+          "2024-09-25",
+          243004
+        ],
+        [
+          "2024-09-03",
+          240050
+        ],
+        [
+          "2024-09-06",
+          239072
+        ],
+        [
+          "2024-09-12",
+          238948
+        ],
+        [
+          "2024-09-11",
+          238382
+        ],
+        [
+          "2024-09-24",
+          234575
+        ],
+        [
+          "2024-09-04",
+          234078
+        ],
+        [
+          "2024-09-13",
+          233882
+        ],
+        [
+          "2024-09-10",
+          233831
+        ],
+        [
+          "2024-09-26",
+          233764
+        ],
+        [
+          "2024-09-05",
+          231993
+        ],
+        [
+          "2024-09-09",
+          228664
+        ],
+        [
+          "2024-09-02",
+          226822
+        ],
+        [
+          "2024-09-16",
+          225038
+        ],
+        [
+          "2024-09-19",
+          205485
+        ],
+        [
+          "2024-09-27",
+          190971
+        ],
+        [
+          "2024-09-08",
+          175585
+        ],
+        [
+          "2024-09-01",
+          173288
+        ],
+        [
+          "2024-09-07",
+          170655
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 24407,
+      "vehicle_type_field_exists": false,
+      "width_counts": {
+        "6": 5799896
+      }
+    },
+    {
+      "bytes": 65983535,
+      "date_field_position": 6,
+      "dominant_width": 6,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:surrogateescape",
+      "filename": "202410_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2024-10-17 03:00:00",
+          "光復南菸廠路口",
+          "2024-10-19 11:00:00",
+          "健安新城",
+          "56:36:30",
+          "2024-10-17"
+        ],
+        [
+          "2024-10-17 18:00:00",
+          "兩棵樹公園",
+          "2024-10-17 20:00:00",
+          "兩棵樹公園",
+          "01:38:30",
+          "2024-10-17"
+        ],
+        [
+          "2024-10-17 20:00:00",
+          "中山行政中心",
+          "2024-10-17 20:00:00",
+          "捷運行天宮站(1號出口)",
+          "00:05:05",
+          "2024-10-17"
+        ],
+        [
+          "2024-10-17 20:00:00",
+          "中山行政中心",
+          "2024-10-17 21:00:00",
+          "捷運中山國小站(4號出口)",
+          "00:11:05",
+          "2024-10-17"
+        ],
+        [
+          "2024-10-17 18:00:00",
+          "中山行政中心",
+          "2024-10-17 18:00:00",
+          "林森公園",
+          "00:16:39",
+          "2024-10-17"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 559466408,
+          "crc32": "57cd9f86",
+          "decode_errors": "surrogateescape",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202410_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2024-10",
+      "row_count": 5257627,
+      "seventh_field_exists": false,
+      "sha256": "84341ab361a17345c01d2f12fd91273234bde844292f45acc3db4bc2b62d846c",
+      "sixth_field_looks_like_date": true,
+      "sixth_field_top_values": [
+        [
+          "2024-10-18",
+          255940
+        ],
+        [
+          "2024-10-17",
+          248975
+        ],
+        [
+          "2024-10-11",
+          244043
+        ],
+        [
+          "2024-10-01",
+          243708
+        ],
+        [
+          "2024-10-14",
+          236782
+        ],
+        [
+          "2024-10-09",
+          235850
+        ],
+        [
+          "2024-10-15",
+          231966
+        ],
+        [
+          "2024-10-21",
+          227014
+        ],
+        [
+          "2024-10-22",
+          212336
+        ],
+        [
+          "2024-10-26",
+          210082
+        ],
+        [
+          "2024-10-05",
+          209720
+        ],
+        [
+          "2024-10-12",
+          209183
+        ],
+        [
+          "2024-10-28",
+          198208
+        ],
+        [
+          "2024-10-25",
+          196816
+        ],
+        [
+          "2024-10-16",
+          195992
+        ],
+        [
+          "2024-10-29",
+          192543
+        ],
+        [
+          "2024-10-10",
+          192449
+        ],
+        [
+          "2024-10-06",
+          191712
+        ],
+        [
+          "2024-10-27",
+          190832
+        ],
+        [
+          "2024-10-13",
+          188752
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 22268,
+      "vehicle_type_field_exists": false,
+      "width_counts": {
+        "6": 5257627
+      }
+    },
+    {
+      "bytes": 70942022,
+      "date_field_position": 7,
+      "dominant_width": 7,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:surrogateescape",
+      "filename": "202411_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2024-11-15 19:00:00",
+          "關渡宮",
+          "2024-11-15 22:00:00",
+          "關渡宮",
+          "02:31:12",
+          "電輔車",
+          "2024-11-15"
+        ],
+        [
+          "2024-11-15 05:00:00",
+          "民權東路六段413巷",
+          "2024-11-15 05:00:00",
+          "國防醫學院",
+          "00:03:49",
+          "電輔車",
+          "2024-11-15"
+        ],
+        [
+          "2024-11-15 21:00:00",
+          "向陽市民大道路口(西北側)",
+          "2024-11-15 22:00:00",
+          "東豐公園",
+          "01:08:47",
+          "一般車",
+          "2024-11-15"
+        ],
+        [
+          "2024-11-15 18:00:00",
+          "中山青島路口",
+          "2024-11-15 18:00:00",
+          "孫立人將軍官邸",
+          "00:14:36",
+          "電輔車",
+          "2024-11-15"
+        ],
+        [
+          "2024-11-15 07:00:00",
+          "志成公園",
+          "2024-11-15 07:00:00",
+          "士林高商",
+          "00:17:12",
+          "一般車",
+          "2024-11-15"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "vehicle_type",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 685207045,
+          "crc32": "f81e82ba",
+          "decode_errors": "surrogateescape",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202411_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2024-11",
+      "row_count": 5883102,
+      "seventh_field_exists": true,
+      "sha256": "a255acf386d88fbb1429147b87c257017c4cff1f851b3860ded61ad3894bc20a",
+      "sixth_field_looks_like_date": false,
+      "sixth_field_top_values": [
+        [
+          "一般車",
+          5733169
+        ],
+        [
+          "電輔車",
+          149933
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 25720,
+      "vehicle_type_field_exists": true,
+      "width_counts": {
+        "7": 5883102
+      }
+    },
+    {
+      "bytes": 79069822,
+      "date_field_position": 7,
+      "dominant_width": 7,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:surrogateescape",
+      "filename": "202412_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2024-12-18 18:00:00",
+          "植物園",
+          "2024-12-18 22:00:00",
+          "植物園",
+          "04:00:59",
+          "一般車",
+          "2024-12-18"
+        ],
+        [
+          "2024-12-18 21:00:00",
+          "長春吉林路口",
+          "2024-12-18 21:00:00",
+          "捷運松江南京站(8號出口)",
+          "00:02:44",
+          "電輔車",
+          "2024-12-18"
+        ],
+        [
+          "2024-12-18 19:00:00",
+          "永樂市場",
+          "2024-12-18 19:00:00",
+          "捷運北門站(3號出口)",
+          "00:03:44",
+          "電輔車",
+          "2024-12-18"
+        ],
+        [
+          "2024-12-18 19:00:00",
+          "捷運忠孝復興站(1號出口)",
+          "2024-12-18 19:00:00",
+          "臺北科技大學(電機工程系)",
+          "00:05:36",
+          "電輔車",
+          "2024-12-18"
+        ],
+        [
+          "2024-12-18 12:00:00",
+          "北投運動中心",
+          "2024-12-18 12:00:00",
+          "芝山聖佑宮",
+          "00:17:53",
+          "一般車",
+          "2024-12-18"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "vehicle_type",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 758701196,
+          "crc32": "1d4d455e",
+          "decode_errors": "surrogateescape",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202412_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2024-12",
+      "row_count": 6511640,
+      "seventh_field_exists": true,
+      "sha256": "75c972b782b1a0874a60fe32c2bf9d6395fc74d1484bf00a79b6365fc3546a7c",
+      "sixth_field_looks_like_date": false,
+      "sixth_field_top_values": [
+        [
+          "一般車",
+          6316624
+        ],
+        [
+          "電輔車",
+          195016
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 28756,
+      "vehicle_type_field_exists": true,
+      "width_counts": {
+        "7": 6511640
+      }
+    },
+    {
+      "bytes": 75633751,
+      "date_field_position": 7,
+      "dominant_width": 7,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:strict",
+      "filename": "202503_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "2025-03-05 17:00:00",
+          "瑞陽公園",
+          "2025-03-05 18:00:00",
+          "捷運文德站(2號出口)",
+          "00:05:08",
+          "一般車",
+          "2025-03-05"
+        ],
+        [
+          "2025-03-05 05:00:00",
+          "湖光國宅",
+          "2025-03-05 06:00:00",
+          "捷運文德站(2號出口)",
+          "00:05:13",
+          "一般車",
+          "2025-03-05"
+        ],
+        [
+          "2025-03-05 09:00:00",
+          "湖光國宅",
+          "2025-03-05 09:00:00",
+          "文德二號公園(北側)",
+          "00:03:04",
+          "一般車",
+          "2025-03-05"
+        ],
+        [
+          "2025-03-05 11:00:00",
+          "湖光國宅",
+          "2025-03-05 11:00:00",
+          "捷運文德站(2號出口)",
+          "00:03:46",
+          "一般車",
+          "2025-03-05"
+        ],
+        [
+          "2025-03-05 13:00:00",
+          "湖光國宅",
+          "2025-03-05 13:00:00",
+          "捷運文德站(2號出口)",
+          "00:03:36",
+          "一般車",
+          "2025-03-05"
+        ]
+      ],
+      "format_nonconforming_by_width": {},
+      "format_nonconforming_rows": 0,
+      "header_present": false,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "vehicle_type",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 723244213,
+          "crc32": "d022a0a1",
+          "decode_errors": "strict",
+          "encoding": "utf-8-sig",
+          "zip_filename": "202503_YouBike2.0▓╝├╥¿ΩÑd╕Ω«╞.csv"
+        }
+      ],
+      "month": "2025-03",
+      "row_count": 6208631,
+      "seventh_field_exists": true,
+      "sha256": "73fb52ce8c1a30cb2c22b6757c2e53a5466c2cae35bd15d9473b1380058556f9",
+      "sixth_field_looks_like_date": false,
+      "sixth_field_top_values": [
+        [
+          "一般車",
+          5982621
+        ],
+        [
+          "電輔車",
+          226010
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 0,
+      "vehicle_type_field_exists": true,
+      "width_counts": {
+        "7": 6208631
+      }
+    },
+    {
+      "bytes": 132748590,
+      "date_field_position": 7,
+      "dominant_width": 7,
+      "duration_format": "H+:MM:SS",
+      "duration_unit_interpretation": "hours:minutes:seconds",
+      "encoding": "utf-8-sig:strict",
+      "filename": "202607_YouBike2.0票證刷卡資料.zip",
+      "first_rows": [
+        [
+          "rent_time",
+          "rent_station",
+          "return_time",
+          "return_station",
+          "rent",
+          "bike_type",
+          "infodate"
+        ],
+        [
+          "2026-07-17 06:00:00",
+          "龍門廣場",
+          "2026-07-17 07:00:00",
+          "臺北遠企購物中心",
+          "00:22:35",
+          "電輔車",
+          "2026-07-17"
+        ],
+        [
+          "2026-07-17 23:00:00",
+          "民生郵局",
+          "2026-07-17 23:00:00",
+          "南港路三段290巷口",
+          "00:14:49",
+          "電輔車",
+          "2026-07-17"
+        ],
+        [
+          "2026-07-17 17:00:00",
+          "捷運大安站(4號出口)",
+          "2026-07-17 17:00:00",
+          "安和路二段181巷口",
+          "00:06:30",
+          "一般車",
+          "2026-07-17"
+        ],
+        [
+          "2026-07-17 17:00:00",
+          "信義延吉街口",
+          "2026-07-17 17:00:00",
+          "捷運國父紀念館站(2號出口)",
+          "00:06:59",
+          "一般車",
+          "2026-07-17"
+        ]
+      ],
+      "format_nonconforming_by_width": {
+        "7": 1
+      },
+      "format_nonconforming_rows": 1,
+      "header_present": true,
+      "inferred_semantics": [
+        "borrow_time",
+        "origin_station_name",
+        "return_time",
+        "destination_station_name",
+        "duration",
+        "vehicle_type",
+        "borrow_date"
+      ],
+      "members": [
+        {
+          "bytes": 886352205,
+          "crc32": "4f7e5c2b",
+          "decode_errors": "strict",
+          "encoding": "utf-8-sig",
+          "zip_filename": "YouBike2.0票證刷卡資料_202607.csv"
+        }
+      ],
+      "month": "2026-07",
+      "row_count": 7596993,
+      "seventh_field_exists": true,
+      "sha256": "91216f4493e7b103b7c162fa1649946261a0a55486ed6bda4c45f86ac53ea312",
+      "sixth_field_looks_like_date": false,
+      "sixth_field_top_values": [
+        [
+          "一般車",
+          6948862
+        ],
+        [
+          "電輔車",
+          648130
+        ],
+        [
+          "bike_type",
+          1
+        ]
+      ],
+      "time_format": "YYYY-MM-DD HH:MM:SS",
+      "undecodable_byte_count": 0,
+      "vehicle_type_field_exists": true,
+      "width_counts": {
+        "7": 7596993
+      }
+    }
+  ]
+}

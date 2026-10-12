@@ -1,0 +1,52 @@
+{
+  "bundle": {
+    "archive": "data/interim/youbike_phase8_1b_cloud_bundle.tar.gz",
+    "size_bytes": 333652554,
+    "sha256": "90649e44ae3d4fe7bb2a87e6b66b3fe367bdbd9055bf15690084f990fc80d8eb",
+    "file_count": 26
+  },
+  "payload_fingerprint_sha256": "e12aca67c60028838a304eb556b738f69940d0165320d71c6af03742ff4e4c35",
+  "cache_snapshot": {
+    "snapshot_created_utc": "2026-09-19T11:54:28Z",
+    "method": "Python sqlite3 online backup API from read-only source connection",
+    "source_journal_mode": "wal",
+    "integrity_check": "ok",
+    "status_counts": {
+      "success": 94900
+    },
+    "rows": 94900,
+    "schema_sha256": "f12a65cb49050e55d565cbe99835ac5c301743b036558df86c505b4af46bf2f5"
+  },
+  "m2_hardening": {
+    "lookups_sha256": "bf8fc3b2c052b7204e9c5a8d78e4d6ab6b125d3236a943f34583b838c477f419",
+    "rd5_runtime_aliases": {
+      "data/raw/routing/E120_N20.rd5": "E120_N20_20260918.rd5",
+      "data/raw/routing/E120_N25.rd5": "E120_N25_20260918.rd5"
+    },
+    "real_route_preflight_required": true
+  },
+  "cloud_benchmark": {
+    "environment": "Google Cloud Compute Engine e2-standard-2 Spot, Debian 13",
+    "workers_1_routes_per_second": 4.70399790295406,
+    "workers_2_routes_per_second": 6.1726189923088945,
+    "full_cloud_production_started": false
+  },
+  "clean_room_validation": {
+    "lookups_hash_valid": true,
+    "wal_shm_in_archive": false,
+    "isolated_brouter_port": 17778,
+    "canonical_rd5_names_tested": true,
+    "windows_symlink_creation_tested": false,
+    "windows_symlink_note": "Windows host required administrator privilege; Linux launcher behavior is contract-tested and was previously exercised in the real Debian cloud repair.",
+    "real_route_id": "00087cf1126a2a927ebb1931",
+    "real_route_status": "success",
+    "route_distance_m": 4643.0,
+    "segment_count": 144,
+    "route_hash": "8392fbc860f3e7e355856186ed46360dd0616d7e5cee6e69198bbbff47794d06",
+    "production_cache_written": false,
+    "production_progress_written": false
+  },
+  "full_routing_launched": false,
+  "cloud_resources_created": false,
+  "upload_performed": false
+}
