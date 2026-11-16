@@ -135,7 +135,7 @@ CBI 不包含自行車 exposure。`EPDO per 1,000 estimated trips` 則描述相�
 
 ![CBI 引導式微路段案例人工檢視](figures/phase8_6a_case_candidate_review.png)
 
-亦可開啟 [互動式人工檢視地圖](figures/interactive/phase8_6a_case_candidate_review.html) 縮放、切換平日／假日圖層並查看 canonical metrics。互動地圖不會寫回資料，也沒有建立 selected-case 狀態。
+亦可開啟 [CBI 引導式候選路段人工檢視地圖](https://kuku0508.github.io/YouBike-Road-Risk-Analysis/figures/interactive/phase8_6a_case_candidate_review.html)，縮放、切換平日／假日圖層並查看 canonical metrics。這份互動地圖用於縮小候選路段的人工檢視範圍，並非四個最終案例的定位成果；地圖不會寫回資料，也沒有建立 selected-case 狀態。
 
 README 與案例文件未收錄或 commit 任何第三方街景截圖；道路環境以研究者文字觀察呈現，避免在授權與 attribution requirements 未確認前重新發布影像。
 
@@ -183,7 +183,7 @@ README 與案例文件未收錄或 commit 任何第三方街景截圖；道路�
 不需要下載原始資料即可閱讀：
 
 1. 從本 README 了解研究故事與核心結果。
-2. 查看 [`figures/`](figures/) 的靜態圖與 [互動式案例地圖](figures/interactive/phase8_6a_case_candidate_review.html)。
+2. 查看 [`figures/`](figures/) 的靜態圖與 [CBI 引導式候選路段人工檢視地圖](https://kuku0508.github.io/YouBike-Road-Risk-Analysis/figures/interactive/phase8_6a_case_candidate_review.html)。
 3. 依需要進入 [`notes/`](notes/) 查看方法、限制、receipts 與決策依據。
 
 ### B. 完整重建
