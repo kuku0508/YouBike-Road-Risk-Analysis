@@ -4,21 +4,18 @@
 
 本文件記錄四個由研究者人工選定的道路案例。它們是 **HUMAN-REVIEWED CASE STUDIES**，不是自動 ranking、hotspot detector、Top-N 或新的風險門檻。選案使用既有 Phase 8.5C／8.6A 呈現結果縮小檢視範圍，但案例單位是實際道路環境（location context），不是單一 BRouter `physical_segment_id`。
 
-研究者沒有在既有 worksheet 或正式 note 留下每案的 exact reference segment IDs；repository 搜尋與 Phase 8.6A worksheet 的空白 `review_status`／`researcher_note` 亦無法建立可稽核的 ID 對應。因此四案均明確記錄：
+研究者原先沒有把每案的 exact reference segment IDs 寫入 worksheet 或正式 note；2026-11-20 從原始人工核對截圖找回四個參考微路段識別碼。四串識別碼均在 `phase8_6a-case-candidate-review.csv` 完全相等命中一筆，並由該 canonical artifact 回查 CBI、SRI、SSI、事故數、EPDO、暴露量與 high-flow 狀態。
 
-```text
-reference_microsegment_ids = not formally recorded
-```
-
-本文件不依地名、CBI 近似值或座標猜測 ID，也不修改 canonical artifact、candidate membership、CBI、EPDO、exposure 或任何分析結果。道路現況來自研究者人工地圖／街景檢視紀錄；這些觀察的日期可能與 2023–2024 研究期間不同，且不能建立因果。
+這次回填不依地名、CBI 近似值或座標猜測 ID，也不修改 canonical artifact、candidate membership、CBI、EPDO、exposure 或任何分析結果。參考微路段用於追溯選案資料，不表示整個道路案例只涵蓋單一微路段。道路現況來自研究者人工地圖／街景檢視紀錄；這些觀察的日期可能與 2023–2024 研究期間不同，且不能建立因果。
 
 ## 案例 A｜民權東路二段－地下道出入口與自行車通行空間
 
-`reference_microsegment_ids = not formally recorded`
+`reference_microsegment_ids = 121530474,25062621|121531622,25062605`
 
 ### 資料證據
 
-- 研究者人工檢視紀錄：CBI 約 `0.8947`。
+- Canonical CBI = `0.8947368421`（作品集顯示為 `0.8947`）；SRI = `0.4473684211`、SSI = `0.4473684211`。
+- 17 件受傷事故、0 件死亡事故；observed EPDO = `1,989`。
 - 平日與假日皆進入既有 high-flow 人工檢視範圍。
 - CBI 是事故頻率與嚴重度的相對指標，不包含自行車 exposure，也不是危險程度排名。
 
@@ -44,15 +41,16 @@ reference_microsegment_ids = not formally recorded
 
 ### 研究限制
 
-道路觀察未與事故個案逐件建立行為機制連結；不能據此主張地下道、植栽或停車造成事故。CBI 近似值來自研究者人工檢視紀錄，因 exact reference microsegment ID 未正式留存，本文件不將其回填至 canonical data。
+道路觀察未與事故個案逐件建立行為機制連結；不能據此主張地下道、植栽或停車造成事故。參考微路段與 canonical metrics 已完成回查，但只支持資料追溯，不把單一微路段等同於整個道路案例。
 
 ## 案例 B｜百齡橋橋頭－自行車上橋入口導引
 
-`reference_microsegment_ids = not formally recorded`
+`reference_microsegment_ids = 121511942,25088082|121515020,25090149`
 
 ### 資料證據
 
-- 研究者人工檢視紀錄：CBI 約 `0.7368`。
+- Canonical CBI = `0.7894736842`（作品集顯示為 `0.7895`）；SRI = `0.3947368421`、SSI = `0.3947368421`。
+- 15 件受傷事故、0 件死亡事故；observed EPDO = `1,755`。
 - 本案例由既有 CBI-guided review workflow 人工選定，不是按 CBI 自動排序所得。
 
 ### 道路現況觀察
@@ -79,13 +77,14 @@ reference_microsegment_ids = not formally recorded
 
 ## 案例 C｜基隆路二段－高車流混合通行與公車站／YouBike 出入口交織
 
-`reference_microsegment_ids = not formally recorded`
+`reference_microsegment_ids = 121554998,25026443|121555625,25026973`
 
 ### 資料證據
 
 - 本案例由研究者在既有 CBI-guided review map 上人工選定。
-- 正式 artifact 與 researcher note 沒有記錄可稽核的 exact CBI，因此本文件不填入近似或推測數值。
-- CBI、EPDO 與 exposure 均維持原分析 artifact，不因案例敘事而重算。
+- Canonical CBI = `0.3684210526`（作品集顯示為 `0.3684`）；SRI = `0.1842105263`、SSI = `0.1842105263`。
+- 7 件受傷事故、0 件死亡事故；observed EPDO = `819`。
+- CBI、EPDO 與 exposure 均直接回查原分析 artifact，不因案例敘事而重算。
 
 ### 道路現況觀察
 
@@ -113,11 +112,13 @@ YouBike 騎士匯入道路、公車進出停靠區、外側車流與可能的視
 
 ## 案例 D｜大度路一段－長距離混合通行與退出選擇受限
 
-`reference_microsegment_ids = not formally recorded`
+`reference_microsegment_ids = 121486355,25122112|121491939,25121767`
 
 ### 資料證據
 
-- 研究者人工檢視紀錄：具有較明確人行空間一側的 CBI 約 `0.3684`；缺乏相近人行空間一側的 CBI 約 `0.6316`。
+- Canonical CBI = `0.6315789474`（作品集顯示為 `0.6316`）；SRI = `0.3157894737`、SSI = `0.3157894737`。
+- 12 件受傷事故、0 件死亡事故；observed EPDO = `1,404`。
+- 人工檢視另記錄道路另一側 CBI 約 `0.3684`；本次找回的參考微路段識別碼對應 `0.6316`，未將另一側近似值回填至此 ID。
 - 研究者地圖量測：下一個較明確切出位置約 `2.7 km`。此數值是 **RESEARCHER MAP MEASUREMENT**，不是 canonical routing metric。
 - 兩側 CBI 與道路環境同時存在差異；本研究沒有因果識別設計。
 
@@ -160,3 +161,4 @@ YouBike 騎士匯入道路、公車進出停靠區、外側車流與可能的視
 ## 影像與授權處理
 
 本文件沒有收錄或 commit 任何第三方街景截圖。若未來需要正式作品集照片，應優先使用自行拍攝、可合法重製的開放影像，或依服務條款合規嵌入／連結 Street View，並確認 attribution requirements。現階段以既有分析地圖與文字描述呈現道路情境。
+
