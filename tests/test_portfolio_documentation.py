@@ -1,3 +1,4 @@
+import csv
 import re
 import unittest
 from pathlib import Path
@@ -7,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 CASES = ROOT / "notes" / "phase8_6b-human-case-studies.md"
 PIPELINE = ROOT / "figures" / "project_pipeline.svg"
+CANDIDATES = ROOT / "notes" / "phase8_6a-case-candidate-review.csv"
 
 
 class PortfolioDocumentationTests(unittest.TestCase):
@@ -36,13 +38,19 @@ class PortfolioDocumentationTests(unittest.TestCase):
     def test_03_exactly_four_human_case_studies_are_recorded(self):
         headings = re.findall(r"^## 案例 ([A-Z])｜", self.cases, flags=re.MULTILINE)
         self.assertEqual(headings, ["A", "B", "C", "D"])
-        self.assertEqual(self.cases.count("reference_microsegment_ids = not formally recorded"), 5)
+        for segment_id in (
+            "121530474,25062621|121531622,25062605",
+            "121511942,25088082|121515020,25090149",
+            "121554998,25026443|121555625,25026973",
+            "121486355,25122112|121491939,25121767",
+        ):
+            self.assertIn(f"reference_microsegment_ids = {segment_id}", self.cases)
         self.assertNotIn("## 案例 E｜", self.cases)
 
-    def test_04_case_c_does_not_invent_exact_cbi(self):
+    def test_04_case_c_records_verified_exact_cbi(self):
         case_c = self.cases.split("## 案例 C｜", 1)[1].split("## 案例 D｜", 1)[0]
-        self.assertIn("沒有記錄可稽核的 exact CBI", case_c)
-        self.assertNotRegex(case_c, r"CBI\s*(?:約|=|：)\s*`?\d")
+        self.assertIn("Canonical CBI = `0.3684210526`", case_c)
+        self.assertIn("121554998,25026443|121555625,25026973", case_c)
 
     def test_05_case_structure_is_consistent(self):
         starts = {label: self.cases.index(f"## 案例 {label}｜") for label in ("A", "B", "C", "D")}
@@ -75,6 +83,23 @@ class PortfolioDocumentationTests(unittest.TestCase):
         for phrase in ("原始 YouBike 旅次", "BRouter 路徑重建", "事故實體重建", "四個人工道路案例"):
             self.assertIn(phrase, svg)
 
+    def test_09_case_reference_segments_match_canonical_candidates(self):
+        expected_cbi = {
+            "121530474,25062621|121531622,25062605": "0.8947368421052632",
+            "121511942,25088082|121515020,25090149": "0.7894736842105263",
+            "121554998,25026443|121555625,25026973": "0.3684210526315789",
+            "121486355,25122112|121491939,25121767": "0.631578947368421",
+        }
+        with CANDIDATES.open(encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        by_id = {}
+        for row in rows:
+            by_id.setdefault(row["physical_segment_id"], []).append(row)
+        for segment_id, cbi in expected_cbi.items():
+            self.assertEqual(len(by_id.get(segment_id, [])), 1)
+            self.assertEqual(by_id[segment_id][0]["cbi"], cbi)
+
 
 if __name__ == "__main__":
     unittest.main()
+
