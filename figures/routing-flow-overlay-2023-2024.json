@@ -1,0 +1,29 @@
+{
+  "source_sha256": "c6dd301a7b328d650aa4e58a7e9b36330d6389465594ad69010d39c02dd0cd6f",
+  "source_rows": 106049,
+  "weighted_traversals": 4674227848,
+  "output_sha256": "55690a5289723c3cfbb168d7ca3ae219331928050f02fdd404e602c536a50e2d",
+  "image_width": 3200,
+  "image_height": 2600,
+  "bounds": [
+    [
+      24.894816811783368,
+      121.3167398471588
+    ],
+    [
+      25.305824393537012,
+      121.87537715284117
+    ]
+  ],
+  "crs": "EPSG:3857 raster aligned to Leaflet ImageOverlay bounds",
+  "display_bins": [
+    "1–9",
+    "10–99",
+    "100–999",
+    "1,000–9,999",
+    "10,000–99,999",
+    "100,000+"
+  ],
+  "risk_measure": false
+}
+
